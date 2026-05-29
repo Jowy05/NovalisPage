@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Auditoría Bloque 3 — Personajes y Facciones — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a>  </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Auditoría Bloque 3 — Personajes y Facciones</h1> </header> <div class="wiki-prose mt-7"> <h1 id="auditoría-bloque-3--personajes-principales-y-facciones-canónicas">Auditoría Bloque 3 — Personajes principales y Facciones canónicas</h1>
+<blockquote>
+<p>Informe del loremaster-critic tras la generación de 24 páginas en el Bloque 3 (9 PJs + 15 facciones).
+Severidades: 🔴 contradicción dura · 🟡 plausibilidad · 🔵 hueco · ⚪ sugerencia.</p>
+</blockquote>
+<h2 id="resumen-ejecutivo">Resumen ejecutivo</h2>
+<p>El Bloque 3 mantiene <strong>muy alta coherencia</strong> con el canon vinculante de los Bloques 0-2 (los 4 dioses, el sello dual, las 3 megacorps con apodos, las 4 potencias hegemónicas con sus líderes y nombres exactos). Las páginas son densas, bien estructuradas y marcan correctamente sus invenciones. Sin embargo, se han colado <strong>siete contradicciones duras</strong> —seis de ellas entre páginas paralelas del propio Bloque 3 (los 5 agentes generaron nombres distintos sin coordinarse)— y una entre Bloque 3 y la página canónica de razas. La más grave: <strong>los nombres de los tres compañeros de Toren en el Consejo de los Cuatro divergen entre la página de Toren, la del Consejo, y la de Imari</strong>. Otras contradicciones nominales severas: los <strong>cuatro Patrones de Veltara</strong> tienen apellidos distintos según la página de Edrik (Madris/Vellior/Krastil/Henrek) o la de los Gremios (Korven/Tehema/Tornay/Korovel). Las <strong>tensiones de plausibilidad</strong> se concentran en cronologías apretadas (matrimonio Helgrim-Eira hace 120 años vs. 22 años de Halgar) y en discrepancias numéricas (la red Saga: 5 nodos en Eira vs. 7 en DM; la Junta del Hierro: 4 humanos + 1 reformista oculto). Los <strong>huecos</strong> son filosofía de granularidad esperable (>60 entidades secundarias inventadas que ahora merecen página propia: cuatro patrones inventados por Edrik que no existen, los compañeros de Toren, el cuarto símbolo de Pacthos, las cofradías de Eternistas, el Comisario Mayor del Programa, etc.). Prioridad de arreglo: <strong>resolver primero la triple discrepancia nominal del Consejo de los Cuatro</strong> (afecta a tres páginas paralelas) y los <strong>cuatro Patrones de Veltara</strong> (afecta a la coherencia de seis páginas).</p>
+<h2 id="hallazgos-por-severidad">Hallazgos por severidad</h2>
+<h3 id="-contradicciones-duras">🔴 Contradicciones duras</h3>
+<p><strong>🔴 Triple discrepancia nominal en el Consejo de los Cuatro</strong></p>
+<ul>
+<li>Qué: las tres páginas paralelas que tocan el Consejo dan nombres incompatibles para los tres compañeros de Toren.</li>
+<li>Evidencia:
+<ul>
+<li><code>personajes/toren-hijo-del-silencio.md</code> línea 55: “<strong>Yssara Cardinal</strong> (Vastus) … <strong>Hervald el Anticipado</strong> (Aevum) … <strong>Marien Mano-Cálida</strong> (Primum)”.</li>
+<li><code>facciones/consejo-de-los-cuatro.md</code> líneas 100-104: “matriarca descendiente de Vastus … <strong>Henne de la Carta Honda</strong> … descendiente de Aevum … <strong>Solveig el Lento</strong> … descendiente de Primum … <strong>Almar de Manos Cálidas</strong>”.</li>
+<li><code>personajes/reina-imari.md</code> (sección DM, línea 178): “el consejero exterior secreto es <strong>Toren Hijo del Silencio</strong>” y la página de Toren confirma su contacto con Imari con los tres nombres Yssara/Hervald/Marien.</li>
+<li>La página del Consejo línea 107 reconoce expresamente: “<strong>Los nombres propuestos para los tres compañeros de Toren</strong> (Henne / Solveig / Almar) son invención. Queda abierto a confirmación o cambio en sesión.”</li>
+</ul>
+</li>
+<li>Sugerencia: fijar canónicamente una sola tripleta. Recomendado <strong>mantener la nomenclatura de Toren</strong> (Yssara Cardinal, Hervald el Anticipado, Marien Mano-Cálida), porque la página de Toren la integra en la sección de Relaciones (no en sección DM/Pendiente) y porque el reparto de carácter (Yssara más cercana, Hervald más cauto, Marien la más joven) es más nítido. Reemplazar Henne→Yssara, Solveig→Hervald, Almar→Marien en <code>consejo-de-los-cuatro.md</code>. Revisar también la línea 100 (“la matriarca descendiente de Vastus”) para alinear con la descripción de Toren (“matriarca”).</li>
+</ul>
+<p><strong>🔴 Cuatro Patrones de Veltara: nombres incompatibles</strong></p>
+<ul>
+<li>Qué: la página de Edrik bautiza a los otros cuatro Patrones del Consejo de los Cinco con apellidos que <strong>ninguna otra página del Bloque 3 reconoce</strong>. Las páginas individuales de cada Gremio dan otros nombres canónicos.</li>
+<li>Evidencia:
+<ul>
+<li><code>personajes/edrik-vatra.md</code> líneas 52-55 + 113 (sección DM “Invención”): “Patrón <strong>Madris</strong> (Banca), Patrón <strong>Vellior</strong> (Especia), Patrón <strong>Krastil</strong> (Núcleos Exóticos), Patrón <strong>Henrek</strong> (Madera)”.</li>
+<li><code>facciones/gremio-de-la-banca.md</code> línea 73: Patrón <strong>Aurelio Korven</strong>.</li>
+<li><code>facciones/gremio-de-la-especia.md</code> línea 68: Patrón <strong>Vassyr Tehema</strong>.</li>
+<li><code>facciones/gremio-de-los-nucleos-exoticos.md</code> línea 75: Patrón <strong>Vellis Tornay</strong>.</li>
+<li><code>facciones/gremio-de-la-madera.md</code> línea 73: Patrón <strong>Hadran Korovel</strong>.</li>
+<li>El contexto-traspaso menciona el reparto “Vassyr Tehema Especia, Hadran Korovel Madera, Vellis Tornay Núcleos Exóticos, Aurelio Korven Banca, Surel Tarvine Navegación”, lo cual ratifica la nomenclatura canónica.</li>
+</ul>
+</li>
+<li>Sugerencia: borrar Madris/Vellior/Krastil/Henrek de la página de Edrik y sustituirlos por Aurelio Korven (Banca), Vassyr Tehema (Especia), Vellis Tornay (Núcleos Exóticos), Hadran Korovel (Madera). Ajustar las relaciones internas (la facción legalizadora interna del Gremio de la Especia está liderada por <strong>Daro Iliasi</strong>, no por el Patrón; el “enemigo natural” canónico de Edrik en Núcleos Exóticos es Tornay; el “Patrón emérito Salvio Korven” es relevante para los Korven banqueros y debería figurar). El gancho del Patrón Krastil contratando a los PJ contra Edrik debe rehacerse con Tornay (Núcleos Exóticos) o con Aurelio Korven; la auditoría de cuentas de Edrik la ejecuta <strong>Velena Stiros</strong>, ya canonizada como auditora consular en el gremio-banca.</li>
+</ul>
+<p><strong>🔴 Edad de Toren Hijo del Silencio: 100 vs. 150 años</strong></p>
+<ul>
+<li>Qué: la página de razas (canónica) le asigna unos cien años; la página propia del personaje le asigna alrededor de un siglo y medio.</li>
+<li>Evidencia:
+<ul>
+<li><code>razas/semidioses.md</code> línea 95 (sección DM): “<strong>Toren Hijo del Silencio</strong> … tiene unos cien años (los semidioses de Null envejecen aún más despacio)”.</li>
+<li><code>personajes/toren-hijo-del-silencio.md</code> línea 17: “Edad: <strong>alrededor de un siglo y medio</strong>, posiblemente algo más”.</li>
+<li><code>facciones/consejo-de-los-cuatro.md</code> línea 98: “Edad estimada: cien años” (sigue a la página de razas).</li>
+</ul>
+</li>
+<li>Sugerencia: la página propia de Toren añade detalles operativos (madre Norha murió hace dos siglos cuando Toren era ya adulto de unos sesenta años → coherente con 150 años, no con 100). El número 150 es más coherente internamente. Recomendado <strong>canonizar 150 años</strong> y actualizar <code>razas/semidioses.md</code> y <code>consejo-de-los-cuatro.md</code> para reflejar la edad nueva, justificándolo con la ralentización del envejecimiento Null que la propia página de razas reconoce.</li>
+</ul>
+<p><strong>🔴 Red Saga: 5 nodos secundarios (cuerpo) vs. 7 nodos vivos (DM)</strong></p>
+<ul>
+<li>Qué: la página de Eira contradice consigo misma en el número de nodos de la red trans-continental.</li>
+<li>Evidencia:
+<ul>
+<li><code>personajes/eira-la-memoriosa.md</code> líneas 85-89 (cuerpo público): enumera <strong>cinco nodos secundarios</strong> (Saga Verde de Fortuna, dos Sagas Marinas, Saga Annis austral, Saga Nocturna de Heliopolis).</li>
+<li><code>personajes/eira-la-memoriosa.md</code> línea 167 (sección DM): “<strong>La red Saga tiene siete nodos vivos</strong>, no cinco como Eira deja entrever incluso al rey. Los dos nodos extra son: una Saga Marina retirada en aguas del Velo Sur, presumida muerta hace años (la red la oculta deliberadamente), y una Saga Verde en la Selva Nublada de Cetus”.</li>
+</ul>
+</li>
+<li>Sugerencia: la propia página resuelve la tensión narrativamente (Eira oculta dos nodos incluso a sus íntimos), por lo que <strong>no es contradicción dura interna sino verdad oculta deliberada</strong>. La discrepancia con <code>razas/sagas.md</code>, que no menciona número exacto, es admisible. El conflicto real está con el contexto-traspaso, que solo decía “red trans-continental” sin número; canonizar 7 nodos vivos como cifra real (5 públicos + 2 secretos) y dejar constancia en <code>razas/sagas.md</code>. <strong>La Saga Verde de la Selva Nublada del DM de Eira es la misma Mehkrit canonizada en <code>arquitectura/selva-nublada.md</code> y en la página del Anciano</strong>: hay coherencia, pero conviene cruzarla explícitamente.</li>
+</ul>
+<p><strong>🔴 “Emperador Aldric III” en la Junta del Hierro vs. “Rey” canónico</strong></p>
+<ul>
+<li>Qué: la página de la Junta llama a Aldric III “Emperador” en una línea, mientras todo el resto del corpus (incluida la propia página de Aldric, INDEX, geografía/fortuna) lo llama Rey.</li>
+<li>Evidencia:
+<ul>
+<li><code>facciones/junta-directiva-del-hierro.md</code> línea 87 (sección DM): “La Junta ha considerado <strong>sustituir preventivamente al Emperador <a href="/NovalisPage/personajes/aldric-iii" class="wikilink">Aldric III</a></strong>”.</li>
+<li>Línea 137 reincide: “tener un autómata cooperativo en el <strong>Trono del Imperio</strong>”.</li>
+<li><code>personajes/aldric-iii.md</code> línea 12: “<strong>Rey actual de <a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a></strong>”.</li>
+<li><code>geografia/fortuna.md</code> (canónico): reino de Fortuna, monarquía.</li>
+</ul>
+</li>
+<li>Sugerencia: corregir “Emperador” → “Rey” y “Trono del Imperio” → “Trono de Fortuna” en <code>junta-directiva-del-hierro.md</code>. Aldric III es Rey, Fortuna es Reino. La connotación imperial podría conservarse a nivel cultural (Heliopolis es “capital imperial” del Concierto), pero el monarca individual no es Emperador.</li>
+</ul>
+<p><strong>🔴 Identidad del consejero secreto de Aldric III vs. Toren↔Eira ya canonizada</strong></p>
+<ul>
+<li>Qué: la página de Aldric mantiene tres opciones abiertas para la identidad del consejero secreto del rey (Saga oculta de la red de Eira, Eternista infiltrado, autómata desertor del Hierro). Pero la página de Toren ya <strong>canoniza</strong> que Aldric “no sabe que [Toren] existe; si llegara a saberlo, podría ser uno de los terremotos cosmopolíticos del reinado”, lo que descarta una de las tres rutas (la Saga ligada a Eira sí podría serlo, pero el Eternista o el autómata desertor entrarían en tensión con el grado de aislamiento que la página de Toren describe entre Aldric y la red de saberes pre-industriales).</li>
+<li>Evidencia:
+<ul>
+<li><code>personajes/aldric-iii.md</code> línea 67: “Saga oculta vinculada a la red trans-continental, Eternista infiltrado en la corte o autómata desertor de la Junta Imperial son las tres opciones plausibles”.</li>
+<li><code>personajes/aldric-iii.md</code> línea 107 (sección DM): reconoce que las tres siguen “abiertas”.</li>
+<li><code>personajes/toren-hijo-del-silencio.md</code> línea 70: “Aldric III no sabe que existe; si llegara a saberlo, podría ser uno de los terremotos cosmopolíticos del reinado”.</li>
+<li><code>facciones/eternistas.md</code> línea 110 (sección DM): “Hay un acuerdo no escrito con <a href="/NovalisPage/personajes/aldric-iii" class="wikilink">Aldric III</a> mediado por la Casa de los Linajes … Aldric no lo sabe del todo. Solo dos consejeros suyos lo saben con seguridad”.</li>
+</ul>
+</li>
+<li>Sugerencia: no es contradicción dura porque el canon explícitamente deja la identidad sin fijar (decisión correcta para no atar la campaña). Pero la página de Eternistas implica que ya hay “dos consejeros” con conexión Eternista, lo cual presiona hacia la opción Eternista. Convendría explicitar en <code>aldric-iii.md</code> DM que las tres opciones son <em>exclusivas entre sí</em> (no hay dos consejeros secretos paralelos) y que la opción Eternista es la más cargada por el lore ya canonizado en su propia facción.</li>
+</ul>
+<p><strong>🔴 Hijo de Mira en Sin-Cuerda: edad y secreto de identidad</strong></p>
+<ul>
+<li>Qué: la página de Sin-Cuerda dice que el Hijo de Mira tiene 15 años y “Mira lo crió como hijo biológico … La isla entera ha colaborado en mantener el secreto durante quince años”. Pero también dice “Mira es ex-animadora certificada del Colegio … veinte años desde la deserción”. Si Mira desertó hace 20 años con la documentación robada y el chico tiene 15, hay 5 años entre deserción y “fabricación” del encarnado humanoide. Cuadra bien numéricamente. <strong>No es contradicción dura sino zona apretada que conviene confirmar</strong>: el chico fue construido en la isla 5 años después de la deserción de Mira, lo cual implica que la ex-animadora tenía capacidad y materiales para fabricar un encarnado humanoide perfecto desde el refugio. ¿Qué núcleo se le implantó? La página no lo explicita.</li>
+<li>Evidencia: <code>facciones/sin-cuerda.md</code> líneas 73 (“Mira … veinte años desde la deserción”) + 173 (“durante quince años”).</li>
+<li>Sugerencia: añadir una nota interna en DM aclarando origen del núcleo del chico (¿núcleo de un encarnado huérfano del laboratorio clandestino? ¿núcleo extraído clandestinamente?). Sin esa pieza, el origen del Hijo de Mira es zona fina.</li>
+</ul>
+<h3 id="-plausibilidad">🟡 Plausibilidad</h3>
+<p><strong>🟡 Cronología matrimonio Helgrim-Eira: 120 años + Halgar 22 años</strong></p>
+<ul>
+<li>Qué: las páginas dicen que Helgrim y Eira llevan “ciento veinte años aproximadamente” casados, y que Halgar nació “veintidós años después del matrimonio, gestación gigante completa más espera ritual” según la página de Helgrim, mientras que la de Eira dice gestación de “siete años”. Por tanto Halgar tendría 120 - 22 = 98 años desde nacimiento si el matrimonio lleva 120 años. Pero las páginas sitúan a Halgar en “veintidós inviernos” (22 años) y “veinticinco años humanos aparentes”. Hay un desfase de casi un siglo entre cuándo se casaron y cuándo nació el heredero.</li>
+<li>Evidencia:
+<ul>
+<li><code>personajes/eira-la-memoriosa.md</code> línea 72: “Desde entonces, han vivido juntos en Hjornheim ciento veinte años aproximadamente”.</li>
+<li><code>personajes/helgrim-cuerno-de-hielo.md</code> línea 64: “Halgar nació <strong>veintidós años después del matrimonio</strong>”.</li>
+<li><code>personajes/halgar-helgrimsson.md</code> línea 18: “nació hace <strong>veintidós inviernos</strong> en calendario actual”.</li>
+</ul>
+</li>
+<li>Sugerencia: hay incompatibilidad. Si Halgar tiene 22 años y nació 22 años después del matrimonio, el matrimonio lleva ~44 años, no 120. Si el matrimonio lleva 120 años, Halgar tiene ~98 años. Decidir una de las dos: o <strong>el matrimonio tiene ~44 años</strong> (lo cual es coherente con la edad declarada de Halgar y con que Helgrim tenía 92 años al subir al trono y ahora tiene 210, dejando ~118 años en el trono, pero el matrimonio pudo ser bastante posterior a la coronación) o <strong>Halgar es mucho mayor de lo que aparenta</strong>. La opción más limpia es ajustar la página de Eira: “han vivido juntos en Hjornheim <strong>alrededor de cuarenta y cinco años</strong>” (post-coronación) y dejar que la sangre Saga de Halgar explique su apariencia mayor. <strong>Este desfase es la incoherencia cronológica más grave del Bloque 3</strong>.</li>
+</ul>
+<p><strong>🟡 Edad de Helgrim al subir al trono: 92 años “rey joven”</strong></p>
+<ul>
+<li>Qué: Helgrim subió al trono “a los noventa y dos años”, “considerado por la cultura gigante como rey joven —edad equivalente, en proporciones humanas, a la treintena”. Pero la página dice que la expedición al hielo profundo (con la que ganó el cuerno y la mano de Eira) la realizó “a los ochenta y cinco años”. Si volvió siete meses después con el cuerno, tenía 85 + 0,6 ≈ 86 años. La aclamación al trono fue inmediata. Si fue rey con 92, hay 6 años inexplicados entre el regreso de la expedición y la coronación.</li>
+<li>Evidencia: <code>personajes/helgrim-cuerno-de-hielo.md</code> líneas 18 (92 al trono), 52 (85 al partir), 56 (“aclamación al trono inmediata”).</li>
+<li>Sugerencia: o la coronación fue a los 86, no a los 92, o hubo años intermedios (“aclamación inmediata” no implica coronación inmediata: pudo haber período de regencia, duelos sucesivos, etc.). Aclarar.</li>
+</ul>
+<p><strong>🟡 Patrón Surel Tarvine: 49 años + 5 años en cargo + Edrik 12 años de patronato</strong></p>
+<ul>
+<li>Qué: la página del Gremio de la Navegación dice que Tarvine fue nombrado Patrón “tras el ascenso de Edrik Vatra al Consulado hace cinco años”. Pero la página de Edrik dice que Edrik fue elegido Cónsul “hace algo más de tres años”, no cinco.</li>
+<li>Evidencia:
+<ul>
+<li><code>facciones/gremio-de-la-navegacion.md</code> línea 77: Tarvine “nombrado tras el ascenso de Edrik Vatra al Consulado hace cinco años”.</li>
+<li><code>personajes/edrik-vatra.md</code> línea 19: “elegido Cónsul por los cinco Patrones hace <strong>algo más de tres años</strong>”.</li>
+<li>Línea 46 (Edrik): “el tercero —el actual— el de las decisiones grandes” (consulado en su tercer año).</li>
+</ul>
+</li>
+<li>Sugerencia: fijar una cifra (3 años o 5). Si fue hace 3 años, ajustar la página de Tarvine. Si fue hace 5, ajustar la de Edrik.</li>
+</ul>
+<p><strong>🟡 Composición de la Junta del Hierro: 5 humanos en organigrama vs. “todos autómatas”</strong></p>
+<ul>
+<li>Qué: la página de la Junta lista cinco asientos con cinco titulares humanos nombrados (Hadrian Vehrold IV, Ervinia Tassen-Mehl, Bergrim Korven, Ilrea Hespian, Conde Marvelin de Vaerith), todos descritos como humanos/enano. La sección DM revela que los cinco son autómatas conscientes con apariencia humana mantenida (“la mayoría son autómatas conscientes” en cuerpo público, “los cinco” en realidad). Pero al mismo tiempo el canon habla de “un humano reformista que oculta la verdad por convicción” presente en la Junta. ¿El reformista es uno de los cinco o el “heredero reformista” extra (línea 81: “voz consultiva en algunas reuniones, no asiento”)?</li>
+<li>Evidencia:
+<ul>
+<li><code>facciones/junta-directiva-del-hierro.md</code> línea 81: “Heredero reformista de los Vehrold — joven descendiente colateral del fundador. <strong>Posee voz consultiva en algunas reuniones, no asiento.</strong>”</li>
+<li><code>facciones/cumbre-secreta-corp.md</code> línea 37: el Asiento del Hierro en la cumbre secreta corp “lo ocupa el <strong>humano reformista heredero del fundador</strong>, único miembro humano de la Junta”.</li>
+<li><code>facciones/junta-directiva-del-hierro.md</code> línea 125 (DM): los cinco son autómatas; el reformista no está entre los cinco titulares.</li>
+<li><code>facciones/cumbre-secreta-corp.md</code> línea 165 (DM): “es <strong>único humano</strong> de la Junta”.</li>
+</ul>
+</li>
+<li>Sugerencia: hay tensión sobre qué es “ser miembro de la Junta”: si el reformista es asiento titular (cumbre secreta), entonces son 4 autómatas + 1 humano. Si solo tiene voz consultiva (Junta), entonces son 5 autómatas y el humano queda fuera. <strong>Recomendado canonizar</strong>: los cinco asientos formales son autómatas con apariencia humana; el humano reformista es voz consultiva sin asiento, pero firma en la cumbre secreta corp como representante del Hierro porque los autómatas no quieren exponerse a la mesa larga (riesgo de detección). Esto cuadra con que la cumbre se celebra “encima del templo profanado” (sótano de los Cimientos Viejos): los autómatas conscientes prefieren no acercarse al bajorrelieve cosmológico.</li>
+</ul>
+<p><strong>🟡 “Toren tiene voz de última palabra de hecho aunque no de derecho”</strong></p>
+<ul>
+<li>Qué: la página del Consejo dice que Toren tiene veto blando por costumbre. La página de Toren refuerza esto. Pero la línea de la página del Consejo línea 169 dice: “<strong>2 a favor</strong> (Toren + Henne) y <strong>2 en contra</strong> (Solveig + Almar). Empate. Aplazamiento”. Si Toren tiene veto blando real, ¿por qué empate y no decisión? La línea sugiere que en cuestiones realmente graves los cuatro asientos son iguales y el aplazamiento es la salida natural. Coherente, pero conviene aclarar.</li>
+<li>Sugerencia: precisar que el “veto blando” de Toren funciona en cuestiones medianas; en las cuestiones cosmológicas mayores, el sistema vuelve al consenso obligatorio y aplazamiento.</li>
+</ul>
+<p><strong>🟡 Halsen Mehralt Korven: hijos canon vs. invención</strong></p>
+<ul>
+<li>Qué: La página de Halsen marca explícitamente como invención la esposa Yenra y los dos hijos. Pero después introduce un <strong>“hijo mayor, Brom Mehralt-Vael”</strong> como sucesor manipulable previsto por la Junta (línea 152, sin marca explícita Inv). Ambos detalles son invenciones derivadas de invenciones. El stack es coherente, pero es invención sobre invención sin marca.</li>
+<li>Sugerencia: añadir marca <code>> [!info] Invención</code> para Brom Mehralt-Vael.</li>
+</ul>
+<p><strong>🟡 Vela Imari-Solar: 15 años + sangre dragonborn-Primum</strong></p>
+<ul>
+<li>Qué: la página de Imari presenta a Vela como “sobrina-nieta joven de quince años, candidata más fuerte”. La página invita a evaluar potencial mayor (DM línea 180). Pero la dragonborn de linaje rojo en Imari es longeva (Imari ronda los 120, parece 65). Vela tendría que mostrar marcas Primum a esa edad para ser candidata viable; la página dice “más activa pero también más cuidadosamente camuflada por instinto adolescente”. Es coherente, pero la cronología de candidatura es apretada: si Imari muere en pocos años (10 años de debilitamiento documentado), Vela tendrá ~25, edad joven para ser Voz de los Volcanes. Decisión narrativa válida pero merece nota.</li>
+<li>Sugerencia: anotar el riesgo cronológico explícitamente.</li>
+</ul>
+<p><strong>🟡 Cumbre secreta corp: hacienda sobre templo de los CUATRO dioses libres</strong></p>
+<ul>
+<li>Qué: la página de la cumbre secreta corp dice que la hacienda se construyó “sobre las ruinas profanadas de un <strong>templo pre-rebautizo dedicado conjuntamente a los cuatro dioses libres</strong>: Aevum, Vastus, Primum y Null”. Pero el canon establece que <strong>Null no era libre — fue sellado al inicio de la creación</strong>. No puede haber tenido culto histórico documentado pre-rebautizo: solo cofradías rurales clandestinas y, según <code>eternistas.md</code>, “un sacerdote residual de Null en el Bosque” pero “altar de tierra sin labrar, sin marca”. Un templo con bajorrelieve de “los cuatro hermanos divinos” debería ser pre-sellado, lo cual lo hace pre-creación, lo cual es absurdo cosmológicamente.</li>
+<li>Evidencia: <code>facciones/cumbre-secreta-corp.md</code> línea 53: “templo pre-rebautizo dedicado conjuntamente a los cuatro dioses libres: Aevum, Vastus, Primum y Null”. Línea 61: “bajorrelieve de los cuatro hermanos divinos”.</li>
+<li>Sugerencia: o el templo es <strong>pre-sellado</strong> (con cuatro dioses originalmente, antes del cierre de Null) y por tanto extremadamente antiguo (anterior a toda civilización conocida), lo cual encajaría con la verdad oculta canonizada en la página de Toren (“los cuatro dioses originalmente eran un solo ser fragmentado”); o el templo es <strong>pre-rebautizo pero post-sellado</strong>, en cuyo caso solo debería tener tres dioses libres reconocidos + el cuarto representado como sello/silencio (coherente con el Anillo Vacío de Pacthos). La primera opción es teológicamente mejor pero requiere reescribir cómo llegó la hacienda hasta ahí. Recomendado: clarificar que el templo es <strong>pre-civilizacional</strong> (no pre-rebautizo simplemente), lo cual le da peso narrativo enorme y coherencia con Pacthos.</li>
+</ul>
+<p><strong>🟡 Cinco gremios: cifras de socios mayores incoherentes</strong></p>
+<ul>
+<li>Qué: cada gremio tiene número distinto de socios mayores. Especia: 13 (Consejo de los Trece). Madera: 11 (Consejo de las Cuencas). Núcleos Exóticos: 7 (Comité de Clasificación). Banca: 9 (Consejo de los Nueve Sellos). Navegación: 5 (Consejo de las Cinco Rutas). No es contradicción —cada gremio puede tener su propia estructura— pero la asimetría es notable y no se explica.</li>
+<li>Sugerencia: ⚪ no requiere arreglo, pero conviene mencionar que la asimetría es deliberada (Veltara es mercantil, no jerárquica).</li>
+</ul>
+<p><strong>🟡 Anciano del Árbol Madre: 220 años + 100 años en la copa + 120 entre llegada y hoy</strong></p>
+<ul>
+<li>Qué: la página dice que el Anciano nació hace 220 años, pasó 70 años de cazador, fue invitado a aprendizaje a los 70 años, “pasó 40 años como aprendiz formal”, y luego “lleva más de un siglo en la copa”. 70 + 40 + 100+ = 210+ años. Coherente. Pero también dice que “ha visto morir a tres reinas y dos reyes-sacerdotes de Kalmari y a cuatro Cónsules de la República” en su siglo. Cuatro Cónsules en cien años implica mandato medio de 25 años. El canon de Edrik dice que su mandato es renovable (línea 19, “elegido Cónsul … hace algo más de tres años”); cinco años de Tarvine como Patrón → mandatos breves. Cuatro Cónsules en cien años parece poco (debería ser más).</li>
+<li>Sugerencia: ⚪ ajuste menor; cambiar “cuatro Cónsules” por “una docena de Cónsules” o aclarar que el cargo de Cónsul es generacional en los hechos (un Cónsul puede repetir mandatos).</li>
+</ul>
+<h3 id="-huecos-críticos-entidades-nombradas-sin-página-propia">🔵 Huecos críticos (entidades nombradas sin página propia)</h3>
+<p>El Bloque 3 ha producido aproximadamente <strong>>150 nombres propios nuevos</strong> de personajes, lugares y objetos. La filosofía de granularidad implica que todos merecen página. Se priorizan los más graves —los que ya están operativamente activos en múltiples páginas—:</p>
+<p><strong>Compañeros del Consejo de los Cuatro (top prioridad — afectan a 3 páginas paralelas)</strong></p>
+<ol>
+<li><strong>Yssara Cardinal / Henne de la Carta Honda</strong> (asiento Vastus) — fijar nombre y crear página.</li>
+<li><strong>Hervald el Anticipado / Solveig el Lento</strong> (asiento Aevum) — fijar nombre y crear página.</li>
+<li><strong>Marien Mano-Cálida / Almar de Manos Cálidas</strong> (asiento Primum) — fijar nombre y crear página.</li>
+<li><strong>Norha la Última</strong> — madre de Toren, hija directa de Null, figura ancestral del archipiélago.</li>
+</ol>
+<p><strong>Personajes secundarios canonizados con peso operativo (alta prioridad)</strong>
+5. <strong>Velmir el Cojo</strong> — consejero hereje de Halsen, lleva 27 años junto al rey.
+6. <strong>General Vandren Korr-Helm</strong> — jefe del cordón militar de Halsen.
+7. <strong>Yenra Mehralt-Vael</strong> — esposa de Halsen, hija menor de la Casa Mehrholt-Vael.
+8. <strong>Borvar el Manco</strong> — tío del rey Helgrim, jarl de Skjell, memorioso.
+9. <strong>Mokv-de-las-Tres-Hijas</strong> — jarl rival superviviente del duelo.
+10. <strong>Vetra-bajo-el-Hielo</strong> — Saga de Bheur del extremo norte.
+11. <strong>Skirja la Sin-Lengua</strong> y <strong>Aldgrim Voz-de-Hielo</strong> — memoriosos del consejo íntimo de Eira.
+12. <strong>Olvar Tres-Lenguas</strong> — sacerdote-mago actual de la corte kalmariana.
+13. <strong>Tenra de la Casa Solar</strong> — hermana política de Imari, dama del séquito.
+14. <strong>Vela Imari-Solar</strong> — sobrina-nieta candidata a heredera, 15 años.
+15. <strong>Hervan Drest</strong> — médico real fortunés, único confidente sobre el suicidio de Aldric II.
+16. <strong>Vesilia de Hardrach</strong> — Reina Madre fallecida, dama de la Casa de los Linajes.
+17. <strong>Aldric II</strong> — rey suicida encubierto, padre de Aldric III.
+18. <strong>Aldric I</strong> — bisabuelo, rey rebautizador, fundador del nombre Novalis.
+19. <strong>Mehkrit</strong> — Saga Verde refugiada en el Árbol Madre central.
+20. <strong>El sacerdote anciano de Aevum / semidiós eternista</strong> — líder espiritual no formal de los Eternistas.
+21. <strong>Mira de la Rueca</strong> — líder operativa de la red Sin-Cuerda (mencionada como “página propia pendiente” en la propia entrada de Sin-Cuerda).
+22. <strong>El Hijo de Mira</strong> — chico de 15 años, encarnado humanoide perfecto.</p>
+<p><strong>Patrones de los Gremios y figuras mercantiles canonizadas</strong>
+23. <strong>Aurelio Korven</strong> (Banca) y <strong>Salvio Korven</strong> (Patrón emérito) — pareja crítica.
+24. <strong>Velena Stiros</strong> — auditora consular silenciada por la Junta del Hierro.
+25. <strong>Vassyr Tehema</strong> (Especia), <strong>Vellis Tornay</strong> (Núcleos Exóticos), <strong>Hadran Korovel</strong> (Madera), <strong>Surel Tarvine</strong> (Navegación) — los otros cuatro Patrones.
+26. <strong>Daro Iliasi</strong> (legalizadora interna en Especia), <strong>Inva Rehan</strong> (mano derecha de Tornay), <strong>el Tercer Ojo</strong> de Karnatha.
+27. <strong>Vellor Hask</strong> — autómata consciente intermediario del Hierro ante Edrik.
+28. <strong>Mirah Verre</strong> — hija no reconocida de Edrik en Atolón de Verre.</p>
+<p><strong>Lugares y conceptos canónicos críticos</strong>
+29. <strong>El Hogar de los Cuatro</strong> — sala natural de obsidiana en Skarheim (sede del Consejo).
+30. <strong>Skarheim el Humeante</strong> — islote mayor del Archipiélago Humeante.
+31. <strong>Caleta de Toren</strong> — refugio personal del descendiente de Null.
+32. <strong>Hacienda del Norte / Sótano de los Cimientos Viejos / Bajorrelieve de los Cuatro Hermanos</strong> — sede de la cumbre secreta corp.
+33. <strong>Cuatro menhires de Pacthos</strong> — uno por dios, página independiente para cada uno.
+34. <strong>El Árbol Madre central</strong> — sub-localización de la Selva Nublada.
+35. <strong>Mehralt</strong> (la capital) — pendiente desde Bloque 2, aún sin página, ahora urgente.
+36. <strong>Heliopolis</strong> (la capital) — idem, urgente.
+37. <strong>Hjornheim</strong> (la capital) — idem, urgente.
+38. <strong>Kalmari</strong> (capital del Reino Sagrado) — idem.
+39. <strong>Veltara</strong> (capital mercantil) — idem.</p>
+<p><strong>Documentos y objetos críticos canonizados</strong>
+40. <strong>Cuaderno cifrado de Aldric III</strong> sobre suicidio paterno.
+41. <strong>Cuaderno de las pesadillas de Halsen Mehralt Korven</strong>.
+42. <strong>Cuaderno encriptado del reformista del Hierro</strong> (en cumbre secreta corp).
+43. <strong>Cuaderno de Halgar en Halgrúnico</strong>.
+44. <strong>Cuaderno de Surel Tarvine</strong> sobre tráfico ferroviario.
+45. <strong>Documentación robada de Velmoria</strong> custodiada por Mira.
+46. <strong>Caja de obsidiana / fragmento de diamante negro de Toren</strong>.
+47. <strong>Anillo de hielo congelado</strong> de Halgar (regalo de su madre).
+48. <strong>Espada de Engren / Cuerno de Hjornheim</strong> — pendientes desde Bloque 2.</p>
+<p><strong>Sectas, sub-facciones y instituciones menores canonizadas</strong>
+49. <strong>Junta Directiva del Hierro / Seguridad Operativa / Secretaría Ejecutiva</strong> — la Junta tiene página, las dos auxiliares no.
+50. <strong>Hermanas del Aceite Vigilante</strong> — orden femenina con núcleos prohibidos (canonizada en Inquisición).
+51. <strong>Sumo Mecánico Universal</strong> y <strong>Sínodo del Hierro</strong> — superiores eclesiásticos.
+52. <strong>Comisariado de Reasentamiento Productivo</strong> — el Programa tiene página, el órgano administrativo central no tiene página dedicada.
+53. <strong>Cuerpo de Captura</strong> del Programa.
+54. <strong>Comisión de Inspección Honoraria</strong> del Programa.
+55. <strong>Quemados Bienaventurados, Penitentes del Raíl, Adventistas del Último Pistón, Hijos del Hierro Antiguo</strong> — sectas heréticas urbanas (pendientes desde Bloque 2, mencionadas en Inquisición).
+56. <strong>Cofradías eternistas</strong>: Hilo Largo, Linde, Cuenco, Ojo, Telar Quieto.
+57. <strong>Cofradías del Pacto</strong>: Anillo Morado, Anillo Azul, Anillo Amarillo, Anillo Vacío.
+58. <strong>Cinco células Sin-Cuerda</strong> (Hilo Roto, Karnatha, Coral, Vorath, Veltara).</p>
+<p><strong>Personajes terciarios con potencial narrativo declarado en sus páginas</strong>
+59-75. Skyr Ironbeard (piloto de huida de Halsen), Sigvaldja Mokvssdóttir, Brand del Valle de Vinterhof, Sjarna hija de Skirja, Vela Imari-Solar, Karon V de la Casa Sagrada, Velros el Custodio, Brom Mehralt-Vael (hijo de Halsen), capitán correo de la Vía Tropical (Sin-Cuerda), Lirah Pelo-de-Niebla / Sevenh la Silenciosa / Tumbri (aprendices del Anciano), Kr’shen (lechuza), Lirea Vohan / Marsen Yrvel / Davir Konsh (Navegación), Surik Nazh, etc.</p>
+<p><strong>Recomendación operativa</strong>: priorizar la creación de las <strong>páginas 1-22</strong> (compañeros del Consejo + secundarios canonizados con peso operativo) en el Bloque 4. Las restantes pueden esperar al Bloque 5 o a la sesión que las invoque.</p>
+<h3 id="-sugerencias">⚪ Sugerencias</h3>
+<p><strong>⚪ El reformista humano del Hierro merece página propia urgente</strong></p>
+<ul>
+<li>Aparece en al menos cuatro páginas (Junta del Hierro, Cumbre Secreta Corp, Sin-Cuerda implícitamente, Aldric III implícitamente como posible consejero secreto en una de las hipótesis). Su cuaderno encriptado es el “documento más peligroso de la era” según la cumbre corp. Debería ser personaje 23 en la lista de prioridades.</li>
+</ul>
+<p><strong>⚪ La Reina Madre Vesilia de Hardrach y la Casa de los Linajes</strong></p>
+<ul>
+<li>La Casa de los Linajes aparece en al menos cinco páginas (Aldric III, Eternistas, Hijos del Pacto, Concierto de Heliopolis, Cumbre Secreta Corp) sin tener página propia. Es la facción noble fortunesa de mayor peso narrativo y articula tres tramas mayores (mediación con Eternistas, alianza con Aldric, tolerancia a Pacthos). Debería ser facción prioritaria en el Bloque 4.</li>
+</ul>
+<p><strong>⚪ Ajustar el lenguaje de “Halgar tiene 22 inviernos pero aparenta 25 años humanos”</strong></p>
+<ul>
+<li>La página explica bien el desfase, pero el desfase chocaría con la cronología canónica del matrimonio si esta no se corrige. Recomendado armonizar primero la cronología matrimonio→nacimiento de Halgar y luego ajustar la apariencia.</li>
+</ul>
+<p><strong>⚪ Estandarizar cómo se nombra Heliopolis vs. “capital fortunesa”</strong></p>
+<ul>
+<li>En las páginas de Cumbre y Junta a veces se usa “norte de Fortuna” para la hacienda secreta y “Heliopolis” para la capital. Coherente, pero conviene mencionar siempre que Heliopolis es la capital y la hacienda está al norte rural.</li>
+</ul>
+<p><strong>⚪ Documentar el sistema de votación del Cónsul de Veltara</strong></p>
+<ul>
+<li>Edrik fue elegido “3-2 en una votación” entre los Patrones; Tarvine fue elegido por “ascenso al Consulado”. El procedimiento exacto de elección consular —si lo eligen los cinco Patrones, si hay ratificación parlamentaria, si hay límite de mandato— no está fijado. Página de la República Mercantil de Veltara pendiente.</li>
+</ul>
+<p><strong>⚪ Marca explícita “Invención” usada de forma desigual entre páginas</strong></p>
+<ul>
+<li>Algunas páginas (Halsen, Helgrim, Eira, Halgar, Toren, Imari, Aldric, Edrik, Consejo) marcan correctamente. Otras (Inquisición, Cumbre Secreta Corp, Programa) usan <strong>bloque “Invención mayor”</strong> al inicio, lo cual es elegante pero rompe el patrón de marcas individuales. Uniformizar el patrón.</li>
+</ul>
+<p><strong>⚪ Cumbre secreta corp: 5 asientos labrados pero solo 3 corps participantes + 1 invitado + 1 real</strong></p>
+<ul>
+<li>La estructura es elegante. Pero el “Asiento Real de Fortuna” lleva tres generaciones siendo ocupado, lo cual implica que Aldric I también lo ocupó — y Aldric I es el rebautizador. ¿Aldric I asistió a la cumbre corp el año de su rebautizo? Tendría sentido narrativo (el rebautizo se diseñó allí), pero merece confirmación.</li>
+</ul>
+<p><strong>⚪ Consistencia de la fundación de la Inquisición Civil del Engranaje</strong></p>
+<ul>
+<li>La página dice “treinta años de operaciones documentadas”. La religión moderna del Dios Máquina lleva ~90 años (Cisma del Hierro Antiguo según <code>religion-moderna-dios-maquina.md</code>). Hay 60 años de Dios Máquina sin Inquisición. Es plausible (la Inquisición pudo crearse después por escalada represiva), pero merece una nota histórica.</li>
+</ul>
+<h2 id="hallazgos-por-área-temática">Hallazgos por área temática</h2>
+<h3 id="personajes-9-páginas">Personajes (9 páginas)</h3>
+<p><strong>Punto fuerte general</strong>: las nueve páginas tienen estructura uniforme (Identidad, Apariencia, Voz, Motivación, Trasfondo, Relaciones, Papel, Secretos, Ganchos, Apariciones, Pendientes, DM). El registro académico-narrativo es consistente. Las invenciones están bien marcadas.</p>
+<p><strong>Tensión cronológica grave (🟡)</strong>: matrimonio Helgrim-Eira (120 años) vs. nacimiento Halgar (22 años). Ya señalada.</p>
+<p><strong>Tensión nominal grave (🔴)</strong>: los nombres de los compañeros del Consejo divergen entre Toren, Imari y el Consejo. Ya señalada.</p>
+<p><strong>Tensión nominal grave (🔴)</strong>: los nombres de los cuatro Patrones de Veltara divergen entre Edrik y los Gremios. Ya señalada.</p>
+<p><strong>Tensión cosmológica (🔴)</strong>: edad de Toren divergente entre razas y página propia. Ya señalada.</p>
+<p><strong>Punto débil estructural</strong>: las páginas de personajes no incluyen una sección <strong>“Cronología personal”</strong> explícita con fechas en calendario unificado. Como cada personaje opera con su propio calendario relativo, las contradicciones cronológicas no se detectan hasta cruzar páginas. Recomendado canonizar un calendario maestro en <code>historia/cronologia.md</code> (pendiente desde la auditoría del Bloque 2).</p>
+<h3 id="facciones-15-páginas">Facciones (15 páginas)</h3>
+<p><strong>Punto fuerte general</strong>: estructura uniforme con cláusulas internas, métodos, sedes, miembros notables y secretos internos bien diferenciados. Densidad notable; cada facción tiene presencia operativa real.</p>
+<p><strong>Tensión nominal grave (🔴)</strong>: ya señalada en Consejo de los Cuatro.</p>
+<p><strong>Tensión cronológica menor (🟡)</strong>: Tarvine 5 años vs. Edrik 3 años. Ya señalada.</p>
+<p><strong>Tensión cosmológica grave (🟡)</strong>: el templo pre-rebautizo “dedicado conjuntamente a los cuatro dioses libres” en cumbre secreta corp es teológicamente apretado. Ya señalada.</p>
+<p><strong>Tensión institucional (🟡)</strong>: la cumbre secreta corp y la Junta del Hierro divergen sobre cuántos humanos titulares hay. Ya señalada.</p>
+<p><strong>Densidad excelente</strong>: las páginas de Sin-Cuerda, Eternistas, Hijos del Pacto y Las Camadas tienen el nivel de detalle más alto del Bloque 3 (estructura interna celular, métodos, secretos, miembros). Son material listo para campaña.</p>
+<p><strong>Coherencia inter-facciones notable</strong>: las cinco facciones de oposición/refugio (Sin-Cuerda, Eternistas, Hijos del Pacto, Las Camadas, Consejo de los Cuatro) se referencian mutuamente con consistencia. La red Saga de Eira articula a las cinco como tejido conjuntivo, lo cual está bien diseñado.</p>
+<p><strong>Asimetría leve en los Cinco Gremios</strong>: cada gremio tiene su propia estructura interna numérica (13/11/7/9/5 socios mayores), su propia jerga (Mezcla del Cónsul, Sello del Tesoro, Sello del Cuenco, etc.) y su propio ritmo. Esta asimetría es coherente con una República Mercantil pero a veces dificulta la lectura.</p>
+<h3 id="coherencia-inter-bloques-b3-vs-b0b1b2">Coherencia inter-bloques (B3 vs B0/B1/B2)</h3>
+<p><strong>Respeto al canon vinculante</strong>: ✅ los 4 dioses, sello dual, 3 megacorps, 4 continentes, líderes canónicos quedan respetados.</p>
+<p><strong>Respeto al Bloque 2</strong>:</p>
+<ul>
+<li>✅ Halsen Mehralt Korven: la página propia coincide con <code>arquitectura/mehralt.md</code> (Alto Mehralt vs. Las Boqueras), <code>geografia/calixar.md</code>, <code>razas/enanos.md</code>.</li>
+<li>✅ Helgrim: coincide con <code>geografia/vorath.md</code> (Hjornheim como capital, Asamblea, ritual del fuego cruzado).</li>
+<li>✅ Eira: coincide con <code>razas/sagas.md</code> (red trans-continental, subtipo Bheur).</li>
+<li>✅ Imari: coincide con <code>arquitectura/kalmari.md</code>, <code>geografia/cetus.md</code>, <code>razas/dragonborn.md</code>.</li>
+<li>✅ Aldric III: coincide con <code>geografia/fortuna.md</code> (~30 años, suicidio paterno encubierto).</li>
+<li>⚠️ Toren: edad divergente con <code>razas/semidioses.md</code>. Ya señalada.</li>
+<li>⚠️ Anciano del Árbol Madre: la edad (220 años) coincide con <code>arquitectura/selva-nublada.md</code> que decía “alrededor de 220 años”. ✅</li>
+<li>⚠️ Mehkrit aparece consistentemente como Saga Verde refugiada en el Árbol Madre.</li>
+</ul>
+<p><strong>Respeto a las correcciones aprobadas en la auditoría 2026-05-06 (Bloque 2)</strong>:</p>
+<ul>
+<li>✅ “Reino Sagrado de Kalmari” se usa en todas las páginas del Bloque 3 (Imari, Edrik, Concierto, etc.). No reaparece “Federación Kalmari”.</li>
+<li>✅ “Hjornheim” se usa como capital vorathiana en todas las páginas. No reaparece “Vornholm”.</li>
+<li>⚠️ El recuento de saunas (9 vs 14) no se ha tocado en el Bloque 3 — sigue pendiente de fijación.</li>
+<li>⚠️ “Kev” no se reintroduce en el Bloque 3.</li>
+</ul>
+<p><strong>Cuatro potencias hegemónicas</strong>: la página de Imari línea 108 dice “una de las cuatro cabezas hegemónicas del mundo”. Recordemos que el canon (<code>contexto-traspaso.md</code>) dice “4 potencias: 2 en Cetus, 1 en Fortuna, 1 en Vorath”, lo cual implica que <strong>Cetus aporta dos</strong> (Veltara mercantil y Kalmari sacerdotal). Por tanto Imari es una de las <strong>cinco cabezas</strong> en cuatro continentes, no una de las cuatro. La auditoría del Bloque 2 ya señaló este matiz; la página de Imari del Bloque 3 reincide.</p>
+<ul>
+<li>Sugerencia: ajustar a “una de las cuatro potencias hegemónicas, la sacerdotal de Cetus junto a la mercantil de Veltara” o “una de las cinco cabezas hegemónicas del mundo”.</li>
+</ul>
+<h2 id="wikilinks-problemáticos-detectados">Wikilinks problemáticos detectados</h2>
+<p>He revisado los wikilinks de las 24 páginas del Bloque 3.</p>
+<p><strong>Wikilinks correctos pero a páginas no escritas todavía</strong> (no son error, son “página huérfana” pendiente):</p>
+<ul>
+<li><code>[[Mehralt]]</code>, <code>[[Heliopolis]]</code>, <code>[[Hjornheim]]</code>, <code>[[Veltara]]</code>, <code>[[Kalmari]]</code> — capitales sin página propia.</li>
+<li><code>[[Reino Sagrado de Kalmari]]</code> — facción/Estado pendiente.</li>
+<li><code>[[República Mercantil de Veltara]]</code> — Estado pendiente.</li>
+<li><code>[[Confederación de Valles Termales]]</code> — Estado pendiente.</li>
+<li>Los compañeros del Consejo (con cualquiera de los dos juegos de nombres).</li>
+</ul>
+<p><strong>Wikilinks rotos o malformados</strong>: ninguno detectado en las 24 páginas auditadas. La sintaxis es correcta.</p>
+<p><strong>Wikilinks con discrepancia de nombre en distintas páginas</strong>:</p>
+<ul>
+<li><code>[[El Anciano del Árbol Madre]]</code> (con “El” inicial, página propia) vs. <code>[[Anciano del Árbol Madre]]</code> (sin “El”, varias páginas internas). Obsidian resolverá el alias pero conviene uniformizar al título canónico exacto del archivo: el INDEX usa “Anciano del Árbol Madre”; la página propia usa “El Anciano del Árbol Madre” como título H1. Recomendado uniformizar.</li>
+<li><code>[[Las Camadas]]</code> (página propia) vs. <code>[[Camadas]]</code> (algunas referencias internas). Obsidian resuelve, pero conviene canonizar “Las Camadas”.</li>
+</ul>
+<p><strong>Wikilink reflexivo</strong>: la página de la cumbre secreta corp se enlaza a sí misma como <code>[[cumbre secreta corp]]</code> desde la sección de la Junta. Cosmético.</p>
+<h2 id="recomendaciones-de-prioridad">Recomendaciones de prioridad</h2>
+<ol>
+<li>
+<p><strong>Arreglar primero (errores nominales y conceptuales que ensucian múltiples páginas)</strong>:</p>
+<ul>
+<li>🔴 <strong>Consejo de los Cuatro</strong>: fijar nombres canónicos de Yssara/Hervald/Marien (recomendado) vs. Henne/Solveig/Almar y propagar a las tres páginas (Toren, Imari, Consejo).</li>
+<li>🔴 <strong>Cuatro Patrones de Veltara</strong>: borrar Madris/Vellior/Krastil/Henrek de la página de Edrik, reemplazar por Aurelio Korven, Vassyr Tehema, Vellis Tornay, Hadran Korovel. Reescribir las relaciones (Edrik-Tornay como “enemigo natural” sustituye a Edrik-Krastil; Aurelio Korven sustituye a Madris en aliado táctico; etc.).</li>
+<li>🔴 <strong>Edad de Toren</strong>: canonizar 150 años; ajustar <code>razas/semidioses.md</code> y <code>consejo-de-los-cuatro.md</code>.</li>
+<li>🔴 <strong>Aldric III no es Emperador</strong>: corregir en la Junta del Hierro.</li>
+<li>🔴 <strong>Cronología matrimonio Helgrim-Eira</strong>: bajar a ~45 años, no 120.</li>
+<li>🟡 <strong>Templo pre-rebautizo de los cuatro dioses libres</strong>: aclarar como <strong>pre-civilizacional</strong> o reinterpretar.</li>
+<li>🟡 <strong>Tarvine 5 años vs. Edrik 3 años de consulado</strong>: fijar una cifra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Arreglar después (coherencia narrativa fina)</strong>:</p>
+<ul>
+<li>🟡 Edad coronación Helgrim 86 vs. 92 — ajustar.</li>
+<li>🟡 Junta del Hierro: 5 autómatas + reformista voz consultiva (sin asiento) vs. 4 autómatas + 1 humano titular en cumbre secreta corp — armonizar.</li>
+<li>🟡 Imari “una de las cuatro” — corregir a “una de las cinco” o “una de la cuatro hegemónicas” con matiz Cetus.</li>
+<li>🟡 Hijo de Mira: aclarar origen del núcleo.</li>
+<li>🟡 Brom Mehralt-Vael: marcar como invención.</li>
+<li>⚪ Uniformizar “El Anciano del Árbol Madre” vs. “Anciano del Árbol Madre”.</li>
+<li>⚪ Estandarizar marcas de invención.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dejar para Bloque 4 (huecos por filosofía de granularidad)</strong>:</p>
+<ul>
+<li>🔵 Las <strong>>60 entidades secundarias canonizadas</strong> sin página propia. Priorizar las 22 más urgentes.</li>
+<li>🔵 Las <strong>5 capitales</strong> (Mehralt, Heliopolis, Hjornheim, Veltara, Kalmari) — pendientes desde Bloque 1 y ahora urgentes.</li>
+<li>🔵 Los <strong>4 menhires de Pacthos</strong> — uno por dios.</li>
+<li>🔵 La <strong>Casa de los Linajes</strong> — facción noble fortunesa con peso narrativo en cinco páginas.</li>
+<li>🔵 El <strong>reformista humano del Hierro</strong> — personaje pivote en cuatro páginas.</li>
+<li>🔵 El <strong>calendario / cronología maestra</strong> del mundo — sin él, las contradicciones cronológicas no se detectan a tiempo.</li>
+<li>⚪ Los <strong>3 Estados de Cetus/Fortuna/Vorath</strong> como facciones de gobierno pendientes (República Mercantil de Veltara, Reino de Fortuna, Confederación de Valles Termales).</li>
+</ul>
+</li>
+</ol>
+<h2 id="dudas-pendientes-para-el-usuario">Dudas pendientes para el usuario</h2>
+<ul>
+<li><strong>Consejo de los Cuatro</strong>: ¿qué juego de nombres canonizamos para los tres compañeros de Toren? Yssara/Hervald/Marien parece más completo y mejor caracterizado, pero Henne/Solveig/Almar tiene la sonoridad “de la Carta Honda / el Lento / de Manos Cálidas” más arcaica. ¿Una mezcla?</li>
+<li><strong>Cuatro Patrones de Veltara</strong>: confirmar que los nombres canónicos son Aurelio Korven (Banca), Vassyr Tehema (Especia), Vellis Tornay (Núcleos Exóticos), Hadran Korovel (Madera). El contexto-traspaso ya los ratifica.</li>
+<li><strong>Cronología matrimonio Helgrim-Eira</strong>: ¿~45 años (acomodando a la edad de Halgar) o ~120 años (acomodando a la longevidad gigante-Saga)? Si es 120, hay que reescribir la edad de Halgar.</li>
+<li><strong>Edad Toren</strong>: ¿100 (canon razas) o 150 (página propia)?</li>
+<li><strong>Templo pre-rebautizo de los cuatro dioses libres</strong> bajo la hacienda corp: ¿pre-civilizacional o post-sellado con tres dioses libres + sello del cuarto?</li>
+<li><strong>Asiento Real de Fortuna en cumbre secreta corp</strong>: ¿Aldric I también lo ocupó? Si sí, el rebautizo se diseñó allí.</li>
+<li><strong>Identidad final del consejero secreto de Aldric III</strong>: ¿se canoniza en este bloque o se deja abierta? Las tres opciones tienen consecuencias narrativas grandes.</li>
+<li><strong>Origen del núcleo del Hijo de Mira</strong>: si es encarnado humanoide perfecto, ¿de dónde sacó Mira el núcleo de ser inteligente?</li>
+<li><strong>Calendario unificado</strong>: ¿abrimos <code>historia/cronologia.md</code> ya o esperamos al Bloque 4?</li>
+</ul>
+<h2 id="estado-general">Estado general</h2>
+<p>El Bloque 3 está <strong>bien construido pero con costuras nominales evidentes</strong> entre páginas paralelas: cinco agentes generaron contenido sin coordinarse y eso produjo dos discrepancias triples (Consejo de los Cuatro, cuatro Patrones de Veltara) y una cronológica grave (matrimonio Helgrim-Eira). El canon vinculante de Bloques 0-2 se respeta con notable consistencia; las correcciones aprobadas en la auditoría anterior (Reino Sagrado de Kalmari, Hjornheim, eliminación de “Kev”) se han mantenido. La densidad de cada página es alta y rica en ganchos de campaña. Una sesión corta de armonización nominal (1-2 horas) limpiaría las siete contradicciones duras; el resto son retoques finos y el habitual hueco de granularidad. Estado: <strong>canon coherente con costuras, listo para limpieza</strong>.</p> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

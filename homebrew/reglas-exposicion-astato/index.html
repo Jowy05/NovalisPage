@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Reglas de Exposición al Astato — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Homebrew</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> homebrew · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Reglas de Exposición al Astato</h1> </header> <div class="wiki-prose mt-7"> <h1 id="reglas-de-exposición-al-astato">Reglas de Exposición al Astato</h1>
+<p>Sistema homebrew de D&#x26;D 5e para arbitrar <strong>la exposición prolongada al <a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a></strong> —mineral radiactivo de maná denso— en mineros, refineros, ingenieros, asaltantes de convoy, peregrinos del <a href="/NovalisPage/conceptos/anillo-vacio" class="wikilink">Anillo Vacío</a> y cualquier personaje que trabaje, viaje o respire cerca del polvo. El sistema sustituye narrativamente al concepto vago de “quemadura de maná” y al cliché de “mutación inevitable” con un track de daño acumulativo que puede recuperarse parcialmente, escalar a condiciones nuevas, o desembocar en <strong>mutación catastrófica</strong> y conversión final a <a href="/NovalisPage/conceptos/inversiones" class="wikilink">Inversión</a>.</p>
+<blockquote>
+<p>[!info] Invención
+Las DCs concretas, el umbral de mutación mayor (5 fallos), las tablas 1d100 y 1d20 y las dos condiciones nuevas son invención mecánica coherente con el canon lore-narrativo previo. Ajustables por DM.</p>
+</blockquote>
+<h2 id="filosofía-mecánica">Filosofía mecánica</h2>
+<ul>
+<li><strong>El Astato no es radiación medieval con barniz</strong>. Es <strong>maná crudo en estado mineral</strong> y el cuerpo humanoide está mal preparado para hospedarlo. El daño no es solo somático: deforma la <strong>identidad arcana</strong> del portador.</li>
+<li><strong>Escala por exposición acumulada, no por golpe único</strong>. Una sola hora puede no dejar huella; cien horas sin protección casi garantizan mutación.</li>
+<li><strong>El sistema rastrea fallos de CON acumulados, no HP</strong>. La degradación es lenta, irreversible parcialmente, y narrativamente legible.</li>
+<li><strong>La protección reduce la DC, no elimina el riesgo</strong>. Ningún equipo es inmune; los Caminantes del <a href="/NovalisPage/conceptos/anillo-vacio" class="wikilink">Anillo Vacío</a> van descalzos a propósito.</li>
+</ul>
+<h2 id="tabla-maestra--save-con-por-horas-de-exposición-no-protegida">Tabla maestra — Save CON por horas de exposición no protegida</h2>
+<p>Cada bloque de exposición continua a Astato refinado o veta abierta exige al final del bloque un <strong>save de Constitución</strong> contra la DC indicada. Los bloques no se solapan; si el personaje sale del entorno y vuelve, el contador de horas se mantiene durante 24 horas y luego se resetea.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tiempo de exposición acumulado</th><th>DC del save CON</th><th>Fallo (efectos)</th></tr></thead><tbody><tr><td><strong>1 hora</strong> (contacto puntual, mantenimiento ligero)</td><td>DC 8</td><td>Náusea 1d4 horas; sin daño persistente</td></tr><tr><td><strong>4 horas</strong> (jornada media en taller refinado)</td><td>DC 12</td><td>1d6 de daño necrótico; tos negra leve 1d6 días</td></tr><tr><td><strong>12 horas</strong> (jornada completa de minero / refinador)</td><td>DC 15</td><td>1d10 daño necrótico; tirada en <strong>Tabla de Quemaduras Astáticas</strong>; +1 fallo acumulado</td></tr><tr><td><strong>24 horas</strong> (turno doble sin descanso o contacto con polvo de cinta crítica)</td><td>DC 18</td><td>2d10 daño necrótico; quemadura grave (Tabla); +1 fallo; tirada en <strong>Tabla de Mutación 1d100</strong> con desventaja</td></tr><tr><td><strong>72+ horas</strong> (semana de minería sin paro, peregrinaje en Anillo, accidente refinería)</td><td>DC 22</td><td>4d10 daño necrótico; mutación obligatoria (Tabla, sin desventaja); +2 fallos; condición Fiebre Argéntea</td></tr></tbody></table>
+<p><strong>Recuperación</strong>: un fallo acumulado se elimina con <strong>30 días de reposo absoluto fuera del entorno astático</strong> y <strong>un descanso largo en sauna-géiser sagrada</strong> (<a href="/NovalisPage/cultura/saunas-geiser" class="wikilink">Saunas-Géiser</a>) o equivalente curativo divino. Los fallos no eliminados son permanentes hasta intervención cosmológica (milagro Aevum, restauración Vastus, fusión Primum).</p>
+<h2 id="umbral-de-mutación-mayor">Umbral de Mutación Mayor</h2>
+<p>Cuando un personaje <strong>acumula 5 fallos</strong> de CON contra Astato, supera el <strong>umbral de Mutación Mayor</strong>: la próxima tirada en la Tabla 1d100 se hace con <strong>ventaja desplazada hacia rangos 61-100</strong> (tira 1d100, suma +30 al resultado, máximo 100). Esto canoniza por qué los mineros veteranos de <a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> desarrollan rasgos visibles tras décadas: la acumulación es estadísticamente irrebatible.</p>
+<p>A partir de 8 fallos acumulados, todas las tiradas Astato se hacen con <strong>resultado mínimo 61</strong> (mutación mayor o catastrófica garantizada). Esto canoniza también la deriva visible de los Caminantes vivos del <a href="/NovalisPage/geografia/borde-del-anillo" class="wikilink">Borde del Anillo</a>.</p>
+<h2 id="tabla-de-mutaciones-1d100">Tabla de Mutaciones (1d100)</h2>
+<p>Tirar tras fallo en save CON cuando la regla lo indique. La mutación se manifiesta en 1d4 días salvo descanso largo en suelo vivo.</p>
+<h3 id="mutaciones-menores-1-60">Mutaciones menores (1-60)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d100</th><th>Mutación</th><th>Efecto mecánico</th></tr></thead><tbody><tr><td>1-10</td><td><strong>Piel grisácea</strong> (textura mineral fina)</td><td>Resistencia psicológica al frío menor; -1 a tiradas Carisma sociales en entornos urbanos no mineros</td></tr><tr><td>11-20</td><td><strong>Ojos plateados</strong> (iris reflectante, pupila vertical)</td><td>Visión nocturna 30 pies; -1 a tiradas Persuasión con campesinos supersticiosos</td></tr><tr><td>21-30</td><td><strong>Voz alterada</strong> (timbre metálico, eco arcano leve)</td><td>Ventaja a Intimidación contra autómatas y constructos; desventaja a Engaño</td></tr><tr><td>31-40</td><td><strong>Cabello rígido</strong> (mechones cristalinos como fibra de vidrio)</td><td>Inmunidad a tracción capilar; -2 a tiradas Sigilo (chasquido al moverse)</td></tr><tr><td>41-50</td><td><strong>Cicatriz rúnica espontánea</strong> (marca azul en piel)</td><td>+1 a tiradas Arcana sobre maná y mineralurgia; -1 a tiradas Religión con clero del Dios Máquina</td></tr><tr><td>51-60</td><td><strong>Aliento luminiscente</strong> (vaho azul leve al exhalar en frío)</td><td>Detectable a oscuras 10 pies; tirada Sigilo desventaja en cuevas frías</td></tr></tbody></table>
+<h3 id="mutaciones-mayores-61-90">Mutaciones mayores (61-90)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d100</th><th>Mutación</th><th>Efecto mecánico</th></tr></thead><tbody><tr><td>61-65</td><td><strong>Pulmón de Cristal</strong></td><td>Condición “Pulmón de Cristal” permanente (ver abajo)</td></tr><tr><td>66-70</td><td><strong>Sangre fluorescente</strong> (azul verdosa visible)</td><td>Hemorragias revelan posición de noche; +2 a saves contra envenenamiento; -1 a Sigilo nocturno</td></tr><tr><td>71-75</td><td><strong>Dedos fundidos</strong> (sindactilia parcial 2-3 dedos cristalizan unidos)</td><td>-2 a destreza fina; desventaja a tareas de cerrajería, escritura; ventaja a golpes sin armas (manopla cristalina, 1d4+FUE contundente)</td></tr><tr><td>76-80</td><td><strong>Tos negra crónica</strong></td><td>-1 a CON máximo; al tirar iniciativa, 25% de toser y delatar posición</td></tr><tr><td>81-85</td><td><strong>Ojo lateral cristalino</strong> (segundo iris pequeño junto al ojo dominante)</td><td>+2 percepción visual; -2 saves contra hechizos de mente que afectan visión</td></tr><tr><td>86-90</td><td><strong>Hueso luminoso</strong> (esqueleto emite glow tenue, visible a través de carne en oscuridad)</td><td>Detectable bajo X-ray arcano; resistencia 5 a daño necrótico</td></tr></tbody></table>
+<h3 id="mutaciones-catastróficas-91-100">Mutaciones catastróficas (91-100)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d100</th><th>Mutación</th><th>Efecto mecánico</th></tr></thead><tbody><tr><td>91-93</td><td><strong>Transformación parcial en autómata</strong></td><td>Una extremidad se sustituye por componente mecánico-cristalino (brazo, pierna o pulmón); pierde sensibilidad cutánea y curación natural en esa zona; +2 a CON contra daño físico contundente en esa zona; el PJ es considerado parcial constructo a efectos de hechizos</td></tr><tr><td>94-96</td><td><strong>Fiebre Argéntea permanente</strong></td><td>Condición Fiebre Argéntea (ver abajo) se vuelve permanente; alucinaciones cosmológicas frecuentes; PJ se vuelve oráculo menor pero socialmente marcado</td></tr><tr><td>97-99</td><td><strong>Conversión a Inversión menor</strong></td><td>El cuerpo del PJ aloja una pieza del Reverso. Durante 1d6 meses el PJ es semi-Inversión: una regla menor del mundo se invierte sobre él (su sombra retrasa 1 segundo, sus huellas aparecen 5 metros detrás, sus palabras tienen un eco invertido). Tras 1d6 meses, save WIS DC 18 cada semana o conversión total a [[Inversiones</td></tr><tr><td>100</td><td><strong>Locura cosmológica</strong></td><td>El PJ “oye” las seis sílabas del nombre verdadero de <a href="/NovalisPage/conceptos/engren" class="wikilink">Engren</a> grabadas en el <a href="/NovalisPage/conceptos/gjornsk" class="wikilink">Gjornsk</a> antiguo. Save WIS DC 22 cada amanecer durante un mes o <strong>locura permanente</strong> estilo <em>long-term madness</em> (PJ se obsesiona con borrar el rebautizo). Si supera todos los saves, gana percepción cosmológica: ventaja permanente a Arcana e Insight sobre temas Null/Engren. Hoy hay <strong>dos personajes vivos</strong> en este estado (DM: uno es académico oculto del Anillo Medio, otro es minero anónimo en Halmgard)</td></tr></tbody></table>
+<h2 id="tabla-de-quemaduras-astáticas-1d20">Tabla de Quemaduras Astáticas (1d20)</h2>
+<p>Tirar cuando una quemadura concreta sea narrativamente relevante (accidente puntual, manejo sin guantes, explosión de cinta).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Ubicación</th><th>Daño y efecto secundario</th></tr></thead><tbody><tr><td>1-3</td><td><strong>Manos</strong></td><td>1d6 necrótico + desventaja a destreza fina 1d6 días; cicatriz azul permanente</td></tr><tr><td>4-5</td><td><strong>Antebrazos</strong></td><td>1d8 necrótico; -1 a tiradas con escudos 1d4 días</td></tr><tr><td>6-7</td><td><strong>Cara</strong></td><td>1d6 necrótico + 1d4 psíquico (desfiguración); -2 Carisma social hasta cura mágica</td></tr><tr><td>8-9</td><td><strong>Cuello y garganta</strong></td><td>1d8 necrótico; voz alterada (efecto Mutación 21-30 temporal 1d6 días)</td></tr><tr><td>10-11</td><td><strong>Pecho</strong></td><td>1d10 necrótico; save CON DC 13 o fatiga 1d4 días</td></tr><tr><td>12-13</td><td><strong>Espalda</strong></td><td>1d10 necrótico; cicatriz visible solo bajo ropa</td></tr><tr><td>14-15</td><td><strong>Abdomen</strong></td><td>1d8 necrótico; save CON DC 13 o náusea durante 24 horas, sin curación natural</td></tr><tr><td>16-17</td><td><strong>Piernas</strong></td><td>1d6 necrótico; velocidad -10 pies 1d4 días</td></tr><tr><td>18-19</td><td><strong>Pies</strong></td><td>1d8 necrótico; save CON DC 14 o no caminar descalzo (relevante a peregrinos del Anillo)</td></tr><tr><td>20</td><td><strong>Total</strong> (cubo de polvo en cara, explosión de núcleo)</td><td>4d10 necrótico; tirada inmediata en Tabla de Mutación 1d100 con +20; cicatriz cosmológica permanente</td></tr></tbody></table>
+<h2 id="condiciones-nuevas">Condiciones nuevas</h2>
+<h3 id="pulmón-de-cristal">Pulmón de Cristal</h3>
+<p>Condición permanente derivada de Mutación Mayor 61-65 o de exposición catastrófica al polvo Astato.</p>
+<ul>
+<li><strong>Desventaja a todos los saves de Constitución</strong> que impliquen contención del aliento, gases o veneno respiratorio.</li>
+<li><strong>Dificultad para respirar 1 vez por encuentro</strong>: en cualquier encuentro de combate o esfuerzo, el DM puede declarar que el PJ tiene un episodio (1 turno completo perdido, save CON DC 13 para acción mínima).</li>
+<li><strong>Vulnerabilidad 2</strong> a daño sónico (el cristal pulmonar vibra y se astilla).</li>
+<li><strong>Beneficio menor</strong>: el PJ puede <strong>respirar en atmósfera con polvo Astato sin penalizador adicional</strong> (ya está adaptado).</li>
+</ul>
+<p>Cura: imposible salvo intervención divina de <a href="/NovalisPage/dioses/aevum" class="wikilink">Aevum</a> o ritual de <a href="/NovalisPage/razas/sagas" class="wikilink">Sagas</a> muy específico.</p>
+<h3 id="fiebre-argéntea">Fiebre Argéntea</h3>
+<p>Condición temporal (1d6 días) o permanente (Mutación catastrófica) derivada de exposición prolongada o contacto con Astato refinado de núcleo profundo.</p>
+<ul>
+<li><strong>Alucinaciones cosmológicas constantes</strong>: el PJ ve fragmentos del Reverso, oye susurros de Null, sueña con <a href="/NovalisPage/dioses/extintos/mahr" class="wikilink">Mahr</a>. El DM puede deslizar pistas reales encriptadas en estas visiones.</li>
+<li><strong>50% de lanzar un hechizo mental aleatorio</strong> al final de cada descanso largo, sin gasto de slot, sin elección de objetivo (DM tira: <em>confusion</em>, <em>suggestion</em>, <em>enthrall</em>, <em>vicious mockery</em>, <em>cause fear</em>). El hechizo se manifiesta involuntariamente; PJs y NPCs cercanos son objetivos legítimos.</li>
+<li><strong>+2 a tiradas de Insight contra entidades del Reverso o cultistas Null</strong>; -2 a tiradas Carisma social con civilizados que no sepan qué le pasa.</li>
+<li><strong>Save WIS DC 15 al final de cada descanso largo</strong>: éxito reduce 1 día la duración; fallo no progresa.</li>
+</ul>
+<p>Cura: la versión temporal sana por sí sola tras 1d6 días. La permanente requiere <strong>inmersión en sauna-géiser de Hjornheim con Skald presente</strong> o <strong>ritual del Hilo Sosegado</strong> con tres oficiantes <a href="/NovalisPage/razas/sagas" class="wikilink">Sagas</a>.</p>
+<h2 id="reglas-de-protección">Reglas de protección</h2>
+<p>El equipo de protección <strong>reduce la DC del save CON correspondiente</strong> según se indica. La protección debe llevarse correctamente y mantenerse en buen estado.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Equipo</th><th>Reducción de DC</th><th>Coste y peso</th></tr></thead><tbody><tr><td><strong>Mascarilla de fieltro plomado</strong> (estándar de minero / refinador)</td><td>DC -3</td><td>8 ach; 1 lb; consumible (descartar tras 30 días de uso)</td></tr><tr><td><strong>Guantes vitrificados</strong> (cristal flexible reforzado, ofrecimiento del <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a>)</td><td>Inmune a Quemadura en manos (1-3 en Tabla 1d20); no afecta save CON general</td><td>25 ach; 0,5 lb</td></tr><tr><td><strong>Traje de buzo astático</strong> (carcasa rígida con visor de vidrio armado, mascarilla integrada, joints sellados)</td><td>DC -8</td><td>400 ach; <strong>25 lb</strong>; -10 pies velocidad, -2 destreza, requiere acción para ponérselo</td></tr><tr><td><strong>Plomada interior</strong> (collar de plomo bendecido por sacerdote Aevum, fortunés alternativo)</td><td>DC -2 + save adicional CON DC 12 1/día para anular fallo previo</td><td>60 ach; 3 lb; usa tirada CHA Religión Aevum para activar</td></tr><tr><td><strong>Mantilla ritual Skald</strong> (en valle vorathiano: lana hervida runada, no industrial)</td><td>DC -2 contra mutación únicamente; no reduce daño</td><td>Solo se consigue ofrecido por Skald, no se vende; 2 lb</td></tr></tbody></table>
+<p><strong>Combinable</strong>: mascarilla + guantes + traje + plomada se acumulan. Un minero veterano de <a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> con equipo completo tira contra DC 5 (12 base - 3 - 2 - 8 + 5 mínimo) en lugar de DC 12 estándar.</p>
+<p><strong>No combinable</strong>: el traje de buzo astático <strong>anula</strong> los efectos de la mantilla Skald (la lana no respira bajo carcasa).</p>
+<h2 id="casos-canónicos-de-referencia">Casos canónicos de referencia</h2>
+<ul>
+<li><strong>Mineros veteranos de Maris-Korr</strong>: 8-12 años de exposición = 4-7 fallos acumulados de media; un 35% tiene al menos una Mutación menor visible. El Sindicato del Yunque Roto garantiza guantes y mascarilla.</li>
+<li><strong>Refineros de Cinder y de Borde del Anillo</strong>: trabajan en presión más alta; 2-3 años = 4 fallos; mutaciones mayores comunes a los 5 años. La rotación corp es deliberadamente cruel: jubilación temprana = pensión menor.</li>
+<li><strong>Caminantes del Anillo Vacío</strong>: deliberadamente descalzos y sin mascarilla. La regla canónica del culto: completar el perímetro = 4d6 fallos acumulados; supervivientes presentan al menos una Mutación catastrófica.</li>
+<li><strong>Ingenieros (El Ingeniero) de campo</strong>: contacto puntual con núcleos refinados; expoosición controlada. Equipo guantes + mascarilla habitual. Riesgo bajo salvo accidente de fusión.</li>
+<li><strong>Veteranos de la Guerra de los Núcleos</strong> (Fase 9 pendiente): supervivientes ancianos suelen presentar 2-3 mutaciones acumuladas; los más afectados se retiraron al Anillo o al monasterio de <a href="/NovalisPage/arquitectura/drahnvar" class="wikilink">Drahnvar</a>.</li>
+</ul>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — Mineral cuya exposición esta regla arbitra</li>
+<li><a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> — Núcleos refinados pueden disparar Quemaduras y Fiebre</li>
+<li><a href="/NovalisPage/conceptos/inversiones" class="wikilink">Inversiones</a> — Mutación 97-99 desemboca en conversión a Inversión menor</li>
+<li><a href="/NovalisPage/conceptos/anillo-vacio" class="wikilink">Anillo Vacío</a> — Peregrinos suicidas como caso límite de exposición voluntaria</li>
+<li><a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> — Ciudad minera donde la regla es protocolo laboral oficial</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — Industria refinadora estándar de equipo de protección</li>
+<li><a href="/NovalisPage/geografia/cinder" class="wikilink">Cinder</a> — Refinería de presión alta, alta tasa de mutación</li>
+<li><a href="/NovalisPage/geografia/borde-del-anillo" class="wikilink">Borde del Anillo</a> — Población local con tasa de Mutación más alta del mundo</li>
+<li><a href="/NovalisPage/cultura/saunas-geiser" class="wikilink">Saunas-Géiser</a> — Vía de cura parcial de fallos y condiciones</li>
+<li><a href="/NovalisPage/homebrew/el-ingeniero" class="wikilink">El Ingeniero</a> — Clase homebrew que interactúa rutinariamente con Astato refinado</li>
+<li><a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> — Provee equipo a sus afiliados</li>
+<li><a href="/NovalisPage/homebrew/reglas-del-ferrocarril" class="wikilink">Reglas del Ferrocarril</a> — Convoyes Astato cruzan esta regla en cada asalto</li>
+<li><a href="/NovalisPage/homebrew/reglas-de-nucleos-animados" class="wikilink">Reglas de Núcleos Animados</a> — Sobrecargas y descargas pueden desencadenar exposición catastrófica</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>La conversión a Inversión menor (Mutación 97-99)</strong> es una salida narrativa que el DM puede usar como arco trágico de PJ. Si el jugador acepta, en 1d6 meses se construye con él un perfil de Inversión menor (CR 4-6, basado en una negación coherente con la mutación previa). Si el jugador no acepta, se le ofrece la “puerta de <a href="/NovalisPage/arquitectura/drahnvar" class="wikilink">Drahnvar</a>”: peregrinar al monasterio, donde un ritual de cuatro días con tres oficiantes Sagas puede <strong>revertir</strong> la conversión, pero a coste alto: el PJ pierde permanentemente 1d4 puntos de CON máximo y queda marcado como “tocado por el otro lado”.</p>
+<p><strong>La Mutación 100</strong> es la <strong>chispa narrativa</strong> más jugosa: un PJ que oye las seis sílabas y supera todos los saves se convierte en <strong>portador semivoluntario del nombre verdadero de Engren</strong>. Esto le da influencia política inmediata si revela su estado a los Skalds (Eira la Memoriosa lo confirmaría) y le pone en la mira de la Inquisición Civil del Engranaje, del Anillo Vacío y de las Casas Mehrholt-Vael. Un PJ así no muere joven por accidente: muere por decisión política de alguien.</p>
+<p><strong>El traje de buzo astático tiene secreto</strong>: el modelo estándar canónico está fabricado por el Gremio de Cristaleros de Voltka, y un 5% de los trajes lleva <strong>micrófono runado</strong> insertado bajo el sello del joint izquierdo. La Inquisición Civil del Engranaje vigila a refineros de alto nivel mediante estos trajes. Los Sin-Cuerda lo saben y producen trajes alternativos con joint izquierdo marcado con runa rota; reconocibles por veteranos.</p>
+<p><strong>El umbral de 5 fallos es deliberadamente bajo</strong>. La biblia del mundo dice que el Astato envejece industrialmente al portador; mecánicamente, la regla obliga al DM a confrontar al jugador con la decisión de seguir o no. Un PJ que llega a 4 fallos tiene que negociar: paga 30 días de reposo + sauna, o asume el siguiente fallo. Eso es el género magitek: el coste es real.</p>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Salarios Canónicos — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span><span class="flex items-center gap-1.5"><span>›</span><span>Economia</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Salarios Canónicos</h1> </header> <div class="wiki-prose mt-7"> <h1 id="salarios-canónicos">Salarios Canónicos</h1>
+<p>Tabla maestra de <strong>salarios típicos por oficio</strong> del Aldricato y de los continentes asociados. Se expresan en moneda canónica del Aldricato (AO/SP/CC; ver <code>monedas-de-novalis.md</code>) y, donde procede, en <strong>jornales</strong>. La tabla sirve para arbitrar contratos en mesa, ajustar economía de campaña, y leer el <strong>diferencial social</strong> del mundo —diferencial que el cierre del documento canoniza como <strong>margen de supervivencia delgado</strong>, motor latente del descontento que alimenta a <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a>, al <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> y a la red obrera del <a href="/NovalisPage/conceptos/brecha-ciudad-pueblo" class="wikilink">continuo ciudad-pueblo</a>—.</p>
+<h2 id="definiciones-operativas">Definiciones operativas</h2>
+<ul>
+<li><strong>Salario diario</strong> = ingreso bruto antes de descuento gremial, eclesial o corp.</li>
+<li><strong>Descuentos canónicos típicos</strong>:
+<ul>
+<li>Cuota gremial: 5-8 % del salario en gremio activo</li>
+<li>Diezmo del Dios Máquina: 3 % (obligatorio en parroquias industriales, voluntario en rurales)</li>
+<li>Descuento corp (en industria de la Compañía): 10-15 % por alquiler de economato, vales y servicios obligatorios</li>
+</ul>
+</li>
+<li><strong>Jornal</strong> = unidad de cuenta gremial (sin moneda física); ver <code>monedas-de-novalis.md</code>. <strong>Jornal estándar continental = 3 CC</strong>.</li>
+</ul>
+<h2 id="trabajos-básicos--obreros">Trabajos básicos / obreros</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Minero de Astato — Maris-Korr</strong></td><td><strong>3 CC/día</strong></td><td>Riesgo de exposición Astato (mutaciones, quemaduras de maná). Vale corp = 4 CC nominales pero solo cuentan 3 CC en libre.</td></tr><tr><td>Minero de Astato — Voltka (Cetus)</td><td>4 CC/día</td><td>Calidad superior, cantidad inferior.</td></tr><tr><td>Minero enano — Mehralt</td><td>5 CC/día</td><td>Hierro/carbón; menos peligro Astato. Cuotas Compañía 10 %.</td></tr><tr><td>Minero de carbón — Sulfen</td><td>3 CC/día</td><td>Silicosis garantizada en 10-15 años.</td></tr><tr><td><strong>Porteador / estibador</strong></td><td><strong>2 CC/día</strong></td><td>Solaria muelles, Veltara puertos. Cobro al cierre del día.</td></tr><tr><td><strong>Lavandera</strong></td><td><strong>2 CC/día</strong></td><td>Por jornada en lavadero comunal. Heliopolis Bajocalle.</td></tr><tr><td><strong>Sirvienta (con cama y comida)</strong></td><td><strong>3 CC/día + alojamiento</strong></td><td>Casa media o cortesana baja. Coste cero de manutención.</td></tr><tr><td>Cocinera doméstica</td><td>5 CC/día + alojamiento</td><td>Casa media.</td></tr><tr><td>Doncella personal cortesana</td><td>1 SP/día + comida</td><td>Casa noble Heliopolis.</td></tr><tr><td>Mayordomo cortesano</td><td>5 SP/día + alojamiento</td><td>Casa de los Linajes.</td></tr><tr><td>Mozo de cuadra</td><td>2 CC/día</td><td>Posada, casa noble.</td></tr><tr><td>Carbonero ambulante</td><td>3 CC/día</td><td>Variable por demanda estacional.</td></tr><tr><td>Carretero</td><td>5 CC/día</td><td>Variable por distancia.</td></tr><tr><td>Marinero raso (barco mercante)</td><td>1 SP/semana + comida</td><td>Inclusive con alojamiento.</td></tr><tr><td>Pescador autónomo</td><td>4-6 CC/día</td><td>Variable por captura. Días malos: cero.</td></tr><tr><td>Jornalero agrícola (rural)</td><td>2 CC/día</td><td>+ comida en campaña.</td></tr><tr><td>Recolector / temporero (cosecha Voltrede)</td><td>3 CC/día + comida</td><td>Tres meses al año.</td></tr><tr><td>Mendigo profesional</td><td>1-3 CC/día</td><td>Variable por situación urbana.</td></tr><tr><td>Trabajadora del sexo (bajo precio)</td><td>5 CC-1 SP/cliente</td><td>Bajocalle, Pasaje del Pasante.</td></tr><tr><td>Trabajadora del sexo (sala fina)</td><td>1-3 AO/noche</td><td>Cabaret cortesano. Comisiones para la regenta.</td></tr></tbody></table>
+<h2 id="trabajos-especializados--artesanos">Trabajos especializados / artesanos</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Herrero — Mehralt</strong></td><td><strong>1 SP/día</strong></td><td>Forja enana. Maestro: 3 SP.</td></tr><tr><td>Herrero rural</td><td>5 CC/día</td><td>Voltrede, aldeas.</td></tr><tr><td><strong>Sastre</strong></td><td><strong>1 SP/día</strong></td><td>Variable urbano. Maestro cortesano Heliopolis: 5 SP.</td></tr><tr><td><strong>Panadero</strong></td><td><strong>5 CC/día</strong></td><td>Más pan invendido como descuento doméstico.</td></tr><tr><td>Carpintero</td><td>1 SP/día</td><td>Reparaciones, casas.</td></tr><tr><td>Albañil</td><td>5 CC-1 SP/día</td><td>Por jornada larga. Cuadrillas para obra pública: tarifa fija.</td></tr><tr><td>Curtidor</td><td>5 CC/día</td><td>Olor severo; pueblo curtidor segregado.</td></tr><tr><td>Joyero</td><td>2 SP/día</td><td>Calidad media; cortesano 1 AO/día.</td></tr><tr><td>Relojero — Veltara (Suren)</td><td>3 SP/día</td><td>Maestro relojero: 1 AO/día.</td></tr><tr><td>Animador civil certificado</td><td>1 AO/día</td><td>Colegio Imperial. Sin certificar (clandestino): 3 SP.</td></tr><tr><td>Boticario</td><td>1 SP/día</td><td>Boticario cortesano 5 SP.</td></tr><tr><td>Médico de barrio</td><td>1-2 SP/día</td><td>Variable por clientela.</td></tr><tr><td>Médico cortesano privado</td><td>2-5 AO/día</td><td>Casas de los Linajes.</td></tr><tr><td>Cirujano</td><td>3 SP-2 AO/operación</td><td>Variable por riesgo.</td></tr><tr><td>Comadrona/partera</td><td>5 CC-1 SP/parto</td><td>Pueblo: 3 CC + cesta.</td></tr><tr><td>Maestro de escuela (público)</td><td>2 SP/día</td><td>Heliopolis primaria. Rural: 5 CC/día.</td></tr><tr><td>Profesor universitario</td><td>5 SP-1 AO/día</td><td>Colegio Imperial, Velmoria.</td></tr></tbody></table>
+<h2 id="trabajos-ferroviarios">Trabajos ferroviarios</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Fogonero ferroviario</strong></td><td><strong>1 SP/día</strong></td><td>Turno de 12 h. Riesgo de quemaduras de maná.</td></tr><tr><td><strong>Maquinista</strong></td><td><strong>3 SP/día</strong></td><td>Responsabilidad del convoy.</td></tr><tr><td>Jefe de tren</td><td>5 SP/día</td><td>Convoy completo.</td></tr><tr><td>Mozo de estación</td><td>5 CC/día</td><td>Carga/descarga.</td></tr><tr><td>Telegrafista de estación</td><td>1 SP/día</td><td>Heliopolis: 2 SP.</td></tr><tr><td><strong>Ingeniero (Compañía)</strong></td><td><strong>1 AO/día</strong></td><td>Diseño y supervisión.</td></tr><tr><td>Ingeniero senior</td><td>3 AO/día</td><td>Halmgard, Iskhal, Solaria.</td></tr><tr><td>Director local de oficina Compañía</td><td>5-10 AO/día</td><td>Cargo medio.</td></tr></tbody></table>
+<h2 id="cultos-y-oficios-sagrados">Cultos y oficios sagrados</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Cantante sacerdotal — Kalmari</strong></td><td><strong>5 SP/día</strong></td><td>Volkario; canto obligatorio en rito. Aprendiz: 1 SP.</td></tr><tr><td>Cantor menor de templo</td><td>2 SP/día</td><td>Variable.</td></tr><tr><td>Cetrero — Voltrede</td><td>3 SP/día</td><td>Halcón cortesano fortunés.</td></tr><tr><td><strong>Sacerdote del Dios Máquina</strong></td><td><strong>1 AO/día</strong></td><td>Parroquia urbana. Padre Engranador: 5 AO.</td></tr><tr><td>Sacerdote menor de Aevum/Vastus/Primum</td><td>5 CC-1 SP/día</td><td>Comunitarios; donaciones de fieles.</td></tr><tr><td>Sumo sacerdote (Eternistas)</td><td>Donación libre</td><td>No cobran; viven de la comunidad.</td></tr><tr><td>Skald maestro (Vorath)</td><td>No-monetario</td><td>Ver § Vorath; cobran en don ritual.</td></tr><tr><td>Skald aprendiz</td><td>No-monetario</td><td>Carne, hielo, juramento.</td></tr><tr><td>Sacerdote de <a href="/NovalisPage/dioses/extintos/mahr" class="wikilink">Mahr</a> (clandestino)</td><td>Donación de creyente</td><td>Iglesia perseguida.</td></tr><tr><td><strong>Panadero de pan ritual</strong> (Voltrede)</td><td><strong>5 CC/día</strong></td><td>+ diezmo eclesial 3 %.</td></tr><tr><td>Diácono del Raíl</td><td>1 SP/día</td><td>Curacero menor industrial.</td></tr><tr><td>Hermana del Aceite</td><td>5 CC/día + alojamiento</td><td>Auxiliar eclesial Dios Máquina.</td></tr></tbody></table>
+<h2 id="trabajos-financieros">Trabajos financieros</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Cambista (Cofradía Veltara)</strong></td><td><strong>1 AO/día</strong></td><td>+ comisiones del 0,3-0,5 %.</td></tr><tr><td><strong>Prestamista usurero</strong></td><td><strong>5 AO/día</strong></td><td>+ intereses (10-25 % anual).</td></tr><tr><td>Notario gremial</td><td>1-3 AO/día</td><td>+ tarifas por contrato.</td></tr><tr><td>Escribano real</td><td>5 SP-1 AO/día</td><td>Tribunal Supremo, Casa de los Linajes.</td></tr><tr><td>Contable de Casa noble</td><td>1 AO/día</td><td>Casa media. Cortesana: 3 AO.</td></tr><tr><td>Auditor de Cinco Bancas</td><td>3 AO/día</td><td>+ bonos por descubrimiento de fraude.</td></tr><tr><td><strong>Banquero — Veltara</strong></td><td><strong>10 AO/día</strong></td><td>Casa Patronal Cinco Gremios.</td></tr><tr><td>Banquero medio — Heliopolis</td><td>5 AO/día</td><td>Cinco Bancas, nivel asalariado alto.</td></tr><tr><td><strong>Patrón gremial</strong></td><td><strong>100+ AO/día</strong></td><td>Patrón de Gremio mayor. Anual: 30.000+ AO.</td></tr><tr><td>Director banca privada</td><td>50+ AO/día</td><td>+ dividendos.</td></tr><tr><td>Tesorero real</td><td>100+ AO/día + asignaciones</td><td>Cargo equivalente a Patrón.</td></tr><tr><td>Maestro de Ceca</td><td>50 AO/día + privilegios</td><td>Vivienda dentro del palacio.</td></tr></tbody></table>
+<h2 id="aventureros-espionaje-y-trabajos-sucios">Aventureros, espionaje y trabajos sucios</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Escolta de convoy</strong></td><td><strong>1 SP/día</strong></td><td>+ bonificación por incidente (1 AO si se evita asalto).</td></tr><tr><td>Guardia urbano</td><td>5 CC/día</td><td>Heliopolis policía corp.</td></tr><tr><td>Mercenario veterano (libre)</td><td>5 SP/día</td><td>Trabajos cortos.</td></tr><tr><td>Mercenario contratado por casa noble</td><td>1-3 AO/día</td><td>Por meses; + bonificaciones.</td></tr><tr><td><strong>Espía</strong></td><td><strong>1 AO/día</strong></td><td>Tarifa de contrato; + bonificación por entrega.</td></tr><tr><td>Espía profesional con red</td><td>3-5 AO/día</td><td>+ financiación de operativos.</td></tr><tr><td><strong>Asesino contratado</strong></td><td><strong>50+ AO/trabajo</strong></td><td>Karnatha tarifa mínima. Asesinato de noble: 500+ AO. Asesinato de Patrón: 5.000+ AO. Asesinato real (verificado): solo en mito.</td></tr><tr><td>Contrabandista de núcleos</td><td>3-10 AO/operación</td><td>Variable por carga y riesgo.</td></tr><tr><td>Cazador de núcleos (caza legal)</td><td>1-5 AO/núcleo común</td><td>Dependiendo de cliente.</td></tr><tr><td>Ladrón de núcleos (caza ilegal)</td><td>50+ AO/núcleo inteligente</td><td>Riesgo de horca.</td></tr><tr><td>Falsificador de moneda</td><td>Variable</td><td>Pena de horca; ingresos brutos por lote 50-200 AO.</td></tr><tr><td>Falsificador de documentos</td><td>1-5 AO/documento</td><td>Aldea de Rueca Cortada referencia.</td></tr><tr><td>Cirujano negro</td><td>1-3 AO/operación</td><td>Extracción de núcleo viva. Karnatha.</td></tr><tr><td>Aventurero principiante (PJ tier 1)</td><td>5 SP-1 AO/día</td><td>Contrato gremial estándar.</td></tr><tr><td>Aventurero veterano (PJ tier 2-3)</td><td>3-10 AO/día</td><td>+ reparto de botín.</td></tr><tr><td>Aventurero élite (PJ tier 4+)</td><td>20+ AO/día</td><td>+ asignaciones de Casa noble o Concierto.</td></tr></tbody></table>
+<h2 id="trabajos-cortesanos-y-diplomáticos">Trabajos cortesanos y diplomáticos</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Oficio</th><th>Salario bruto</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Secretario real</strong></td><td><strong>5 AO/día</strong></td><td>+ alojamiento en palacio + asignación de gabinete.</td></tr><tr><td>Cancillera de los Animadores</td><td>10 AO/día + asignación</td><td>Cargo corp/Estado.</td></tr><tr><td><strong>Embajador residente mayor</strong></td><td><strong>50 AO/día</strong></td><td>+ residencia + presupuesto operativo.</td></tr><tr><td>Embajador menor</td><td>10-20 AO/día</td><td>+ residencia.</td></tr><tr><td>Cónsul comercial</td><td>5 AO/día</td><td>+ asignación gremial.</td></tr><tr><td>Chambelán real</td><td>20 AO/día + privilegios</td><td>Heliopolis Palacio Real.</td></tr><tr><td>Intérprete diplomático</td><td>1-3 AO/día</td><td>+ bonificación por idioma raro (Gjornsk, Volkario).</td></tr><tr><td>Juez de Tribunal Supremo</td><td>30 AO/día + asignación</td><td>Designación real.</td></tr><tr><td>Magistrado menor</td><td>10 AO/día</td><td>Heliopolis.</td></tr><tr><td>Senador de Cámara Alta</td><td>Sin salario formal</td><td>Cobra <strong>por sesión</strong> asistida: 5 SP. Reciben asignaciones discretas de Casa.</td></tr><tr><td>Patrón de gremio en Cámara Baja</td><td>2 AO/día + asignación gremial</td><td>+ dietas.</td></tr><tr><td>Cortesano de honor</td><td>Variable</td><td>Sostenido por familia noble.</td></tr></tbody></table>
+<h2 id="comparativa-de-subsistencia">Comparativa de subsistencia</h2>
+<h3 id="familia-obrera-media--mehralt-o-heliopolis-4-personas">Familia obrera media — Mehralt o Heliopolis (4 personas)</h3>
+<ul>
+<li><strong>Padre</strong>: minero de Astato Maris-Korr → 3 CC/día (con descuentos: 2,5 CC líquidos)</li>
+<li><strong>Madre</strong>: lavandera → 2 CC/día</li>
+<li><strong>Hija mayor (14 años)</strong>: aprendiz sirvienta → 1 CC/día + alojamiento parcial fuera de casa</li>
+<li><strong>Hijo menor (10 años)</strong>: vendedor de periódicos → ½ CC/día irregular</li>
+<li><strong>Ingresos brutos familia</strong>: ~6 CC/día (1,5 CC por persona)</li>
+<li><strong>Coste de vida diario mínimo</strong>: ~5-6 CC/día (alquiler 1 CC + comida 3 CC + leña/aceite 1 CC + ropa amortizada 0,5 CC + diezmo eclesial 0,3 CC)</li>
+<li><strong>Margen</strong>: cero o negativo en mes malo. Una enfermedad, una bota rota, una multa = endeudamiento con prestamista usurero.</li>
+</ul>
+<h3 id="familia-obrera-con-dos-hijos-chicos-en-voltrede-rural">Familia obrera con dos hijos chicos en Voltrede rural</h3>
+<ul>
+<li>Padre <strong>panadero</strong>: 5 CC/día</li>
+<li>Madre cuidadora doméstica: ½ CC equivalente (huerto/aves)</li>
+<li><strong>Ingresos brutos familia</strong>: ~5,5 CC/día (1,4 CC por persona)</li>
+<li><strong>Coste de vida rural diario</strong>: ~4 CC/día (alquiler 0,5 CC + comida del huerto + cerveza 1 CC + leña gratis + ropa 0,3 CC + diezmo eclesial 0,3 CC)</li>
+<li><strong>Margen</strong>: ~1,5 CC/día. Pequeño ahorro posible.</li>
+</ul>
+<h3 id="familia-artesana--mehralt-herrería">Familia artesana — Mehralt herrería</h3>
+<ul>
+<li>Padre <strong>herrero maestro</strong>: 3 SP/día (= 36 CC/día)</li>
+<li>Madre tenedora de libros: 1 SP/día (= 12 CC/día)</li>
+<li>Aprendiz hijo: 5 CC/día</li>
+<li><strong>Ingresos brutos familia</strong>: 53 CC/día ≈ 4,4 SP/día (13 CC por persona — <em>8 veces el obrero medio</em>)</li>
+<li><strong>Coste de vida medio urbano</strong>: ~10-15 CC/día (alquiler digno 2 CC + comida 5 CC + ropa 1 CC + diezmo 0,5 CC + educación 1 CC)</li>
+<li><strong>Margen</strong>: ~38 CC/día. Ahorro real posible. Acceso a inversión menor.</li>
+</ul>
+<h3 id="familia-banquera--heliopolis-distrito-bancario">Familia banquera — Heliopolis Distrito Bancario</h3>
+<ul>
+<li>Director banca privada: 50 AO/día</li>
+<li>Esposa (sin trabajo formal): asignaciones de Casa</li>
+<li>Tres hijos en Colegio: gasto, no ingreso</li>
+<li><strong>Ingresos brutos familia</strong>: 50 AO/día = 12.000 CC/día</li>
+<li><strong>Coste de vida cortesano</strong>: ~5 AO/día (mansión propia + servicio + dieta cortesana + asignación de moda + diezmo eclesial)</li>
+<li><strong>Margen</strong>: 45 AO/día. Acumulación masiva. Inversión en deuda soberana, núcleos, fincas rurales.</li>
+</ul>
+<h3 id="margen-de-supervivencia-delgado">Margen de supervivencia delgado</h3>
+<p>La conclusión canónica que la tabla impone:</p>
+<ul>
+<li><strong>Una familia obrera media vive al filo</strong>. Un mes malo es endeudamiento. Tres meses son emigración. Seis meses son hambruna.</li>
+<li><strong>La brecha ciudad-pueblo</strong> (<a href="/NovalisPage/conceptos/brecha-ciudad-pueblo" class="wikilink">Brecha Ciudad-Pueblo</a>) es estructural: el campesino vive con margen estrecho pero alimentado por su huerto; el obrero urbano vive con margen cero y comida que paga al mercado.</li>
+<li><strong>La familia artesana</strong> es la clase media estable del Aldricato, <strong>único estrato con verdadero ascenso social</strong> —el banquero nace banquero, el obrero muere obrero, pero el herrero puede llegar a Patrón de gremio en una generación—.</li>
+<li><strong>Las élites cobran 100-500 veces más</strong> que el obrero medio. Esta cifra no se publica oficialmente; es la <strong>cifra silenciada del Aldricato</strong>, y la conocen las Sagas, los Eternistas, y los pasquines de Veltara.</li>
+</ul>
+<h2 id="variación-por-continente">Variación por continente</h2>
+<h3 id="fortuna">Fortuna</h3>
+<ul>
+<li><strong>Salarios base estándar</strong>. La tabla aplica directamente.</li>
+<li><strong>Voltrede y Fortuna rural</strong>: salarios obreros 1 CC menos / día; coste de vida 1-2 CC menos / día. Margen comparable.</li>
+<li><strong>Heliopolis Bajocalle</strong>: salarios obreros 3-4 CC; coste de vida 6-7 CC. Margen frecuentemente negativo, compensado por trabajo extra de menores y mendicidad.</li>
+</ul>
+<h3 id="calixar">Calixar</h3>
+<ul>
+<li><strong>Mehralt y Maris-Korr</strong>: salarios industriales 10-20 % por encima de Fortuna. Vales corp obligatorios. <strong>Descuentos corp</strong> del 15-20 % erosionan el bruto.</li>
+<li><strong>Mehralt obreros enanos</strong>: 30-50 % más altos por longevidad y tradición gremial. Un herrero enano de 80 años puede acumular en una vida varias decenas de miles de AO.</li>
+<li><strong>Borde del Anillo y Cinder</strong>: salarios bajos pero coste de vida bajísimo; trueque domina sobre moneda.</li>
+</ul>
+<h3 id="cetus">Cetus</h3>
+<ul>
+<li><strong>Veltara</strong>: salarios urbanos 20-30 % por encima de Heliopolis. Costo de vida 30-40 % por encima por importaciones.</li>
+<li><strong>Veltara banqueros</strong>: salarios canónicos los <strong>más altos del mundo</strong> (10 AO/día estándar, hasta 30 AO/día para Patrones de los Cinco Gremios).</li>
+<li><strong>Kalmari sacerdocio</strong>: sistema dual — cantantes y sacerdotes cobran salario, pero la cofradía cubre todos los costes de vida. <strong>Margen efectivo 100 %</strong>.</li>
+<li><strong>Selva nublada</strong>: economía no monetaria; trueque y ofrenda.</li>
+</ul>
+<h3 id="vorath">Vorath</h3>
+<ul>
+<li><strong>Salario monetario en marco mehrholt</strong>: el marco vale 1,8 SP, así que las cifras nominales parecen altas pero el cambio es engañoso. <strong>1 marco mehrholt/día</strong> equivale a 1,8 SP = 22 CC ≈ tres veces el jornal estándar.</li>
+<li><strong>Karls vorathianos</strong>: cobran en <strong>medidas de mantequilla, hielo y carne</strong> semanales, no en moneda diaria. La medida estándar Karl equivale a ~5 SP en libre.</li>
+<li><strong>Skalds y Jarls</strong>: no tienen salario monetario. Son sostenidos por la comunidad y por las casas que protegen.</li>
+<li><strong>Iskhal industria Mehrholt-Vael</strong>: salarios enanos 5-7 SP/día (los más altos del continente Vorath); cuotas gremiales y eclesiales reducen un 12 %.</li>
+</ul>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/economia/monedas-de-novalis" class="wikilink">Monedas de Novalis</a> — sistema monetario base</li>
+<li><a href="/NovalisPage/conceptos/economia/precios-canonicos" class="wikilink">Precios Canónicos</a> — tabla complementaria</li>
+<li><a href="/NovalisPage/conceptos/economia/balanza-aldricato" class="wikilink">Balanza Aldricato</a> — flujos macro asociados</li>
+<li><a href="/NovalisPage/conceptos/economia/gremios-financieros" class="wikilink">Gremios Financieros</a> — empleadores mayores</li>
+<li><a href="/NovalisPage/conceptos/brecha-ciudad-pueblo" class="wikilink">Brecha Ciudad-Pueblo</a> — concepto del diferencial rural-urbano</li>
+<li><a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> — defensa colectiva del salario obrero</li>
+<li><a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a> — red obrera del descontento</li>
+<li><a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a> — defensores doctrinales del jornal</li>
+<li><a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> — referencia minera Astato</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — referencia herrería enana</li>
+<li><a href="/NovalisPage/arquitectura/kalmari" class="wikilink">Kalmari</a> — referencia sacerdocio cantante</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — referencia rural fortunesa</li>
+<li><a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> — referencia banca cetuana</li>
+<li><a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> — referencia cortesana</li>
+<li><a href="/NovalisPage/facciones/casas-vellanor" class="wikilink">Casas Vellanor</a> — empleador bancario</li>
+<li><a href="/NovalisPage/facciones/banca-mehrholt" class="wikilink">Banca Mehrholt</a> — empleador bancario internacional</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — empleador industrial mayor</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>El descuento corp del 15-20 % a los obreros mineros de Maris-Korr</strong> se canonizó <strong>deliberadamente como mecanismo para mantenerlos endeudados</strong>. Aldwin Vael-Tarvine (canon, <code>aldwin-vael-tarvine.md</code>) firmó cuatro certificaciones de fuga obrera falsas para Karls que descubrieron que el descuento era estadísticamente más alto que el alquiler real del economato. Los <strong>archivos contables internos de la Compañía en Halmgard</strong> contienen prueba del fraude. Si los PJ acceden, tienen palanca pública contra la Compañía Imperial entera.</p>
+<p><strong>El salario del asesino contratado en Karnatha</strong> está <strong>registrado en libro cifrado</strong> que la matrona de la sala fina lleva por costumbre del oficio. El libro registra clientes —no por nombre, sino por <strong>seña de la mano izquierda</strong> dibujada en margen—. Una seña recurrente, la del <strong>anillo de pulgar con piedra triangular</strong>, identifica a un cliente que ha encargado <strong>siete asesinatos políticos</strong> en los últimos 30 años. La seña corresponde a <strong>Veshala Krasvol-Mehren</strong>, ala radical de los <a href="/NovalisPage/facciones/sectas/coleccionistas-del-pliegue" class="wikilink">Coleccionistas del Pliegue</a> —canonización colateral—.</p>
+<p><strong>El “margen de supervivencia delgado”</strong> es un <strong>factor estructural del despertar de Null</strong>: las familias obreras desesperadas son <strong>terreno fértil para la captación por focos psíquicos</strong> —Halsen en Mehralt, Borvad en Cráter Cementerio, el sexto vector emergente Vorrek Helsen-Mahn del <a href="/NovalisPage/facciones/sectas/culto-del-padre-vacio" class="wikilink">Culto del Padre Vacío</a>—. La pobreza no solo alimenta al sedimento del Hilo Sosegado; alimenta al <strong>sello roto activamente</strong>.</p>
+<p><strong>El sistema dual de Kalmari</strong> (salario + cofradía cubre coste de vida) <strong>no se canoniza públicamente</strong> porque los Patrones del Aldricato consideran que demostraría que un sistema de aseguramiento gremial pleno es viable. Las <strong>Sagas vorathianas</strong> y los <strong>Eternistas</strong> lo conocen y lo citan en privado como modelo a estudiar. El Conservatorio de Animadores ha enviado <strong>dos agentes encubiertos a Kalmari</strong> en los últimos diez años para entender el modelo financiero — uno fue absorbido por la cofradía, el otro desapareció.</p>
+<p><strong>Posibles ganchos</strong>:</p>
+<ul>
+<li>Los PJ son contratados por el <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> para <strong>filtrar a la prensa</strong> el archivo contable de descuentos corp en Maris-Korr. La filtración desencadena huelgas. La represión es brutal.</li>
+<li>Una <strong>anomalía salarial</strong> en una refinería de Solaria (los maquinistas cobran el doble de lo canónico): los PJ investigan. Resulta que la corp les paga así para silenciar un <strong>incidente de fuga de Astato grado IV</strong> que mató a 12 obreros la temporada pasada.</li>
+<li>Un Patrón gremial es asesinado. La policía corp acusa a <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a>. La realidad: <strong>otro Patrón</strong>, en pugna por la silla, contrató asesinos en Karnatha. Los PJ tienen que investigar y decidir a quién entregar la verdad.</li>
+<li>Un <strong>embajador real de Vorath</strong> llega a Heliopolis y se descubre que vive con 2 SP/día porque su asignación de 50 AO/día está <strong>embargada por la Casa de los Linajes</strong> en compensación de una deuda de su Casa. El embajador busca PJ para negociar discretamente la liberación.</li>
+<li>Una hija de aldeano de Voltrede aspira a entrar como <strong>doncella personal de Casa noble en Heliopolis</strong> (1 SP/día + comida). Para ser admitida necesita una recomendación de un Patrón. Quien la dé exigirá favor a futuro. Los PJ pueden ser intermediarios o esponsorizar.</li>
+</ul>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

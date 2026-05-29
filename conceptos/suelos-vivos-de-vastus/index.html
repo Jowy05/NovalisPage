@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Suelos Vivos de Vastus — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Suelos Vivos de Vastus</h1> </header> <div class="wiki-prose mt-7"> <h1 id="suelos-vivos-de-vastus">Suelos Vivos de Vastus</h1>
+<p><strong>Sub-ficha</strong> de <a href="/NovalisPage/conceptos/el-suelo-vivo" class="wikilink">El Suelo Vivo</a> dedicada a los <strong>lugares donde <a href="/NovalisPage/dioses/vastus" class="wikilink">Vastus</a> filtra al sustrato físico</strong>. Recoge la <strong>doctrina del espacio cruzado y del horizonte mirado</strong> —la lectura cosmológica que vincula al dios del Espacio con el suelo, el agua, el aire del lugar—, y cataloga los <strong>seis lugares canónicos</strong> confirmados como Suelos Vivos de Vastus del mundo conocido, con densidad estimada, fenómeno observable, guardián(es) y peligros si se profana o industrializa. Los Suelos Vivos de Vastus son, <strong>estructuralmente</strong>, los lugares donde <strong>el horizonte se pliega</strong>: el espacio se densifica de modo que ojos atentos perciben <strong>más mundo del que las leyes ópticas permiten</strong>.</p>
+<h2 id="doctrina-del-espacio-cruzado--horizonte-mirado">Doctrina del espacio cruzado / horizonte mirado</h2>
+<p>La doctrina canónica desarrollada por la Cofradía del Anillo Azul, los Eternistas costeros y las Sagas marítimas describe el Suelo Vivo de Vastus como <strong>“el lugar donde el horizonte respira”</strong>. La metáfora opera en tres niveles operativos:</p>
+<ol>
+<li><strong>Espacio plegado</strong>: la geometría visual del lugar se altera —no de modo catastrófico, sutilmente—. Un pescador que rema desde la costa de Drahnvar <strong>ve más lejos</strong> que las leyes ópticas permiten, especialmente al amanecer y al atardecer; una caravana cetuana cruzando el Velo Sur <strong>observa cosas que no están</strong> sin alucinar; el faro de Suren irradia luz que es percibida más allá de la cuenca del aliento óptico atmosférico. Los marineros lo llaman <strong>“la lente del dios”</strong> y lo enseñan a los aprendices como reconocimiento.</li>
+<li><strong>Travesía depositada</strong>: el sustrato <strong>retiene memoria de paso</strong> de quienes lo cruzaron. Una costa donde flotas pesqueras parten y vuelven al mismo punto durante siglos <strong>acumula aenva</strong> específica de <strong>travesía cumplida</strong>. Voltrede, donde generaciones de campesinos cosecheros han cruzado el condado en el mismo recorrido de yunta-y-arado, retiene <strong>residuo de movimiento agrario</strong> —Korvun absorbido por Vastus tras rebautizo—. La memoria de paso es <strong>literal cosmológicamente</strong>: el sustrato sabe quién pasó.</li>
+<li><strong>Recogida garantizada</strong>: morir sobre Suelo Vivo de Vastus <strong>garantiza tracción Vastus</strong> del <a href="/NovalisPage/conceptos/ciclo-vastus" class="wikilink">Ciclo Vastus</a> si el difunto porta marca de horizonte. La hebra <strong>se tira hacia arriba con luminosidad anómala</strong> visible a quien tenga competencia ritual. La doctrina cetuana costera de <strong>trasladar al moribundo al horizonte</strong> —cabaña con balcón al mar, balsa exterior del Anillo Mayor en Coral Hueco, mirador del Patronazgo en Veltara, cubierta de balandra ballenera— deriva directamente de esto. Por eso los faros de Hren se construyen <strong>con habitación de moribundo orientada al horizonte</strong>: el farero viejo muere ahí con tracción garantizada.</li>
+</ol>
+<p>La doctrina Saga añade <strong>lectura inversa específica de Vastus</strong>: el dios del Espacio es el <strong>más activamente ofendido</strong> por la era industrial (ver <a href="/NovalisPage/conceptos/ciclo-vastus" class="wikilink">Ciclo Vastus</a>), y por consiguiente sus Suelos Vivos <strong>erosionan más rápido</strong> cuando se acerca infraestructura ferroviaria o industrial. La vía Solaria-Voltrede norte —si se construyera, proyecto corp en discusión— drenaría <strong>6–10 ua/ha por año</strong> del Suelo Vivo de Voltrede en radio de tres kilómetros de cualquier estación intermedia. Por ese motivo la Cofradía del Bisonte Pardo bloquea <strong>políticamente</strong> los proyectos ferroviarios menores que cruzarían el condado.</p>
+<h2 id="lugares-canónicos-de-suelo-vivo-de-vastus">Lugares canónicos de Suelo Vivo de Vastus</h2>
+<h3 id="1-voltrede-entera-fortuna-interior">1. Voltrede entera (Fortuna interior)</h3>
+<p><strong>Ubicación</strong>: pueblo cosechero del centro-norte de <a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a> y <strong>condado de Voltrede</strong> entero, sobre la cuenca media del <a href="/NovalisPage/geografia/rio-claro" class="wikilink">Río Claro</a>. Ver ficha <a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> para detalle geográfico.</p>
+<p><strong>Densidad</strong>: ≈ <strong>88 ua/ha</strong> sobre el núcleo del pueblo y el Granero Sagrado; ≈ <strong>42 ua/ha</strong> sobre la Pradera de Tres Vientos; ≈ <strong>30–50 ua/ha</strong> distribuido por el condado entero. Es <strong>el pueblo más cosmológicamente cargado del continente fortunés</strong> y uno de los más cargados del mundo accesible.</p>
+<p><strong>Tipo</strong>: Vastus <strong>mixto con residuo Korvun absorbido</strong>. La losa de altar pre-rebautizo enterrada bajo el <a href="/NovalisPage/geografia/granero-sagrado-de-voltrede" class="wikilink">Granero Sagrado de Voltrede</a> sigue emanando aenva del dios extinto <a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a>; tras la extinción y la absorción del dominio agrario-migratorio en Vastus, la doctrina canónica reasigna esta densidad al dios del Espacio. Adicionalmente, las <strong>anguilas migratorias</strong> del <a href="/NovalisPage/geografia/rio-claro" class="wikilink">Río Claro</a> —canónicamente cargadas de aenva Vastus residual desde el Mar del Pacto— vehiculan <strong>aenva Vastus pura</strong> a la cuenca a través de su migración anual.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Cosechas anómalamente fértiles</strong>: el trigo blando, la cebada y el centeno de Voltrede rinden <strong>15–20% más</strong> que las mismas variedades sembradas con mismas técnicas en otros pueblos fortuneses comparables. Los agrónomos del Conservatorio de Velmoria lo atribuyen sin convicción a “microclima caliza-fluvial”.</li>
+<li><strong>Queso de bisonte DOC con vetas verde-musgo</strong>: el queso madura <strong>anómalamente</strong> sobre suelo voltredés; ciertas variedades adquieren vetas color verde-musgo (color de Korvun) que <strong>no aparecen</strong> si la misma leche se queseza fuera del condado con mismo proceso. Es DOC reconocida públicamente sin que nadie formule la cosmología.</li>
+<li><strong>Granero almacena +50% más tiempo</strong>: el grano almacenado en el Almacén Municipal (antiguo Granero Sagrado) sobre la losa enterrada <strong>se conserva un 50% más</strong> que en silos de Heliopolis o Solaria comparables. La Cofradía del Bisonte Pardo lo sabe y lo gestiona discretamente como ventaja comercial.</li>
+<li><strong>Raíces crecen hacia abajo con fuerza anómala</strong>: las plantas cultivadas sobre el sustrato del núcleo del pueblo desarrollan <strong>sistemas radiculares 40% más profundos</strong> que sus equivalentes. Es indicador empírico Eternista de Suelo Vivo Alto Vastus.</li>
+<li><strong>Longevidad rural anómala</strong>: edad media 38 años, veinte ancianos de más de 70 (proporción 1:30 vs media reino 1:60). Vastus protege a los que cultivan tierra propia con marca de movimiento agrario continuado.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong><a href="/NovalisPage/facciones/cofradia-del-bisonte-pardo" class="wikilink">Cofradía del Bisonte Pardo</a></strong> — bastión rural anti-corp del pueblo. Patrullan ortodoxia genética del bisonte doméstico y bloquean política ferroviaria del condado. Sin formular cosmología explícita, <strong>operan como defensa del Suelo Vivo de Vastus mayor del continente</strong>.</li>
+<li><strong>Posada del Bisonte Pardo</strong> — sede informal de la Cofradía; <strong>Suelo Vivo Bajo Aevum doméstico secundario</strong> (≈ 22 ua/ha) por uso ritual continuado de tres siglos de bodas y velatorios.</li>
+<li><strong>Capilla de la Espiga disimulada como casa común de matronas</strong> — núcleo Eternista clandestino del pueblo. Las <strong>matronas mayores</strong> de la capilla mantienen rito pre-rebautizo de <strong>ofrenda a la cosecha</strong> que cosmológicamente sostiene la emanación de la losa.</li>
+<li><strong>Eternistas del condado</strong> distribuidos en las ganaderías mayores Voltren y Brendt-Vega.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong><a href="/NovalisPage/bestiario/fortuna/bisonte-salvaje-pre-rebautizo" class="wikilink">Bisonte Salvaje Pre-Rebautizo</a></strong> — fauna pre-rebautizo de la Pradera de Tres Vientos. Su presencia <strong>carga</strong> el sustrato de la pradera con aenva Vastus residual: las migraciones estacionales del rebaño actúan como <strong>cargador biológico</strong>. Si se cazara comercialmente, la pradera perdería 15 ua/ha en cinco años.</li>
+<li><strong>Anguila Dorada del Aguamiel</strong> del Río Claro — vehiculan aenva Vastus desde el Mar del Pacto. Su pesca tradicional sostenible <strong>no daña</strong>; pesca industrial sí.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Vía ferroviaria atravesando el condado</strong>: drenaría 6–10 ua/ha por año en radio de 3 km de estación. Proyecto corp menor en discusión bloqueado políticamente.</li>
+<li><strong>Perforación experimental del subsuelo del Granero Sagrado</strong> (intento Conservatorio de Animadores, cuatro veces bloqueado): si se llegara a la losa, la rotura <strong>descargaría todo el sustrato del condado en una década</strong>. Daño cosmológico <strong>irreparable</strong> para el continente —Suelo Vivo Alto Vastus se reduciría a estándar—.</li>
+<li><strong>Caza industrial del Bisonte Salvaje Pre-Rebautizo</strong> (intento corp documentado): drenaje progresivo de la Pradera de Tres Vientos.</li>
+<li><strong>Cooptación corp del DOC del queso</strong>: el Conservatorio ha intentado <strong>comprar la denominación de origen</strong> para producir queso “voltredés” en fábricas Heliopolitanas. La Cofradía del Bisonte Pardo bloquea legalmente. Si tuviera éxito, el queso “imitación” <strong>no tendría las vetas verde-musgo</strong> (cosmología no transferible) pero diluiría el mercado.</li>
+</ul>
+<h3 id="2-costa-de-drahnvar-fortuna">2. Costa de Drahnvar (Fortuna)</h3>
+<p><strong>Ubicación</strong>: costa noroeste de <a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a> desde el cabo del Cuerno hasta el puerto de Drahnvar, abarcando <strong>18 leguas de litoral</strong> de bahías abrigadas y caladeros pesqueros tradicionales. Acceso por caminos costeros y por mar abierto.</p>
+<p><strong>Densidad</strong>: ≈ <strong>68 ua/ha</strong> sobre los caladeros mayores; ≈ <strong>35–55 ua/ha</strong> sobre el litoral en general.</p>
+<p><strong>Tipo</strong>: Vastus puro por <strong>continuidad pesquera de ochocientos años</strong>: los barcos pesqueros parten y vuelven al <strong>mismo punto cosmológico</strong> sobre el agua durante ocho siglos documentados. Cada travesía repetida <strong>deposita aenva Vastus</strong> sobre el agua y sobre el suelo costero de partida. El <strong>circuito virtuoso del cabotaje</strong> carga sustrato sin desgastarlo.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Pesca con bonificación cosmológica</strong>: los pescadores de Drahnvar capturan <strong>más</strong> que los de bahías comparables a misma técnica y mismas especies. La doctrina marítima dice <strong>“el mar se acuerda de nosotros”</strong>. Mecánica D&#x26;D 5e: +1d4 a check de Supervivencia para pesca; +2 a Navegación local.</li>
+<li><strong>Ver más lejos al amanecer y al atardecer</strong>: efecto óptico anómalo en horizonte costero. Los marineros distinguen <strong>velas a 12 leguas</strong> cuando la óptica permite 8. PJs con DC 14 SAB (Percepción cosmológica) lo reconocen.</li>
+<li><strong>Brújulas funcionan con exactitud anómala</strong>: a contraste con el Anillo del Sello donde oscilan, sobre la costa de Drahnvar las brújulas marcan <strong>más estable</strong> que la media. Es indicador Eternista de Suelo Vivo Vastus.</li>
+<li><strong>Auto-éxito de “tracción Vastus”</strong> para pescador moribundo trasladado a su balandra propia sobre el caladero.</li>
+<li><strong>Aenva Vastus marítima difuso</strong> detectable hasta 5 km mar adentro.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong><a href="/NovalisPage/arquitectura/drahnvar" class="wikilink">Drahnvar</a></strong> ciudad — cofradía civil pesquera mantiene tradición y bloquea industrialización portuaria. Es <strong>escudo político</strong> estructural de la costa.</li>
+<li><strong>Cofradía del Anillo Azul</strong> — capítulo Drahnvar — devotos de Vastus puristas; tatuajes de pulpo en hombro izquierdo. Mantienen registros de <strong>leguas náuticas efectivamente recorridas</strong> por cada pescador y certifican marca Vastus para velatorios.</li>
+<li><strong>Eternistas del litoral</strong> en aldeas pesqueras menores.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Cetáceos del Mar del Pacto</strong> que cruzan los caladeros — cargadores biológicos.</li>
+<li><strong>Aves marinas</strong> —gaviotas mayores del Cuerno, cormoranes de Drahnvar— pasajeros migratorios que vehiculan aenva Vastus aviar.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Pesca industrial corp</strong> (intento documentado: la Compañía Imperial intentó instalar flota de arrastre hace doce años, rechazada por motín pesquero local): drenaje rápido. Cálculo Saga: una flota industrial drenaría 8 ua/ha por año en radio de 10 km.</li>
+<li><strong>Puerto industrial extendido al sur de Drahnvar</strong> (proyecto corp menor en discusión): drenaje del litoral inferior. Bloqueado políticamente por ahora.</li>
+<li><strong>Refinería marítima</strong> (no se ha intentado, pero candidato corp futuro): drenaría doblemente como Suelo Drenado severo.</li>
+</ul>
+<h3 id="3-el-velo-sur-isla-suroeste">3. El Velo Sur (isla suroeste)</h3>
+<p><strong>Ubicación</strong>: isla del <strong>suroeste</strong> del Mar de Vastus, niebla persistente, puerto pirata Bocaniebla y asentamiento flotante La Amarra. Acceso solo por mar; visibilidad casi siempre limitada por la niebla cosmológica.</p>
+<p><strong>Densidad</strong>: ≈ <strong>120 ua/ha</strong> centro (Suelo Vivo Alto); ≈ <strong>60–90 ua/ha</strong> periferia.</p>
+<p><strong>Tipo</strong>: Vastus puro por <strong>manifestación cosmológica de horizonte plegado</strong>. La isla <strong>es</strong> una <strong>anomalía cartográfica cosmológicamente cargada</strong>: la niebla y el plegamiento óptico son síntomas, no causas. Vastus filtra al sustrato porque la isla es <strong>un lugar donde el horizonte se pliega sobre sí mismo</strong> —concepto del dios del Espacio operando casi sin mediación—.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Cartografía marina inconsistente</strong>: dos cartas marítimas hechas con cinco años de diferencia <strong>no coinciden</strong> en posición exacta de la isla. Las brújulas oscilan <strong>dentro</strong> de la niebla pero <strong>se estabilizan</strong> al salir. Mecánica D&#x26;D 5e: navegar al Velo Sur requiere DC 16 INT (Navegación) con desventaja si no se conoce la isla previamente.</li>
+<li><strong>Ver cosas que no están sin alucinar</strong>: visitantes ocasionales informan ver <strong>velas de barcos</strong> que no existen en la realidad de su tiempo. Los Sin-Cuerda de Bocaniebla lo entienden como <strong>eco del paso histórico</strong> de las flotas que cruzaron el Velo durante siglos. Mecánica D&#x26;D 5e: DC 14 SAB para distinguir eco-Vastus de alucinación; éxito → información narrativa útil; fracaso → posible misdirection.</li>
+<li><strong>Comunicación cuasi-telepática a larga distancia</strong> entre Bocaniebla y otros nodos Vastus mayores (Faro Mudo, Mar del Pacto): los Sin-Cuerda mayores <strong>reciben mensajes</strong> de otros nodos sin emisor visible. Frecuencia: una o dos por luna. Es <strong>red Vastus orgánica</strong> que ningún corp ha replicado.</li>
+<li><strong>Auto-éxito de tracción Vastus</strong> para cualquier moribundo sobre la isla con marca de horizonte.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Bocaniebla</strong> y <strong>La Amarra</strong> — puerto pirata Sin-Cuerda y asentamiento flotante; cofradía clandestina de <strong>Custodios del Velo</strong> protege el sustrato. Operan como <strong>escudo socio-político</strong> del Suelo Vivo.</li>
+<li><strong>Sin-Cuerda mayores</strong> — algunos Sin-Cuerda son <strong>Cofradía del Anillo Azul</strong> de facto, devotos de Vastus puristas. La doble pertenencia es común.</li>
+<li><strong>Cofradía de los Nudos Sueltos</strong> — alianza táctica con los Custodios.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Niebla cosmológica activa</strong>: la propia niebla <strong>responde</strong> a intrusos no-aceptados (espesa donde miran, ralea donde se les permite pasar). Es <strong>defensa pasiva natural</strong>.</li>
+<li><strong>Aves migratorias errantes</strong> del Mar de Vastus que descansan en el Velo.</li>
+<li><strong>Pulpos pelágicos mayores</strong> que habitan grietas submarinas del flanco oeste, asociados a Vastus marítimo.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Industrialización del puerto Bocaniebla</strong> (intento corp documentado: Vellanor intentó comprar concesión hace cinco años, rechazada por consejo Sin-Cuerda): drenaje rápido del Suelo Vivo Alto.</li>
+<li><strong>Cartografía oficial publicada de la isla</strong>: cualquier intento de <strong>fijar cartográficamente</strong> el Velo Sur <strong>lo descargaría</strong> —el dios responde al uso oculto, no al uso público registrado—. Las Sagas calculan que publicar carta oficial de Bocaniebla bajaría densidad a 60 ua/ha en dos décadas.</li>
+<li><strong>Combate magitek mayor</strong> sobre la isla (no ha ocurrido nunca): el campo cosmológico <strong>inutiliza núcleos magitek</strong> dentro del radio del centro del Velo. Una fragata corp con núcleos quedaría <strong>inerme</strong>.</li>
+</ul>
+<h3 id="4-faro-mudo-la-isla-que-camina">4. Faro Mudo (La Isla que Camina)</h3>
+<p><strong>Ubicación</strong>: <strong>La Isla que Camina</strong>, isla migratoria del oeste del Mar de Vastus que <strong>cambia de posición</strong> entre cartografías. El <strong>Faro Mudo</strong> es el faro central de la isla, sin uso de luz convencional —el faro no enciende fuego ni núcleo magitek, irradia presencia de Vastus directamente—.</p>
+<p><strong>Densidad</strong>: ≈ <strong>130 ua/ha</strong> centro (Suelo Vivísimo bajo); ≈ <strong>80–110 ua/ha</strong> la isla entera. <strong>El segundo lugar más cosmológicamente cargado del mundo accesible</strong>, solo por debajo del Cráter de Voltka.</p>
+<p><strong>Tipo</strong>: Vastus <strong>encarnado parcial</strong>. El Faro Mudo <strong>es</strong> cuerpo físico parcial de Vastus —no es lugar donde Vastus filtra, sino <strong>lugar que es</strong> Vastus encarnado en la materia—. La distinción cosmológica es importante: el sustrato no retiene residuo del dios, <strong>es</strong> el dios en su modalidad encarnada. Por eso la isla migra: el cuerpo del dios se desplaza.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>El faro “respira”</strong>: la torre del faro pulsa visualmente con ritmo respiratorio lento (un ciclo cada minuto y medio aproximadamente). El efecto es <strong>perceptible incluso por humanoides no entrenados</strong> —DC 10 SAB para reconocer—.</li>
+<li><strong>La isla se mueve</strong> entre lunas llenas: cambia posición geográfica de modo no aleatorio (rutas cosmológicas calculadas por Sagas marítimas) pero impredecible para cartografía corp.</li>
+<li><strong>Auto-éxito de tracción Vastus máxima</strong>: cualquier moribundo trasladado a la isla con marca de horizonte mínima accede a <strong>tracción Vastus con integración de conciencia residual breve durante una luna</strong> (paralelo cosmológico de sabios bajo glaciar de Aevum vorathiano).</li>
+<li><strong>Comunicación a larga distancia clara</strong>: desde el faro se puede transmitir mensaje cosmológico a Bocaniebla y al Templo del Cantor del Mar <strong>sin necesidad de núcleo ni intermediario</strong>. Los Sin-Cuerda lo usan en emergencias.</li>
+<li><strong>Brújulas, relojes y núcleos magitek</strong> se <strong>alteran severamente</strong> dentro del radio de un kilómetro del Faro: núcleos descargan más rápido, brújulas giran lentamente sin causa magnética, relojes adelantan minutos. <strong>Tecnología corp inviable en el Faro</strong>.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>El propio dios Vastus</strong> —encarnación parcial—. La isla rechaza activamente a quien no debe estar.</li>
+<li><strong>Custodios del Faro</strong> — cofradía Saga marítima de <strong>siete personas vivas</strong> que tienen rito de <strong>acceso al Faro</strong>. Linaje matrilineal-cosmológico, no jerarquía formal.</li>
+<li><strong>Hjala que Camina los Mares</strong> — una de las siete custodias actuales.</li>
+<li><strong>Cofradía del Anillo Azul</strong> — capítulo de devotos extremos, conocen la existencia pero no acceden.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Cetáceos sagrados</strong> que escoltan la isla en sus migraciones.</li>
+<li><strong>Aves migratorias mayores</strong> que nidifican estacionalmente en el faro.</li>
+<li><strong>Tempestad cosmológica defensiva</strong>: cualquier embarcación no-acompañada por custodia <strong>encuentra tormenta</strong> al acercarse a 5 leguas del Faro. Defensa pasiva sistemática.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Intento de capturar el Faro</strong> (no se ha intentado nunca en serio; expedición Conservatorio explorada hace 30 años, retorno desordenado, una baja, ningún cartógrafo sobreviviente con memoria coherente): respuesta cosmológica masiva. Vastus podría <strong>dejar de migrar</strong> —retirarse del mundo material parcialmente—.</li>
+<li><strong>Instalación de núcleo magitek mayor en proximidad</strong>: imposible operativamente; el núcleo descargaría en horas.</li>
+<li><strong>Cartografía oficial publicada de la isla</strong> (no ha ocurrido): cualquier intento sería <strong>inviable</strong> —la isla migra antes de que la carta llegue a imprenta—.</li>
+</ul>
+<h3 id="5-mar-del-pacto-corredor-migratorio-cetáceo">5. Mar del Pacto (corredor migratorio cetáceo)</h3>
+<p><strong>Ubicación</strong>: el <strong>mar entre <a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a> y <a href="/NovalisPage/geografia/cetus" class="wikilink">Cetus</a></strong> que separa los dos continentes, <strong>canónicamente</strong> documentado como corredor migratorio de cetáceos mayores y como <strong>archivo cosmológico marino</strong>. Ver ficha <a href="/NovalisPage/geografia/mar-del-pacto" class="wikilink">Mar del Pacto</a>.</p>
+<p><strong>Densidad</strong>: ≈ <strong>25–45 ua/ha</strong> difuso en agua salobre del corredor central; puntos puntuales con ≈ 60 ua/ha cerca de las <strong>rutas migratorias mayores</strong> de ballenas Aevum-Vastus.</p>
+<p><strong>Tipo</strong>: Vastus <strong>difuso en agua</strong>. Caso especial del Suelo Vivo: no es <strong>suelo</strong> literal, es <strong>columna de agua cosmológicamente cargada</strong> por presencia migratoria continuada. Las Sagas marítimas y la Orden del Canto Azul lo clasifican como <strong>“agua viva de Vastus”</strong> —distinción cosmológica fina—.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Ballenas cantan por dos</strong>: el canto cetáceo del corredor <strong>se transmite a distancias anómalas</strong>, hasta 200 leguas de propagación inteligible (la física submarina normal limita a 50–70). Ver <a href="/NovalisPage/conceptos/profecias/profecia-del-mar-que-recuerda" class="wikilink">Profecía del Mar que Recuerda</a> para canon profético asociado.</li>
+<li><strong>Coral habla por uno</strong>: en el extremo sur del corredor —cerca de Coral Hueco—, el coral vivo del fondo <strong>resuena con vibraciones inteligibles</strong> para slimes mayores y para humanoides con DC 16 SAB. Es <strong>interfase cosmológica</strong> entre Suelo Vivo Vastus marino y Aenva entidad Reverso del atolón slime.</li>
+<li><strong>Hilo roto se anuda en agua salada</strong>: tirar una soga deshilachada en el corredor central, dejarla siete días, <strong>vuelve anudada con nudos cosmológicamente cargados</strong> (DC 18 SAB para distinguir de nudos casuales). Es uno de los <strong>tres signos canónicos</strong> de la profecía del Mar que Recuerda.</li>
+<li><strong>Navegación con bonificación cosmológica</strong>: las naves que cruzan el corredor con respeto ritual (no usar núcleos motores grandes; canto del Anillo Azul al amanecer) tienen +2 a Navegación durante la travesía.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong><a href="/NovalisPage/facciones/sectas/orden-del-canto-azul" class="wikilink">Orden del Canto Azul</a></strong> — devotos extremos de Vastus; nadan regata anual del corredor. Custodian la doctrina del agua viva.</li>
+<li><strong>Cofradía de los Nudos Sueltos</strong> — contrabandistas con doctrina náutica disidente.</li>
+<li><strong>Cetáceos sagrados</strong> del corredor —cargadores biológicos vivos—.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Ballenas mayores del Mar del Pacto</strong> —especies migratorias hermanas cubriendo Vorath ↔ Cetus ↔ Fortuna—.</li>
+<li><strong>Pulpos pelágicos</strong> asociados al corredor sur.</li>
+<li><strong>Aves marinas</strong> —albatros del Pacto, fragata mayor— que descansan sobre cubiertas en travesía.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Ruta ferroviaria submarina cosmológica</strong> (proyecto fantasioso de un ingeniero corp documentado, archivado por inviable): si se intentara, sería <strong>drenaje masivo distribuido</strong> del corredor.</li>
+<li><strong>Pesca ballenera industrial corp</strong> (intento de mercado negro documentado pero no escalable): rechazado por flotas balleneras vorathianas y por la Orden del Canto Azul. Una pesca masiva sostenida durante una década <strong>mataría</strong> el corredor cosmológico.</li>
+<li><strong>Núcleos magitek mayores cruzando el corredor</strong>: la Compañía Imperial mueve cargamentos de Astato refinado por aquí (rutas corp transcontinentales); el paso intermitente <strong>drena ligeramente</strong> el corredor. Cálculo Saga: 0.2 ua/ha por convoy. Es daño acumulativo lento.</li>
+</ul>
+<h3 id="6-templo-del-cantor-del-mar-suren-cetus-costa">6. Templo del Cantor del Mar (Suren, Cetus costa)</h3>
+<p><strong>Ubicación</strong>: pequeño templo costero en <strong><a href="/NovalisPage/arquitectura/suren" class="wikilink">Suren</a></strong>, capital costera de Cetus oriental, dedicado al <strong>Cantor del Mar</strong> —entidad pseudo-divina cetuana que las Sagas identifican como <strong>manifestación canalizadora de Vastus a través de <a href="/NovalisPage/personajes/marsa-la-inundada" class="wikilink">Marsa la Inundada</a></strong>, el espíritu volcánico semihundido del archipiélago—. El templo se construyó hace cuatro siglos sobre cabo costero específico.</p>
+<p><strong>Densidad</strong>: ≈ <strong>55 ua/ha</strong> centro (Suelo Vivo Medio).</p>
+<p><strong>Tipo</strong>: Vastus puro <strong>canalizado por canto humano sostenido</strong>. Caso interesante: el sustrato se carga <strong>por canto ritual</strong> continuado de los sacerdotes del Cantor —no por presencia divina encarnada ni por migración aviar—. El canto <strong>es</strong> la vía de carga. La doctrina cetuana sostiene que <strong>“el canto abre el horizonte”</strong> y cosmológicamente es cierto: cada canto ritual deposita aenva Vastus en el sustrato del templo y mantiene comunicación con Marsa la Inundada en el cráter semihundido.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Eco del canto</strong>: el canto ritual al Cantor del Mar resuena <strong>más allá del templo</strong> —los marineros del puerto de Suren lo perciben con claridad anómala incluso bajo cubierta—. Mecánica D&#x26;D 5e: el alcance perceptible del canto es ×2 sobre el normal.</li>
+<li><strong>Marsa responde</strong>: dos veces al año (mareas vivas), Marsa la Inundada <strong>responde al canto</strong> mediante vibración acuática rítmica que los buzos rituales del Linaje de la Inundada traducen al canto coral del templo. Es <strong>interfase cosmológica entre Suelo Vivo Vastus terrestre y espíritu volcánico semihundido</strong>.</li>
+<li><strong>Bonificación a Navegación marina</strong>: cualquier marino que ha pasado al menos un mes orando en el templo recibe +1 permanente a checks de Navegación marítima dentro del Mar Largo.</li>
+<li><strong>Auto-éxito de tracción Vastus</strong> para sacerdote moribundo en el templo.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Sacerdocio del Cantor del Mar</strong> —cofradía cetuana de devotos, no jerarquía corp—.</li>
+<li><strong>Linaje de la Inundada</strong> — linaje familiar cetuano de buzos rituales que sostienen comunicación con Marsa. Doce miembros activos.</li>
+<li><strong><a href="/NovalisPage/personajes/marsa-la-inundada" class="wikilink">Marsa la Inundada</a></strong> — espíritu volcánico semihundido en el cráter occidental del archipiélago; <strong>manifestación cosmológicamente protectora</strong> del templo.</li>
+<li><strong>Cofradía del Anillo Azul</strong> — capítulo de Suren, asistente del culto.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Cetáceos pequeños</strong> del cabo costero, alineados con Marsa.</li>
+<li><strong>Aves marinas</strong> —cormoranes del Cantor— que nidifican en los aleros del templo.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Cierre del templo</strong> (intento doctrinal de la Iglesia del Dios Máquina, bloqueado por presión cetuana): si el templo cesara cantos rituales, el sustrato se descargaría a 25 ua/ha en una década y Marsa <strong>perdería interfase</strong>, lo cual desestabilizaría su mantenimiento sísmico del archipiélago volcánico.</li>
+<li><strong>Industrialización portuaria adyacente</strong>: drenaje progresivo. Bloqueado políticamente por Sacerdocio.</li>
+<li><strong>Destrucción de Marsa</strong> (escenario apocalíptico): el Cantor del Mar perdería su contraparte cosmológica y el sustrato del templo se vaciaría a 15 ua/ha en cinco años.</li>
+</ul>
+<h2 id="tabla-de-bonificadores-específicos-vastus">Tabla de bonificadores específicos Vastus</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Actividad</th><th>Bono sobre Suelo Vivo Vastus Bajo</th><th>Bono sobre Medio</th><th>Bono sobre Alto/Vivísimo</th></tr></thead><tbody><tr><td>Navegación marítima</td><td>+1 al check</td><td>+1d4 al check</td><td>+1d6 al check / DC −2 a checks complejos</td></tr><tr><td>Orientación terrestre y lectura de mareas</td><td>+1 al check</td><td>+2 al check</td><td>+3 al check</td></tr><tr><td>Pesca tradicional</td><td>+1 al check de Supervivencia</td><td>+1d4 al check</td><td>+1d6 al check</td></tr><tr><td>Fermentación salina (brennvin de fiordo, salmuera, manglar)</td><td>productos +10% conservación</td><td>productos +25% conservación</td><td>productos +40% conservación</td></tr><tr><td>Comunicación cuasi-telepática vinculada a Vastus</td><td>n/a</td><td>alcance ×1.5</td><td>alcance ×2 + claridad</td></tr><tr><td>Velar moribundo con marca Vastus</td><td>tracción Vastus garantizada</td><td>+ luminosidad anómala visible</td><td>+ conciencia residual breve durante una luna</td></tr><tr><td>Cartografía marina y celeste</td><td>precisión +10%</td><td>precisión +25%</td><td>precisión +40% (paradoja: no se puede cartografiar el Velo)</td></tr><tr><td>Pacto/juramento sobre horizonte (caso costa Drahnvar, balandra cubierta)</td><td>vinculación pública</td><td>vinculación cosmológica</td><td>vinculación cosmológica + Vastus puede atestiguarla</td></tr></tbody></table>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/el-suelo-vivo" class="wikilink">El Suelo Vivo</a> — Ficha madre del fenómeno</li>
+<li><a href="/NovalisPage/dioses/vastus" class="wikilink">Vastus</a> — Dios libre cuya filtración genera estos Suelos Vivos</li>
+<li><a href="/NovalisPage/conceptos/ciclo-vastus" class="wikilink">Ciclo Vastus</a> — Tracción funeraria correspondiente</li>
+<li><a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">El Hilo Sosegado</a> — Mecanismo cosmológico unitario</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — Pueblo mayor de Suelo Vivo Alto Vastus con residuo Korvun</li>
+<li><a href="/NovalisPage/geografia/granero-sagrado-de-voltrede" class="wikilink">Granero Sagrado de Voltrede</a> — Edificio con losa enterrada cosmológicamente activa</li>
+<li><a href="/NovalisPage/geografia/rio-claro" class="wikilink">Río Claro</a> — Río con aenva Vastus residual vehiculada por anguilas migratorias</li>
+<li><a href="/NovalisPage/arquitectura/drahnvar" class="wikilink">Drahnvar</a> — Ciudad portuaria escudo político de costa Vastus</li>
+<li><a href="/NovalisPage/arquitectura/el-velo-sur" class="wikilink">El Velo Sur</a> — Isla suroeste de horizonte plegado</li>
+<li><a href="/NovalisPage/arquitectura/la-isla-que-camina" class="wikilink">La Isla que Camina</a> — Isla migratoria del Faro Mudo</li>
+<li>Faro Mudo — Cuerpo encarnado parcial de Vastus</li>
+<li><a href="/NovalisPage/geografia/mar-del-pacto" class="wikilink">Mar del Pacto</a> — Corredor migratorio cetáceo de aenva Vastus difuso</li>
+<li><a href="/NovalisPage/arquitectura/suren" class="wikilink">Suren</a> — Capital costera cetuana sede del Templo del Cantor del Mar</li>
+<li><a href="/NovalisPage/geografia/suren/templo-del-cantor-del-mar" class="wikilink">Templo del Cantor del Mar</a> — Templo cetuano con interfase Marsa-Vastus</li>
+<li><a href="/NovalisPage/personajes/marsa-la-inundada" class="wikilink">Marsa la Inundada</a> — Espíritu volcánico semihundido contraparte del Cantor</li>
+<li>Linaje de la Inundada — Linaje familiar de buzos rituales</li>
+<li><a href="/NovalisPage/facciones/sectas/orden-del-canto-azul" class="wikilink">Orden del Canto Azul</a> — Devotos extremos de Vastus</li>
+<li>Cofradía del Anillo Azul — Cofradía devocional Vastus general</li>
+<li><a href="/NovalisPage/facciones/cofradia-del-bisonte-pardo" class="wikilink">Cofradía del Bisonte Pardo</a> — Bastión rural anti-corp custodio implícito de Voltrede</li>
+<li><a href="/NovalisPage/bestiario/fortuna/bisonte-salvaje-pre-rebautizo" class="wikilink">Bisonte Salvaje Pre-Rebautizo</a> — Cargador biológico de la Pradera de Tres Vientos</li>
+<li><a href="/NovalisPage/facciones/sectas/cofradia-de-los-nudos-sueltos" class="wikilink">Cofradía de los Nudos Sueltos</a> — Contrabandistas con doctrina náutica disidente</li>
+<li><a href="/NovalisPage/personajes/hjala-que-camina-los-mares" class="wikilink">Hjala que Camina los Mares</a> — Una de las siete custodias del Faro Mudo</li>
+<li><a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a> — Dios extinto cuyo dominio agrario-migratorio absorbió Vastus</li>
+<li><a href="/NovalisPage/conceptos/profecias/profecia-del-mar-que-recuerda" class="wikilink">Profecía del Mar que Recuerda</a> — Canon profético asociado al corredor cetáceo</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>Suelos Vivos Vastus no revelados oficialmente</strong>:</p>
+<ul>
+<li><strong>El Suelo Vivo de la Plaza Inundable de Marsa la Inundada</strong> (≈ 55 ua/ha, Vastus marítimo en Kalmari urbano) — canal cosmológico activo entre el espíritu volcánico semihundido y el dios del Espacio. La Reina Imari lo usa para sincronizar su canto sostenedor del equilibrio sísmico <strong>sin formularlo</strong>. Sagueable solo por Sagas marítimas.</li>
+<li><strong>El Suelo Vivo de la cubierta del Konghall de Hjornheim</strong> (≈ 35 ua/ha Vastus, vinculado al Cuerno de Hjornheim como instrumento de mando real): el Cuerno <strong>acumula aenva Vastus residual</strong> por su naturaleza de hueso de patriarca dragón-matador (la matanza fue acto cosmológicamente cargado). Cuando el Cuerno se sopla legítimamente, el Konghall se vuelve <strong>Suelo Vivo Vastus efímero durante una luna</strong>.</li>
+<li><strong>El Suelo Vivo del Glaciar de las Mil Voces</strong> (≈ 60 ua/ha Vastus + ≈ 40 ua/ha Aevum mixto): el pilar acústico vorathiano del sellado de Null <strong>opera sobre Suelo Vivo mixto</strong>. La doctrina Saga lo clasifica aparte porque el pilar <strong>drena cíclicamente</strong> la aenva del suelo para sostenerse: relación parásita con el Suelo Vivo entorno. Si el pilar fallara, el Glaciar <strong>subiría a Suelo Vivo Alto</strong> rápidamente.</li>
+<li><strong>El Suelo Vivo del Mirador de Velmoria</strong> (≈ 25 ua/ha Vastus, costa fortunesa noroeste): mirador desde el que generaciones de marinos han <strong>observado el horizonte</strong> antes de zarpar. Caso menor de Suelo Vivo Bajo por uso ritual de <strong>contemplación pre-travesía</strong>.</li>
+</ul>
+<p><strong>Verdad cosmológica adicional</strong>: el <strong>horizonte plegado del Velo Sur</strong> es <strong>mecanismo defensivo cosmológico</strong> del propio Vastus. El dios mantiene la isla como <strong>anomalía cartográfica activa</strong> para protegerla de identificación corp. Si la doctrina del Suelo Vivo se publicara mundialmente, <strong>Vastus aumentaría el plegamiento</strong> —el Velo se volvería **completamente imposible de cartografiar—. Es protección <strong>emergente espontánea</strong>, no decisión consciente del dios.</p>
+<p><strong>Conexión cosmológica importante</strong>: la <strong>migración de La Isla que Camina</strong> no es aleatoria. Las rutas cosmológicas que las Sagas marítimas calculan <strong>trazan figura cosmológica</strong> que <strong>completaría una constelación si se trazaran todas las migraciones documentadas de los últimos siglos</strong>. Las Sagas mayores sospechan que el dios Vastus está <strong>dibujando algo</strong> lentamente, con su propio cuerpo encarnado, y que la figura <strong>se completará en una década aproximadamente</strong>. Nadie sabe qué pasaría al completarse. Es el <strong>arco-misterio cosmológico Vastus</strong> del mundo. Vinculado a Profecía del Mar que Recuerda.</p>
+<p><strong>Vías DM Vastus específicas</strong>:</p>
+<ol>
+<li><strong>Misión Bisonte Pardo</strong>: el Conservatorio de Animadores envía expedición clandestina al Granero Sagrado de Voltrede para <strong>muestrear el subsuelo</strong> (intento documentado, ahora más sofisticado). Los PJ son contratados por la Cofradía del Bisonte Pardo para <strong>bloquear</strong> sin escándalo público. Misión de infiltración, sabotaje técnico y maniobra política. Si fracasan, el condado pierde 30 ua/ha en una década.</li>
+<li><strong>Misión Velo Sur cartografiado</strong>: un cartógrafo corp ha logrado fijar <strong>provisionalmente</strong> la posición del Velo Sur en una carta marítima preliminar. Los PJ son contactados por los Custodios del Velo para <strong>destruir</strong> la carta y sus copias antes de impresión. Misión rápida + investigación de copias + posible asesinato selectivo cosmológicamente justificado.</li>
+<li><strong>Misión Faro Mudo emergencia</strong>: la isla está <strong>migrando</strong> con menos frecuencia. Las Sagas marítimas sospechan que Vastus está <strong>concentrando aenva</strong> allí en respuesta a sedimentación ferroviaria masiva. Los PJ son llevados al Faro por Hjala para <strong>investigar</strong> y posiblemente recibir un mensaje del dios. Vinculado a arco mayor.</li>
+<li><strong>Misión Mar del Pacto pesca ilegal</strong>: una flota de mercado negro corp ha empezado <strong>caza ballenera ilegal</strong> en el corredor central. Los PJ son contratados por la Orden del Canto Azul para <strong>interrumpir</strong> la caza. Combate naval + cosmología.</li>
+<li><strong>Misión Cantor cerrado</strong>: una facción de la Iglesia del Dios Máquina <strong>presiona</strong> para cerrar el Templo del Cantor del Mar. Los PJ defienden mediando con la dinastía Imari, exponiendo influencia corp en la decisión, y consiguiendo respaldo de Severina Aldric desde Heliopolis. Misión diplomática mayor.</li>
+<li><strong>Misión Pradera de Tres Vientos</strong>: alguien ha empezado a <strong>cazar bisontes salvajes</strong> del condado de Voltrede con licencia falsificada. Los PJ investigan, descubren red corp clandestina, y bloquean a tiempo de que la pradera no pierda más de 5 ua/ha (recuperable). Si tardan más, el daño es irreversible.</li>
+</ol>
+<p><strong>La paradoja Velo Sur publicada</strong>: si los PJ aprenden que <strong>publicar la cartografía del Velo Sur lo descargaría</strong>, podrían usar este conocimiento para <strong>dañar al Velo</strong> si entran en conflicto con los Custodios. Es <strong>arma cosmológica menor</strong> que la doctrina Saga nunca formaliza pero que es <strong>canon firme</strong>. El DM tiene que arbitrar el coste moral.</p>
+<p><strong>Conexión con el arco Voltrede-Korvun</strong>: la <strong>reactivación parcial de la losa enterrada</strong> del Granero Sagrado es posible si se realizan ofrendas pre-rebautizo en Engren antiguo. Vinculado al bloque DM de <a href="/NovalisPage/conceptos/el-suelo-vivo" class="wikilink">El Suelo Vivo</a> propuesta 4. Reactivar la losa subiría el condado entero <strong>30 ua/ha</strong>. Coste: Vastus, que absorbió el dominio de Korvun, percibiría la reactivación como <strong>interferencia ritual</strong> y los PJ atraerían atención cosmológica directa del dios. Posible <strong>bendición</strong> o <strong>maldición</strong> según contexto.</p>
+<blockquote>
+<p>[!info] Invención
+Sub-ficha de canonización derivada. Los <strong>seis lugares canónicos</strong> de Suelo Vivo de Vastus se establecen aquí. Cuatro tenían existencia canónica previa (Voltrede con su losa Korvun, costa de Drahnvar con cabotaje 800 años, Velo Sur con horizonte plegado, Mar del Pacto como corredor cetáceo). El <strong>Faro Mudo de La Isla que Camina</strong> y el <strong>Templo del Cantor del Mar de Suren</strong> se canonizan aquí como Suelos Vivos Vastus con sus densidades ua/ha. La doctrina del <strong>horizonte plegado</strong> como mecanismo defensivo cosmológico de Vastus es canonización nueva consistente con la naturaleza del dios del Espacio. La figura cosmológica que las migraciones de La Isla que Camina trazan es <strong>arco-misterio firme</strong> abierto a desarrollo de campaña.</p>
+</blockquote>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

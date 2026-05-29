@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Suelos Vivos de Primum — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Suelos Vivos de Primum</h1> </header> <div class="wiki-prose mt-7"> <h1 id="suelos-vivos-de-primum">Suelos Vivos de Primum</h1>
+<p><strong>Sub-ficha</strong> de <a href="/NovalisPage/conceptos/el-suelo-vivo" class="wikilink">El Suelo Vivo</a> dedicada a los <strong>lugares donde <a href="/NovalisPage/dioses/primum" class="wikilink">Primum</a> filtra al sustrato físico</strong>. Recoge la <strong>doctrina del oficio en la materia</strong> —la lectura cosmológica que vincula al dios de la Creación con el suelo, la roca, el mineral y la herramienta del lugar—, y cataloga los <strong>siete lugares canónicos</strong> confirmados como Suelos Vivos de Primum del mundo conocido, con densidad estimada, fenómeno observable, guardián(es), mecánica D&#x26;D 5e y advertencias. Los Suelos Vivos de Primum son, <strong>estructuralmente</strong>, los lugares donde <strong>la materia se ofrece</strong>: el sustrato facilita la creación, recuerda la mano que trabajó sobre él, y devuelve piezas anómalas a quien sabe forjar.</p>
+<h2 id="doctrina-del-oficio-en-la-materia">Doctrina del oficio en la materia</h2>
+<p>La doctrina canónica desarrollada por la Cofradía del Anillo Amarillo, la hermandad gremial enana, los Eternistas urbanos y los Skalds vorathianos describe el Suelo Vivo de Primum como <strong>“el yunque que ha calentado mil veces el mismo punto retiene el calor del herrero muerto”</strong>. La metáfora opera en tres niveles operativos:</p>
+<ol>
+<li><strong>Materia ofrecida</strong>: el sustrato <strong>facilita</strong> la transformación. Una pieza única forjada sobre Suelo Vivo Primum Medio adquiere <strong>rasgo “Bien Forjada”</strong>: durabilidad superior, peso óptimo, tono acústico anómalo según herramienta. El metal <strong>acepta</strong> mejor la voluntad del artesano. Esta es la razón canónica por la que <strong>el Astato de Verre es de calidad superior al de cualquier otro yacimiento</strong>: el sustrato del Cráter de Voltka es <strong>boca cosmológica de Primum</strong> y el mineral se forma <strong>en presencia del dios casi directa</strong>.</li>
+<li><strong>Memoria del oficio depositada</strong>: el sustrato <strong>retiene memoria de los oficios</strong> que se ejecutaron sobre él. Mehralt entera —ciudad-cordillera donde se forja desde <strong>nueve siglos documentados, primero por enanos y después por humanos</strong>— acumula aenva Primum específica por capa: los <strong>niveles más bajos de la ciudad</strong> retienen residuo enano puro; los <strong>niveles medios</strong> mezclan enano y humano; los <strong>niveles altos</strong> modernos drenan progresivamente por industrialización. Un maestro herrero enano que entra en una fragua de nivel bajo <strong>siente</strong> la presencia de los maestros muertos —no metafóricamente, el sustrato sostiene memoria de oficio—.</li>
+<li><strong>Recogida garantizada</strong>: morir sobre Suelo Vivo de Primum <strong>garantiza tracción Primum</strong> del <a href="/NovalisPage/conceptos/ciclo-primum" class="wikilink">Ciclo Primum</a> si el difunto porta marca de oficio. El último aliento sube por la columna de calor del Suelo Vivo y se integra de modo limpio. La doctrina enana mehraltí del <strong>yunque del descanso</strong> —canon de Funerales de Calixar— es <strong>ritualización</strong> de esta garantía: el difunto se vela sobre yunque de hierro común (no su yunque personal) y el sustrato del taller lo entrega al dios.</li>
+</ol>
+<p>La doctrina Saga añade <strong>lectura inversa específica de Primum</strong>: el dios es <strong>el más activamente usurpado</strong> por la era industrial (ver <a href="/NovalisPage/conceptos/ciclo-primum" class="wikilink">Ciclo Primum</a>), y por consiguiente los Suelos Vivos de Primum <strong>se erosionan rápidamente</strong> cuando se acerca producción en serie. Una fundición Mehrholt-Vael instalada en periferia de Mehralt drena <strong>8–12 ua/ha por año</strong> en radio de 1 km. La fundición de Iskhal industrial <strong>ha drenado</strong> el barrio adyacente desde Suelo Vivo Bajo (≈ 25 ua/ha) hasta Suelo Drenado (≈ 4 ua/ha) en tres generaciones. Es <strong>erosión más rápida</strong> que en Suelos Vivos de Aevum o Vastus por dos motivos cosmológicos: (a) la <strong>falsa marca Primum</strong> que la industria genera no es <strong>inerte</strong> sino <strong>activamente contraproducente</strong> —el dios la <strong>rechaza</strong> y al rechazarla <strong>drena el sustrato</strong>—; (b) el <strong>Dios Máquina</strong> opera <strong>directamente sobre el dominio de Primum</strong> (cooptación), no solo sobre los símbolos: cada catedral del Dios Máquina sobre Suelo Vivo Primum <strong>sustrae aenva al cooptar el rito</strong>.</p>
+<h2 id="lugares-canónicos-de-suelo-vivo-de-primum">Lugares canónicos de Suelo Vivo de Primum</h2>
+<h3 id="1-cráter-de-voltka-atolón-de-verre-cetus-archipiélago">1. Cráter de Voltka (Atolón de Verre, Cetus archipiélago)</h3>
+<p><strong>Ubicación</strong>: caldera activa del <strong>único volcán</strong> del <a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a>, en la costa este de <a href="/NovalisPage/geografia/cetus" class="wikilink">Cetus</a> dentro del Mar Largo. La caldera interior aloja al <strong>Pueblo de la Caldera</strong>, único asentamiento del atolón. Acceso por barco pequeño desde la costa cetuana; tres días de navegación.</p>
+<p><strong>Densidad</strong>: ≈ <strong>320 ua/ha</strong> sobre el centro del Cráter (Suelo Vivísimo); ≈ <strong>150–250 ua/ha</strong> sobre la caldera y el pueblo interior; ≈ <strong>80–120 ua/ha</strong> sobre la pared exterior del atolón. <strong>El lugar más cosmológicamente cargado del mundo accesible</strong>. Densidad anómala que la doctrina Eternista del Cuenco Mayor <strong>no había logrado mensurar previamente</strong> —las técnicas Eternistas saturan más allá de 200 ua/ha—.</p>
+<p><strong>Tipo</strong>: Primum <strong>boca cosmológica</strong>. El Cráter de Voltka <strong>es</strong> boca cosmológica activa de Primum —el lugar del mundo donde el dios de la Creación filtra al mundo material con <strong>menor mediación cosmológica</strong>—. No es sustrato cargado por uso histórico ni por presencia divina encarnada parcial: es <strong>canal directo</strong> entre el dios y el mundo. Cosmológicamente análogo al <strong>Anillo del Sello como boca de Null</strong> pero <strong>operando en sentido inverso</strong> (ofrenda, no consumo).</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Astato puro brota directo</strong>: las grietas activas del cráter exhalan <strong>Astato puro</strong> sin proceso de refinado industrial. La <strong>calidad del mineral aquí es la mejor del mundo conocido</strong>. Es la <strong>razón cosmológica canónica</strong> de la calidad superior y de por qué la Compañía Imperial intenta anexionar el atolón cada generación sin lograrlo. Ver <a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a> para detalle.</li>
+<li><strong>Forja de pieza única sobre Suelo Vivo Vivísimo</strong>: cualquier pieza forjada <strong>dentro de la caldera</strong> adquiere rasgo “Bien Forjada+” (mejora doble) con probabilidad alta. Mecánica D&#x26;D 5e: forja sobre Cráter de Voltka añade +2 al check de oficio artesano y el resultado adquiere una propiedad mágica menor canónica (durabilidad +1, daño +1d4, peso óptimo, o tono acústico). Los <em>quemadores</em> del pueblo lo saben empíricamente sin formular cosmología.</li>
+<li><strong>Refinado natural</strong>: el Astato no requiere refinería industrial —los quemadores recogen el mineral con palas de cobre, contenedores de obsidiana, máscaras de plomo, y el mineral <strong>ya es</strong> Astato puro—. Una refinería corp aquí sería <strong>redundante</strong> y de hecho <strong>drenaría</strong> el sustrato (paradoja industrial).</li>
+<li><strong>El volcán “respira”</strong>: ventanas de tiempo cortas de recolección dictadas por la <strong>respiración del volcán</strong> —canónicamente fenómeno cosmológico del dios manifiesto, no solo geológico—. Cada exhalación es <strong>ofrenda de Primum</strong>; cada inhalación <strong>espera</strong> al artesano.</li>
+<li><strong>Auto-éxito tracción Primum</strong> con integración de <strong>conciencia residual breve</strong> para cualquier moribundo sobre el Cráter con marca mínima de oficio.</li>
+<li><strong>Núcleos magitek se cargan parcialmente</strong> por proximidad al Cráter sin intervención humana —fenómeno único del mundo confirmado—. Es <strong>regalo de Primum</strong> que la Compañía Imperial daría parte de su tesoro por estudiar y replicar industrialmente.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Quemadores del Atolón de Verre</strong> —cofradía gremial-religiosa del pueblo, ≈ 40 quemadores activos—. Honor heredado. Mueren con frecuencia (cada cuarto antes de los cincuenta) por exposición a Astato puro; aceptan el precio. Operan como <strong>sacerdocio gremial implícito de Primum</strong> sin formalización doctrinal.</li>
+<li><strong>Sacerdocio Volcánico de Kalmari</strong> — sacerdocio cetuano colindante; mantienen vínculo ritual con el atolón pero <strong>no operan dentro del Cráter</strong>. Reconocen el Cráter de Voltka como “boca cosmológica” en su doctrina.</li>
+<li><strong>Cofradía del Anillo Amarillo</strong> — capítulo cetuano; devotos extremos de Primum, custodios doctrinales.</li>
+<li><strong>Compañía Imperial del Hierro y la Llama</strong> — <strong>antagonista</strong> estructural: ha intentado <strong>anexionar el atolón cada generación</strong> sin lograrlo. Tres expediciones militares documentadas, tres fracasos.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Aves marinas mayores</strong> del atolón —fragatas del Cráter, gaviotas del Aliento— alineadas con el volcán.</li>
+<li><strong>Tortugas marinas de la pared exterior</strong>, fauna ofrendada del flanco oceánico.</li>
+<li><strong>Tormenta cosmológica defensiva</strong>: la caldera puede <strong>expulsar</strong> humo defensivo en concentración suficiente para repeler flota corp. Las tres anexiones militares fracasaron parcialmente por <strong>eventos atmosféricos cosmológicamente cargados</strong> que los registros corp atribuyen a “mala suerte”.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Anexión militar corp</strong> (tres intentos documentados, tres fracasos): respuesta cosmológica del dios. La cuarta tentativa <strong>podría</strong> triunfar (el sustrato no es infinito); si lo hiciera, Primum <strong>se retiraría</strong> parcialmente del mundo material, lo cual aceleraría la usurpación del Dios Máquina catastróficamente.</li>
+<li><strong>Refinería industrial dentro de la caldera</strong>: cosmológicamente paradójico (Astato ya es puro), drenaría el sustrato.</li>
+<li><strong>Industrialización del Pueblo de la Caldera</strong> (intento corp sutil documentado: ofertas de ciudadanía a quemadores jóvenes para emigración a Solaria): drenaje progresivo si los Quemadores se vacían.</li>
+</ul>
+<p><strong>Advertencias canónicas</strong>:</p>
+<ul>
+<li><strong>Exposición a Astato puro</strong> mata al cuarto quemador antes de los cincuenta. Cualquier PJ que pase tiempo significativo en el Cráter debería realizar saves CON por exposición Astato (ver homebrew Reglas de exposición Astato).</li>
+<li><strong>Los quemadores no comparten</strong> la doctrina cosmológica con visitantes ocasionales. Quien aprenda lo que el Cráter es <strong>debe</strong> comprometerse al silencio o sufrirá hostilidad del pueblo.</li>
+</ul>
+<h3 id="2-mehralt-entera-calixar-cordillera">2. Mehralt entera (Calixar, cordillera)</h3>
+<p><strong>Ubicación</strong>: ciudad-cordillera enana-humana de <a href="/NovalisPage/geografia/calixar" class="wikilink">Calixar</a>, distribuida vertical sobre <strong>nueve niveles canonizados</strong> (de <strong>Niveles Mudos sellados</strong> bajo la Gran Mina hasta <strong>Mehralt Alto</strong> abierto al sol). Acceso por camino real, ferrocarril corp menor, o caminos enanos antiguos.</p>
+<p><strong>Densidad</strong>: ≈ <strong>95 ua/ha</strong> centro Mehralt Alto (Suelo Vivo Alto); ≈ <strong>70–90 ua/ha</strong> niveles medios; ≈ <strong>45–60 ua/ha</strong> Mehralt bajo industrial (drenado parcialmente); ≈ <strong>40 ua/ha</strong> ruinas del <strong>Templo del Yunque Hondo</strong> (residuo Tellith pre-rebautizo).</p>
+<p><strong>Tipo</strong>: Primum <strong>por acumulación de nueve siglos</strong>. La forja en Mehralt es ininterrumpida durante <strong>novecientos años documentados</strong>, primero solo enana (siglos I–V), después mixta enano-humana (siglos V–VII), después humana mayoritaria con minoría enana (siglos VII–IX). Cada generación de maestros herreros ha <strong>depositado aenva Primum</strong> en el sustrato del taller y del yunque. La ciudad entera es <strong>archivo Primum vivo</strong>.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Piezas únicas duran dos generaciones más</strong>: las espadas, hachas, herramientas y armaduras forjadas en talleres tradicionales de Mehralt Alto <strong>duran cosmológicamente más</strong> que sus equivalentes producidos en fundición Mehrholt-Vael industrial. Es <strong>secreto comercial gremial enano</strong> que la doctrina Eternista corrobora. Mecánica D&#x26;D 5e: una pieza forjada en taller tradicional Mehralt Alto gana <strong>rasgo “Forjado en Mehralt”</strong> —dureza +1, durabilidad x1.5—.</li>
+<li><strong>Forja cosmológicamente eficaz</strong>: bonificación +1 a check de oficio artesano sobre Mehralt Alto; +2 sobre yunque familiar centenario. Forja de pieza única adquiere rasgo “Bien Forjada” con probabilidad alta.</li>
+<li><strong>Maestros muertos “presentes”</strong>: maestro herrero enano que entra en fragua de nivel bajo <strong>siente</strong> la presencia de los muertos. DC 14 SAB (Percepción cosmológica) para reconocer; competencia enana mehraltí no requiere proficiency adicional (es parte del entrenamiento gremial).</li>
+<li><strong>Templo del Yunque Hondo (ruinas)</strong>: el aire bajo las ruinas <strong>resuena al golpear hierro</strong>. La doctrina Saga lo atribuye al residuo Tellith pre-rebautizo —el dios extinto de las Montañas filtra aún débilmente—. Las matronas que velan ahí en velorios mayores reciben +1 a tirada de SAB para distinguir tracción Primum-Tellith en hebra del difunto.</li>
+<li><strong>Auto-éxito tracción Primum</strong> con integración limpia para difunto enano/humano con marca de oficio en cualquier nivel mayor de Mehralt.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Hermandad de Oficio Enana</strong> —cofradía gremial principal—. Patrullan ortodoxia técnica y bloquean producción de serie en niveles altos. Operan como <strong>defensa estructural del Suelo Vivo</strong>.</li>
+<li><strong>Cofradía del Yunque</strong> —matronas enanas del rito funerario—. Sostienen el rito del <strong>yunque del descanso</strong>.</li>
+<li><strong>Eternistas Mehraltís</strong> —disidencia humana del régimen Halsen—. Mantienen herbolaria mineral y registros cosmológicos.</li>
+<li><strong><a href="/NovalisPage/facciones/sectas/hermandad-de-la-piedra-muda" class="wikilink">Hermandad de la Piedra Muda</a></strong> —ludditas mágicos anti-Astato— aliados tácticos: bloquean instalación de fundiciones industriales en niveles altos.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Bestias gremiales menores</strong> (perros de fragua, gatos de carbón) entrenados.</li>
+<li><strong>Espíritus residuales</strong>: rumores no confirmados de <strong>apariciones de maestros muertos</strong> en fraguas centenarias (DC 18 SAB para distinguir si es eco cosmológico o alucinación).</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Fundición Mehrholt-Vael industrial extendida</strong> a niveles altos (intento corp documentado, bloqueado por Hermandad de Oficio): drenaje rápido. Cálculo Saga: cada fundición instalada en nivel medio drena 8–12 ua/ha por año.</li>
+<li><strong>Ferrocarril corp atravesando Mehralt</strong> (proyecto en discusión, varias generaciones): drenaje masivo distribuido. Cofradía del Yunque y Hermandad bloquean.</li>
+<li><strong>Cisma enano del Cráter Cementerio extendido</strong>: si el régimen Halsen impone industrialización completa, Mehralt <strong>caería</strong> a Suelo Vivo Bajo en una generación.</li>
+<li><strong>Persecución intermitente del régimen Halsen</strong> contra Eternistas mehraltís (canon de Funerales de Calixar): erosiona instituciones que mantienen el sustrato.</li>
+</ul>
+<h3 id="3-cordillera-volcánica-de-calixar">3. Cordillera Volcánica de Calixar</h3>
+<p><strong>Ubicación</strong>: cordillera volcánica del <strong>flanco oriental de Calixar</strong>, separando Mehralt del Cráter Cementerio. Cuevas, grietas activas y vetas expuestas. Acceso difícil; tribus pre-civilizacionales habitan los flancos.</p>
+<p><strong>Densidad</strong>: variable según punto, <strong>40–80 ua/ha</strong> (Suelo Vivo Bajo a Medio); puntos puntuales con <strong>> 100 ua/ha</strong> sobre <strong>vetas de mineral primigenio bruto</strong> (no cartografiados oficialmente).</p>
+<p><strong>Tipo</strong>: Primum <strong>por mineral primigenio expuesto</strong>. La cordillera expone <strong>fragmentos elementales de Primum</strong> como mineral primigenio bruto —sustrato que <strong>es</strong> materia divina parcial, no sustrato cargado por uso—. Caso cosmológicamente distinto del Cráter de Voltka: ahí el dios filtra activamente, aquí el sustrato <strong>es</strong> dios fragmentado.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Vetas de mineral primigenio</strong>: ciertas vetas de hierro, cobre y mineral oscuro en la cordillera <strong>brillan con vibración subaudible</strong> que los gigantes vorathianos perciben como “calor del subsuelo profundo” (canon de <a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a> residual) y que los enanos mehraltís perciben como “metal vivo”. Mecánica D&#x26;D 5e: minería sobre veta primigenia produce <strong>mineral con rasgo “Primigenio”</strong> —forja de pieza única en este mineral genera arma de calidad mágica menor automática—.</li>
+<li><strong>Brennvin curativo</strong> producido con agua geotérmica de las grietas activas de la cordillera tiene <strong>efectos curativos sutiles</strong> (canon de <a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a> residual). El brennvin común no tiene este efecto.</li>
+<li><strong>Forja sobre piedra primigenia</strong>: fragua instalada directamente sobre veta primigenia produce piezas excepcionales con probabilidad cosmológica alta.</li>
+<li><strong>Fragmentos elementales móviles</strong>: documento Saga raro menciona <strong>fragmentos elementales rodando solos</strong> por las grietas profundas (DC 16 SAB para distinguir si es eco cosmológico o entidad menor independiente).</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Tribus pre-civilizacionales</strong> de los flancos (tribu de las Runas Rojas y subsidiarias): culturas pre-rebautizo que custodian la cordillera sin formular cosmología explícita. No reciben enviados corp.</li>
+<li><strong>Hermandad de Oficio Enana</strong> — reconoce la cordillera como <strong>fuente</strong> de mineral primigenio pero <strong>no extrae</strong> activamente: el saqueo de mineral primigenio se considera <strong>tabú</strong> en la doctrina enana. La extracción comercial corp es <strong>violación cosmológica directa</strong> que los enanos consideran impía.</li>
+<li><strong><a href="/NovalisPage/facciones/hermandad-del-anillo-concentrico" class="wikilink">Hermandad del Anillo Concéntrico</a></strong> —antagonista enana del Cráter Cementerio—: extrae mineral primigenio sin tabú, lo introduce en el mercado clandestino. Es <strong>drenaje activo</strong> del sustrato cordillerano.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Salamandras ígneas</strong> (bestias) de cuevas profundas; alineadas con Primum.</li>
+<li><strong>Tigres dientes-de-sable templados</strong> y otra fauna pre-rebautizo de los flancos.</li>
+<li><strong>Tribus humanas</strong> y semi-humanas hostiles a intrusos corp.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Extracción comercial de mineral primigenio</strong> (Hermandad del Anillo Concéntrico ya lo hace de modo limitado; escalable a explotación industrial): drenaje masivo distribuido. Un yacimiento explotado durante una década <strong>se vacía</strong> y no se recarga durante siglos.</li>
+<li><strong>Instalación de fundición sobre veta primigenia</strong>: producción industrial de hierro con falsa marca Primum; cosmología pésima.</li>
+<li><strong>Saqueo arqueológico</strong> de cuevas profundas: pérdida de fragmentos elementales que <strong>sustentan</strong> la densidad cordillerana.</li>
+</ul>
+<h3 id="4-templo-del-yunque-hondo-mehralt-pre-rebautizo-ruinas">4. Templo del Yunque Hondo (Mehralt, pre-rebautizo, ruinas)</h3>
+<p><strong>Ubicación</strong>: ruinas en <strong>Mehralt bajo</strong>, cerca de la Gran Mina, restos del <strong>templo enano pre-rebautizo dedicado a Tellith</strong> (no a Primum). El templo se canceló doctrinalmente tras el rebautizo Engren→Novalis; quedó ruinoso por desuso programado.</p>
+<p><strong>Densidad</strong>: ≈ <strong>50 ua/ha</strong> centro de ruinas (Suelo Vivo Medio).</p>
+<p><strong>Tipo</strong>: Primum <strong>residual con residuo Tellith pre-rebautizo dominante</strong>. Caso cosmológico complejo: el templo <strong>fue</strong> dedicado a Tellith (dios extinto de las Montañas, residual aún en sustratos mineros); tras la extinción doctrinal del dios y la absorción de su dominio mineral en Primum, la doctrina canónica reasigna el sustrato al Suelo Vivo de Primum mientras la doctrina Saga lo clasifica como <strong>“Tellith residual bajo administración Primum”</strong>.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Aire que resuena al golpear hierro</strong>: golpear un trozo de hierro <strong>bajo las ruinas</strong> produce <strong>eco anómalo prolongado</strong> (DC 12 SAB para percibir; DC 14 para distinguir la resonancia Tellith).</li>
+<li><strong>Forja ritual ocasional</strong>: la Hermandad de Oficio Enana realiza <strong>una forja ritual al año</strong> en las ruinas, dedicada a los maestros muertos pre-rebautizo. La pieza forjada adquiere <strong>rasgo “Forjada en Yunque Hondo”</strong> (similar a “Forjado en Mehralt” pero con propiedad mágica menor garantizada).</li>
+<li><strong>Velar a anciano enano sobre las ruinas</strong> garantiza tracción Primum <strong>con integración residual</strong> (caso paralelo a sabios bajo glaciar de Aevum vorathiano).</li>
+<li><strong>Sueños de mineros muertos</strong>: dormir una noche en las ruinas activa <strong>sueño residual Tellith</strong> vinculado a <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a>: los durmientes sueñan <strong>escenas mineras de generaciones pasadas</strong> (DC 14 SAB para reconocer; bonificación de +1 a Conocimiento histórico minero al día siguiente).</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Hermandad de Oficio Enana</strong> — realiza forja anual y mantiene las ruinas en estado reverenciado, sin restaurar (la doctrina enana <strong>prohíbe</strong> restaurar templo cancelado: la ruina <strong>es</strong> el estado correcto post-rebautizo).</li>
+<li><strong>Cofradía del Yunque</strong> — capítulo bajo de Mehralt.</li>
+<li><strong>Eternistas Mehraltís disidentes</strong> — investigan el residuo Tellith en silencio.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>: ninguna activa. Las ruinas están <strong>protegidas culturalmente</strong> —entrar sin propósito ritual es tabú gremial—.</p>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Restauración del templo</strong> (intento de la Iglesia del Dios Máquina hace dos décadas, bloqueado por revuelta gremial enana): re-consagración doctrinal industrial drenaría el residuo Tellith.</li>
+<li><strong>Industrialización del nivel bajo de Mehralt</strong> (proyecto corp en discusión): drenaje progresivo de las ruinas.</li>
+</ul>
+<h3 id="5-saunas-géiser-de-stor-heita-y-otras-seis-vorathianas-mayores">5. Saunas-géiser de Stor-Heita (y otras seis vorathianas mayores)</h3>
+<p><strong>Ubicación</strong>: <strong>Stor-Heita</strong> en el centro de <a href="/NovalisPage/arquitectura/hjornheim" class="wikilink">Hjornheim</a> (sauna mayor) + <strong>seis saunas-géiser mayores</strong> distribuidas por Vorath: Vinterhof, Halmgard, Bargheim, Iskhal viejo (no la fundición Mehrholt-Vael), Hjornheim del Sur, y Ferro-Korr. Las <strong>seis saunas mayores</strong> comparten estatus cosmológico documentado.</p>
+<p><strong>Densidad</strong>: ≈ <strong>72 ua/ha</strong> Stor-Heita centro (Suelo Vivo Medio); ≈ <strong>40–65 ua/ha</strong> las otras seis saunas mayores; ≈ <strong>15–35 ua/ha</strong> saunas menores comunes (Suelo Vivo Bajo).</p>
+<p><strong>Tipo</strong>: Primum <strong>mixto con residuo Tellith pre-rebautizo</strong>. Las saunas-géiser mayores son alimentadas por <strong>manantiales geotérmicos</strong> que circulan por <strong>mineral primigenio profundo no extraído</strong> —residuo Tellith activo—. Adicionalmente, los <strong>pactos selladores morales</strong> que se ejecutan en estas saunas durante doce siglos depositan aenva Primum específica de <strong>juramento vinculante</strong> —caso cosmológico raro de Suelo Vivo cargado por <strong>acto ritual no funerario</strong>—.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Brennvin curativo</strong>: el <a href="/NovalisPage/cultura/brennvin" class="wikilink">Brennvin</a> solo se hace en estas siete saunas mayores. La destilación con <strong>agua de géiser específico</strong> produce líquido con <strong>efectos curativos sutiles</strong> —no mágicos espectaculares, sí mensurables: el brennvin de saunas mayores <strong>acelera recuperación de fatiga de viaje</strong> y <strong>alivia dolor articular crónico</strong>—. El brennvin destilado en cualquier otra sauna o destilería <strong>es bebible pero inerte</strong> cosmológicamente.</li>
+<li><strong>Pacto sellador moralmente vinculante</strong>: lo dicho en sauna mayor <strong>vincula</strong> al jurante hasta la muerte. Cosmológicamente: el sustrato registra el juramento y <strong>comunica</strong> al dios. Quien rompe juramento de Stor-Heita <strong>siente</strong> durante el resto de su vida una sensación corporal específica de <strong>traición sostenida</strong> (mecánica D&#x26;D 5e: −1 a CHA en interacciones sociales con vorathianos hasta restaurar el juramento o morir).</li>
+<li><strong>Curación menor durante baño ritual</strong>: una sesión de sauna mayor restaura <strong>1 punto de fatiga adicional</strong> sobre el descanso largo equivalente.</li>
+<li><strong>Skalds detectan resonancia anómala</strong> de las runas tatuadas dentro de sauna mayor —canon Skald—. El tatuaje rúnico <strong>resuena</strong> y los Skalds maestros lo leen con mayor claridad.</li>
+<li><strong>Velar a sabio o guerrero anciano en sauna mayor</strong> garantiza tracción <strong>mixta Primum-Aevum</strong> con integración doble (cosmología avanzada).</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li><strong>Jarl de Hjornheim</strong> (en Stor-Heita) y <strong>Karls custodios</strong> de cada sauna mayor.</li>
+<li><strong><a href="/NovalisPage/conceptos/skalds" class="wikilink">Skalds</a></strong> — maestros y aprendices custodios; oficiana lectura de runas en pactos.</li>
+<li><strong>Matronas y matriarcas Karl</strong> — custodian sauna ritual matrilineal adyacente (ver <a href="/NovalisPage/conceptos/suelos-vivos-de-aevum" class="wikilink">Suelos Vivos de Aevum</a> para sauna ritual de Hjornheim de Aevum, distinta del Stor-Heita Primum).</li>
+<li><strong>Cofradía del Anillo Amarillo</strong> — capítulo vorathiano; devotos extremos de Primum, asistentes del rito brennvin.</li>
+</ul>
+<p><strong>Criaturas guardianas</strong>:</p>
+<ul>
+<li><strong>Salamandras polares</strong> menores que habitan grietas geotérmicas de las saunas.</li>
+<li><strong>Linces azules de Vastus-Vorath</strong> vinculados al horizonte del valle (no estrictamente guardianes de Primum sino fauna asociada).</li>
+</ul>
+<p><strong>Peligros si se profana</strong>:</p>
+<ul>
+<li><strong>Fundición Mehrholt-Vael instalada en proximidad</strong> (caso Iskhal): drenaje del sauna mayor adyacente. La fundición industrial <strong>ya</strong> ha drenado parcialmente Iskhal viejo: la sauna de Iskhal está hoy en ≈ 40 ua/ha vs ≈ 60 ua/ha hace tres generaciones.</li>
+<li><strong>Cooptación industrial del brennvin</strong> (intento corp documentado: producir “brennvin de Iskhal” industrial): el producto sería <strong>inerte</strong> pero <strong>diluiría el mercado</strong> y comprometería la cofradía.</li>
+<li><strong>Pacto roto deliberado</strong>: si una facción organizara ruptura sistemática de juramentos de Stor-Heita, la doctrina vorathiana entera entraría en crisis. Ninguna fuerza ha intentado esto en serio; sería <strong>delito cultural mayor</strong>.</li>
+</ul>
+<h3 id="6-granero-sagrado-de-voltrede-con-losa-korvun-enterrada">6. Granero Sagrado de Voltrede (con losa Korvun enterrada)</h3>
+<p><strong>Ubicación</strong>: edificio centenario en la <strong>Plaza del Granero</strong> de <a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a>, frente a la Casa del Concejo. Hoy es <strong>Almacén Municipal</strong> de grano; sigue siendo <strong>dominio histórico</strong> del culto a Korvun pre-rebautizo.</p>
+<p><strong>Densidad</strong>: ≈ <strong>88 ua/ha</strong> sobre la losa enterrada bajo el suelo de madera (Suelo Vivo Alto puntual); descarga rápidamente a 30–40 ua/ha a 50 metros de la losa. Caso cosmológico <strong>mixto Vastus-Primum</strong>: tratado en <a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a> como mayor, aquí en cuanto <strong>sub-bloque Primum</strong> vinculado a oficio agrario.</p>
+<p><strong>Tipo</strong>: Primum <strong>residual con residuo Korvun pre-rebautizo absorbido</strong>. La losa de altar era originalmente dedicada a Korvun (dios extinto de las Cosechas, absorbido por Vastus); la doctrina canónica reasigna el Suelo Vivo a Vastus por dominio agrario-migratorio, pero el <strong>componente Primum agrario</strong> —oficio de campesino que transforma materia del suelo en grano— mantiene sub-bloque Primum identificable.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Grano almacenado se conserva +50%</strong>: ver detalle en <a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a> (Voltrede mayor). En cuanto a componente Primum: el grano <strong>endurece su gluten</strong> anómalamente —el pan voltredés <strong>leuda mejor</strong> y se conserva fresco un día más que pan idéntico hecho con grano externo—.</li>
+<li><strong>Forja menor de aperos de labranza</strong>: el <strong>único herrero del pueblo</strong> (Yunque-Voltren, enano de cuatro generaciones) trabaja sobre <strong>forja artesanal sobre Suelo Vivo Bajo Primum</strong> (≈ 35 ua/ha local). Los aperos de labranza forjados en Voltrede <strong>duran +30%</strong> sobre equivalentes urbanos. Las hoces de Voltrede son <strong>gremio enano secreto</strong> que las ganaderías mayores conocen.</li>
+<li><strong>Auto-éxito tracción Primum agraria</strong> para campesino moribundo sobre su parcela del condado.</li>
+</ul>
+<p><strong>Guardianes</strong>:</p>
+<ul>
+<li>Ver <a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a> —Voltrede entera—.</li>
+<li><strong>Yunque-Voltren</strong> (línea enana de cuatro generaciones): custodio implícito del sub-bloque Primum agrario.</li>
+<li><strong>Capilla de la Espiga</strong> —matronas— oficiana <strong>ofrenda anual de cosecha</strong> que reactiva parcialmente la losa enterrada.</li>
+</ul>
+<p><strong>Peligros si se profana</strong>: ver <a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a> para detalle de Voltrede.</p>
+<h3 id="7-atolón-de-verre-caldera-activa--entrada-complementaria-al-1-cráter">7. Atolón de Verre (caldera activa) — entrada complementaria al #1 Cráter</h3>
+<p><strong>Ubicación</strong>: la <strong>pared exterior del <a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a></strong> —no la caldera central—. Ladera externa del volcán expuesta al mar, terrazas cultivadas, asentamientos menores de pescadores.</p>
+<p><strong>Densidad</strong>: ≈ <strong>80–120 ua/ha</strong> (Suelo Vivo Alto). Densidad propia distinta del Cráter de Voltka pero cosmológicamente relacionada.</p>
+<p><strong>Tipo</strong>: Primum <strong>acumulación periférica</strong> de la boca cosmológica. La pared exterior es <strong>arrastrada</strong> por la presencia del Cráter sin ser ella misma boca: caso paralelo a “Bosques Sagrados periferia” pero con <strong>acumulación mucho mayor</strong> por proximidad a boca cosmológica.</p>
+<p><strong>Fenómeno observable principal</strong>:</p>
+<ul>
+<li><strong>Fruta tropical anómala</strong>: la fruta cultivada en las terrazas de la pared exterior <strong>madura con sabor cosmológicamente notable</strong> —los quemadores la consideran “comida que recuerda al volcán”—. Mecánica D&#x26;D 5e: comer fruta tropical de Verre restaura <strong>1 punto adicional de fatiga</strong>.</li>
+<li><strong>Pescados de la laguna interior</strong> con núcleos magitek menores formados espontáneamente —ver Bestiario del Atolón de Verre—. La fauna acuática <strong>incorpora</strong> aenva Primum del sustrato.</li>
+<li><strong>Forja menor sobre terrazas</strong>: forjas pequeñas instaladas en la pared exterior reciben bonificación +1 Primum.</li>
+</ul>
+<p><strong>Guardianes</strong>: Quemadores del atolón, ver Cráter de Voltka #1.</p>
+<p><strong>Peligros si se profana</strong>: anexión militar corp al atolón (escenario común con Cráter de Voltka).</p>
+<h2 id="tabla-de-bonificadores-específicos-primum">Tabla de bonificadores específicos Primum</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Actividad</th><th>Bono sobre Suelo Vivo Primum Bajo</th><th>Bono sobre Medio</th><th>Bono sobre Alto</th><th>Bono sobre Vivísimo (solo Cráter de Voltka)</th></tr></thead><tbody><tr><td>Forja de pieza única (arma, herramienta, armadura)</td><td>+1 al check</td><td>+2 al check</td><td>+3 al check + rasgo “Bien Forjada”</td><td>+4 al check + rasgo “Bien Forjada+” + propiedad mágica menor</td></tr><tr><td>Alfarería, sastrería, papelería</td><td>+1 al check</td><td>+2 al check</td><td>+3 al check</td><td>+4 al check</td></tr><tr><td>Refinado de mineral común</td><td>productos +10% pureza</td><td>productos +20% pureza</td><td>productos +30% pureza</td><td>n/a (mineral ya puro)</td></tr><tr><td>Refinado de Astato</td><td>imposible (Astato requiere fuente cosmológica)</td><td>imposible</td><td>imposible</td><td>Astato puro brota directo</td></tr><tr><td>Partería tradicional (Primum del primer aliento)</td><td>+1 al check</td><td>+2 al check</td><td>+3 al check + auto-éxito en complicaciones menores</td><td>n/a</td></tr><tr><td>Pan, queso, cerveza tradicional artesanal</td><td>productos +10% conservación</td><td>productos +25% conservación</td><td>productos +40% conservación</td><td>n/a</td></tr><tr><td>Velar moribundo con marca Primum</td><td>tracción Primum garantizada</td><td>+ integración limpia</td><td>+ conciencia residual breve durante una luna</td><td>+ acceso a “telar Primum” hasta luna nueva (ver bloque DM)</td></tr><tr><td>Pacto/juramento moralmente vinculante (caso Stor-Heita)</td><td>vinculación pública</td><td>vinculación cosmológica con coste a quien rompe</td><td>vinculación cosmológica + Skald puede atestiguarla</td><td>n/a</td></tr><tr><td>Recarga de núcleos magitek</td><td>no aplicable</td><td>no aplicable</td><td>no aplicable</td><td>núcleos se recargan parcialmente solos</td></tr></tbody></table>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/el-suelo-vivo" class="wikilink">El Suelo Vivo</a> — Ficha madre del fenómeno</li>
+<li><a href="/NovalisPage/dioses/primum" class="wikilink">Primum</a> — Dios libre cuya filtración genera estos Suelos Vivos</li>
+<li><a href="/NovalisPage/conceptos/ciclo-primum" class="wikilink">Ciclo Primum</a> — Tracción funeraria correspondiente</li>
+<li><a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">El Hilo Sosegado</a> — Mecanismo cosmológico unitario</li>
+<li><a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a> — Boca cosmológica de Primum en Cráter de Voltka</li>
+<li><a href="/NovalisPage/arquitectura/voltka" class="wikilink">Voltka</a> — Volcán-pueblo cetuano del archipiélago volcánico</li>
+<li><a href="/NovalisPage/geografia/atolon-de-verre/pueblo-de-la-caldera" class="wikilink">Pueblo de la Caldera</a> — Asentamiento dentro del Cráter</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — Ciudad-cordillera enana-humana de Suelo Vivo Alto Primum</li>
+<li><a href="/NovalisPage/geografia/templo-del-yunque-hondo" class="wikilink">Templo del Yunque Hondo</a> — Ruinas pre-rebautizo con residuo Tellith</li>
+<li><a href="/NovalisPage/geografia/stor-heita" class="wikilink">Stor-Heita</a> — Sauna mayor de Hjornheim con residuo Tellith</li>
+<li><a href="/NovalisPage/arquitectura/hjornheim" class="wikilink">Hjornheim</a> — Capital vorathiana sede de Stor-Heita</li>
+<li><a href="/NovalisPage/geografia/cordillera-volcanica" class="wikilink">Cordillera Volcánica</a> — Cordillera calixar con mineral primigenio expuesto</li>
+<li><a href="/NovalisPage/geografia/granero-sagrado-de-voltrede" class="wikilink">Granero Sagrado de Voltrede</a> — Sub-bloque Primum agrario voltredés</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — Pueblo mayor (Suelo Vivo Vastus principalmente)</li>
+<li><a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a> — Diosa extinta cuyo residuo mineral subsiste</li>
+<li><a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a> — Dios extinto cuyo dominio agrario absorbió Vastus</li>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — Mineral del mana, calidad superior en Verre</li>
+<li><a href="/NovalisPage/cultura/brennvin" class="wikilink">Brennvin</a> — Aguardiente curativo de saunas-géiser mayores</li>
+<li>Hermandad de Oficio Enana — Cofradía gremial principal Mehralt</li>
+<li>Cofradía del Yunque — Matronas enanas del rito funerario</li>
+<li>Cofradía del Anillo Amarillo — Devotos extremos de Primum</li>
+<li>Sacerdocio Volcánico de Kalmari — Sacerdotes cetuanos del Volkario</li>
+<li><a href="/NovalisPage/facciones/hermandad-del-anillo-concentrico" class="wikilink">Hermandad del Anillo Concéntrico</a> — Antagonista enana extractora de mineral primigenio</li>
+<li><a href="/NovalisPage/facciones/sectas/hermandad-de-la-piedra-muda" class="wikilink">Hermandad de la Piedra Muda</a> — Aliados tácticos ludditas anti-Astato</li>
+<li><a href="/NovalisPage/conceptos/skalds" class="wikilink">Skalds</a> — Cronistas vorathianos custodios de pactos en Stor-Heita</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — Antagonista corp tres anexiones fracasadas</li>
+<li><a href="/NovalisPage/conceptos/dios-maquina" class="wikilink">Dios Máquina</a> — Deidad usurpadora de Primum</li>
+<li>Reglas de exposición Astato — Homebrew de exposición al mineral</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>Suelos Vivos Primum no revelados oficialmente</strong>:</p>
+<ul>
+<li>
+<p><strong>El Suelo Vivo bajo el <a href="/NovalisPage/geografia/voltka/templo-del-volcan-mismo" class="wikilink">Templo del Volcán Mismo</a></strong> de Voltka (≈ 62 ua/ha) — el templo principal del Sacerdocio Volcánico kalmariano está <strong>sobre Suelo Vivo de Primum sacerdotal-volcánico</strong>. Los sacerdotes lo saben implícitamente sin formularlo en lenguaje Suelo Vivo: lo llaman “presencia del Volcán Mismo”. Cosmológicamente es <strong>canal Primum específicamente sacerdotal</strong>: las funciones rituales del Sacerdocio operan con mayor eficacia ahí. La doctrina del Volkario adquiere resonancia anómala. Si los PJ aprenden esto y lo revelan a la Compañía, el templo se convertiría en objetivo prioritario.</p>
+</li>
+<li>
+<p><strong>El Suelo Vivo bajo Engrenhof caída</strong> (≈ 25 ua/ha hoy, ≈ 80 ua/ha pre-caída) — la ciudad muerta tiene <strong>aenva Primum residual</strong> todavía detectable de la era pre-rebautizo. Expediciones Sagas y de la Hermandad de la Piedra Muda han explorado el sitio. Es candidato secreto a <strong>restauración cosmológica</strong> si el régimen Novalis cae. La Cofradía del Anillo Amarillo tiene <strong>mapa preliminar</strong> del residuo.</p>
+</li>
+<li>
+<p><strong>Los Niveles Mudos sellados</strong> de la Gran Mina (≈ 90 ua/ha Primum + Tellith mixto, sub-bloque del componente Primum sin componente Aevum) — bajo la Gran Mina, sellados desde la primera generación de cisma enano, hay <strong>niveles mineros con residuo Tellith</strong> y Primum pre-rebautizo. La Hermandad de Oficio Enana <strong>sabe</strong> de su existencia y custodia el sellado: abrirlos liberaría conocimiento minero ancestral pero <strong>drenaría hacia el Anillo del Sello</strong> parte de la aenva por el túnel-conexión cosmológico subterráneo. Decisión cosmológica imposible.</p>
+</li>
+<li>
+<p><strong>El Suelo Vivo de cualquier fragua familiar centenaria mehraltí enana</strong> (≈ 25–45 ua/ha doméstico): cada fragua familiar enana con cuatro generaciones de uso continuado <strong>es</strong> Suelo Vivo Bajo doméstico. Es un fenómeno <strong>distribuido</strong> que la doctrina Eternista no ha catalogado individualmente. Lista interna Saga: hay aproximadamente 200 fraguas familiares centenarias activas en Mehralt; aproximadamente 80 superan los 25 ua/ha.</p>
+</li>
+</ul>
+<p><strong>Verdad cosmológica adicional</strong>: el <strong>Cráter de Voltka es boca cosmológica activa</strong> pero <strong>bidireccional</strong>: aenva Primum filtra al mundo, <strong>y el mundo filtra plegaria al dios</strong> —el dios “escucha” más claramente lo que ocurre cerca del Cráter—. La Reina Imari de Kalmari <strong>sabe</strong> esto: sus cantos sostenedores del equilibrio sísmico no son solo función mantenimiento de los espíritus volcánicos, son <strong>plegarias eficaces</strong> que llegan al dios. La sucesión Imari (ver <a href="/NovalisPage/conceptos/profecias/profecia-de-la-corona-de-niebla" class="wikilink">Profecía de la Corona de Niebla</a>) tiene <strong>doble carga cosmológica</strong>: política y vía de comunicación a Primum.</p>
+<p><strong>El Telar Primum</strong> (mecánica DM avanzada): morir sobre el Cráter de Voltka con marca de oficio densa permite <strong>acceso al telar Primum del dios</strong> durante hasta una luna nueva. El difunto <strong>mantiene fragmento de conciencia</strong> dentro del dominio del dios y <strong>puede ofrecer dones de oficio</strong> a aprendices vivos —canónicamente, una luz menor en la mente del aprendiz, una idea nueva al despertar, una solución técnica que no había considerado—. Es <strong>rito heroico</strong> que ningún humanoide vivo ha experimentado. Si los PJ logran que un maestro herrero muera ritualmente en el Cráter, podrían <strong>enviar legados Primum</strong> a aprendices específicos. Misión de varios meses de preparación. Coste: el difunto <strong>no se recicla limpiamente</strong> —su hebra queda parcialmente en el telar—.</p>
+<p><strong>Vías DM Primum específicas</strong>:</p>
+<ol>
+<li>
+<p><strong>Misión cuarta anexión de Verre</strong>: la Compañía Imperial prepara cuarta tentativa de anexión militar. Los PJ deben <strong>detectar y bloquear</strong>. Si la cuarta tiene éxito, Primum se retira parcialmente del mundo material; consecuencias cosmológicas mayores.</p>
+</li>
+<li>
+<p><strong>Misión Mehralt cisma extendido</strong>: el régimen Halsen impone fundición industrial extendida a niveles altos de Mehralt. Los PJ son contratados por la Hermandad de Oficio Enana. Sabotaje técnico + maniobra política + cosmología.</p>
+</li>
+<li>
+<p><strong>Misión Niveles Mudos</strong>: una facción quiere <strong>abrir</strong> los Niveles Mudos sellados de la Gran Mina. Los PJ deben <strong>investigar</strong> si vale la pena, mediar entre Hermandad de Oficio y Hermandad de la Piedra Muda, y decidir.</p>
+</li>
+<li>
+<p><strong>Misión Cordillera Volcánica saqueada</strong>: la Hermandad del Anillo Concéntrico extiende su extracción de mineral primigenio. Los PJ son contratados por las tribus pre-civilizacionales para <strong>detener</strong> o <strong>renegociar</strong>. Combate + diplomacia interracial.</p>
+</li>
+<li>
+<p><strong>Misión brennvin industrial</strong>: una destilería corp en Iskhal industrial intenta replicar el brennvin curativo en cadena. Los PJ investigan, descubren que el producto <strong>es</strong> inerte, y exponen el fraude públicamente. Misión gremial y de prensa.</p>
+</li>
+<li>
+<p><strong>Misión Yunque Hondo restaurado</strong>: la Iglesia del Dios Máquina prepara segundo intento de restaurar el Templo del Yunque Hondo (esta vez con respaldo del régimen Halsen). Los PJ son contratados por la Hermandad enana para <strong>bloquear</strong> sin escándalo masivo. Misión política + cosmológica.</p>
+</li>
+<li>
+<p><strong>Misión Telar Primum</strong>: un maestro herrero anciano (NPC, Drekkar Aurelio de Maestros Tres Generaciones) <strong>pide a los PJ</strong> acompañarlo al Cráter de Voltka para morir allí y enviar legados Primum a aprendices específicos. Misión de preparación larga, viaje, ritual. Recompensa: el DM puede otorgar <strong>un bono permanente de oficio</strong> a un PJ Eternista o herrero entre los PJ como “legado del telar”. Coste para Drekkar: no se recicla limpiamente.</p>
+</li>
+</ol>
+<p><strong>Conexión con el arco Vesilia</strong>: si la Reina Vesilia, además de marca Aevum, hubiera tenido marca Primum (la reina <strong>bordaba</strong> con habilidad notable, oficio menor pero real), el rescate parcial de su hebra podría involucrar <strong>tanto</strong> Olivo del Hilo Aevum como Cráter de Voltka Primum. Doble rito cosmológico en dos continentes. Misión final del arco mayor.</p>
+<p><strong>La paradoja Cráter de Voltka</strong>: el dios <strong>acepta</strong> el Astato puro como ofrenda industrial (la Compañía recoge mineral del Cráter pacíficamente cada generación). ¿Por qué Primum acepta esto? La hipótesis Saga es: <strong>el Astato puro recogido del Cráter no es “extracción”</strong> —es <strong>ofrenda canónica</strong> del dios al mundo material para sostener la red magitek que el dios <strong>no rechaza completamente</strong>—. Primum es <strong>el dios más matizado</strong> sobre la industrialización: rechaza la producción en serie de <strong>piezas</strong>, acepta el flujo de Astato como mineral primario, <strong>interroga</strong> la cadena intermedia. Si los PJ formalizan esta doctrina —imposible operativamente—, abrirían tercer camino entre Eternistas e Iglesia del Dios Máquina.</p>
+<blockquote>
+<p>[!info] Invención
+Sub-ficha de canonización derivada. Los <strong>siete lugares canónicos</strong> de Suelo Vivo de Primum se establecen aquí. Cinco tenían existencia canónica previa (Cráter de Voltka, Mehralt entera, Cordillera Volcánica de Calixar, Stor-Heita y seis saunas vorathianas mayores con residuo Tellith, Granero Sagrado de Voltrede sub-bloque Primum). El <strong>Templo del Yunque Hondo de Mehralt</strong> se canoniza explícitamente como Suelo Vivo Primum residual con residuo Tellith pre-rebautizo dominante; era ruina mencionada sin formulación cosmológica. El <strong>Atolón de Verre pared exterior</strong> se canoniza como entrada complementaria al Cráter de Voltka con su propia densidad ua/ha. La doctrina del <strong>Cráter de Voltka como boca cosmológica activa bidireccional</strong> es canonización nueva consistente. El <strong>Telar Primum</strong> como mecánica DM avanzada es canon firme para campañas avanzadas. El “tercer camino” del dios sobre la industrialización (acepta Astato puro como ofrenda, rechaza producción en serie de piezas) es <strong>arco-misterio teológico</strong> abierto.</p>
+</blockquote>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

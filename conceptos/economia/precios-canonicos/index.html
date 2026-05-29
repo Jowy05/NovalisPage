@@ -1,0 +1,847 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Precios Canónicos — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span><span class="flex items-center gap-1.5"><span>›</span><span>Economia</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Precios Canónicos</h1> </header> <div class="wiki-prose mt-7"> <h1 id="precios-canónicos">Precios Canónicos</h1>
+<p>Tabla maestra de <strong>precios típicos</strong> del continente de <a href="/NovalisPage/geografia/novalis" class="wikilink">Novalis</a> expresados en la moneda canónica del Aldricato —<strong>Aldric de oro (AO), Sello de plata (SP), Chispa de cobre (CC)</strong>—. Sirve de referencia para arbitraje en mesa, contrato gremial, contabilidad de campaña y verificación de coherencia narrativa. Para conversiones y aleaciones, ver <code>monedas-de-novalis.md</code>. Los precios aquí listados son <strong>estándar Fortuna urbano</strong>; al final del documento se detallan las <strong>variaciones por continente</strong> canonizadas.</p>
+<h2 id="cómo-leer-la-tabla">Cómo leer la tabla</h2>
+<ul>
+<li>Los precios canónicos asumen <strong>moneda libre</strong> (oro/sello/chispa imperiales) sin descuento. En zonas dominadas por <strong>vales corp</strong>, los mismos bienes pueden costar entre <strong>15 y 25 % menos</strong> en cambio formal, pero el vale corp solo se acepta en economatos de la Compañía.</li>
+<li>Donde aparece <em>prima cosmológica</em>, el precio refleja el <strong>valor cultural o ritual</strong> del bien más allá del coste de producción (un kit herbolario eternista en suelo vivo de <a href="/NovalisPage/dioses/aevum" class="wikilink">Aevum</a> vale más que su equivalente urbano).</li>
+<li><em>AO/sem</em> = Aldric de oro por semana; <em>SP/d</em> = Sello de plata por día; <em>CC/u</em> = Chispa de cobre por unidad.</li>
+</ul>
+<h2 id="comida">Comida</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Precio Fortuna urbano</th><th>Notas canónicas</th></tr></thead><tbody><tr><td>Pan común (hogaza de 500 g)</td><td><strong>1 CC</strong></td><td>Estándar diario; pan de centeno básico. En Solaria 2 CC por inflación industrial.</td></tr><tr><td>Pan fino de panadería (200 g blanco)</td><td>2 CC</td><td>Trigo de <a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> el más prestigioso (3 CC). Pan de runas vorathiano sólo en delegaciones.</td></tr><tr><td>Cerveza de jarra (1 litro, taberna popular)</td><td><strong>1 CC</strong></td><td>Cerveza de Aldric estándar. Variantes de festival hasta 3 CC.</td></tr><tr><td>Vaso de aguardiente local</td><td>2 CC</td><td>Brennvin auténtico (importado vorathiano): 5 CC el vaso pequeño.</td></tr><tr><td>Vaso de vino tinto común</td><td>2 CC</td><td>Vino fortunés común. Vino de las laderas de Velmoria (selección): 1 SP la jarra.</td></tr><tr><td>Pollo asado entero (mercado)</td><td><strong>2 CC</strong></td><td>Pollo de granja típico. Capón cebado en Voltrede: 5 CC.</td></tr><tr><td>Pescado fresco del día (porción)</td><td>3 CC</td><td>Variable por puerto. Pescado salado vorathiano (filete): 1 CC.</td></tr><tr><td>Queso de aldea (200 g)</td><td>2 CC</td><td>Queso de <strong>Voltrede</strong> (referencia): 1 SP/kg en Heliopolis, prima del 20 %.</td></tr><tr><td>Mantequilla amarilla vorathiana (libra)</td><td>2 SP</td><td>Tabú de exportación + raridad. En Vorath rural: 5 CC.</td></tr><tr><td>Comida en posada media</td><td><strong>5 CC</strong></td><td>Plato fuerte + pan + cerveza. Posada barata: 3 CC.</td></tr><tr><td>Comida en posada fina (Solaria, Heliopolis)</td><td>2 SP</td><td>Plato cuidado + vino.</td></tr><tr><td>Banquete cortesano (cubierto, por persona)</td><td><strong>2 AO</strong></td><td>Catering noble en Heliopolis. Cumbre Corp: 5 AO/cubierto.</td></tr><tr><td>Café (taza en café-cantante de Heliopolis)</td><td>1 CC</td><td>Café importado de las Hermanas del Sur; en Veltara 2 CC.</td></tr><tr><td>Té de hierbas (taza)</td><td>&#x3C;1 CC</td><td>Costumbre rural; no se cobra en hogares.</td></tr><tr><td>Especia común (pimienta, comino — pizca)</td><td>2 CC</td><td>Importada de Cetus. La canela de Kalmari: 1 SP por cucharadita.</td></tr><tr><td>Especia exótica (azafrán cetuano, gramo)</td><td>1 SP</td><td>Solo en cocina cortesana.</td></tr></tbody></table>
+<h2 id="alojamiento">Alojamiento</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tipo</th><th>Precio Fortuna urbano</th><th>Notas canónicas</th></tr></thead><tbody><tr><td>Posada barata (cama compartida en común)</td><td><strong>3 CC/noche</strong></td><td>Pulgas garantizadas. Sin comida.</td></tr><tr><td>Posada media (habitación privada)</td><td><strong>1 SP/noche</strong></td><td>Comida incluida en algunos casos; preguntar.</td></tr><tr><td>Posada de lujo (Sol Real Heliopolis)</td><td><strong>5 SP/noche</strong></td><td>Habitación con baño privado, comida fina, atención personalizada.</td></tr><tr><td>Apartamento alquilado urbano (mes)</td><td>1-3 AO</td><td>Heliopolis centro: 5 AO/mes. Barrio obrero: 1 AO/mes.</td></tr><tr><td>Casa rural alquilada (mes)</td><td>3-8 SP</td><td>Voltrede media: 5 SP. Aldea remota: 3 SP.</td></tr><tr><td>Habitación en universidad/seminario (semestre)</td><td>2 AO</td><td>Solo estudiantes acreditados.</td></tr><tr><td>Templos/refugios sagrados</td><td>Donación libre</td><td>Aevum/Vastus/Primum acogen sin coste; donación esperada.</td></tr><tr><td>Hospedaje gremial (afiliado)</td><td>0</td><td>Gratis para miembros. Los Patrones cubren.</td></tr><tr><td>Casa segura clandestina (mensual, Sin-Cuerda)</td><td>2 AO + favor</td><td>El favor pesa más que la moneda.</td></tr></tbody></table>
+<h2 id="transporte">Transporte</h2>
+<h3 id="ferrocarril-aldricato">Ferrocarril Aldricato</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trayecto</th><th>Tercera clase</th><th>Segunda clase</th><th>Primera clase</th><th>Tiempo</th></tr></thead><tbody><tr><td>Solaria → Heliopolis</td><td>5 CC</td><td>1 SP 3 CC</td><td>4 SP</td><td>1 día</td></tr><tr><td>Heliopolis → Drahnvar</td><td>8 CC</td><td>2 SP</td><td>8 SP</td><td>2 días</td></tr><tr><td>Mehralt → Maris-Korr</td><td>6 CC</td><td>1 SP 6 CC</td><td>5 SP</td><td>1,5 días</td></tr><tr><td><strong>Solaria → Mehralt</strong> (continental)</td><td><strong>3 CC/día</strong></td><td><strong>1 SP/día</strong></td><td><strong>5 SP/día</strong></td><td>6 días</td></tr><tr><td>Halmgard → Iskhal (continental Vorath)</td><td>4 CC/día</td><td>1 SP/día</td><td>4 SP/día</td><td>2 días</td></tr><tr><td>Bargheim → Hjornheim</td><td>5 CC/día</td><td>1 SP 2 CC/día</td><td>5 SP/día</td><td>4 días</td></tr></tbody></table>
+<ul>
+<li><strong>Comida no incluida</strong> salvo en primera clase (donde se sirve plato fuerte y vino dos veces al día).</li>
+<li><strong>Vagón de Astato</strong>: no transporta pasajeros. Solo carga refinada custodiada.</li>
+<li><strong>Escolta extra</strong>: 2 SP por día de viaje en clase de su elección.</li>
+</ul>
+<h3 id="otros-transportes">Otros transportes</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Medio</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td>Carromato alquilado (sin caballo)</td><td><strong>2 CC/día</strong></td><td>Aldea/granja.</td></tr><tr><td>Carruaje urbano con cochero (carrera Heliopolis)</td><td>3 CC/carrera</td><td>Tarifa fija al Distrito Bancario; doble por la noche.</td></tr><tr><td>Caballo de silla alquilado (día)</td><td>1 SP/día</td><td>Más seguro de devolución (3 AO de depósito).</td></tr><tr><td>Diligencia de larga distancia (asiento)</td><td>5 CC/día</td><td>Voltrede → Heliopolis = 2 días = 1 SP.</td></tr><tr><td>Barca de río alquilada (día con barquero)</td><td>1 SP/día</td><td>Río Claro, Río Coronado.</td></tr><tr><td>Barco fletado pequeño (cabotaje semana)</td><td><strong>5 AO/semana</strong></td><td>Sin tripulación incluida (negociar aparte).</td></tr><tr><td>Pasaje en barco mercante (clase común)</td><td>3 SP/semana</td><td>Solaria → Veltara: 4 semanas = 1 AO 2 SP.</td></tr><tr><td>Pasaje en barco mercante (camarote)</td><td>1 AO/semana</td><td>Mismo trayecto: 4 AO.</td></tr><tr><td>Pasaje en barco vorathiano refrigerador (hielo)</td><td>2 AO/semana</td><td>Solo cabotaje Vorath ↔ Heliopolis; condiciones duras.</td></tr><tr><td>Servicio de mensajería rápida (carta a continente vecino)</td><td>2 SP</td><td>Telégrafo: 1 SP + 1 CC/palabra.</td></tr></tbody></table>
+<h2 id="sastrería">Sastrería</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Prenda</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td>Traje obrero (lana basta)</td><td><strong>1 SP</strong></td><td>Solaria, Bajocalle. Hecho en sastrería de barrio.</td></tr><tr><td>Camisa de algodón común</td><td>5 CC</td><td>Reposición.</td></tr><tr><td>Vestido de calle común</td><td>1 SP 5 CC</td><td>Mujer media urbana.</td></tr><tr><td>Levita cortesana fina</td><td><strong>5 SP</strong></td><td>Sastrería de Heliopolis Distrito de los Linajes.</td></tr><tr><td>Vestido de baile cortesano</td><td><strong>2 AO</strong></td><td>Seda, encaje, tejido a medida. Tiempo: 3-4 semanas.</td></tr><tr><td>Capa de viaje engrasada</td><td>1 SP</td><td>Estándar viajero.</td></tr><tr><td>Botas resistentes de cuero</td><td>1 SP 5 CC</td><td>2 años de uso.</td></tr><tr><td>Botas de viaje reforzadas (Mehralt)</td><td>2 SP</td><td>Calzado enano, 5+ años.</td></tr><tr><td>Reparación de sastre (zurcido común)</td><td><strong>3 CC</strong></td><td>Vuelco, parche, cosido.</td></tr><tr><td>Trabajo de bordado fino (camisa)</td><td>5 CC-1 SP</td><td>Variable por complejidad.</td></tr><tr><td>Sombrero de fieltro común</td><td>5 CC</td><td>Sombrero obrero.</td></tr><tr><td>Sombrero de copa cortesano</td><td>1 SP 5 CC</td><td>Heliopolis caballero.</td></tr></tbody></table>
+<h2 id="armería">Armería</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Arma</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td>Daga simple</td><td><strong>5 CC</strong></td><td>Acero común.</td></tr><tr><td>Cuchillo de utility (campesino)</td><td>2 CC</td><td>Hoja corta.</td></tr><tr><td>Espada corta de hierro</td><td>1 SP</td><td>Veterano de barrio.</td></tr><tr><td><strong>Espada larga estándar</strong></td><td><strong>1 SP</strong></td><td>Hoja imperial. Acero refinado: 3 SP.</td></tr><tr><td>Sable de oficial</td><td>5 SP</td><td>Heliopolis Distrito Mercantil.</td></tr><tr><td>Hacha de mano</td><td>1 SP</td><td>Vorathiana 2 SP.</td></tr><tr><td>Hacha de batalla enana</td><td>5 SP</td><td>Forja Mehralt.</td></tr><tr><td>Mazo, garrote</td><td>3 CC-5 CC</td><td>Arma humilde.</td></tr><tr><td>Lanza de cuerpo</td><td>1 SP</td><td>Astil + punta.</td></tr><tr><td><strong>Pistola de chispa</strong></td><td><strong>3 SP</strong></td><td>Arma de chispa fortunesa, un disparo, recarga 3-4 acciones.</td></tr><tr><td>Pistola fina de oficial</td><td>1 AO</td><td>Acero pulido.</td></tr><tr><td><strong>Mosquete de chispa</strong></td><td><strong>5 SP</strong></td><td>Munición común.</td></tr><tr><td><strong>Rifle de chispa</strong></td><td><strong>1 AO</strong></td><td>Mayor alcance.</td></tr><tr><td>Rifle fino de cazador (sniper)</td><td>3 AO</td><td>Heliopolis Gremio de Armeros.</td></tr><tr><td>Munición (cartucho por disparo)</td><td><strong>1 CC/disparo</strong></td><td>Bola + pólvora + cebo.</td></tr><tr><td>Pólvora bruta (libra)</td><td>5 CC</td><td>Refinada para fusilería.</td></tr><tr><td>Carga de cañón menor</td><td>1 SP</td><td>Munición militar.</td></tr><tr><td>Bayoneta (ajuste)</td><td>2 CC</td><td>Trabajo de armero.</td></tr></tbody></table>
+<h3 id="armaduras">Armaduras</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Armadura</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td>Acolchada (gambesón)</td><td>1 SP</td><td>Obrera.</td></tr><tr><td>Cuero curtido</td><td>2 SP</td><td>Estándar viajero.</td></tr><tr><td>Cuero tachonado</td><td>5 SP</td><td>Bandido elaborado.</td></tr><tr><td>Cota de mallas</td><td>1 AO</td><td>Soldado regular.</td></tr><tr><td>Coraza de placas (parcial)</td><td>3 AO</td><td>Oficial.</td></tr><tr><td>Coraza completa (de oficial)</td><td>8 AO</td><td>Heliopolis Gremio de Armeros.</td></tr><tr><td>Escudo simple</td><td>5 CC</td><td>Madera reforzada.</td></tr><tr><td>Escudo de oficial</td><td>2 SP</td><td>Acero embutido.</td></tr></tbody></table>
+<h2 id="núcleos-mágicos">Núcleos Mágicos</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tipo de núcleo</th><th>Precio canónico</th><th>Notas</th></tr></thead><tbody><tr><td>Núcleo animal <strong>común</strong> (oso, salamandra, ave, lobo)</td><td><strong>50 AO</strong></td><td>Subasta Gremio Núcleos Exóticos, lote estándar.</td></tr><tr><td>Núcleo animal <strong>raro</strong> (gigante, dragón joven, criatura pre-rebautizo)</td><td><strong>500 AO</strong></td><td>Subasta cerrada, solo a clientes aprobados.</td></tr><tr><td>Núcleo <strong>exótico</strong> (Aenva, Inversión, especie extinta)</td><td><strong>5.000+ AO</strong></td><td>Mercado negro Veltara; precio por puja.</td></tr><tr><td>Núcleo de <strong>raza inteligente</strong> (prohibido por <a href="/NovalisPage/conceptos/ley-de-la-consciencia" class="wikilink">Ley de la Consciencia</a>)</td><td>10.000+ AO</td><td>Cuelga la horca. Karnatha mercado negro únicamente.</td></tr><tr><td>Núcleo <strong>animado básico</strong> (de autómata Línea Velar)</td><td>200 AO</td><td>Producto Compañía Imperial certificado.</td></tr><tr><td>Núcleo <strong>vaciado</strong> (falsificación)</td><td>5-10 AO</td><td>Cuando se descubre, sale a coste de chatarra.</td></tr><tr><td><strong>Recarga ritual</strong> de núcleo común (servicio)</td><td>5 SP</td><td>Templo del Dios Máquina o animador civil; con núcleo del cliente.</td></tr><tr><td>Sello de garantía Colegio Imperial Animadores</td><td>3 SP</td><td>Inspección oficial obligatoria para venta legal.</td></tr></tbody></table>
+<h2 id="animales">Animales</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Animal</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Caballo de silla común</strong></td><td><strong>5 AO</strong></td><td>Bueno para viaje.</td></tr><tr><td>Caballo de tiro (carga)</td><td>8 AO</td><td>Pesado.</td></tr><tr><td>Caballo fino de oficial</td><td>25 AO</td><td>Pura sangre fortunés.</td></tr><tr><td><strong>Vaca lechera</strong></td><td><strong>2 AO</strong></td><td>Granja media.</td></tr><tr><td>Buey de tiro</td><td>3 AO</td><td>Trabajo agrícola.</td></tr><tr><td><strong>Oveja</strong></td><td><strong>1 SP</strong></td><td>Voltrede mercado.</td></tr><tr><td>Cabra</td><td>1 SP 5 CC</td><td>Productora de leche.</td></tr><tr><td>Cerdo (engorde)</td><td>1 AO</td><td>Granja.</td></tr><tr><td>Gallina ponedora</td><td>5 CC</td><td>Mercado semanal.</td></tr><tr><td>Perro de guarda adulto</td><td>1 SP-1 AO</td><td>Variable por raza/edad.</td></tr><tr><td>Halcón cetrero entrenado</td><td>5 AO</td><td>Solo en Voltrede / archipiélagos.</td></tr><tr><td>Mula</td><td>4 AO</td><td>Más resistente, más cara que caballo medio.</td></tr><tr><td>Pollo asado en mercado</td><td>2 CC</td><td>Ya cocinado, ver § Comida.</td></tr></tbody></table>
+<h2 id="herramientas-y-servicios">Herramientas y servicios</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Objeto / servicio</th><th>Precio</th><th>Notas</th></tr></thead><tbody><tr><td><strong>Kit herbolario</strong></td><td><strong>1 SP</strong></td><td>Estándar urbano. Eternista en suelo vivo: 1 AO.</td></tr><tr><td>Kit de carpintero</td><td>2 SP</td><td>Herramientas básicas.</td></tr><tr><td>Kit de herrero portátil</td><td>5 SP</td><td>Yunque pequeño + martillos.</td></tr><tr><td>Kit de ladrón</td><td>5 SP</td><td>Mercado gris.</td></tr><tr><td>Kit de animador (básico)</td><td>3 AO</td><td>Colegio Imperial certifica.</td></tr><tr><td>Linterna de aceite</td><td>5 CC</td><td>Vela 1 CC, aceite 2 CC litro.</td></tr><tr><td>Linterna de núcleo (común, recargable)</td><td>5 SP</td><td>1 año de uso con recargas.</td></tr><tr><td>Cuerda de cáñamo (15 m)</td><td>3 CC</td><td>Marinera.</td></tr><tr><td>Cuerda de seda (15 m, fina)</td><td>1 SP</td><td>Más resistente, ligera.</td></tr><tr><td>Tinta y pluma</td><td>2 CC</td><td>Despacho básico.</td></tr><tr><td>Papel pergamino (10 hojas)</td><td>5 CC</td><td>Carta seria.</td></tr><tr><td><strong>Libro</strong> (encuadernado, contenido común)</td><td><strong>1 AO</strong></td><td>Heliopolis Gremio de Editores.</td></tr><tr><td><strong>Manuscrito raro</strong></td><td><strong>10 AO</strong></td><td>Texto pre-rebautizo, archivo privado.</td></tr><tr><td>Manuscrito hereje (Mahr, Korvun)</td><td>30 AO</td><td>Mercado negro Veltara o Karnatha.</td></tr><tr><td>Reloj de bolsillo común</td><td>5 SP</td><td>Veltara fabricación.</td></tr><tr><td>Reloj de bolsillo cortesano</td><td>3 AO</td><td>Heliopolis Distrito Mercantil.</td></tr><tr><td>Reloj de pared con péndulo</td><td>8 AO</td><td>Veltara fabricación.</td></tr><tr><td><strong>Servicio médico común</strong> (visita)</td><td>1 SP</td><td>Sanador de barrio.</td></tr><tr><td>Servicio médico cortesano</td><td>5 SP-1 AO</td><td>Médico Heliopolis privado.</td></tr><tr><td>Cirugía menor</td><td>1 AO</td><td>Variable por riesgo.</td></tr><tr><td>Funeral común</td><td>2 SP</td><td>Ataúd + entierro.</td></tr><tr><td>Funeral cortesano</td><td>5 AO</td><td>Capilla, banquete, lápida grabada.</td></tr><tr><td>Bautismo Mecánico</td><td>5 CC-2 SP</td><td>Tarifa variable según parroquia.</td></tr><tr><td>Boda civil</td><td>5 CC</td><td>Notario gremial.</td></tr><tr><td>Boda eclesiástica del Dios Máquina</td><td>1 SP-2 AO</td><td>Variable por parroquia y rango.</td></tr></tbody></table>
+<h2 id="variación-por-continente">Variación por continente</h2>
+<h3 id="mehralt-y-calixar-continental">Mehralt y Calixar continental</h3>
+<ul>
+<li><strong>Hierro y artesanía enana</strong>: <strong>10-30 % más baratos</strong> que en Heliopolis (origen de la producción). Cota de mallas: 7 SP en Mehralt vs 1 AO en Heliopolis.</li>
+<li><strong>Vino y aceite</strong>: 20-40 % más caros (importados). Vino fortunés común: 3 CC el vaso.</li>
+<li><strong>Vales corp en economatos</strong>: descuento del 15-20 % sobre los precios estándar para bienes industriales (lámparas, ropa de trabajo, herramientas), pero <strong>prima del 20 % sobre precios libres</strong> en bienes externos al sistema (vino, ropa fina).</li>
+</ul>
+<h3 id="veltara-y-cetus">Veltara y Cetus</h3>
+<ul>
+<li><strong>Especias y maderas exóticas</strong>: <strong>30-50 % más altas</strong> que en Heliopolis (pero <strong>80 % más baratas</strong> en origen kalmari).</li>
+<li><strong>Vidrio y ámbar de Pacthos</strong>: prima del 100 % en Heliopolis sobre precio veltarés.</li>
+<li><strong>Hierro y armamento</strong>: prima del 40 % sobre precio Calixar (importados).</li>
+<li><strong>Pescado y mariscos</strong>: 50 % más baratos.</li>
+<li><strong>Tela veltaresa</strong> como medio de pago tiene cambio fijo SP a 1,05, garantizado por Cinco Gremios.</li>
+</ul>
+<h3 id="vorath">Vorath</h3>
+<ul>
+<li><strong>Grano y pan</strong>: prima del <strong>20 %</strong> sobre Heliopolis (importado de Fortuna; en mal año hasta 40 %).</li>
+<li><strong>Pieles, narval-marfil, mantequilla amarilla</strong>: 60-70 % más baratos.</li>
+<li><strong>Hielo en barco refrigerador</strong>: producto exclusivo Vorath, 2 SP el bloque de 30 kg desembarcado en Heliopolis.</li>
+<li><strong>Brennvin auténtico</strong>: vaso 2 CC en Vinterhof; 5 CC en Heliopolis; 1 SP en taberna Veltara.</li>
+<li><strong>Servicios de Skald</strong> (tatuaje rúnico, narración funeraria, archivo encarnado): no se cobran en moneda — se cobran en <strong>don ritual</strong> (carne, hielo, juramento de servicio). Insertarlos en una tabla de precios es <strong>ofensa Skaldica</strong>.</li>
+</ul>
+<h3 id="voltrede-y-fortuna-rural">Voltrede y Fortuna rural</h3>
+<ul>
+<li><strong>Queso, pan, lana</strong>: 30-40 % más baratos que en Heliopolis (producción local).</li>
+<li><strong>Anguila dorada de la Cofradía Anguilera</strong>: 1 SP la pieza completa en Voltrede, 3 SP en Heliopolis.</li>
+<li><strong>Servicios médicos rurales</strong>: 3-5 CC (vs 1 SP urbano).</li>
+<li><strong>Salario obrero rural</strong>: 2-3 CC/día (vs 3-4 CC urbano).</li>
+</ul>
+<h3 id="solaria">Solaria</h3>
+<ul>
+<li><strong>Astato refinado</strong>: no se compra al menudeo legalmente. Precio gris industrial: <strong>1 AO el gramo refinado grado II</strong>, <strong>5 AO grado IV</strong>.</li>
+<li><strong>Precios urbanos generales</strong>: prima del 20-25 % por inflación industrial.</li>
+<li><strong>Servicios portuarios</strong> (estibadores, transporte de muelle): tarifa gremial fija que la corona no pisa.</li>
+</ul>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/economia/monedas-de-novalis" class="wikilink">Monedas de Novalis</a> — ficha madre del sistema</li>
+<li><a href="/NovalisPage/conceptos/economia/salarios-canonicos" class="wikilink">Salarios Canónicos</a> — ficha hermana, base de comparativa</li>
+<li><a href="/NovalisPage/conceptos/economia/balanza-aldricato" class="wikilink">Balanza Aldricato</a> — flujos macro asociados</li>
+<li><a href="/NovalisPage/conceptos/economia/gremios-financieros" class="wikilink">Gremios Financieros</a> — instituciones que arbitran precios</li>
+<li><a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> — referencia de precio cortesano</li>
+<li><a href="/NovalisPage/arquitectura/solaria" class="wikilink">Solaria</a> — referencia industrial</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — referencia enana</li>
+<li><a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> — referencia mercantil cetuana</li>
+<li><a href="/NovalisPage/arquitectura/hjornheim" class="wikilink">Hjornheim</a> — referencia vorathiana</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — referencia rural fortunesa</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — emisor vales corp</li>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — insumo industrial referencial</li>
+<li><a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> — bien gris referencial</li>
+<li><a href="/NovalisPage/cultura/mercado-negro-de-nucleos" class="wikilink">Mercado Negro de Núcleos</a> — precios paralelos</li>
+<li><a href="/NovalisPage/facciones/gremio-de-los-nucleos-exoticos" class="wikilink">Gremio de los Núcleos Exóticos</a> — subasta del raro y el exótico</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>Inflación del último decenio</strong>: desde la muerte de Aldric II y la transición a Aldric III, los precios del <strong>pan común y de la cerveza popular</strong> han subido <strong>un 15 %</strong> mientras que <strong>los salarios obreros han subido 4 %</strong>. Esta tijera explica gran parte del descontento del Bajocalle de Heliopolis y del Barrio Obrero de Mehralt, y alimenta indirectamente a <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a> y al <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a>. La corona conoce la cifra pero no la publica.</p>
+<p><strong>El precio del banquete cortesano (2 AO/cubierto)</strong> es <strong>inversamente correlacional con la salud del régimen Aldric</strong>: cuando Aldric II vivía, los banquetes costaban 1 AO; tras su muerte, los costes subieron por sobreoferta de banquetes de cortesía durante el período de transición. Aldric III ha intentado reducirlos por edicto sumptuario, sin éxito: el Patrón Loris Kantenbruck (alcalde) bloquea la medida con apoyo silencioso de las Cinco Bancas.</p>
+<p><strong>Los precios de núcleos exóticos</strong> son <strong>el mejor indicador macro del estado del sello de Null</strong>: cuando las Inversiones se multiplican (señal cosmológica negativa), las subastas de núcleos de Inversión bajan por sobreoferta. Cuando el sello se estabiliza, los núcleos suben. La <strong>Banca Mehrholt</strong> sigue el índice en su boletín reservado y lo usa como <strong>trazador discreto del estado del sello</strong>.</p>
+<p><strong>El precio del manuscrito raro (10 AO)</strong> incluye una franja del <strong>mercado prohibido</strong>: manuscritos del antiguo panteón (Mahr, Korvun, Tellith, Voraj) cotizan <strong>30-100 AO</strong> según especialista. La Inquisición Civil del Engranaje los persigue. Los PJ pueden encontrar un manuscrito de Mahr en un cofre olvidado y enfrentarse a la decisión de venderlo (mucho oro, riesgo legal) o usarlo (apertura cosmológica).</p>
+<p><strong>El precio del caballo (5 AO)</strong> y de la vaca (2 AO) parece menor pero <strong>funciona como termómetro rural</strong>: cuando hay sequía o crisis, los precios caen un 30-50 % porque los campesinos venden. Cuando hay paz, suben.</p>
+<p><strong>Posibles ganchos</strong>:</p>
+<ul>
+<li>Una falsificación masiva de Sellos de plata circula por Heliopolis y los precios sufren inflación distorsionada. Los PJ son contratados por las Cinco Bancas para rastrear la fuente.</li>
+<li>Una <strong>subasta de núcleo exótico</strong> anunciada en Veltara atrae a coleccionistas internacionales y a <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a>. El precio sale de control: 12.000 AO. ¿Quién paga? Por qué.</li>
+<li>Una hambruna en Vorath dispara el precio del grano y la <strong>Cofradía de los Nudos Sueltos</strong> organiza contrabando masivo: los PJ pueden infiltrarse, sabotear o cooperar.</li>
+<li>El precio del kit herbolario eternista (1 AO en suelo vivo de Aevum) se dispara: los Eternistas explican que el suelo vivo del Río Coronado se está <strong>secando</strong>. Los PJ deben investigar.</li>
+<li>Una caja de <strong>manuscritos raros pre-rebautizo</strong> aparece en una librería del Distrito Bohemio. La librera no sabe lo que tiene. Los PJ pueden ofertar, robar, denunciar o quemar.</li>
+</ul>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

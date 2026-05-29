@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Calendario del Aldricato — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Calendario del Aldricato</h1> </header> <div class="wiki-prose mt-7"> <h1 id="calendario-del-aldricato">Calendario del Aldricato</h1>
+<p><strong>Sistema temporal oficial post-rebautizo</strong> establecido por <a href="/NovalisPage/personajes/aldric-i" class="wikilink">Aldric I</a> tras el <a href="/NovalisPage/historia/rebautizo-engren-novalis" class="wikilink">rebautizo Engren-Novalis</a> hace <strong>aproximadamente mil años</strong>: <strong>doce meses de treinta días + cinco días intercalares = 365 días</strong> por año civil, organizado en torno a una nomenclatura administrativa cuidadosamente diseñada para borrar simbólicamente el calendario lunar de trece meses pre-rebautizo. Es <strong>el calendario civil dominante</strong> en <a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a>, <a href="/NovalisPage/geografia/calixar" class="wikilink">Calixar</a> y las regiones aldricatistas de <a href="/NovalisPage/geografia/cetus" class="wikilink">Cetus</a> y <a href="/NovalisPage/geografia/vorath" class="wikilink">Vorath</a>; conviven con él <strong>al menos cinco calendarios regionales no aldricatistas</strong> que mantienen sistemas propios por convicción ritual, comercial o cosmológica. La estructura oficial superpone, además, un <strong>calendario ritual aldricajo</strong> que sincroniza los festivales canónicos del régimen (Rebautizo, Yunque Roto, Anguilas, Mil Voces, Incendio Azul, Coral Hueco) con el civil. Los <a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a> conservan privadamente la nomenclatura lunar de trece meses pre-rebautizo, y al duodécimo mes —<strong>Engrenis</strong> oficialmente— lo llaman <strong>Memoris</strong> en círculos cerrados, tabú sutil del nombre prohibido.</p>
+<blockquote>
+<p>[!info] Invención
+Nomenclatura específica de los doce meses, distribución de los cinco días intercalares, sincronía con festivales canónicos, calendarios regionales no aldricatistas y nombre eternista privado del último mes son canonización de Fase 15 coherente con el canon previo del rebautizo, Aldric I, festivales canónicos y <code>cayado-de-obsidiana.md</code> (veintiséis lunas Kalmari).</p>
+</blockquote>
+<h2 id="el-calendario-civil-aldricajo">El calendario civil aldricajo</h2>
+<h3 id="estructura">Estructura</h3>
+<p>El año civil aldricajo se divide en:</p>
+<ul>
+<li><strong>Doce meses de treinta días</strong> cada uno (360 días).</li>
+<li><strong>Cinco días intercalares</strong> distribuidos entre los meses (no agregados al final, decisión deliberada de Aldric I para que el año “no termine con sobra” simbólica).</li>
+<li><strong>Año total: 365 días</strong>.</li>
+</ul>
+<p>La semana civil es de <strong>seis días</strong> —llamados <em>primer-día, segundo-día, tercer-día, cuarto-día, quinto-día, sexto-día</em>— con el sexto reservado oficialmente al culto del <a href="/NovalisPage/conceptos/dios-maquina" class="wikilink">Dios Máquina</a> desde el <a href="/NovalisPage/historia/cisma-del-hierro-antiguo" class="wikilink">Cisma del Hierro Antiguo</a>. Cinco semanas componen el mes (treinta días). Los días intercalares <strong>no pertenecen a ninguna semana</strong> y se cuentan aparte —rareza administrativa que genera disputas contables menores en los gremios financieros (canon <code>gremios-financieros.md</code>).</p>
+<h3 id="los-doce-meses-canónicos">Los doce meses canónicos</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Nº</th><th>Nombre civil</th><th>Etimología post-rebautizo</th><th>Estación dominante</th><th>Festival canónico</th></tr></thead><tbody><tr><td>1</td><td><strong>Aldris</strong></td><td>”del rey” (sufijo Aldric) — inicio del año real</td><td>Primavera temprana</td><td>Festival del Rebautizo (días 7-9)</td></tr><tr><td>2</td><td><strong>Brenis</strong></td><td>”del brote” — siembra fortunesa</td><td>Primavera</td><td>—</td></tr><tr><td>3</td><td><strong>Sollarn</strong></td><td>”del sol pleno” — solsticio agrícola</td><td>Primavera tardía</td><td>Paseo de las Anguilas (Cetus, día 14)</td></tr><tr><td>4</td><td><strong>Vesaris</strong></td><td>”de la promesa” — celebración matrimonial cortesana</td><td>Verano temprano</td><td>Regata de Coral Hueco (Cetus, día 18)</td></tr><tr><td>5</td><td><strong>Hardrin</strong></td><td>”del hierro” — apogeo industrial (Mehralt y Calixar trabajan a pleno)</td><td>Verano</td><td>Feria del Yunque Roto (Mehralt, días 22-24)</td></tr><tr><td>6</td><td><strong>Voltren</strong></td><td>”del fuego corriente” — calor pleno; etimología contestada (algunos filólogos derivan de “Voltka”, canon <code>voltka.md</code>)</td><td>Verano tardío</td><td>—</td></tr><tr><td>7</td><td><strong>Cosis</strong></td><td>”de la cosecha” — cosecha fortunesa, ferroviaria saturada</td><td>Otoño temprano</td><td>—</td></tr><tr><td>8</td><td><strong>Cumbris</strong></td><td>”de las cumbres” — caza vorathiana abierta</td><td>Otoño</td><td>—</td></tr><tr><td>9</td><td><strong>Vellanor</strong></td><td>”de la mesa” — banquetes de las Casas, Concierto trianual</td><td>Otoño tardío</td><td>—</td></tr><tr><td>10</td><td><strong>Concertis</strong></td><td>”del acuerdo” — fechado por Aldric II para honrar al Concierto de Heliopolis</td><td>Invierno temprano</td><td>—</td></tr><tr><td>11</td><td><strong>Halmis</strong></td><td>”del silencio” — pausa cortesana, archivística</td><td>Invierno</td><td>Noche de las Mil Voces (Vorath, día 23)</td></tr><tr><td>12</td><td><strong>Engrenis</strong></td><td>”del nombre antiguo” — único nombre que conserva la raíz pre-rebautizo, deliberadamente “atado al hierro” según Aldric I</td><td>Invierno tardío / solsticio</td><td>El Incendio Azul (Kalmari, día 7)</td></tr></tbody></table>
+<p>El <strong>doceavo mes (Engrenis)</strong> lleva tabú sutil. Aldric I conservó la raíz “Engren” únicamente en él <strong>como gesto político-cosmológico calculado</strong>: borrarla por completo habría sido violencia explícita; conservarla solo en el mes del cierre del año la <strong>sujeta a calendario regular</strong>, la <strong>administrativiza</strong>. Las cofradías Eternistas leen el gesto como <strong>encadenamiento simbólico del nombre divino al ciclo civil</strong>, y en privado prefieren llamar al mes <strong>“Memoris”</strong> (canon firme de esta página) —del verbo “memorar” en Engren antiguo simplificado—. El uso de “Memoris” en correspondencia pública es <strong>señal Eternista discreta</strong>; usarlo en correspondencia oficial es <strong>acto político deliberado</strong>.</p>
+<h3 id="los-cinco-días-intercalares">Los cinco días intercalares</h3>
+<p>Aldric I distribuyó los cinco días intercalares de modo que <strong>ninguna estación quedara sin uno</strong> y que <strong>ninguno cayera junto a festival mayor canonizable</strong>. La distribución firme es:</p>
+<ul>
+<li><strong>Día intercalar I — “Día del Renombramiento”</strong>, entre Aldris y Brenis. Aniversario simbólico (no exacto) del decreto del rebautizo. Día sin actividad oficial obligatoria; en la práctica, los Eternistas lo conmemoran <strong>tres días antes</strong> dentro de Aldris como “trío silente” (canon <code>festival-del-rebautizo.md</code>).</li>
+<li><strong>Día intercalar II — “Día del Hierro Frío”</strong>, entre Vesaris y Hardrin. Día de <strong>descanso obligatorio</strong> para gremios industriales. Mehralt lo respeta firmemente; el Aldricato lo usa como vitrina de “respeto al oficio”.</li>
+<li><strong>Día intercalar III — “Día del Horizonte”</strong>, entre Voltren y Cosis. Día reservado a marineros y caravaneros; no se firman contratos ferroviarios ni marítimos en él. Vastus ofrendado por costumbre cetuana.</li>
+<li><strong>Día intercalar IV — “Día del Sello”</strong>, entre Cumbris y Vellanor. <strong>Día sin nombre público claro</strong> —el régimen lo deja deliberadamente vago—. Los <a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a>, las Sagas y la Hermandad del Anillo Concéntrico lo dedican a <strong>velar el sellado de Null</strong>: ritos privados de mantenimiento, ofrendas a los pilares acústicos vorathianos y calixarianos. Aldric I lo dispuso así sabiendo qué hacían en él; el silencio es pacto.</li>
+<li><strong>Día intercalar V — “Día del Hilo”</strong>, entre Halmis y Engrenis. Día de <strong>conmemoración funeraria pública</strong>: las familias visitan tumbas, los gremios honoran a oficiales muertos en el último año. El <a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">Hilo Sosegado</a> no se nombra explícitamente pero <strong>el día se entiende cosmológicamente</strong> así por casi todo el mundo aldricajo.</li>
+</ul>
+<p>Los cinco días intercalares <strong>no se cuentan como días laborales</strong> para efectos salariales (canon <code>salarios-canonicos.md</code>), pero los gremios industriales los pagan a tarifa normal por costumbre. Disputa permanente entre Patrones y obreros: los Patrones modernos quieren convertirlos en festivos no pagados.</p>
+<h2 id="el-calendario-ritual-aldricajo">El calendario ritual aldricajo</h2>
+<p>Superpuesto al civil, el <strong>calendario ritual aldricajo</strong> marca los <strong>seis festivales canónicos</strong> del régimen + los <strong>ciclos lunares</strong> que el régimen tolera como dispositivos auxiliares. Los seis festivales canónicos firmes y sus posiciones:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Festival</th><th>Mes</th><th>Día(s)</th><th>Región principal</th><th>Tipo</th></tr></thead><tbody><tr><td><strong>Festival del Rebautizo</strong></td><td>Aldris</td><td>7-9</td><td>Heliopolis / global aldricajo</td><td>Cívico, trans-continental, 3 días</td></tr><tr><td><strong>Paseo de las Anguilas</strong></td><td>Sollarn</td><td>14</td><td>Veltara / Cetus costero</td><td>Comercial-popular, 1 día</td></tr><tr><td><strong>Regata de Coral Hueco</strong></td><td>Vesaris</td><td>18</td><td>Coral Hueco / Cetus atolónico</td><td>Marítimo-cultural, 1 día</td></tr><tr><td><strong>Feria del Yunque Roto</strong></td><td>Hardrin</td><td>22-24</td><td>Mehralt / Iskhal / Ferro-Korr</td><td>Industrial-gremial, 3 días</td></tr><tr><td><strong>Noche de las Mil Voces</strong></td><td>Halmis</td><td>23</td><td>Glaciar de las Mil Voces / Vorath</td><td>Skaldica-ritual, 1 noche</td></tr><tr><td><strong>El Incendio Azul</strong></td><td>Engrenis</td><td>7</td><td>Kalmari / Cetus volcánico</td><td>Sacerdotal-volcánico, 1 noche</td></tr></tbody></table>
+<p>El calendario ritual aldricajo <strong>incorpora estos seis festivales por decreto sucesivo</strong>: el Rebautizo lo instituyó Aldric II (canon <code>festival-del-rebautizo.md</code>), los demás se canonizaron por edictos posteriores que reconocieron festivales regionales preexistentes. La incorporación es <strong>política</strong>: el régimen los inscribe en el calendario civil para legitimar la sincronía aldricaja, pero <strong>no controla la ejecución ritual</strong> (la Noche de las Mil Voces sigue siendo skáldica; el Incendio Azul sigue siendo Kalmari sacerdotal).</p>
+<p>Los ciclos lunares aldricajos se computan como <strong>luna nueva / luna creciente / luna llena / luna menguante</strong> sin nombres particulares —el régimen los considera “marcadores astronómicos auxiliares”, no rituales—. Los Eternistas en privado conservan los <strong>trece nombres lunares pre-rebautizo</strong> (uno por cada mes lunar antiguo).</p>
+<h2 id="calendarios-regionales-que-coexisten">Calendarios regionales que coexisten</h2>
+<p>El calendario aldricajo <strong>no es universal</strong>. Al menos cinco sistemas regionales coexisten con él, sostenidos por convicción ritual, oficio o cosmología.</p>
+<h3 id="calendario-skald-vorathiano-solar-glacial">Calendario Skald vorathiano (solar-glacial)</h3>
+<p>Los <a href="/NovalisPage/conceptos/skalds" class="wikilink">Skalds</a> vorathianos llevan <strong>calendario solar-glacial</strong> medido por <strong>cuatro estaciones marcadas por niveles del Glaciar de las Mil Voces</strong>:</p>
+<ul>
+<li><strong>Estación del Hielo Bajo</strong> (~equivalente Cumbris-Halmis). El glaciar en su nivel mínimo del año; las grietas son legibles.</li>
+<li><strong>Estación del Hielo Profundo</strong> (~equivalente Engrenis-Aldris). El glaciar al nivel máximo; las voces se oyen mejor durante la Noche de las Mil Voces.</li>
+<li><strong>Estación del Deshielo</strong> (~equivalente Brenis-Sollarn). El glaciar libera fragmentos; los Skalds los recuperan ritualmente.</li>
+<li><strong>Estación del Asentamiento</strong> (~equivalente Vesaris-Voltren). El glaciar se reasienta; los Skalds tatúan ese año.</li>
+</ul>
+<p>Sobre estas cuatro estaciones se superponen <strong>trece meses lunares</strong> con nombres en <a href="/NovalisPage/conceptos/gjornsk" class="wikilink">Gjornsk</a>: <strong>Jorn, Hjar, Vella, Skar, Brand, Helsk, Vorth, Tann, Skagg, Halgr, Brenn, Vald, Hjorn-mer</strong> (el decimotercero, <strong>Hjorn-mer</strong>, traducible como “Hjorn-del-mar”, se intercala variablemente cada 2-3 años solares para resincronizar el ciclo lunar con el solar-glacial). Los Skalds tatúan año por <strong>muescas lunares</strong>, no por años aldricajos: una crónica skaldica de “veintisiete lunas” puede equivaler a poco más de dos años aldricajos. <strong>Convertir registros skáldicos al calendario aldricajo es oficio especializado</strong> —en Heliopolis hay un puñado de archiveros que dominan ambos sistemas; Maestro Skald de Iskhal es la autoridad reconocida.</p>
+<p>La capital vorathiana <strong>Iskhal usa calendario aldricajo</strong> para correspondencia oficial con el Aldricato y skáldico para asuntos internos; doble contabilidad rutinaria.</p>
+<h3 id="calendario-kalmari-volcánico-lunar-puro">Calendario Kalmari volcánico (lunar puro)</h3>
+<p>El <strong>Sacerdocio Volcánico de Kalmari</strong> (canon <code>volkario.md</code>, <code>kalmari.md</code>) usa calendario <strong>lunar puro</strong>: cuenta por <strong>lunas completas</strong> sin agrupar en años solares. El ciclo ritual mayor es de <strong>veintiséis lunas</strong> —canon firme <code>cayado-de-obsidiana.md</code>: la Reina Imari realiza el Pacto del Cayado de Obsidiana cada veintiséis lunas, equivalente aproximado a dos años solares menos un mes—.</p>
+<p>El sacerdocio cuenta su tiempo en:</p>
+<ul>
+<li><strong>Lunas individuales</strong> (1 a 26 dentro del ciclo del Pacto). Cada luna tiene <strong>nombre privativo</strong> en lengua volcánica antigua (anterior al Volkario cantado, canon <code>volkario.md</code>); los nombres se transmiten oralmente del Maestro de Cantos al sucesor.</li>
+<li><strong>Ciclos del Pacto</strong> (1 ciclo = 26 lunas). Las Reinas Imari reinan canónicamente entre <strong>20 y 35 ciclos</strong> (40-70 años solares aproximadamente). La cronología kalmariana se mide en ciclos cumplidos del cayado.</li>
+<li><strong>Eras del Volcán</strong>: marcas mayores entre erupciones cardinales del Cráter de Voltka. La era actual lleva el nombre del último gran silencio del Cráter (~120 años atrás).</li>
+</ul>
+<p>El sacerdocio <strong>no usa “años”</strong> salvo en correspondencia con el Aldricato. Convertir cronología Kalmari a aldricaja es <strong>función oficial del Concierto de Heliopolis</strong> —el Departamento de Cumbres mantiene un cuadernillo de conversión actualizado por Olvar Tres-Lenguas.</p>
+<p>El <strong>Incendio Azul</strong> (festival canónico aldricajo de Engrenis 7) cae <strong>siempre cerca pero no exactamente</strong> en la misma luna kalmariana: el régimen aldricajo lo fijó arbitrariamente en Engrenis 7; el sacerdocio lo celebra la <strong>luna correcta del ciclo del Pacto</strong> (variable año a año respecto al calendario aldricajo). Los kalmarianos cumplen ambos por cortesía diplomática; los Eternistas notan la incongruencia anual.</p>
+<h3 id="calendario-hombre-gato-de-la-selva-nublada">Calendario hombre-gato de la Selva Nublada</h3>
+<p>Los clanes hombre-gato de la <a href="/NovalisPage/arquitectura/selva-nublada" class="wikilink">Selva Nublada</a> (canon <code>manantial-velado.md</code>, <code>selva-nublada.md</code>) llevan <strong>calendario climático-vegetal</strong>: tres “estaciones de bruma” por año subjetivo, sin meses numerados.</p>
+<ul>
+<li><strong>Bruma Espesa</strong>: aproximadamente cinco lunas aldricajas (~5 meses). La visibilidad en selva alta es menor a 10 m; la caza nocturna se interrumpe; los rituales del Anciano del Árbol Madre se concentran aquí.</li>
+<li><strong>Bruma Media</strong>: aproximadamente cuatro lunas. La visibilidad oscila entre 30 y 100 m; viajes inter-clánicos.</li>
+<li><strong>Bruma Fina</strong>: aproximadamente tres lunas. La visibilidad es plena (más de 200 m); fiestas mayores del Manantial Velado; ceremonias matrimoniales.</li>
+</ul>
+<p>Los hombre-gato <strong>no cuentan años</strong>. La edad personal se mide en <strong>“brumas espesas vividas”</strong> (un anciano “ha visto sesenta brumas espesas” = unos sesenta años aldricajos). La cronología de clan se lleva por <strong>cuerdas anudadas</strong> —una por bruma espesa— colgadas del Árbol Madre del clan central. Cuando una cuerda se pudre por humedad, esa bruma queda canónicamente perdida; la pérdida deliberada de cuerdas es <strong>forma de duelo</strong>.</p>
+<p>El régimen aldricajo <strong>ha intentado tres veces</strong> imponer el calendario aldricajo en correspondencia oficial con los clanes de Selva Nublada —tres fracasos canónicos firmes: los clanes responden con cuerdas anudadas y los aldricajos no las saben leer—. Las correspondencias se llevan en la práctica vía Mhrana Vilkran-de-la-Niebla (canon <code>manantial-velado.md</code>) como traductora cultural rara que conoce ambos sistemas.</p>
+<h3 id="calendario-kenku-de-bocas-del-sello-por-publicaciones">Calendario kenku de Bocas del Sello (por publicaciones)</h3>
+<p>Los kenku de <strong><a href="/NovalisPage/arquitectura/bocas-del-sello" class="wikilink">Bocas del Sello</a></strong> y de <strong><a href="/NovalisPage/arquitectura/el-coro-vacio" class="wikilink">El Coro Vacío</a></strong> (canon <code>el-clarin-de-bocas-del-sello.md</code>) llevan <strong>calendario por publicaciones del Clarín</strong>: cuatro ediciones anuales coincidentes con los <strong>solsticios y equinoccios</strong>.</p>
+<ul>
+<li><strong>Edición de Primavera</strong> (equinoccio, ~Aldris 14).</li>
+<li><strong>Edición de Verano</strong> (solsticio, ~Voltren 1).</li>
+<li><strong>Edición de Otoño</strong> (equinoccio, ~Cosis 14).</li>
+<li><strong>Edición de Invierno</strong> (solsticio, ~Engrenis 1).</li>
+</ul>
+<p>Los kenku <strong>miden el tiempo en ediciones</strong>, no en lunas ni en meses. Un kenku dirá “hace dieciséis ediciones que oí esa cita” (= unos cuatro años aldricajos). El archivo del Nicho del Clarín cuenta hasta <strong>doscientos cuatro años</strong> = <strong>ochocientas dieciséis ediciones</strong> consecutivas sin interrupción (canon firme <code>el-clarin-de-bocas-del-sello.md</code>).</p>
+<p>Los kenku <strong>conocen el calendario aldricajo</strong> y lo respetan en correspondencia diplomática (los ocho ejemplares del Clarín que llegan a archivos oficiales aldricajos vienen fechados también en calendario aldricajo, canon firme), pero <strong>internamente</strong> funcionan por ediciones. Skarra Voz-Propia (canon firme) recuerda hechos por “la edición de su voz publicada”; ningún kenku de Krarna usa años espontáneamente.</p>
+<h3 id="calendario-costero-cetuano-de-las-aguas-lentas">Calendario costero cetuano de las Aguas Lentas</h3>
+<p>Los pescadores y marineros de la <strong>costa cetuana</strong> y de las comunidades atolónicas que hablan la <a href="/NovalisPage/conceptos/lengua-de-las-aguas-lentas" class="wikilink">Lengua de las Aguas Lentas</a> llevan <strong>calendario tridál</strong>: cuentan <strong>mareas vivas y muertas</strong> dentro de cada luna lunar. Cada luna lunar comprende dos mareas vivas (~en luna nueva y luna llena) y dos mareas muertas (~en cuartos). Un año subjetivo costero contiene <strong>veinticuatro mareas vivas + veinticuatro muertas + un puñado de mareas extraordinarias por equinoccio</strong>.</p>
+<p>La cronología costera mide por <strong>mareas vivas mayores</strong> —las que <strong>superan el dique de Veltara</strong> o las que <strong>dejan al descubierto el muelle bajo de Mirakar</strong>—. Un viejo pescador veltarí cuenta su edad en mareas vivas mayores presenciadas; los más longevos pasan de las <strong>doscientas veinte mareas vivas mayores</strong> (~55 años aldricajos).</p>
+<p>El sistema <strong>no compite con el aldricajo en correspondencia oficial</strong> pero domina la cotidianidad pesquera. La bolsa de Veltara, sin embargo, <strong>fecha cada cierre en marea viva</strong> además de en día aldricajo —vestigio del calendario tridál antiguo, canónicamente firme—; los precios de pescado en Veltara siguen mareas, no calendario aldricajo. Los hablantes de Aguas Lentas mantienen el calendario tridál vivo en sus libros de bitácora.</p>
+<h2 id="calendario-pre-rebautizo-engren-trece-meses-lunares">Calendario pre-rebautizo Engren (trece meses lunares)</h2>
+<p>Antes del decreto del rebautizo, el calendario de los reinos humanos pre-aldricajos era <strong>lunar puro de trece meses</strong>, sin días intercalares fijos pero con <strong>ajustes lunares discrecionales</strong> del clero Engren (3-4 días intercalares cada año en posiciones decididas por las cofradías sagradas). Los trece meses lunares tenían nombres en <a href="/NovalisPage/conceptos/engren-antiguo" class="wikilink">Engren Antiguo</a> que designaban estados cosmológicos del año:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Mes lunar antiguo</th><th>Nombre Engren antiguo</th><th>Significado</th></tr></thead><tbody><tr><td>1</td><td><strong>Vesarn</strong></td><td>”del despertar”</td></tr><tr><td>2</td><td><strong>Brennarn</strong></td><td>”del brote luminoso”</td></tr><tr><td>3</td><td><strong>Sollarn-Æl</strong></td><td>”del sol invocado a Aevum”</td></tr><tr><td>4</td><td><strong>Vohrarn</strong></td><td>”del horizonte abierto, a Vastus”</td></tr><tr><td>5</td><td><strong>Phormarn</strong></td><td>”del oficio en plena, a Primum”</td></tr><tr><td>6</td><td><strong>Korvarn</strong></td><td>”de la espiga, a Korvun”</td></tr><tr><td>7</td><td><strong>Tellitharn</strong></td><td>”del préstamo de la veta, a Tellith”</td></tr><tr><td>8</td><td><strong>Vorarn</strong></td><td>”del óxido, a Voraj”</td></tr><tr><td>9</td><td><strong>Mahrarn</strong></td><td>”de los sueños, a Mahr”</td></tr><tr><td>10</td><td><strong>Engrenarn</strong></td><td>”del nombre del mundo, a Engren”</td></tr><tr><td>11</td><td><strong>Halmarn</strong></td><td>”del silencio firme”</td></tr><tr><td>12</td><td><strong>Voldharn</strong></td><td>”del cierre menor”</td></tr><tr><td>13</td><td><strong>Vodh-arn</strong></td><td>”del cierre mayor, hacia Null” (mes innombrable, solo escrito por academia)</td></tr></tbody></table>
+<p>El decimotercero —<strong>Vodh-arn</strong>— estaba <strong>canónicamente prohibido nombrar en voz alta</strong> salvo en cofradía cerrada; los Engren antiguos lo identificaban en correspondencia ordinaria como <strong>“el mes que no se nombra”</strong> o <strong>“mes-Vohr-en-pares”</strong> según convenciones de las casas. Su existencia daba al año pre-rebautizo <strong>resonancia cosmológica explícita</strong> con el panteón octuple (un mes para cada dios libre + tres meses cíclicos auxiliares + un mes para el dios sellado).</p>
+<p><strong>Aldric I redujo el calendario a doce + cinco intercalares como gesto del rebautizo</strong>. Decisión política-cosmológica:</p>
+<ul>
+<li><strong>Doce meses</strong> = ruptura simbólica con la cuenta lunar pura (ya no hay “mes para cada dios libre”; los nuevos meses son administrativos).</li>
+<li><strong>Cinco días intercalares</strong> = recuperación operativa de los ~5 días “perdidos” al pasar de 13 lunas (~384 días) a 12 meses solares (365 días). El número cinco también es <strong>eco invertido</strong> de los siete del rebautizo (canon firme <code>rebautizo-engren-novalis.md</code>).</li>
+<li><strong>Borrado del mes-Engrenarn / mes-Vodharn</strong> = los dos meses cosmológicamente cargados pre-rebautizo desaparecen del calendario; el nombre Engren se conserva solo en Engrenis y Vodh queda <strong>completamente borrado</strong> salvo en archivos académicos.</li>
+</ul>
+<p>Los <a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a> <strong>conservan privadamente el calendario lunar de trece meses pre-rebautizo</strong>: las cofradías Eternistas mayores (Hilo Sosegado, Hilo Largo, Cuenco Mayor) datan sus actos rituales internos por el calendario lunar antiguo, no por el aldricajo. Las correspondencias eternistas internas usan <strong>datación dual</strong>: día aldricajo + día lunar-Engren equivalente. La práctica es <strong>conocida pero tolerada</strong> por el régimen mientras no se exteriorice en correspondencia pública.</p>
+<p><strong>Aurelio Halmeras-Vetria</strong> (canon firme <code>aurelio-halmeras-vetria.md</code>) data su correspondencia privada con la Cofradía del Hilo Largo en <strong>fechas duales</strong>: encabeza con día aldricajo “para el archivo civil” y termina con día lunar-Engren “para el corazón”. El cierre por día lunar-Engren es <strong>firma cosmológica Eternista discreta</strong> entre eruditos del círculo.</p>
+<h2 id="conversiones-canónicas-firmes">Conversiones canónicas firmes</h2>
+<p>Para uso práctico, los archiveros y los gremios financieros mantienen tablas de conversión canónicas firmes:</p>
+<ul>
+<li><strong>1 año aldricajo = 365 días civiles aldricajos</strong>.</li>
+<li><strong>1 año aldricajo ≈ 12,4 lunas siderales</strong> (un poco más de 12 lunas completas).</li>
+<li><strong>1 ciclo del Pacto Kalmari (26 lunas) ≈ 1,98 años aldricajos</strong> (= aproximadamente dos años aldricajos menos un mes).</li>
+<li><strong>1 año skáldico (ciclo solar-glacial) ≈ 1 año aldricajo</strong> (sincronía solar firme; los meses lunares Skald se intercalan para resincronizar).</li>
+<li><strong>1 bruma espesa hombre-gato ≈ 1 año aldricajo</strong> (aproximación gruesa; los clanes no normalizan).</li>
+<li><strong>1 edición del Clarín ≈ 91 días aldricajos</strong> (un cuarto de año, ajustado por solsticios y equinoccios).</li>
+</ul>
+<p>Las <strong>conversiones de fechas históricas</strong> son objeto de discrepancia académica menor: el <strong>año del rebautizo</strong> —año cero del calendario aldricajo— se fija canónicamente en el equinoccio de primavera de Aldris hace mil años, pero los Eternistas datan el rebautizo en la <strong>última luna Engrenarn pre-decreto</strong>, que en cronología aldricaja correspondería al <strong>día intercalar I</strong> de ese mismo año (canon Eternista interno). La discrepancia es <strong>diferencia simbólica firme</strong>: el régimen marca el inicio en su decreto público; los Eternistas lo marcan en el último mes-Engren cumplido.</p>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/historia/rebautizo-engren-novalis" class="wikilink">Rebautizo Engren-Novalis</a> — Acto fundacional que estableció el calendario civil</li>
+<li><a href="/NovalisPage/personajes/aldric-i" class="wikilink">Aldric I</a> — Decretó la estructura 12+5 y la nomenclatura de los meses</li>
+<li><a href="/NovalisPage/personajes/aldric-ii" class="wikilink">Aldric II</a> — Instituyó el Festival del Rebautizo como festival mayor anual</li>
+<li><a href="/NovalisPage/cultura/festivales/festival-del-rebautizo" class="wikilink">Festival del Rebautizo</a> — Festival cívico mayor del calendario ritual aldricajo</li>
+<li><a href="/NovalisPage/cultura/festivales/el-incendio-azul" class="wikilink">El Incendio Azul</a> — Festival kalmariano sincronizado nominalmente a Engrenis 7</li>
+<li><a href="/NovalisPage/objetos/cayado-de-obsidiana" class="wikilink">Cayado de Obsidiana</a> — Ritual de las veintiséis lunas del calendario lunar Kalmari</li>
+<li><a href="/NovalisPage/conceptos/engren-antiguo" class="wikilink">Engren Antiguo</a> — Lengua de los nombres lunares pre-rebautizo</li>
+<li><a href="/NovalisPage/conceptos/sennheim" class="wikilink">Sennheim</a> — Lengua mercantil con sistema numérico duodecimal pre-rebautizo</li>
+<li><a href="/NovalisPage/conceptos/skalds" class="wikilink">Skalds</a> — Custodios del calendario solar-glacial vorathiano</li>
+<li><a href="/NovalisPage/cultura/prensa/el-clarin-de-bocas-del-sello" class="wikilink">El Clarín de Bocas del Sello</a> — Calendario kenku por publicaciones</li>
+<li><a href="/NovalisPage/geografia/manantial-velado" class="wikilink">Manantial Velado</a> — Sub-localización custodial del calendario hombre-gato</li>
+<li><a href="/NovalisPage/conceptos/lengua-de-las-aguas-lentas" class="wikilink">Lengua de las Aguas Lentas</a> — Hablantes del calendario tridál cetuano</li>
+<li><a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a> — Conservan el calendario lunar pre-rebautizo en privado</li>
+<li><a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">El Hilo Sosegado</a> — Día intercalar V “Día del Hilo” lo conmemora discretamente</li>
+<li><a href="/NovalisPage/conceptos/sellado-de-null" class="wikilink">Sellado de Null</a> — Día intercalar IV “Día del Sello” lo vela discretamente</li>
+<li><a href="/NovalisPage/personajes/aurelio-halmeras-vetria" class="wikilink">Aurelio Halmeras-Vetria</a> — Filólogo que data correspondencia en sistema dual</li>
+<li><a href="/NovalisPage/personajes/olvar-tres-lenguas" class="wikilink">Olvar Tres-Lenguas</a> — Mantiene el cuadernillo de conversión Kalmari→aldricajo</li>
+<li><a href="/NovalisPage/facciones/concierto-de-heliopolis" class="wikilink">Concierto de Heliopolis</a> — Departamento de Cumbres custodia conversiones inter-regionales</li>
+<li><a href="/NovalisPage/arquitectura/iskhal" class="wikilink">Iskhal</a> — Capital con doble contabilidad aldricaja/skáldica</li>
+<li><a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> — Bolsa fecha cierres en marea viva + día aldricajo</li>
+<li><a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> — Archivo central del Aldricato custodia documento original del decreto</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>El día intercalar IV — “Día del Sello”</strong> es <strong>secreto operativo cosmológico</strong> del Aldricato. Aldric I lo dispuso para que las cofradías sagradas, los Eternistas y la Hermandad del Anillo Concéntrico realizaran ritos de <strong>mantenimiento del sellado de Null</strong> sin que el régimen tuviera que reconocer públicamente la fragilidad cosmológica del sello. El pacto tácito ha funcionado durante mil años: el régimen no nombra qué pasa el Día del Sello, pero <strong>lo respeta</strong> —no se firman decretos, no se inauguran obras, no se hacen ceremonias oficiales—. <strong>Vorrek Helsen-Mahn</strong> (canon firme) ha publicado un par de ensayos crípticos que cuestionan el silencio del régimen sobre este día; el Aldricato los ignoró deliberadamente. <strong>Si Vorrek lograra publicar un análisis explícito</strong> sobre el día intercalar IV y su relación cosmológica con el sello, <strong>el pacto tácito se quebraría</strong> y las cofradías perderían cobertura legal para sus ritos. Aldwin Vael-Tarvine (canon firme <code>aldwin-vael-tarvine.md</code>) bloquea editorialmente cualquier mención académica explícita.</p>
+<p><strong>El mes Memoris (nombre Eternista privado de Engrenis)</strong> es <strong>señal canónica firme</strong> de pertenencia Eternista. Quien escribe correspondencia fechada “Memoris 14” en lugar de “Engrenis 14” está señalando <strong>lealtad Eternista activa</strong>. Los archiveros aldricajos no entrenados pasan por alto la palabra; los archiveros entrenados —y muy especialmente los Inquisidores Civiles del Engranaje— la marcan al margen. <strong>Aurelio Halmeras-Vetria</strong> firma sus cartas internas a la Cofradía del Hilo Largo con “Memoris” sistemáticamente desde hace doce años. Si el Aldricato lo investigara seriamente, <strong>el patrón de la palabra “Memoris” en su correspondencia archivada sería evidencia suficiente para procesarlo por colaboración eternista encubierta</strong>. El régimen no lo ha investigado porque Aurelio nunca ha sido sospechado.</p>
+<p><strong>Las 13 lunas Engren conservadas en privado por los Eternistas</strong> incluyen el mes <strong>Vodh-arn</strong> —“hacia Null”—. <strong>Pronunciar Vodh-arn</strong> en voz alta en luna llena de invierno cerca de un pilar acústico del sello (Mehralt, Vorath, Pacthos, Cetus) tiene canónicamente <strong>efecto cosmológico operativo menor</strong>: el sello vibra brevemente, los Sagas próximos lo perciben. <strong>Eira la Memoriosa</strong> lo sabe; lo ha hecho una vez en 1987 EN cerca del Glaciar de las Mil Voces, deliberadamente, para “comprobar que el nombre todavía operaba”. Confirmó que sí. <strong>Nadie más ha pronunciado Vodh-arn cerca de pilar acústico en cien años</strong>. Si un PJ erudito que aprende Engren antiguo lo pronuncia accidentalmente o deliberadamente en condiciones similares, el efecto cosmológico se produce y los Skalds vorathianos lo detectan en la siguiente Noche de las Mil Voces como “voz extraña en el glaciar”.</p>
+<p><strong>El calendario kenku por ediciones del Clarín</strong> es <strong>vehículo de información encriptada</strong>. Cada edición lleva citas literales fechadas a “edición X-fecha kenku” y “calendario aldricajo Y-fecha”. <strong>Las citas que omiten una de las dos fechas son señal canónica de manipulación</strong>. Skarra Voz-Propia (canon firme) lleva archivo paralelo silencioso de citas omitidas de fechado dual: hasta ahora ha detectado <strong>catorce omisiones</strong> en doscientos cuatro años, todas correspondientes a citas que el régimen aldricajo intentó suprimir. Si un PJ accede al <strong>archivo paralelo de Skarra</strong> —dificultad alta: requiere confianza kenku ganada por años, canon firme—, encuentra las catorce citas suprimidas, incluyendo <strong>una de Aldric II sobre el cuarto día intercalar</strong> que el régimen lleva borrando ochenta años.</p>
+<p><strong>La conversión exacta entre ciclos del Pacto Kalmari y años aldricajos</strong> tiene <strong>discrepancia cosmológica firme</strong> que el Aldricato no quiere reconocer: las veintiséis lunas del Pacto <strong>no son exactamente</strong> dos años solares aldricajos menos un mes; <strong>drift gradual</strong> de aproximadamente 1,8 días por ciclo. En 800 años de Pacto, el drift acumulado es de unos 720 días = casi dos años aldricajos. Los kalmarianos lo saben y lo aceptan; <strong>el Aldricato canónicamente ha solicitado al Sacerdocio Volcánico que “ajuste”</strong> el ritual para sincronizarlo, <strong>petición canónicamente rechazada</strong> por el sacerdocio en correspondencia firme de hace 47 años. La carta original está en el Archivo del Concierto, sub-bóveda diplomática. La carta de respuesta de la Maestra de Cantos de entonces es <strong>una sola línea</strong>: <em>“El volcán no escucha el calendario del rey.”</em></p>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

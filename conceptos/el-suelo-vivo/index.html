@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>El Suelo Vivo — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">El Suelo Vivo</h1> </header> <div class="wiki-prose mt-7"> <h1 id="el-suelo-vivo">El Suelo Vivo</h1>
+<p><strong>Página madre</strong> del <strong>fenómeno cosmológico ambiental</strong> por el cual ciertos lugares de <a href="/NovalisPage/geografia/novalis" class="wikilink">Novalis</a> acumulan, tras siglos de presencia divina reiterada, una <strong>fertilidad mística mensurable</strong> que se filtra en suelo, agua, aire, mineral, madera, sauna y manglar, y altera —no de modo espectacular, sino de modo silencioso y sistemático— las funciones biológicas, artesanales, herbolarias y rituales que ocurren sobre ellos. El Suelo Vivo es <strong>aenva ambiental difusa</strong>: residuo cosmológico del paso de los Tres dioses libres (<a href="/NovalisPage/dioses/aevum" class="wikilink">Aevum</a>, <a href="/NovalisPage/dioses/vastus" class="wikilink">Vastus</a>, <a href="/NovalisPage/dioses/primum" class="wikilink">Primum</a>) por la materia del mundo, <strong>filtrado al sustrato físico</strong> y <strong>acumulado durante generaciones</strong>. No es magia accesible —no produce hechizos, no se invoca, no se canaliza en núcleos—; <strong>manifiesta en efectos</strong>, no en operaciones. Una herbolaria que cura aquí no cura allá; un brennvin que se hace aquí no se hace allá; un queso que madura aquí no madura allá. Es el <strong>canon de la magia que el mundo ejecuta solo</strong>.</p>
+<blockquote>
+<p>[!important] Distinción cosmológica
+El Suelo Vivo <strong>no es lo mismo que <a href="/NovalisPage/conceptos/aenva" class="wikilink">Aenva</a> de Coral Hueco</strong>, aunque comparte raíz nominal. Aenva es <strong>entidad pasiva menor del Reverso</strong> con grado de voluntad localizada y cuerpo geométrico discreto; el Suelo Vivo es <strong>magia residual difusa</strong> sin voluntad y sin cuerpo, distribuida por el sustrato material del mundo entero en densidades muy variables. El término <strong>aenva ambiental</strong> que la doctrina Eternista emplea para hablar del Suelo Vivo es uso analógico: la palabra evoca filtración cosmológica al sustrato, no entidad consciente. La confusión nominal es deliberada en los textos Saga —ayuda a esconder Coral Hueco bajo discurso genérico de “aenva en el suelo”— pero cosmológicamente son fenómenos distintos.</p>
+</blockquote>
+<h2 id="naturaleza-del-suelo-vivo">Naturaleza del Suelo Vivo</h2>
+<p>El Suelo Vivo se describe en la doctrina Eternista como <strong>“lo que queda del dios cuando el dios ya no está mirando”</strong>. Cuando uno de los Tres dioses libres pasa repetidamente por un lugar —porque su tracción funeraria del <a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">Hilo Sosegado</a> lo cruza con regularidad, porque su huella mítica está fijada allí, porque sus criaturas asociadas migran por encima, porque alguna ceremonia lo invoca durante siglos—, <strong>filtra trazas cosmológicas</strong> al sustrato físico. Estas trazas <strong>no son el dios</strong> y no actúan como el dios actúa: son <strong>resto, sedimento, levadura</strong>. Permanecen en el suelo cuando el paso del dios cesa. Se acumulan si el paso vuelve. Se erosionan si la materia es destruida o industrializada, pero <strong>muy lentamente</strong> —siglos, no años—.</p>
+<p>La doctrina Saga emplea otra imagen: <strong>el yunque que ha calentado mil veces el mismo punto retiene el calor del herrero muerto</strong>. El suelo de Voltrede ha estado bajo presencia de <a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a> (dios extinto) durante seiscientos años de culto agrario; tras la extinción del dios y la absorción de su dominio por Vastus, <strong>la levadura cosmológica permanece</strong> sin reposición divina, lentamente perdiendo densidad pero todavía activa generaciones después. Los manglares de <a href="/NovalisPage/arquitectura/coral-hueco" class="wikilink">Coral Hueco</a> han recibido el cruce migratorio masivo de aves Aevum durante milenios; el sustrato coralino retiene <strong>aenva Aevum</strong> independientemente de que la aves de hoy sigan migrando.</p>
+<p>Esta dinámica explica por qué el Suelo Vivo <strong>no se crea</strong>: se <strong>deposita lentamente</strong> por uso cosmológico repetido. Un templo nuevo no genera Suelo Vivo aunque celebre cien ceremonias; necesita <strong>siglos de uso ritual continuado</strong> o <strong>paso reiterado de cuerpo divino</strong> o <strong>migración cosmológicamente cargada repetida</strong> para que el sustrato empiece a acumular densidad legible. Por contraste, <strong>destruir un Suelo Vivo es relativamente fácil</strong>: industrializar el lugar, talar el bosque, asfaltar la pradera, perforar la roca, refinar minerales debajo, <strong>acelera la erosión</strong> del depósito. Un siglo de tala intensiva basta para vaciar un manglar que tardó cinco mil años en cargarse.</p>
+<h2 id="densidad-la-métrica-de-los-eternistas">Densidad: la métrica de los Eternistas</h2>
+<p>La doctrina Eternista —desarrollada en los siglos posteriores al rebautizo por los herbolarios disidentes que documentaban diferencias inexplicables entre lugares aparentemente idénticos— mide el Suelo Vivo en <strong>unidades de aenva por hectárea</strong> (<strong>ua/ha</strong>). La escala es <strong>logarítmica relativa</strong>: se calibra contra el <strong>suelo de referencia urbano estándar</strong> de <a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> post-rebautizo, fijado convencionalmente en <strong>5 ua/ha</strong> (suelo residencial industrializado, sin culto activo, drenado por décadas de refinería distante). Las medidas se determinan por <strong>batería de pruebas herbarias</strong> (ciertas plantas indicadoras crecen o no crecen, curan o no curan) y por <strong>lectura ritual</strong> de Eternistas, Sagas y Skalds entrenados.</p>
+<p>Las <strong>densidades canónicas conocidas</strong> distribuyen el mundo en seis franjas operativas:</p>
+<ul>
+<li><strong>Suelo Muerto</strong> (≤ 0 ua/ha) — sustrato que <strong>sustrae aenva</strong> activamente. Es <strong>anti-Suelo Vivo</strong>. La única región del mundo confirmada en esta franja es <strong><a href="/NovalisPage/geografia/el-anillo-del-sello" class="wikilink">El Anillo del Sello</a></strong> central (≈ −120 ua/ha), donde el sello físico de <a href="/NovalisPage/dioses/null" class="wikilink">Null</a> consume aenva ambiental para sostenerse. Pasar tiempo en Suelo Muerto <strong>degrada al organismo</strong> independientemente de otros peligros: las plantas se marchitan más rápido, las heridas curan peor, los sueños se vuelven planos, la memoria afectiva se erosiona. Los <strong>cazadores de Inversiones</strong> de <a href="/NovalisPage/geografia/borde-del-anillo" class="wikilink">Borde del Anillo</a> documentan empíricamente este efecto sin nombrarlo.</li>
+<li><strong>Suelo Drenado</strong> (1–4 ua/ha) — sustrato cosmológicamente empobrecido por industrialización intensa. Refinerías de Astato de <a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a>, distritos fabriles de <a href="/NovalisPage/arquitectura/iskhal" class="wikilink">Iskhal</a>, <strong>vías ferroviarias mayores de la <a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a></strong>, almacenes corp de <a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> mercantil moderna. Los efectos son <strong>negativos suaves</strong>: la herbolaria fracasa, la fermentación tarda, el pan no leuda bien.</li>
+<li><strong>Suelo Estándar</strong> (5–15 ua/ha) — sustrato urbano y agrario común. Heliopolis residencial, Solaria, Velmoria, capitales cetuanas, núcleo de Mehralt. <strong>No hay efectos detectables</strong> ni positivos ni negativos: lo que el mundo hace por defecto.</li>
+<li><strong>Suelo Vivo Bajo</strong> (16–40 ua/ha) — sustrato cosmológicamente cargado, primer umbral de efectos perceptibles. Pueblos agrarios pre-industriales, comarcas eternistas, mucho del campo fortunés interior, valles vorathianos no industrializados. <strong>Bonificaciones leves canónicas a herbolaria, fermentación y pan</strong> —ver tabla mecánica D&#x26;D 5e más abajo—.</li>
+<li><strong>Suelo Vivo Medio</strong> (41–80 ua/ha) — sustrato fuertemente cargado, efectos manifiestos y documentados. <strong><a href="/NovalisPage/arquitectura/bosques-sagrados" class="wikilink">Bosques Sagrados</a></strong> de Fortuna, <strong><a href="/NovalisPage/geografia/stor-heita" class="wikilink">Stor-Heita</a></strong> y otras seis saunas vorathianas mayores, <strong>manglares de <a href="/NovalisPage/arquitectura/coral-hueco" class="wikilink">Coral Hueco</a></strong>, <strong>Catedral de la Mañana</strong> de <a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a>, <strong>Costa de <a href="/NovalisPage/arquitectura/drahnvar" class="wikilink">Drahnvar</a></strong> ballenera, <strong>Atolón Cráter de <a href="/NovalisPage/arquitectura/voltka" class="wikilink">Voltka</a></strong> sacerdotal, <strong><a href="/NovalisPage/geografia/voltka/templo-del-volcan-mismo" class="wikilink">Templo del Volcán Mismo</a></strong> sacerdotal kalmariano, <strong><a href="/NovalisPage/geografia/suren/templo-del-cantor-del-mar" class="wikilink">Templo del Cantor del Mar</a></strong> de <a href="/NovalisPage/arquitectura/suren" class="wikilink">Suren</a>. Aquí la herbolaria Eternista <strong>funciona</strong> mientras que en suelo estándar <strong>no</strong>.</li>
+<li><strong>Suelo Vivo Alto</strong> (81–150 ua/ha) — sustrato cosmológicamente excepcional. <strong>Voltrede</strong> (≈ 88 ua/ha) con su losa <a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a> enterrada bajo el Granero Sagrado. <strong><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> entera</strong> alto-medio (≈ 95 ua/ha) por nueve siglos de yunque humano y antaño enano. <strong><a href="/NovalisPage/geografia/lago-de-cien-ojos" class="wikilink">Lago de Cien Ojos</a></strong> (≈ 110 ua/ha, Fortuna interior). <strong>Faro Mudo de <a href="/NovalisPage/arquitectura/la-isla-que-camina" class="wikilink">La Isla que Camina</a></strong> (≈ 130 ua/ha, cuerpo físico parcial de Vastus encarnado en el suelo). <strong><a href="/NovalisPage/arquitectura/el-velo-sur" class="wikilink">El Velo Sur</a></strong> central (≈ 120 ua/ha, donde el horizonte se pliega).</li>
+<li><strong>Suelo Vivísimo</strong> (> 150 ua/ha) — sustrato cosmológicamente anómalo, <strong>boca cosmológica activa</strong>. Una única ubicación confirmada en el mundo: <strong>el Cráter de <a href="/NovalisPage/arquitectura/voltka" class="wikilink">Voltka</a></strong> del <a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a> de <a href="/NovalisPage/geografia/cetus" class="wikilink">Cetus</a> (≈ 320 ua/ha), considerado por las Sagas y la doctrina Eternista la <strong>boca cosmológica de Primum</strong> —el lugar donde el dios de la Creación filtra al mundo material con menor mediación—. La densidad anómala explica por qué el Astato de Verre es de calidad superior al de cualquier otro yacimiento: el mineral se forma <strong>en presencia de Primum casi directa</strong>.</li>
+</ul>
+<h2 id="origen-cómo-se-carga-un-suelo">Origen: cómo se carga un suelo</h2>
+<p>El Suelo Vivo se carga por <strong>cuatro vías mayores documentadas</strong> y una vía residual que la doctrina Eternista trata aparte:</p>
+<ol>
+<li><strong>Paso reiterado del cuerpo divino por la materia</strong> — huellas literales en el sustrato. Donde un dios libre se ha manifestado encarnado o cuasi-encarnado durante siglos —el Faro Mudo de La Isla que Camina como cuerpo físico parcial de Vastus, el Cráter de Voltka como boca cosmológica de Primum, los menhires de <a href="/NovalisPage/arquitectura/pacthos" class="wikilink">Pacthos</a> como cuerpos de Aevum-Vastus-Primum—, la materia <strong>retiene huella</strong> sin necesidad de culto. Es la vía de <strong>mayor densidad acumulada</strong> pero la más rara.</li>
+<li><strong>Sacrificios antiguos repetidos</strong> — emanación residual de actos cultuales sostenidos. El Granero Sagrado de Voltrede recibió <strong>seis siglos de ofrendas de cosecha a Korvun</strong> que filtraron al sustrato; aún tras la extinción del dios, la losa enterrada bajo el granero sigue emanando aenva. Los altares pre-rebautizo de Aevum bajo Catedrales del Dios Máquina retienen residuo Aevum bajo cooptación industrial. La vía de <strong>densidad media-alta</strong> y la más común históricamente.</li>
+<li><strong>Ciclos cosmológicos y migraciones cargadas</strong> — paso reiterado de criaturas asociadas al dios. Las <strong>anguilas migratorias</strong> del <a href="/NovalisPage/geografia/rio-claro" class="wikilink">Río Claro</a> vehiculan aenva <a href="/NovalisPage/dioses/vastus" class="wikilink">Vastus</a> desde el Mar del Pacto hasta los cursos fortuneses; las <strong>aves migratorias</strong> del manglar de Coral Hueco vehiculan aenva <a href="/NovalisPage/dioses/aevum" class="wikilink">Aevum</a> desde la presencia continuada del cuerpo aviar comunal; los <strong>cetáceos sagrados</strong> del <a href="/NovalisPage/geografia/mar-del-pacto" class="wikilink">Mar del Pacto</a> sostienen aenva Vastus marina; los rebaños trashumantes vorathianos generan corredor Aevum-Vastus inter-valle. La vía de <strong>densidad media</strong> pero <strong>muy distribuida geográficamente</strong>.</li>
+<li><strong>Mineral primigenio expuesto</strong> — sustrato que <strong>es</strong> materia divina parcial. La <a href="/NovalisPage/geografia/cordillera-volcanica" class="wikilink">Cordillera Volcánica</a> de <a href="/NovalisPage/geografia/calixar" class="wikilink">Calixar</a> expone fragmentos elementales de Primum como mineral primigenio bruto; las saunas-géiser vorathianas mayores como Stor-Heita emanan residuo <a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a> desde mineral profundo no extraído; el cráter de Voltka expone Primum casi directo. Es la vía <strong>menos común</strong> pero la <strong>más densa puntualmente</strong>.</li>
+</ol>
+<p>La vía residual —la <strong>vía Mahr</strong>— es <strong>especial y se trata aparte</strong> porque <a href="/NovalisPage/dioses/extintos/mahr" class="wikilink">Mahr</a> está extinto desde la <a href="/NovalisPage/historia/caida-de-engrenhof" class="wikilink">Caída de Engrenhof</a>. Los lugares cargados de aenva Mahr no se renuevan: solo se erosionan. Pero el sustrato onírico residual del dios extinto —canonizado como <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a>— funciona <strong>estructuralmente como un Suelo Vivo de los tres dioses libres</strong> salvo que sus efectos son <strong>oníricos</strong> en lugar de materiales (sueños proféticos, archivo onírico vivo). La doctrina Eternista lo cataloga como <strong>quinta franja transversal</strong> del Suelo Vivo: no se mide en ua/ha clásicas sino en <strong>densidad onírica residual</strong> con DC 12–20 propia. Ver ficha dedicada para detalle.</p>
+<h2 id="tipología-por-dios-filtrador">Tipología por dios filtrador</h2>
+<p>Los Suelos Vivos se distinguen según <strong>qué dios</strong> ha filtrado al sustrato. La doctrina canónica distingue <strong>tres tipos mayores</strong> (Aevum, Vastus, Primum, uno por cada dios libre) más <strong>dos residuales</strong> (Mahr extinto, Tellith pre-rebautizo) más <strong>dos absorbidos</strong> (Korvun absorbido por Vastus tras rebautizo, Voraj borrado deliberadamente):</p>
+<ul>
+<li><strong>Suelo Vivo de Aevum</strong> — filtración del dios del Tiempo. Doctrina del <strong>tiempo compartido</strong>. Efectos en curaciones de la memoria, longevidad de plantas medicinales, lectura de sueños profundos, archivos rituales. Lugares: ver <a href="/NovalisPage/conceptos/suelos-vivos-de-aevum" class="wikilink">Suelos Vivos de Aevum</a>.</li>
+<li><strong>Suelo Vivo de Vastus</strong> — filtración del dios del Espacio. Doctrina del <strong>espacio cruzado y el horizonte mirado</strong>. Efectos en orientación marítima, fermentación salina, conservación de pieles de viaje, comunicación a distancia. Lugares: ver <a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a>.</li>
+<li><strong>Suelo Vivo de Primum</strong> — filtración del dios de la Creación. Doctrina del <strong>oficio en la materia</strong>. Efectos en forja, alfarería, panadería, refinado de minerales, curtido, dureza de herramientas. Lugares: ver <a href="/NovalisPage/conceptos/suelos-vivos-de-primum" class="wikilink">Suelos Vivos de Primum</a>.</li>
+<li><strong>Suelo Vivo de Mahr (residual extinto)</strong> — filtración onírica residual del dios extinto de los Sueños. Ver <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a> para tratamiento completo. <strong>Decae lentamente</strong> —no se carga más— y manifiesta como sueños proféticos, no como efecto material.</li>
+<li><strong>Suelo Vivo Tellith (residual)</strong> — filtración mineral residual del dios extinto de las Montañas. Documentado en <strong>saunas-géiser vorathianas mayores</strong> y veta de minerales primigenios calixares no industrializados. Efectos curativos sobre fatiga y huesos quebrados; brennvin curativo. No se cataloga aparte: se trata como caso especial del Suelo Vivo de Primum por <strong>absorción residual</strong> del dominio mineral de Tellith en Primum tras el rebautizo. Ver <a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a>.</li>
+<li><strong>Suelo Vivo Korvun (residual)</strong> — filtración agraria residual del dios extinto de las Cosechas. Documentado en Voltrede y en algunos altares enterrados de Fortuna interior. Efectos en fertilidad cerealista y queso. Se cataloga como caso especial del Suelo Vivo de Vastus por <strong>absorción del dominio cosechero</strong> en Vastus tras el rebautizo (el dominio agrario migratorio se reasignó al dios del horizonte). Ver <a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a>.</li>
+</ul>
+<h2 id="detectabilidad">Detectabilidad</h2>
+<p>El Suelo Vivo <strong>no es perceptible por humanoide común</strong>. Quien camina sobre Suelo Vivo Medio o Alto <strong>no siente nada conscientemente</strong>: nota acaso una sensación vaga de “este lugar me sienta bien”, “aquí duermo mejor”, “el pan de aquí está más rico” —sin formular cosmología—. La percepción consciente requiere <strong>entrenamiento ritual</strong> o <strong>disposición natural</strong>, ambas raras.</p>
+<p>Los <strong>cinco perfiles canónicos</strong> que perciben Suelo Vivo son:</p>
+<ol>
+<li><strong>Eternistas</strong> entrenados en herbolaria del Cuenco Mayor. Detectan por <strong>cambio de tacto</strong> del suelo, <strong>olor sutil</strong> en plantas indicadoras (artemisa lectora, salvia lectora, hipérico lectora), <strong>brillo del aire</strong> al amanecer.</li>
+<li><strong>Sagas</strong> mayores y menores. Detectan por <strong>vibración del hilo</strong> —metáfora canónica para sensibilidad cosmológica heredada—. La Saga lee densidad por <strong>temperatura subjetiva</strong> de manos y por <strong>resonancia</strong> de objetos rituales (campanas pequeñas, agua en cuenco).</li>
+<li><strong>Skalds</strong> vorathianos. Detectan por <strong>timbre del valle</strong>: el aire de un Suelo Vivo Medio hace que las runas tatuadas resuenen “más” al voz alta (efecto sin formulación clara, transmitido como técnica oral).</li>
+<li><strong>Sacerdotes sacerdotales kalmarianos</strong> del Sacerdocio Volcánico. Detectan por <strong>eco del canto Volkario</strong>: el canto al magma resuena distinto sobre Suelo Vivo de Primum.</li>
+<li><strong>Doctores del Sacerdocio de Pacthos</strong> y matronas mayores fortunesas. Detectan por <strong>práctica acumulada</strong>: décadas de partos atendidos en distintos lugares enseñan a reconocer dónde los recién nacidos “salen mejor”.</li>
+</ol>
+<h3 id="mecánica-dd-5e-tirada-de-percepción-cosmológica">Mecánica D&#x26;D 5e: tirada de Percepción cosmológica</h3>
+<p>Detectar el Suelo Vivo es <strong>tirada de Sabiduría (Percepción cosmológica)</strong> con DC variable según densidad. La habilidad <strong>no existe por defecto en D&#x26;D 5e</strong>; es <strong>competencia adquirida</strong> por entrenamiento Eternista, Saga, Skald, sacerdotal kalmariano, o matriarca fortunesa rural. PJs no entrenados pueden intentar la tirada <strong>a desventaja</strong> o <strong>con bono de 0</strong> (sin proficiencia).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Densidad del Suelo Vivo</th><th>DC</th><th>Lo que se detecta</th></tr></thead><tbody><tr><td>Suelo Vivísimo (> 150 ua/ha)</td><td>12</td><td>Reconocimiento inequívoco; sensación corporal intensa</td></tr><tr><td>Suelo Vivo Alto (81–150 ua/ha)</td><td>14</td><td>Reconocimiento claro con concentración breve</td></tr><tr><td>Suelo Vivo Medio (41–80 ua/ha)</td><td>16</td><td>Reconocimiento con concentración y entrenamiento</td></tr><tr><td>Suelo Vivo Bajo (16–40 ua/ha)</td><td>18</td><td>Reconocimiento marginal, solo expertos</td></tr><tr><td>Suelo Drenado / Muerto</td><td>16 / 12</td><td>Suelo Muerto produce sensación corporal nauseabunda inequívoca (DC 12); Suelo Drenado requiere expertise (DC 16)</td></tr></tbody></table>
+<p><strong>Bonificadores acumulables</strong>:</p>
+<ul>
+<li>Eternista entrenado: +3</li>
+<li>Saga heredera de hilo: +5</li>
+<li>Skald maestro: +4</li>
+<li>Sacerdote Volcánico: +3 (solo Suelo de Primum)</li>
+<li>Dormir una noche sobre el lugar: +2 a la tirada al despertar</li>
+<li>Plantas indicadoras presentes (artemisa lectora, salvia lectora, hipérico lectora): +2</li>
+<li>Estar bajo techo industrial corp: −3</li>
+</ul>
+<h2 id="mecánica-dd-5e-efectos-del-suelo-vivo">Mecánica D&#x26;D 5e: efectos del Suelo Vivo</h2>
+<p>Estar y operar en Suelo Vivo Medio o superior modifica las tiradas de habilidad relacionadas con la cosmología del dios filtrador. Los efectos son <strong>canónicos</strong> y <strong>estables</strong>: no requieren tirada de invocación, suceden por defecto si la actividad ocurre sobre el sustrato.</p>
+<h3 id="tabla-de-bonificadores-por-tipo-de-suelo-vivo">Tabla de bonificadores por tipo de Suelo Vivo</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tipo</th><th>Actividad bonificada</th><th>Bono</th></tr></thead><tbody><tr><td><strong>Suelo Vivo de Aevum</strong></td><td>Curaciones herbales que invocan recuperación de memoria emocional, partería tradicional, atención a moribundo (asistencia funeraria Aevum)</td><td>+1 a curar / DC 12 para “sostener un recuerdo perdido”</td></tr><tr><td></td><td>Lectura de sueños profundos (con <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a> superpuesto: efectos se combinan)</td><td>+1d4 a tirada de SAB</td></tr><tr><td></td><td>Velar a un moribundo en marca Aevum: garantiza tracción Aevum sin fallo posible</td><td>Auto-éxito de “ventana al norte”</td></tr><tr><td><strong>Suelo Vivo de Vastus</strong></td><td>Orientación marítima, lectura de mareas, lectura de corrientes, navegación cuasi-mística</td><td>+1d4 a tirada de SAB (Supervivencia) o INT (Navegación)</td></tr><tr><td></td><td>Fermentación salina (brennvin de fiordo, salmuera de Voltka, manglar cetuano)</td><td>Productos resultantes son rasgo “Conservante mejorado” — duran +25%</td></tr><tr><td></td><td>Comunicación cuasi-telepática a larga distancia (silbidos de <a href="/NovalisPage/conceptos/lengua-de-las-aguas-lentas" class="wikilink">Lengua de las Aguas Lentas</a>, cantos del Cantor del Mar)</td><td>Alcance ×1.5</td></tr><tr><td><strong>Suelo Vivo de Primum</strong></td><td>Forja de pieza única, alfarería, refinado de mineral, panadería de masa madre</td><td>+1 a check de oficio artesano</td></tr><tr><td></td><td>Forja sobre Suelo Vivo Alto/Vivísimo (Mehralt alto, Cráter de Voltka)</td><td>Pieza resultante adquiere rasgo “Bien Forjada” (+1 a una propiedad relevante: durabilidad, peso, tono acústico)</td></tr><tr><td></td><td>Refinado de Astato sobre Suelo Vivo Vivísimo (Verre)</td><td>Astato resultante es <strong>de calidad superior</strong> —canon: por eso Verre produce el mejor Astato del mundo—</td></tr><tr><td><strong>Suelo Vivo Mahr residual</strong></td><td>Sueño profético: distinguir profecía de ruido</td><td>Ver <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a> (DC 12–20 con bonificadores propios)</td></tr><tr><td><strong>Suelo Muerto / anti-Suelo Vivo</strong></td><td>Cualquier check de magia, herbolaria, sueño, forja</td><td>−1 a −3 según densidad negativa</td></tr><tr><td></td><td>Permanencia prolongada (> 1 semana) en Suelo Muerto del Anillo del Sello</td><td>Save CON cada 24h o pérdida de 1 PV máximo permanente hasta abandonar el Suelo Muerto y descansar 1 mes en Suelo Vivo Medio o superior</td></tr></tbody></table>
+<h3 id="efectos-no-mecánicos-canónicos">Efectos no-mecánicos canónicos</h3>
+<ul>
+<li>Las <strong>plantas medicinales</strong> de los Bosques Sagrados curan <strong>el doble</strong> que las mismas especies de los herbolarios urbanos de Heliopolis. La Cofradía del Cuenco Mayor lo sabe, la Iglesia del Dios Máquina lo niega oficialmente.</li>
+<li>El <strong>brennvin</strong> no se hace en cualquier sauna-géiser: solo en las <strong>siete saunas mayores</strong> con residuo Tellith. Una destilería corp que intenta replicarlo en Iskhal industrial produce líquido <strong>bebible pero sin efecto curativo</strong>.</li>
+<li>El <strong>pan de runas</strong> vorathiano <strong>pierde sabor</strong> si se cocina sin Skald presente: no por superstición, por interacción cosmológica del aliento Skald con la levadura del valle.</li>
+<li>El <strong>queso de bisonte DOC</strong> de Voltrede <strong>madura anómalamente</strong>: ciertas variedades adquieren vetas color verde-musgo que no aparecen en queso producido fuera del condado, <strong>incluso con la misma leche y mismo proceso</strong>.</li>
+<li>Las <strong>anguilas del Río Claro</strong> son cosmológicamente “más nutritivas”: comer una anguila migratoria del Aguamiel sobre el propio cauce <strong>restaura un punto de fatiga adicional</strong> sobre la cena equivalente.</li>
+<li>Las <strong>piezas únicas forjadas en Mehralt alto</strong> sobre yunque familiar duran <strong>dos generaciones más</strong> que las forjadas en fundición Mehrholt-Vael industrial. Es secreto comercial gremial enano.</li>
+</ul>
+<h2 id="riesgo-suelo-muerto-y-degradación">Riesgo: Suelo Muerto y degradación</h2>
+<p>El reverso del Suelo Vivo es el <strong>Suelo Muerto</strong> o <strong>anti-Suelo Vivo</strong>: sustrato que <strong>sustrae aenva activamente</strong> del entorno y del organismo que lo pisa. La única región del mundo confirmada en esta franja es <strong>El Anillo del Sello</strong> central, donde el sello físico de Null <strong>come aenva ambiental</strong> como combustible para sostenerse encarcelado. La densidad estimada es de <strong>−120 ua/ha</strong> en el cinturón medio del Anillo, llegando a <strong>−200 ua/ha</strong> en el cinturón interior (donde solo los <strong>cazadores de Inversiones más experimentados</strong> sobreviven).</p>
+<p>Los efectos de permanencia en Suelo Muerto se documentan empíricamente desde la primera generación de cazadores de Inversiones:</p>
+<ul>
+<li><strong>Marchitamiento acelerado</strong> de toda planta presente. Los <strong>cactos invertidos</strong> del cinturón medio son la única vegetación viable: prosperan precisamente porque su estructura inversa <strong>come</strong> Suelo Muerto.</li>
+<li><strong>Curación retardada de heridas</strong> —factor 0.5 a 0.7 de velocidad normal—.</li>
+<li><strong>Sueños planos</strong> o ausencia total de sueños durante la estancia. Los Eternistas describen esto como “Null come Mahr antes de que llegue al durmiente”: el sustrato onírico Mahr no alcanza al cerebro porque el Suelo Muerto lo absorbe en tránsito.</li>
+<li><strong>Erosión de memoria afectiva</strong>: tras un mes en Suelo Muerto, el sujeto recuerda los hechos pero <strong>pierde la carga emocional</strong> asociada. Funeral propio, primer amor, muerte del maestro: el recuerdo persiste como dato, no como vínculo. Es uno de los daños psíquicos más documentados del Anillo y la razón canónica por la que <strong>los cazadores de Inversiones envejecen mal</strong>: no por años, por <strong>vaciado emocional</strong>.</li>
+<li><strong>Pérdida de PV máximo permanente</strong> si la permanencia supera el mes (mecánica D&#x26;D arriba).</li>
+</ul>
+<p>La doctrina Saga sostiene que <strong>el sello físico de Null se alimenta de aenva ambiental</strong> además de <strong>almas sedimentadas del <a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">Hilo Sosegado</a></strong>: una doble vía de alimentación que retroactiva la urgencia cosmológica del régimen industrial. Cada hectárea drenada por refinería corp <strong>alimenta indirectamente a Null</strong> al reducir aenva libre disponible para los Tres dioses recogedores. La industrialización no es solo fábrica de olvidados: es <strong>fábrica de Suelo Muerto distribuido</strong>.</p>
+<h2 id="vínculo-con-el-hilo-sosegado">Vínculo con el Hilo Sosegado</h2>
+<p>Los Suelos Vivos son, además de <strong>terreno de magia residual</strong>, los lugares donde <strong>las almas son más fácilmente reclamadas por su dios al morir</strong>. Las tres tracciones del Hilo Sosegado <strong>operan con mayor eficacia</strong> sobre Suelo Vivo del dios correspondiente:</p>
+<ul>
+<li><strong>Morir sobre Suelo Vivo de Aevum</strong> (Bosques Sagrados, Catedral de la Mañana, sauna ritual de Hjornheim, manglar coralino) <strong>garantiza tracción Aevum sin fallo</strong> si el difunto porta marca de tiempo compartido. La hebra <strong>no se desvía</strong> ni se sedimenta parcialmente.</li>
+<li><strong>Morir sobre Suelo Vivo de Vastus</strong> (Costa de Drahnvar, Velo Sur, Faro Mudo, Mar del Pacto sobre cubierta, Templo del Cantor del Mar) <strong>garantiza tracción Vastus sin fallo</strong> si el difunto porta marca de horizonte. La hebra se tira hacia arriba con luminosidad anómala visible a quien tenga competencia.</li>
+<li><strong>Morir sobre Suelo Vivo de Primum</strong> (Mehralt alto, Cráter de Voltka, saunas-géiser mayores, Templo del Yunque Hondo en ruinas) <strong>garantiza tracción Primum sin fallo</strong> si el difunto porta marca de oficio. El último aliento sube por la columna de calor del Suelo Vivo y se integra de modo limpio.</li>
+</ul>
+<p>Esto canoniza por qué los Eternistas <strong>trasladan a los moribundos</strong> a Suelos Vivos cuando es posible: no es decoración, es <strong>garantía cosmológica de tracción asistida</strong>. La cofradía del Hogar Sostenido fortunesa, la cofradía del Yunque calixar, la doctrina cetuana costera, la doctrina vorathiana del valle: todas <strong>operan instintivamente</strong> este principio sin formularlo siempre con el vocabulario del Suelo Vivo.</p>
+<p>La consecuencia inversa también es canónica: <strong>morir sobre Suelo Muerto del Anillo del Sello</strong> sedimenta el alma <strong>automáticamente</strong> independientemente de la marca portada. La hebra no se tira hacia ningún dios libre: cae a Null <strong>antes</strong> de que cualquier tracción pueda leerla. Los presos del régimen Halsen expuestos al cinturón medio del Anillo durante meses <strong>mueren con tracción imposible</strong>. Es la pena cosmológica más cruel documentada: ni Aevum, ni Vastus, ni Primum recuperan al difunto. La sedimentación es <strong>total</strong>.</p>
+<h2 id="política-del-suelo-vivo">Política del Suelo Vivo</h2>
+<p>El Suelo Vivo es <strong>objeto de disputa política activa</strong> entre dos polos no formalizados:</p>
+<h3 id="el-polo-eternista-saga-pre-corp">El polo Eternista-Saga-pre-corp</h3>
+<p>Los <strong>Eternistas</strong> —especialmente la Cofradía del Cuenco Mayor— <strong>protegen</strong> los Suelos Vivos conocidos como <strong>patrimonio cosmológico irrecuperable</strong>. La doctrina es: una hectárea de Suelo Vivo Medio destruida tarda <strong>cinco a diez generaciones</strong> en regenerarse aunque el culto se reanude. Las protecciones operativas incluyen:</p>
+<ul>
+<li><strong>Edictos eternistas no oficiales</strong> que prohíben tala, perforación o asfalto en sectores cargados (Bosques Sagrados, Pradera de Tres Vientos al norte de Voltrede, costa de Drahnvar).</li>
+<li><strong>Comunidades aliadas custodias</strong> (Cofradía del Bisonte Pardo de Voltrede, Cofradía del Cuenco Mayor de Bosques Sagrados, Cofradía del Hogar Sostenido del Valle de las Ovejas Blancas, Cofradía del Yunque calixar mehraltí enana).</li>
+<li><strong>Cartografía cosmológica clandestina</strong> de Suelos Vivos sostenida por las Sagas. Documento canónico raro: el <strong>Mapa del Hilo Tibio</strong> —en realidad atlas Saga de densidades ua/ha conocidas—. Existen tres copias confirmadas (Eira la Memoriosa, Anciano del Árbol Madre central de Cetus, Drekkanna de las Camadas).</li>
+<li><strong>Sabotaje encubierto</strong> contra la industrialización inminente de un Suelo Vivo, como la cuarta tentativa de tala clandestina de los Bosques Sagrados.</li>
+</ul>
+<h3 id="el-polo-megacorp-industrial-aldricato">El polo megacorp-industrial-Aldricato</h3>
+<p>Las <strong>tres megacorps</strong> <strong>identifican</strong> los Suelos Vivos como <strong>recursos</strong>: terreno con propiedades extractivas o productivas anómalas que pueden comercializarse. La doctrina corp es:</p>
+<ul>
+<li><strong>El Conservatorio de Animadores de Heliopolis</strong> financia investigaciones sobre “microclima caliza-fluvial de Voltrede” sin convicción real: el verdadero interés es <strong>comprar tierra del condado</strong> para instalar refinerías que captarían la anomalía. La resistencia de la Cofradía del Bisonte Pardo y la opacidad eternista lo han bloqueado <strong>cuatro veces</strong> en cuatro generaciones.</li>
+<li>La <strong>Banca Vellanor</strong> tiene posición tomada en futuros de Astato de Verre por anticipar correctamente que la calidad superior tiene <strong>base cosmológica</strong> que la industrialización no replica. Vellanor <strong>no industrializa Verre</strong> porque destruirla destruiría su propio activo: estrategia financiera de <strong>rentista cosmológico</strong>.</li>
+<li>Programas como <a href="/NovalisPage/conceptos/programa-yunque-negro" class="wikilink">Programa Yunque Negro</a> han documentado internamente la existencia de “anomalías de fertilidad” sin formular su naturaleza cosmológica. El régimen Halsen calixar tiene <strong>listado interno</strong> de Suelos Vivos confirmados que considera “patrimonios estratégicos” —en práctica, candidatos a industrialización futura controlada—.</li>
+<li>La <strong>Iglesia del Dios Máquina</strong> niega oficialmente el Suelo Vivo: la doctrina <strong>religión moderna del Aldricato</strong> sostiene que toda fertilidad anómala se explica por causas industriales-mecánicas. Es <strong>negacionismo doctrinal funcional</strong> que protege el régimen extractivo de la disidencia cosmológica.</li>
+</ul>
+<h2 id="tabla-maestra-de-suelos-vivos-canónicos-conocidos">Tabla maestra de Suelos Vivos canónicos conocidos</h2>
+<p>Esta es la <strong>tabla operativa</strong> que las Sagas mayores y los Eternistas del Cuenco Mayor tienen memorizada o cartografiada. Es <strong>referencia canónica</strong> del mundo, con densidades estimadas y fenómeno observable principal.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Lugar</th><th>Tipo</th><th>Densidad (ua/ha)</th><th>Continente / región</th><th>Fenómeno observable principal</th></tr></thead><tbody><tr><td><strong>Cráter de Voltka (Atolón de Verre)</strong></td><td>Primum (boca cosmológica)</td><td>≈ 320</td><td>Cetus, archipiélago volcánico cetuano</td><td>Astato puro brota directo, calidad inigualada</td></tr><tr><td><strong>Faro Mudo (La Isla que Camina)</strong></td><td>Vastus (cuerpo encarnado parcial)</td><td>≈ 130</td><td>isla migratoria del Mar de Vastus</td><td>Suelo “respira” perceptiblemente; horizonte pliega</td></tr><tr><td><strong>El Velo Sur (centro)</strong></td><td>Vastus (horizonte plegado)</td><td>≈ 120</td><td>isla suroeste</td><td>Cartografía marina inconsistente; brújulas oscilan</td></tr><tr><td><strong>Lago de Cien Ojos</strong></td><td>Aevum (espejo de Mahr legado)</td><td>≈ 110</td><td>Fortuna interior</td><td>Aguas muestran recuerdos al observador concentrado</td></tr><tr><td><strong>Mehralt alto (yunque humano + enano)</strong></td><td>Primum (acumulación nueve siglos)</td><td>≈ 95</td><td>Calixar, cordillera</td><td>Piezas únicas duran dos generaciones más</td></tr><tr><td><strong>Voltrede (losa Korvun enterrada + Granero Sagrado)</strong></td><td>Vastus (residual Korvun absorbido)</td><td>≈ 88</td><td>Fortuna, condado</td><td>Cosechas anómalas, queso DOC, longevidad rural; grano almacenado se conserva +50%, raíces de plantas crecen hacia abajo en el Granero Sagrado</td></tr><tr><td><strong>Bosques Sagrados (centro)</strong></td><td>Aevum</td><td>≈ 75</td><td>Fortuna interior</td><td>Herbolaria Eternista funcional; Ciervo Blanco aparece</td></tr><tr><td><strong>Stor-Heita (sauna mayor Hjornheim)</strong></td><td>Primum (Tellith residual)</td><td>≈ 72</td><td>Vorath, Hjornheim</td><td>Pactos vinculan moralmente; brennvin curativo</td></tr><tr><td><strong>Manglares del alba (Coral Hueco)</strong></td><td>Aevum (migración aviar continuada)</td><td>≈ 70</td><td>atolón slime sur Cetus</td><td>Slimes viejos exhalan ahí, parto coralino</td></tr><tr><td><strong>Costa de Drahnvar (faena ballenera)</strong></td><td>Vastus</td><td>≈ 68</td><td>Fortuna noroeste</td><td>Barcos pesqueros parten y vuelven al mismo punto 800 años</td></tr><tr><td><strong>Atolón Cráter de Voltka (sacerdotal)</strong></td><td>Primum (sacerdotal-volcánico)</td><td>≈ 65</td><td>Cetus, archipiélago volcánico</td><td>Canto Volkario resuena con eco anómalo</td></tr><tr><td><strong>Templo del Volcán Mismo (Voltka)</strong></td><td>Primum</td><td>≈ 62</td><td>Cetus</td><td>Sacerdotes leen profecías en humo del altar</td></tr><tr><td><strong>Catedral de la Mañana (Heliopolis)</strong></td><td>Aevum (oración Aldric II últimos meses)</td><td>≈ 58</td><td>Fortuna, Heliopolis</td><td>Velas duran más; visitantes recuerdan a muertos íntimos</td></tr><tr><td><strong>Templo del Cantor del Mar (Suren)</strong></td><td>Vastus</td><td>≈ 55</td><td>Cetus costa</td><td>Canto sostiene a <a href="/NovalisPage/personajes/marsa-la-inundada" class="wikilink">Marsa la Inundada</a></td></tr><tr><td><strong>Sauna ritual de Hjornheim (matriarcas)</strong></td><td>Aevum</td><td>≈ 52</td><td>Vorath, Hjornheim</td><td>Matriarcas nacen y mueren en la misma cabaña; archivo Aevum denso</td></tr><tr><td><strong>Templo del Yunque Hondo (ruinas Mehralt)</strong></td><td>Primum (Tellith residual pre-rebautizo)</td><td>≈ 50</td><td>Calixar, Mehralt</td><td>Aire bajo ruinas resuena al golpear hierro</td></tr><tr><td><strong>Cordillera Volcánica de Calixar</strong></td><td>Primum (mineral primigenio)</td><td>40–80 (variable)</td><td>Calixar oriental</td><td>Fragmentos elementales de Primum afloran en grietas</td></tr><tr><td><strong>Bosques Sagrados periferia</strong></td><td>Aevum</td><td>30–50</td><td>Fortuna interior</td><td>Plantas medicinales rinden +25% sobre estándar</td></tr><tr><td><strong>Mar del Pacto (corredor cetáceo)</strong></td><td>Vastus (difuso en agua)</td><td>25–45 (difuso)</td><td>mar entre Fortuna y Cetus</td><td>Aenva acuático; ballenas cantan por dos</td></tr><tr><td><strong>Pradera de Tres Vientos (Voltrede)</strong></td><td>Vastus (residual Korvun)</td><td>≈ 42</td><td>Fortuna, condado de Voltrede</td><td>Bisontes salvajes pre-rebautizo persisten</td></tr><tr><td><strong>Valle de las Ovejas Blancas</strong></td><td>Aevum</td><td>≈ 40</td><td>Fortuna interior</td><td>Rebaños trashumantes acumulan marca, peregrinaje</td></tr><tr><td><strong>Anillo del Sello (cinturón medio)</strong></td><td><strong>Suelo Muerto</strong></td><td>≈ −120</td><td>Calixar meridional</td><td>Cactos invertidos; aenva sustraída; PV máximo erosionado</td></tr><tr><td><strong>Anillo del Sello (cinturón interior)</strong></td><td><strong>Suelo Muerto profundo</strong></td><td>≈ −200</td><td>Calixar meridional</td><td>Inversiones de alto CR; cosmología rota</td></tr><tr><td><strong>Catedrales del Dios Máquina mayores</strong></td><td>Drenado / Estándar</td><td>3–8</td><td>Aldricato general</td><td>Aenva Aevum bajo cooptación industrial; tirada SAB DC 18 detecta residuo</td></tr><tr><td><strong>Refinerías de Astato de Maris-Korr</strong></td><td>Drenado severo</td><td>≈ 2</td><td>Calixar costa</td><td>Herbolaria no funciona; fermentación tarda</td></tr><tr><td><strong>Vías ferroviarias mayores (vía + 100 m)</strong></td><td>Drenado</td><td>≈ 3</td><td>Aldricato general</td><td>”Sedimentación por raíl”; marca Vastus rechazada</td></tr></tbody></table>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">El Hilo Sosegado</a> — Mecanismo cosmológico funerario que opera con mayor eficacia sobre Suelos Vivos del dios correspondiente</li>
+<li><a href="/NovalisPage/dioses/aevum" class="wikilink">Aevum</a> — Dios libre cuya filtración genera Suelo Vivo de Aevum</li>
+<li><a href="/NovalisPage/dioses/vastus" class="wikilink">Vastus</a> — Dios libre cuya filtración genera Suelo Vivo de Vastus</li>
+<li><a href="/NovalisPage/dioses/primum" class="wikilink">Primum</a> — Dios libre cuya filtración genera Suelo Vivo de Primum</li>
+<li><a href="/NovalisPage/dioses/null" class="wikilink">Null</a> — Dios sellado cuyo cuerpo genera Suelo Muerto en el Anillo del Sello</li>
+<li><a href="/NovalisPage/dioses/extintos/mahr" class="wikilink">Mahr</a> — Dios extinto cuyo residuo onírico se canoniza como <a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a></li>
+<li><a href="/NovalisPage/dioses/extintos/tellith" class="wikilink">Tellith</a> — Diosa extinta cuyo residuo mineral perdura en saunas-géiser vorathianas mayores</li>
+<li><a href="/NovalisPage/dioses/extintos/korvun" class="wikilink">Korvun</a> — Dios extinto cuyo residuo agrario perdura en Voltrede y altares enterrados</li>
+<li><a href="/NovalisPage/conceptos/suelos-vivos-de-aevum" class="wikilink">Suelos Vivos de Aevum</a> — Sub-ficha con catálogo de lugares Aevum</li>
+<li><a href="/NovalisPage/conceptos/suelos-vivos-de-vastus" class="wikilink">Suelos Vivos de Vastus</a> — Sub-ficha con catálogo de lugares Vastus</li>
+<li><a href="/NovalisPage/conceptos/suelos-vivos-de-primum" class="wikilink">Suelos Vivos de Primum</a> — Sub-ficha con catálogo de lugares Primum</li>
+<li><a href="/NovalisPage/conceptos/el-suelo-de-mahr" class="wikilink">El Suelo de Mahr</a> — Sustrato onírico residual del dios extinto, tratado como quinta franja transversal</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — Pueblo cosechero sobre losa Korvun enterrada</li>
+<li><a href="/NovalisPage/arquitectura/atolon-de-verre" class="wikilink">Atolón de Verre</a> — Boca cosmológica de Primum en Cráter de Voltka</li>
+<li><a href="/NovalisPage/geografia/stor-heita" class="wikilink">Stor-Heita</a> — Sauna-géiser mayor con residuo Tellith</li>
+<li><a href="/NovalisPage/arquitectura/bosques-sagrados" class="wikilink">Bosques Sagrados</a> — Bosque Aevum medio-alto, herbolaria Eternista funcional</li>
+<li><a href="/NovalisPage/arquitectura/coral-hueco" class="wikilink">Coral Hueco</a> — Manglares Aevum por migración aviar continuada</li>
+<li><a href="/NovalisPage/geografia/el-anillo-del-sello" class="wikilink">El Anillo del Sello</a> — Única región del mundo con Suelo Muerto confirmado</li>
+<li><a href="/NovalisPage/conceptos/aenva" class="wikilink">Aenva</a> — Entidad pasiva menor del Reverso; no confundir nominalmente con aenva ambiental difusa</li>
+<li><a href="/NovalisPage/conceptos/el-reverso" class="wikilink">El Reverso</a> — Plano cosmológico de origen de Aenva (no del Suelo Vivo)</li>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — Mineral cuya calidad correlaciona con densidad de Suelo Vivo de Primum del yacimiento</li>
+<li><a href="/NovalisPage/facciones/eternistas" class="wikilink">Eternistas</a> — Doctrina herbolaria que documentó empíricamente las densidades ua/ha</li>
+<li><a href="/NovalisPage/facciones/las-sagas" class="wikilink">Las Sagas</a> — Red disidente custodia del Mapa del Hilo Tibio</li>
+<li><a href="/NovalisPage/conceptos/skalds" class="wikilink">Skalds</a> — Cronistas-tatuadores vorathianos que detectan Suelo Vivo por timbre del valle</li>
+<li>Sacerdocio Volcánico de Kalmari — Sacerdotes que detectan Suelo de Primum por eco del Volkario</li>
+<li><a href="/NovalisPage/facciones/cofradia-del-cuenco-mayor" class="wikilink">Cofradía del Cuenco Mayor</a> — Cofradía Eternista herbolaria que sostiene el conocimiento operativo</li>
+<li><a href="/NovalisPage/facciones/cofradia-del-bisonte-pardo" class="wikilink">Cofradía del Bisonte Pardo</a> — Custodios voltredeses bastión rural anti-corp</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — Polo industrial que extrae sin formular el coste cosmológico</li>
+<li>Conservatorio de Animadores — Megacorp con investigaciones de “microclima” que enmascaran intención industrial</li>
+<li>Iglesia del Dios Máquina — Negacionismo doctrinal funcional del Suelo Vivo</li>
+<li><a href="/NovalisPage/conceptos/programa-yunque-negro" class="wikilink">Programa Yunque Negro</a> — Lista interna corp de “anomalías de fertilidad” estratégicas</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>Suelos Vivos no revelados oficialmente por los Eternistas</strong>: el Mapa del Hilo Tibio Saga es <strong>más amplio</strong> que lo que la Cofradía del Cuenco Mayor comparte siquiera con sus miembros plenos. Los Eternistas conocen y enseñan las densidades de <strong>lugares públicamente conocidos</strong> (Bosques Sagrados, Voltrede, Stor-Heita, Catedral de la Mañana). Lo que mantienen en silencio:</p>
+<ul>
+<li><strong>El Suelo Vivo bajo el Palacio Real de Heliopolis</strong> (≈ 45 ua/ha, Aevum residual de coronaciones y velatorios Hardrach pre-Aldric). La <a href="/NovalisPage/geografia/sala-del-cambio" class="wikilink">Sala del Cambio</a> está literalmente sobre un Suelo Vivo Medio cuyo emanación influye sutilmente en quien firma decretos: explica parcialmente la incomodidad creciente de <a href="/NovalisPage/personajes/aldric-iii" class="wikilink">Aldric III</a> —el rey vive sobre Aevum residual, dios que su régimen industrial debilita—. Saber esto convertiría al palacio en objetivo prioritario tanto de Eternistas (custodiar) como de corp (drenar). Las Sagas lo callan por equilibrio inestable.</li>
+<li><strong>El Suelo Vivo bajo la Hacienda del Norte</strong> (≈ 60 ua/ha, Aevum residual de huellas pre-Engren mucho más antiguas que la propia hacienda). La cumbre corp anual ocurre <strong>sobre Suelo Vivo Medio sin saberlo</strong>: los magnates corp negocian futuros industriales sobre el sustrato de un dios al que están exterminando. Los Eternistas que infiltran la cumbre <strong>lo sienten</strong> y obtienen +2 a tiradas de SAB durante toda la estancia: ventaja oculta de campaña.</li>
+<li><strong>El Suelo Vivo del Olivo del Hilo</strong> (≈ 95 ua/ha, mixto Aevum-Vastus-Primum: único caso documentado de los <strong>tres</strong> dioses libres filtrando simultáneamente). El árbol-templo Saga es sustrato vivo de campaña. Las Sagas lo califican como <strong>patrimonio cosmológico de primer rango</strong> y la red Sin-Cuerda lo protege militarmente sin saber del todo por qué.</li>
+<li><strong>El Suelo Vivo bajo Engrenhof caída</strong> (≈ 80 ua/ha pre-caída, residual ≈ 25 ua/ha hoy). La ciudad muerta tiene aenva todavía detectable; expediciones Sagas y de la Hermandad de la Piedra Muda han explorado el sitio. Es candidato secreto a <strong>restauración cosmológica</strong> si el régimen Novalis cae.</li>
+<li><strong>El Suelo Muerto bajo la Cripta de los Cinco Pactos</strong> (≈ −40 ua/ha localizado bajo la cripta veltarés): foco menor de Suelo Muerto fuera del Anillo del Sello, vinculado al Sexto Fundador silenciado y a la placa de obsidiana con nombres verdaderos. <strong>Confirmación cosmológica</strong> de que el sexto pacto era con Null y de que la cripta sigue alimentando al sello a través de la sedimentación residual de los fundadores no nombrados.</li>
+<li><strong>El Suelo Vivo de la Plaza Inundable de Marsa la Inundada</strong> (≈ 55 ua/ha, Vastus marítimo, ligado al cuerpo semihundido de Marsa). El sustrato urbano kalmariano de la plaza es <strong>canal cosmológico activo</strong> entre el espíritu volcánico semihundido y el dios del Espacio. La Reina Imari lo sabe; lo usa para sincronizar su canto sin formularlo.</li>
+</ul>
+<p><strong>Lugares que los Eternistas no han descubierto</strong>:</p>
+<ul>
+<li>El <strong>Lago de Cien Ojos</strong> está <strong>subestimado</strong> por los Eternistas (calculan ≈ 110 ua/ha; la realidad es ≈ 170 ua/ha si se mide en la roca submarina del centro del lago). Es un <strong>Suelo Vivísimo de Aevum</strong> no reconocido como tal por nadie vivo. El <a href="/NovalisPage/personajes/anciano-del-arbol-madre" class="wikilink">Anciano del Árbol Madre</a> de Cetus lo sospecha pero no ha viajado a verificarlo. Posible mazmorra cosmológica futura.</li>
+<li>Los <strong>Pozos Mudos de Veltara</strong> (la mazmorra cetuana) tienen densidad anómala difícil de medir: el fenómeno acústico-cosmológico <strong>interfiere</strong> con la lectura ritual. La hipótesis Saga es que se trata de <strong>Suelo Vivo Mixto Vastus-Primum acústico-resonante</strong> vinculado al cuarto pilar del sellado, con densidad probable ≈ 100 ua/ha. La canonización del cuarto pilar <strong>confirma</strong> la lectura.</li>
+<li>La <strong>Plaza de los Cinco Pactos de Veltara</strong> (superficie, no cripta) tiene Suelo Vivo Medio (≈ 45 ua/ha) que <strong>emana hacia arriba desde la cripta sellada inferior</strong>. La doble capa —Suelo Vivo Aevum-Primum en superficie / Suelo Muerto bajo la cripta— es <strong>único fenómeno documentado de inversión cosmológica vertical</strong> en el mundo conocido. Vía DM mayor: investigar la <strong>inversión</strong> revela el sexto pacto.</li>
+</ul>
+<p><strong>Tabla DM de medición precisa por entrenamiento</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Perfil</th><th>Capacidad de medir</th><th>Margen de error</th></tr></thead><tbody><tr><td>Eternista del Cuenco Mayor</td><td>sí, dentro de su carta</td><td>±15 ua/ha</td></tr><tr><td>Saga mayor</td><td>sí, todo el catálogo conocido</td><td>±5 ua/ha</td></tr><tr><td>Saga menor</td><td>parcial</td><td>±25 ua/ha</td></tr><tr><td>Skald maestro</td><td>solo Vorath y zonas cosmológicas mayores</td><td>±20 ua/ha</td></tr><tr><td>Sacerdote Volcánico</td><td>solo Primum, escala distinta</td><td>n/a</td></tr><tr><td>PJ con entrenamiento improvisado</td><td>aproximado por bonificadores</td><td>±40 ua/ha</td></tr></tbody></table>
+<p><strong>Vías DM de campaña</strong>:</p>
+<ol>
+<li><strong>Misión cartografía cosmológica</strong> — los PJ son contratados por una Saga (Veshra la Caminante, Marella Sin-Tiempo) para verificar densidades sospechadas pero no confirmadas. Recorrer media docena de lugares con plantas indicadoras y registro de DC de Percepción cosmológica. Recompensa: aprender una técnica de medición. Coste: la Compañía detecta la actividad como espionaje minero.</li>
+<li><strong>Misión defensa de Suelo Vivo</strong> — el Conservatorio de Animadores planea <strong>perforación experimental</strong> del subsuelo de Voltrede para acceder a la “anomalía caliza-fluvial”. Los PJ son contactados por la Cofradía del Bisonte Pardo. Sabotaje técnico + maniobra política + infiltración del Conservatorio. Si fracasan, el condado pierde 30 ua/ha en una década y el Granero Sagrado emana <strong>mucho menos</strong>: las cosechas vuelven al promedio.</li>
+<li><strong>Misión Suelo Muerto inducido</strong> — el régimen Halsen calixar ha desarrollado, en colaboración con un científico corp herético, <strong>método para inducir Suelo Muerto en lugares estratégicos</strong> —degradar Suelo Vivo Bajo a Suelo Drenado o Suelo Drenado a Suelo Muerto puntualmente—. Los PJ descubren que <strong>la Pradera de Tres Vientos al norte de Voltrede ha caído 15 ua/ha en seis meses</strong> sin causa industrial evidente: alguien la está “matando” deliberadamente. Investigación → descubrimiento del método → opciones (destruirlo, robarlo, usarlo).</li>
+<li><strong>Misión cosecha residual de Korvun</strong> — los PJ aprenden que la losa enterrada bajo el Granero Sagrado de Voltrede <strong>podría reactivarse parcialmente</strong> si se realizan ofrendas pre-rebautizo en el lenguaje original (Engren antiguo, conservado por las Sagas). Reactivar la losa subiría el condado entero <strong>30 ua/ha</strong>. Coste: <strong>alguien notaría</strong> —Vastus, que absorbió el dominio de Korvun, percibiría la reactivación como interferencia y los PJ atraerían atención cosmológica directa del dios del Espacio—.</li>
+<li><strong>Misión Olivo triple</strong> — investigar por qué el Olivo del Hilo es <strong>el único Suelo Vivo Aevum-Vastus-Primum simultáneo confirmado</strong>. Resolución cosmológica: el Olivo es el <strong>único punto del mundo donde la Saga vegetal del fundador raíz mantiene contacto con los tres dioses libres a la vez</strong>, lo cual lo convierte en <strong>candidato natural a sede de un rito de redirección de almas sedimentadas</strong> (ver bloque DM de <a href="/NovalisPage/conceptos/el-hilo-sosegado" class="wikilink">El Hilo Sosegado</a>). Misión final: usar el Olivo para recuperar a la Reina Vesilia del sedimento.</li>
+<li><strong>Misión drenaje del Anillo</strong> — los PJ descubren que el cinturón medio del Anillo del Sello <strong>se ha expandido tres kilómetros en una década</strong>: el Suelo Muerto está creciendo. Investigación → confirmación de que el sello debilita más rápido de lo que las Sagas calculaban → urgencia narrativa. Vinculado a <a href="/NovalisPage/conceptos/profecias/profecia-de-la-quinta-arquitectura" class="wikilink">Profecía de la Quinta Arquitectura</a>.</li>
+<li><strong>Misión Faro Mudo</strong> — el cuerpo encarnado parcial de Vastus en La Isla que Camina está <strong>moviéndose con menor frecuencia</strong> que hace una década: la isla migra menos. La hipótesis Saga es que <strong>Vastus está concentrando aenva</strong> allí —cargando densidad— <strong>en respuesta a la sedimentación ferroviaria masiva</strong>. Si los PJ visitan, encuentran densidad de <strong>≈ 175 ua/ha</strong> (subió de 130). Implicación: Vastus se prepara para <strong>algo cosmológico mayor</strong> que la Saga no sabe identificar.</li>
+</ol>
+<p><strong>El secreto cosmológico más sensible</strong> del Suelo Vivo es el <strong>paralelo con el Hilo Sosegado</strong>: así como las almas sin marca caen como sedimento a Null, <strong>la aenva ambiental drenada por industrialización alimenta también a Null</strong>. La doble vía de alimentación —almas sedimentadas + aenva drenada— acelera el debilitamiento del sello <strong>independientemente</strong> una de otra. Detener la industrialización del Suelo Vivo es <strong>tan urgente como reactivar las marcas de vida</strong>. Esta es la <strong>conclusión integrada</strong> que las Sagas mayores tienen formulada y que ningún PJ leerá hasta haber alcanzado nivel Saga menor honoraria.</p>
+<p><strong>La paradoja cosmológica final</strong>: el régimen Novalis industrial mata al mundo por <strong>dos vías cosmológicas simultáneas</strong> (sedimento de almas + drenaje de aenva ambiental). Pero <strong>el régimen Engren pre-rebautizo no era cosmológicamente perfecto</strong>: tenía Suelo Muerto local del Anillo del Sello (Null encarcelado siempre comió aenva) y tenía sedimento de olvidados pre-industriales (presos, expósitos, asesinados en secreto). La diferencia es <strong>cuantitativa, no cualitativa</strong>: Engren equilibraba (2–3% de almas + drenaje localizado del Anillo); Novalis desequilibra (18–25% + drenaje masivo distribuido). <strong>Volver a Engren no resuelve</strong>, solo ralentiza. La resolución verdadera requiere algo cosmológicamente nuevo —no documentado por ninguna doctrina existente— que ni Sagas ni Eternistas ni Skalds ni sacerdotes Volcánicos han formulado. Es el <strong>arco-misterio de fondo</strong> del mundo. Si los PJ encuentran respuesta, será <strong>la respuesta</strong>.</p>
+<blockquote>
+<p>[!info] Invención
+Página de <strong>canonización fundacional</strong>. El concepto <strong>El Suelo Vivo</strong> no existía previamente como página propia: existían menciones aisladas a “anomalías de fertilidad” en Voltrede, “residuo cosmológico” en Stor-Heita, “aenva residual” en Río Claro, “calidad superior” del Astato de Verre, y “herbolaria que solo funciona aquí” en Bosques Sagrados — todos sin formulación cosmológica unificada. Esta página <strong>integra</strong> esos fenómenos dispersos en doctrina coherente con métrica ua/ha, tipología por dios filtrador, mecánica D&#x26;D 5e, vínculo con el Hilo Sosegado, y política activa Eternista vs corp. El <strong>canon firme aquí establecido</strong> es: (1) unidad de medida ua/ha y escala logarítmica relativa con Heliopolis = 5; (2) seis franjas operativas de densidad incluyendo Suelo Muerto negativo; (3) cuatro vías mayores de carga (cuerpo divino, sacrificios, ciclos cosmológicos, mineral primigenio); (4) tipología por dios filtrador (tres libres + dos residuales + dos absorbidos); (5) tabla de DC de detección y bonificadores por entrenamiento; (6) tabla de bonificadores mecánicos por actividad sobre Suelo Vivo; (7) Suelo Muerto del Anillo del Sello como anti-Suelo Vivo y única región confirmada; (8) vínculo cosmológico con el Hilo Sosegado vía tracción asistida sobre Suelo Vivo del dios correspondiente; (9) política Eternista-Saga vs megacorp como conflicto activo; (10) Mapa del Hilo Tibio como documento canónico raro Saga. La tabla maestra de Suelos Vivos canónicos es <strong>canon operativo</strong> para sub-fichas Aevum/Vastus/Primum.</p>
+</blockquote>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

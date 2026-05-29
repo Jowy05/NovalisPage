@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>El Ingeniero — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Homebrew</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> homebrew · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">El Ingeniero</h1> </header> <div class="wiki-prose mt-7"> <h1 id="el-ingeniero">El Ingeniero</h1>
+<p>Clase homebrew de D&#x26;D centrada en la creación, mantenimiento y mejora de <a href="/NovalisPage/conceptos/automatas" class="wikilink">Autómatas</a>. A diferencia de las clases de combate convencionales, el Ingeniero no es un guerrero directo: es un estratega de recursos que invierte en su gólem compañero.</p>
+<h2 id="descripción">Descripción</h2>
+<p>El Ingeniero es el arquetipo del proto-científico en <a href="/NovalisPage/geografia/novalis" class="wikilink">Novalis</a>: parte artesano, parte mago aplicado, parte estratega. Ha dedicado su vida al estudio de la mecánica arcana y domina el arte de implantar, intercambiar y potenciar <a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> en sus creaciones.</p>
+<p>En combate, el Ingeniero raramente se expone directamente. Su fuerza reside en el <strong>Chasis</strong> —el cuerpo del autómata— y en la variedad de núcleos que ha recolectado a lo largo de sus aventuras.</p>
+<h2 id="creación-de-personaje">Creación de personaje</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Rasgo</th><th>Valor</th></tr></thead><tbody><tr><td><strong>Dado de Golpe</strong></td><td>1d8 por nivel de Ingeniero</td></tr><tr><td><strong>Característica principal</strong></td><td>Inteligencia</td></tr><tr><td><strong>Salvaciones</strong></td><td>Inteligencia y Constitución</td></tr><tr><td><strong>Competencias de armas</strong></td><td>Armas sencillas, pistolas de chispa</td></tr><tr><td><strong>Competencias de armadura</strong></td><td>Armadura ligera</td></tr><tr><td><strong>Herramientas</strong></td><td>Herramientas de herrero, herramientas de ingeniero (de tu invención)</td></tr><tr><td><strong>Habilidades</strong></td><td>Elige dos: Arcanos, Historia, Investigación, Naturaleza, Perspicacia, Trato con Animales</td></tr></tbody></table>
+<p><strong>Equipo inicial:</strong> herramientas de ingeniero, una pistola de chispa o ballesta ligera, armadura de cuero, una bolsa de componentes mecánicos y el <strong>núcleo inerte</strong> que dará vida a tu primer Chasis.</p>
+<h2 id="tabla-de-la-clase">Tabla de la clase</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Nivel</th><th>Comp.</th><th>Rasgos</th><th align="center">Ranuras de Núcleo</th><th align="center">Chispas de Calibración</th></tr></thead><tbody><tr><td>1</td><td>+2</td><td>El Chasis, Extracción de Núcleos</td><td align="center">1</td><td align="center">2</td></tr><tr><td>2</td><td>+2</td><td>Calibración de Campo</td><td align="center">1</td><td align="center">2</td></tr><tr><td>3</td><td>+2</td><td>Especialización del Chasis</td><td align="center">2</td><td align="center">3</td></tr><tr><td>4</td><td>+2</td><td>Mejora de característica</td><td align="center">2</td><td align="center">3</td></tr><tr><td>5</td><td>+3</td><td>Sobrecarga de Núcleo</td><td align="center">2</td><td align="center">4</td></tr><tr><td>6</td><td>+3</td><td>Rasgo de Especialización</td><td align="center">3</td><td align="center">4</td></tr><tr><td>7</td><td>+3</td><td>Reparación Veloz</td><td align="center">3</td><td align="center">5</td></tr><tr><td>8</td><td>+3</td><td>Mejora de característica</td><td align="center">3</td><td align="center">5</td></tr><tr><td>9</td><td>+4</td><td>Núcleos Mayores</td><td align="center">3</td><td align="center">6</td></tr><tr><td>10</td><td>+4</td><td>Rasgo de Especialización</td><td align="center">4</td><td align="center">6</td></tr><tr><td>11</td><td>+4</td><td>Doble Detonación</td><td align="center">4</td><td align="center">7</td></tr><tr><td>12</td><td>+4</td><td>Mejora de característica</td><td align="center">4</td><td align="center">7</td></tr><tr><td>13</td><td>+5</td><td>Telemando (chasis remoto)</td><td align="center">4</td><td align="center">8</td></tr><tr><td>14</td><td>+5</td><td>Rasgo de Especialización</td><td align="center">5</td><td align="center">8</td></tr><tr><td>15</td><td>+5</td><td>Chasis Indómito</td><td align="center">5</td><td align="center">9</td></tr><tr><td>16</td><td>+5</td><td>Mejora de característica</td><td align="center">5</td><td align="center">9</td></tr><tr><td>17</td><td>+6</td><td>Núcleo Alfa</td><td align="center">5</td><td align="center">10</td></tr><tr><td>18</td><td>+6</td><td>Rasgo de Especialización</td><td align="center">6</td><td align="center">10</td></tr><tr><td>19</td><td>+6</td><td>Mejora de característica</td><td align="center">6</td><td align="center">11</td></tr><tr><td>20</td><td>+6</td><td>Obra Maestra</td><td align="center">6</td><td align="center">12</td></tr></tbody></table>
+<h2 id="rasgos-de-clase">Rasgos de clase</h2>
+<h3 id="el-chasis-nivel-1">El Chasis (nivel 1)</h3>
+<p>Construyes tu autómata: un <strong>Chasis</strong> animado por un núcleo. Es una criatura aparte que obedece tus órdenes mentales mientras estés a 60 pies.</p>
+<ul>
+<li><strong>CA</strong> 14 + tu bonificador de competencia. <strong>Puntos de golpe</strong> = 5 + (5 × tu nivel de Ingeniero).</li>
+<li>Usa tus salvaciones y obtiene competencia en Fuerza y Constitución.</li>
+<li>En su turno puede moverse y usar una acción; ataca con un <strong>Golpe de Chasis</strong> (alcance 5 pies, 1d8 + tu modificador de Inteligencia de daño contundente).</li>
+<li>Si cae a 0 PG no muere: queda <strong>desactivado</strong>. Lo reactivas con 1 hora de trabajo o gastando una ranura durante un descanso corto.</li>
+<li>Al subir de nivel, mejoras el Chasis invirtiendo <strong>tiempo de inactividad y materiales</strong> (ver <em>Construcción y Mejora</em>).</li>
+</ul>
+<h3 id="extracción-de-núcleos-nivel-1">Extracción de Núcleos (nivel 1)</h3>
+<p>Cuando una criatura con núcleo (la mayoría de bestias y aberraciones del Bestiario) muere a 5 pies de ti, puedes intentar <strong>extraer su núcleo</strong> dedicando 10 minutos y superando una prueba de <strong>Inteligencia (herramientas de ingeniero)</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>CD</th><th>Categoría del núcleo</th></tr></thead><tbody><tr><td>12</td><td>Núcleo menor (criatura CR ≤ 3)</td></tr><tr><td>15</td><td>Núcleo mayor (CR 4–9)</td></tr><tr><td>18</td><td>Núcleo alfa (CR 10+)</td></tr></tbody></table>
+<p>Un fallo destruye el núcleo. El éxito te da un núcleo instalable. La extracción te expone a residuos de <a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a>: cada extracción suma una marca de exposición (ver reglas del mundo).</p>
+<h3 id="ranuras-e-instalación-de-núcleos">Ranuras e Instalación de Núcleos</h3>
+<p>El Chasis tiene <strong>Ranuras de Núcleo</strong> (ver tabla). Durante un descanso corto o largo puedes <strong>instalar, retirar o intercambiar</strong> los núcleos alojados. Cada núcleo instalado otorga su habilidad al Chasis. Esto convierte al Ingeniero en una clase <strong>muy versátil pero dependiente de la preparación</strong>: adaptas el autómata a cada encuentro… si has cazado lo correcto.</p>
+<h3 id="chispas-de-calibración">Chispas de Calibración</h3>
+<p>Recurso que representa la energía fina que reservas para forzar tus sistemas. Tienes las <strong>Chispas</strong> de la tabla y las recuperas tras un descanso largo. Las gastas en:</p>
+<ul>
+<li><strong>Sobrecarga de Núcleo</strong> (nivel 5): 1 chispa para que la habilidad de un núcleo dispare con ventaja o daño doble una vez.</li>
+<li><strong>Reparación Veloz</strong> (nivel 7): acción adicional, 1 chispa, el Chasis recupera 2d8 + tu nivel de PG.</li>
+<li><strong>Doble Detonación</strong> (nivel 11): el Chasis ataca dos veces o usa dos habilidades de núcleo en un turno (2 chispas).</li>
+</ul>
+<h3 id="otros-rasgos">Otros rasgos</h3>
+<ul>
+<li><strong>Calibración de Campo</strong> (2): reactivas o reconfiguras un núcleo durante un descanso corto sin herramientas.</li>
+<li><strong>Telemando</strong> (13): controlas el Chasis hasta a 1.000 pies y puedes ver a través de sus sensores como acción.</li>
+<li><strong>Chasis Indómito</strong> (15): cuando el Chasis caería a 0 PG, queda a 1 PG una vez por descanso largo.</li>
+<li><strong>Núcleo Alfa</strong> (17): puedes alojar un núcleo alfa, que ocupa 2 ranuras y otorga una habilidad legendaria.</li>
+<li><strong>Obra Maestra</strong> (20): construyes un segundo Chasis ligero o duplicas las ranuras de uno; tu autómata se vuelve una leyenda con nombre propio.</li>
+</ul>
+<h2 id="núcleos-ejemplos">Núcleos: ejemplos</h2>
+<p>Cada núcleo otorga al Chasis una capacidad de la bestia de origen. Algunos ejemplos sencillos:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Núcleo</th><th>Categoría</th><th>Capacidad</th></tr></thead><tbody><tr><td>Araña gigante</td><td>Menor</td><td>Telaraña + ataque envenenado</td></tr><tr><td>Salamandra de fuego</td><td>Menor</td><td>Resistencia al fuego, daño térmico</td></tr><tr><td>Águila</td><td>Menor</td><td>Visión aguda, +iniciativa</td></tr><tr><td>Basilisco volcánico</td><td>Mayor</td><td>Mirada vitrificante</td></tr><tr><td>Dragón de Astato</td><td>Alfa</td><td>Aliento cristalizante</td></tr></tbody></table>
+<blockquote>
+<p><strong>Catálogo completo, categorías (menor / mayor / alfa) y reglas de extracción en <a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a>.</strong></p>
+</blockquote>
+<h2 id="construcción-y-mejora-del-chasis">Construcción y Mejora del Chasis</h2>
+<p>El Chasis es un proyecto de <strong>tiempo de inactividad</strong>. Entre aventuras inviertes oro y materiales para:</p>
+<ul>
+<li>Aumentar PG, CA o velocidad del Chasis.</li>
+<li>Añadir <strong>ranuras de núcleo</strong> extra (hasta el máximo de tu nivel).</li>
+<li>Modificaciones especializadas: blindaje pesado, propulsores, miembros ocultos, compartimentos para portar carga o pasajeros.</li>
+</ul>
+<p>Coste orientativo: <strong>250 po y 3 días</strong> por mejora menor; <strong>1.000 po y 1 semana</strong> por mejora mayor. El acceso a talleres (como los del <a href="/NovalisPage/facciones/colegio-imperial-de-los-animadores" class="wikilink">Colegio Imperial de los Animadores</a>) reduce el tiempo a la mitad.</p>
+<h2 id="especialización-del-chasis-subclases">Especialización del Chasis (subclases)</h2>
+<p>A nivel 3 eliges cómo se ha construido tu autómata. Otorga rasgos a niveles 3, 6, 10, 14 y 18.</p>
+<h3 id="coloso-de-asedio">Coloso de Asedio</h3>
+<p>Chasis pesado de control de zona. Más PG y CA, puede <strong>embestir</strong> (derribar y empujar), interponerse para proteger aliados y, a alto nivel, volverse inmune al derribo y a ser movido. El muro andante.</p>
+<h3 id="autómata-venático">Autómata Venático</h3>
+<p>Chasis ligero de caza. Gana sigilo, velocidad y trepar/saltar; sus golpes son precisos (daño extra a presas marcadas) e integra mejor los núcleos de depredador. Persigue, flanquea y remata.</p>
+<h3 id="forja-andante">Forja Andante</h3>
+<p>Chasis de soporte y manufactura. Repara aliados y objetos, fabrica munición y útiles en campo, despliega un <strong>taller móvil</strong> y a alto nivel produce un autómata menor de un solo uso. El ingeniero que sostiene a la mesa.</p>
+<h2 id="filosofía-de-diseño">Filosofía de Diseño</h2>
+<ul>
+<li>Clase de <strong>gestión de recursos</strong> más que de acción directa.</li>
+<li>Penaliza la improvisación; recompensa el conocimiento del entorno y la planificación.</li>
+<li>Crea dependencia narrativa de la caza y el mercado de núcleos.</li>
+<li>La frontera ética de la <a href="/NovalisPage/conceptos/ley-de-la-consciencia" class="wikilink">Ley de la Consciencia</a> es una fuente natural de dilemas para el personaje.</li>
+</ul>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/automatas" class="wikilink">Autómatas</a> — La herramienta y compañero principal de la clase</li>
+<li><a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> — El recurso que define las capacidades del autómata</li>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — El mineral que anima los núcleos y expone al Ingeniero a su corrupción</li>
+<li>Bestiario — Fuente de los núcleos extraíbles y de sus habilidades</li>
+<li><a href="/NovalisPage/conceptos/ley-de-la-consciencia" class="wikilink">Ley de la Consciencia</a> — Frontera ética que el Ingeniero puede verse tentado a cruzar</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p>La mecánica del Ingeniero es una trampa narrativa perfecta para la corrupción gradual. Introduce un vendedor de núcleos ilegales que sea simpático y tenga justificaciones razonables: “son de criminales ejecutados”, “ya estaban muertos cuando los encontré”, “nadie les echará de menos”.</p>
+<p>Cada vez que el jugador acepte un núcleo de origen dudoso (especialmente un núcleo <strong>sintiente</strong> o humanoide), el autómata manifestará un rasgo de personalidad del individuo al que perteneció. Gradualmente, el jugador se dará cuenta de que su autómata está “recordando” a alguien. ¿Hasta dónde llega la culpabilidad?</p>
+<p><strong>Gancho mecánico:</strong> lleva la cuenta de las marcas de exposición al Astato por extracción. Pasado cierto umbral, ofrece poder a cambio de cordura: un núcleo alfa que susurra, un Chasis que actúa por su cuenta una vez por sesión. El precio del progreso es dejar de estar seguro de quién da las órdenes.</p>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Gremios Financieros — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span><span class="flex items-center gap-1.5"><span>›</span><span>Economia</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Gremios Financieros</h1> </header> <div class="wiki-prose mt-7"> <h1 id="gremios-financieros">Gremios Financieros</h1>
+<p>Catálogo canónico de las <strong>cinco instituciones financieras mayores</strong> del continente. La nomenclatura sigue la distinción canónica del Aldricato entre <strong>bancas</strong> (instituciones de crédito y depósito con licencia real), <strong>casas mercantiles</strong> (operadoras inmobiliarias y comerciales con apellido familiar), <strong>gremios</strong> (cuerpos profesionales con cuotas), <strong>sociedades</strong> (acuerdos contractuales de aseguramiento sin licencia real) y <strong>cofradías</strong> (redes operativas con jerarquía religiosa o gremial mixta). Las cinco instituciones aquí descritas son las que <strong>mueven la mayor parte del capital declarado</strong> del mundo y arbitran, en la práctica, <strong>quién accede al crédito en cada continente</strong>.</p>
+<p>Para flujos macro asociados, ver <code>balanza-aldricato.md</code>. Para precios y salarios que alimentan estos gremios, ver <code>precios-canonicos.md</code> y <code>salarios-canonicos.md</code>. Para el sistema monetario que vehiculan, ver <code>monedas-de-novalis.md</code>.</p>
+<hr>
+<h2 id="1-banca-vellanor">1. Banca Vellanor</h2>
+<blockquote>
+<p>“Esta banca <strong>es</strong> <a href="/NovalisPage/facciones/casas-vellanor" class="wikilink">Casas Vellanor</a> vista por su mostrador público en Heliopolis.” Ver <code>wiki/facciones/casas-vellanor.md</code> para el lore completo de la familia escindida de <a href="/NovalisPage/facciones/casa-vael-sirinn" class="wikilink">Casa Vael-Sirinn</a>.</p>
+</blockquote>
+<h3 id="naturaleza-institucional">Naturaleza institucional</h3>
+<p><strong>Banca privada de origen veltarés</strong> escindida hace <strong>47 años</strong> de la <a href="/NovalisPage/facciones/casa-vael-sirinn" class="wikilink">Casa Vael-Sirinn</a>, hoy con <strong>doble entidad operativa</strong>: la Banca propiamente dicha (crédito y depósito) y la Casa Armadora Vellanor (transporte de mercancía). En Heliopolis es <strong>una de las Cinco Bancas</strong> del Distrito Bancario y la más antigua del cinco (su sede heliopolitana se abrió a los 12 años de la fundación calixariana). Sucursales mayores en <a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> (sede central calixariana), <a href="/NovalisPage/arquitectura/ferro-korr" class="wikilink">Ferro-Korr</a> zona sur, <a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> zona norte, <a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> (oficina mayor entre las Cinco Bancas), <a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> (sucursal extranjera con relación cordial-distante con la matriz Vael-Sirinn). Agencias menores en <a href="/NovalisPage/arquitectura/sulfen" class="wikilink">Sulfen</a> y <a href="/NovalisPage/arquitectura/hren" class="wikilink">Hren</a>.</p>
+<h3 id="liderazgo">Liderazgo</h3>
+<ul>
+<li><strong>Patriarca-banquero</strong>: <strong>Solvenor Vellanor</strong> (91 años, humano), fundador. Vive en la sede de Mehralt; lúcido pero enfermo (<code>casas-vellanor.md</code> § DM).</li>
+<li><strong>Asistente principal</strong>: <strong>Brema Halmen-Faja-Larga</strong> (halfling Robusta de 39 años, 18 años con Solvenor). Confidente operativa única.</li>
+<li><strong>Director Ferro-Korr</strong>: <strong>Velmir Vellanor</strong> (63 años, hijo mayor). Sucesor designado para la Banca.</li>
+<li><strong>Directora Maris-Korr</strong>: <strong>Aldra Vellanor-Solva</strong> (59 años, hija menor). Sucesora designada para la Casa Armadora.</li>
+<li><strong>Oficina Heliopolis</strong>: <strong>Helka Vellanor-Vael</strong> (31 años, nieta mayor). Contacto con Casa Vael-Sirinn.</li>
+</ul>
+<h3 id="capital-estimado">Capital estimado</h3>
+<ul>
+<li><strong>Depósitos en custodia</strong>: ~25 M AO</li>
+<li><strong>Cartera de crédito vigente</strong>: ~18 M AO (de los cuales 6-8 M son crédito al régimen Halsen y 4 M a Tobias Vehrold por canal privado)</li>
+<li><strong>Capital propio (incluidas reservas y oro físico)</strong>: ~12 M AO</li>
+<li><strong>Total</strong>: ~55 M AO bajo gestión.</li>
+</ul>
+<h3 id="productos-financieros">Productos financieros</h3>
+<ul>
+<li><strong>Depósito y crédito</strong> a familias industriales no afiliadas a la Compañía Imperial.</li>
+<li><strong>Custodia de tesoros familiares</strong> (cajas fuertes con triple llave; tres firmantes obligatorios).</li>
+<li><strong>Crédito al Estado calixariano</strong> (régimen Halsen) — principal fuente de liquidez no-Hierro.</li>
+<li><strong>Cambio de divisa</strong>: vale corp, moneda libre, tela veltaresa, marco fortunés, marco mehrholt. <strong>Mejores tipos del continente.</strong></li>
+<li><strong>Custodia testamentaria</strong> especialmente de familias mestizas y mixtas con dinastías complejas.</li>
+<li><strong>Banca contable subcontratada</strong> para los Cinco Gremios de Veltara en territorio calixariano.</li>
+<li><strong>Letra de cambio</strong> Heliopolis ↔ Mehralt ↔ Veltara con comisión 0,3-0,8 %.</li>
+</ul>
+<h3 id="especialización-en-heliopolis">Especialización en Heliopolis</h3>
+<p>En el Distrito Bancario de Heliopolis, Banca Vellanor es especializada en <strong>deuda soberana</strong> (compra bonos del Aldricato emitidos por la Banca de Fortuna) y en <strong>crédito agrícola</strong> (préstamos a Casas rurales de Voltrede, Velmoria, Drahnvar). Es la única de las Cinco Bancas que <strong>mantiene crédito agrícola a tipo competitivo</strong>, lo que le da poder político sobre la Fortuna rural.</p>
+<h3 id="escándalos-canónicos">Escándalos canónicos</h3>
+<ul>
+<li><strong>Affaire del doble libro Vellanor-Vehrold</strong> (canónico, vigente): canal privado de financiación a Tobias Vehrold (heredero reformista del Hierro). Documentado en doble copia (Aldra y Solvenor). Sería <strong>escándalo público destructor del régimen Halsen</strong> si se filtrara.</li>
+<li><strong>Escándalo del crédito Hren</strong> (10 años atrás): la agencia menor de Hren financió a un comerciante itinerante que resultó ser <strong>traficante de núcleos exóticos</strong>. El asunto se cerró con pago discreto a la Inquisición Civil y traslado del agente. Documentación destruida.</li>
+<li><strong>Boicot interno de Vael-Sirinn</strong> (constante): los Cinco Gremios veltarinos consideran a la rama Vellanor una <strong>fuga de capital</strong> del marco institucional. Tensiones no oficializadas.</li>
+</ul>
+<h3 id="vínculos-con-megacorps">Vínculos con megacorps</h3>
+<ul>
+<li><strong>Compañía Imperial del Hierro y la Llama</strong>: relación de coexistencia tolerada. La Compañía no ataca a Vellanor porque sería mala publicidad; Vellanor no ataca a la Compañía porque depende de su flujo Astato.</li>
+<li><strong>Casa Mehrholt-Vael</strong>: relación cordial; cambian operativamente en Iskhal con descuento mínimo.</li>
+<li><strong>Casa Vael-Sirinn (matriz)</strong>: relación cordial-distante mediada por Helka.</li>
+</ul>
+<hr>
+<h2 id="2-casas-vellanor-rama-mercantil">2. Casas Vellanor (rama mercantil)</h2>
+<h3 id="naturaleza-institucional-1">Naturaleza institucional</h3>
+<p>Rama mercantil de la familia Vellanor, <strong>legalmente separada</strong> de la Banca aunque operativamente coordinada en Mehralt. Su negocio principal son los <strong>bienes raíces de renta urbana</strong> —no la naviera (que es Casa Armadora Vellanor)—. Concentra propiedad inmobiliaria en <strong>barrios obreros de Mehralt, Maris-Korr y Ferro-Korr</strong>, donde alquila a familias mineras y obreras del puerto.</p>
+<h3 id="liderazgo-1">Liderazgo</h3>
+<ul>
+<li><strong>Patriarca operativo</strong>: <strong>Aldra Vellanor-Solva</strong>, misma directora que la Casa Armadora.</li>
+<li><strong>Administrador inmobiliario Mehralt</strong>: <strong>Halvar Vellanor-Mehralt</strong> (humano de 47 años, sobrino de Solvenor por rama colateral). Hombre de confianza.</li>
+<li><strong>Administrador Maris-Korr</strong>: <strong>Vrenn Halmen-Korr</strong> (halfling Robusta de 36 años, primo de Brema). Trato con sindicatos.</li>
+</ul>
+<h3 id="capital-estimado-1">Capital estimado</h3>
+<ul>
+<li><strong>Cartera inmobiliaria</strong>: ~8 M AO en propiedades urbanas</li>
+<li><strong>Ingreso anual estable</strong> por alquileres: 700.000 AO/año (rendimiento ~9 %)</li>
+<li><strong>Reservas líquidas</strong>: 1 M AO</li>
+</ul>
+<h3 id="productos">Productos</h3>
+<ul>
+<li><strong>Alquiler urbano</strong> masivo en barrios obreros (típicamente 1-3 AO/mes el apartamento de tres habitaciones, ver <code>precios-canonicos.md</code>).</li>
+<li><strong>Préstamos hipotecarios menores</strong> a familias obreras con plazos a 20-30 años y tipo del 6-8 %. Una familia minera de Maris-Korr puede pagar la casa propia tras 25 años de trabajo continuado — sistema <strong>diseñado para retener fuerza de trabajo</strong>, no para emancipar.</li>
+<li><strong>Especulación inmobiliaria</strong> menor en Heliopolis y Veltara.</li>
+</ul>
+<h3 id="vínculos-canónicos">Vínculos canónicos</h3>
+<ul>
+<li><strong>Compañía Imperial</strong>: las propiedades de Casas Vellanor en barrios obreros son <strong>terreno arrendado por la Compañía a los mineros</strong>. La Compañía cobra al minero, paga a Casas Vellanor, <strong>doble rentabilidad sobre el trabajador</strong>. Es el sistema <strong>rentier industrial</strong> canónico de Calixar.</li>
+<li><strong>Sindicato del Yunque Roto</strong>: relación hostil. El Sindicato denuncia condiciones de los apartamentos (insalubres, sin ventilación) pero no consigue movilizar arbitraje porque el Aldricato no regula vivienda obrera fuera de su territorio directo.</li>
+</ul>
+<h3 id="escándalos-canónicos-1">Escándalos canónicos</h3>
+<ul>
+<li><strong>Caso del incendio de la Calle del Pozo Largo</strong> (Maris-Korr, hace 6 años): un edificio Casa Vellanor ardió por escape de gas de núcleo; 14 muertos. La investigación cerró el caso como “accidente fortuito” tras pago discreto al juez. La familia de las víctimas no fue compensada.</li>
+<li><strong>Demanda del Sindicato del Yunque Roto</strong> (hace 4 años): denuncia formal por insalubridad en 23 edificios. El Tribunal Civil de Mehralt archivó la denuncia por defecto formal.</li>
+</ul>
+<hr>
+<h2 id="3-banca-mehrholt">3. Banca Mehrholt</h2>
+<blockquote>
+<p>Ver <code>wiki/facciones/banca-mehrholt.md</code> para el detalle de su estructura como <strong>pantalla financiera oficial</strong> de <a href="/NovalisPage/facciones/casa-mehrholt-vael" class="wikilink">Casa Mehrholt-Vael</a> y de su operación inter-continental con sede oficial en Heliopolis y dirección oficiosa desde Iskhal.</p>
+</blockquote>
+<h3 id="síntesis-canónica">Síntesis canónica</h3>
+<p><strong>Banca enana</strong> legalmente independiente y oficialmente regulada por el Concierto como <strong>una de las Cinco Bancas de Heliopolis</strong>, dirigida en realidad desde <strong>Iskhal</strong> (Vorath) por la propia <a href="/NovalisPage/facciones/casa-mehrholt-vael" class="wikilink">Casa Mehrholt-Vael</a>. Sede social hace <strong>50 años</strong> en Heliopolis. Función real: <strong>financiar contratos militares, operaciones de armamento y deuda continental</strong> que la Casa coloca en los cuatro Estados sin que sus libros queden expuestos a la prensa fortunesa.</p>
+<h3 id="liderazgo-público-fortunés-vs-operativo-enano">Liderazgo público (fortunés) vs. operativo (enano)</h3>
+<ul>
+<li><strong>Junta directiva oficial</strong>: 9 fortuneses con apellidos heliopolitanos prestigiosos.</li>
+<li><strong>Auditoría anual independiente</strong>: casa contable fortunesa con licencia real.</li>
+<li><strong>Junta operativa real</strong>: convoca los <strong>lunes en Iskhal</strong> en sala anexa a la Sede Mundial de la Casa; las actas no se escriben.</li>
+<li><strong>Cobradores residentes únicos</strong> en Mehralt, Veltara, Bargheim y Hjornheim — cada uno responde operativamente al nodo anterior, no directamente a la sede de Heliopolis (triangulación deliberada).</li>
+</ul>
+<h3 id="capital-estimado-2">Capital estimado</h3>
+<ul>
+<li><strong>Depósitos en custodia</strong>: ~50 M AO</li>
+<li><strong>Cartera de crédito vigente</strong>: ~80 M AO (de los cuales 40 M son <strong>deuda soberana vorathiana</strong> auto-comprada por la Casa, ver <code>balanza-aldricato.md</code> § cártel Mehrholt-Vael)</li>
+<li><strong>Activos no declarados</strong> (oro físico en bóveda doble de Iskhal): estimado 15-20 M AO</li>
+<li><strong>Total</strong>: ~150 M AO bajo gestión. <strong>La institución financiera más grande del continente</strong>.</li>
+</ul>
+<h3 id="productos-financieros-1">Productos financieros</h3>
+<ul>
+<li><strong>Financiación de contratos militares</strong> (autómatas Línea Velar M2, Centinela Vael) a ejércitos estatales. Línea más rentable.</li>
+<li><strong>Cobros internacionales</strong> como cámara de compensación de Casa Mehrholt-Vael — pantalla operativa que reclasifica transferencias militares como “comisión de auditoría” o “honorarios de consultoría”.</li>
+<li><strong>Deuda continental</strong> (compra de bonos soberanos de los cuatro Estados, especialmente Vorath).</li>
+<li><strong>Letra de cambio</strong> Heliopolis ↔ Iskhal con descuento sistemático 5-7 % por <strong>riesgo cosmológico no declarado</strong> (la fragilidad del sellado Vorath).</li>
+<li><strong>Cripta financiera</strong> privada para clientes patronales: depósito oculto sin libro público (sólo tres personas vivas pueden reconstruir el control accionarial).</li>
+</ul>
+<h3 id="escándalos-canónicos-2">Escándalos canónicos</h3>
+<ul>
+<li><strong>El “asiento que no figura”</strong> (canónico, recurrente): un miércoles cualquiera, una de las Cinco Bancas presenta saldo cuadrado en la Cámara de Compensación pero <strong>con un asiento sin libro reconocido</strong> que la sociedad pantalla solariana propietaria de la <a href="/NovalisPage/geografia/hacienda-del-norte" class="wikilink">Hacienda del Norte</a> vincula a la Banca Mehrholt.</li>
+<li><strong>Manipulación del ticker telegráfico</strong> (canónico, mensual): una vez al mes, la cifra del <strong>oro coronado</strong> se publica con un dígito cambiado deliberadamente para marcar señal a las Cinco Bancas y abrir operación coordinada de compraventa. La corona sospecha; sin prueba.</li>
+<li><strong>El expediente de la cripta de Iskhal</strong>: documento único que reconstruye el control accionarial real de la Casa Mehrholt-Vael sobre la Banca. Si se filtra, la Casa pierde licencia bancaria fortunesa.</li>
+<li><strong>La microfilmación de la cumbre corp</strong>: los pagos cruzados entre Compañía del Hierro, Colegio Imperial y Casa Mehrholt-Vael están microfilmados en bóveda doble de Iskhal. Su filtración destruiría la negabilidad de la cumbre corp secreta.</li>
+</ul>
+<h3 id="vínculos-con-megacorps-1">Vínculos con megacorps</h3>
+<ul>
+<li><strong>Casa Mehrholt-Vael</strong>: matriz oficiosa; la Banca es <strong>su pantalla pública</strong>.</li>
+<li><strong>Compañía Imperial del Hierro y la Llama</strong>: cliente principal de financiación militar. Relación operativa cordial con tensión latente por reparto de margen.</li>
+<li><strong>Colegio Imperial de los Animadores</strong>: cliente de financiación experimental y cumbre corp secreta.</li>
+<li><strong>Casa Argentea</strong> (banca enana competidora en Heliopolis): tolerancia táctica — la Argentea opera en metales preciosos, no en armamento. Sirve de espejo limpio.</li>
+</ul>
+<hr>
+<h2 id="4-sociedad-de-aseguradores-de-heliopolis">4. Sociedad de Aseguradores de Heliopolis</h2>
+<h3 id="naturaleza-institucional-2">Naturaleza institucional</h3>
+<p><strong>Gremio asegurador trans-corporativo</strong> fundado hace <strong>15 años post-cumbre corp</strong> (precisión canónica: tras la primera cumbre estable en la <a href="/NovalisPage/geografia/hacienda-del-norte" class="wikilink">Hacienda del Norte</a>, las grandes corps coincidieron en que el riesgo de <strong>asalto a convoyes</strong>, <strong>descarrilamiento ferroviario</strong> y <strong>fuga de Astato</strong> era inasegurable por una sola Banca y necesitaba <strong>mutualización</strong>). Originalmente fue un acuerdo informal entre la Compañía Imperial, Casa Mehrholt-Vael y la Banca Vellanor; posteriormente se formalizó como <strong>Sociedad gremial registrada en el Concierto</strong> con asiento en el Distrito Bancario de Heliopolis pero <strong>fuera de las Cinco Bancas</strong>.</p>
+<h3 id="liderazgo-2">Liderazgo</h3>
+<ul>
+<li><strong>Patrón asegurador</strong>: <strong>Albrecht Korvenstadt-Heliopolis</strong> (humano de 67 años), antiguo Patrón del Gremio de Comerciantes de Astato. Cargo nominalmente electivo cada cuatro años; en la práctica reelegido sin oposición tres veces consecutivas.</li>
+<li><strong>Junta de los Cinco Asegurados</strong> (5 sillas rotativas representando a las cinco corps fundadoras): Compañía Imperial del Hierro y la Llama, Casa Mehrholt-Vael, Colegio Imperial de los Animadores, Casa Vael-Sirinn, Banca Vellanor.</li>
+<li><strong>Director de Suscripción</strong>: <strong>Sevra Vellanor-Korven</strong> (humana de 52 años, prima lejana de Solvenor), enlace técnico con la Banca Vellanor.</li>
+<li><strong>Director de Reclamaciones</strong>: <strong>Vetric Hardrach-Sostenido</strong> (humano de 49 años, miembro menor de Casa Hardrach), enlace técnico con el Concierto.</li>
+</ul>
+<h3 id="capital-estimado-3">Capital estimado</h3>
+<ul>
+<li><strong>Reservas técnicas</strong> (provisión para siniestros): ~15 M AO</li>
+<li><strong>Capital propio</strong>: ~5 M AO</li>
+<li><strong>Primas anuales recaudadas</strong>: ~3 M AO</li>
+<li><strong>Siniestros pagados anuales</strong>: ~2 M AO (margen técnico ~33 %)</li>
+<li><strong>Total bajo gestión</strong>: ~23 M AO</li>
+</ul>
+<h3 id="productos-aseguradores">Productos aseguradores</h3>
+<ul>
+<li><strong>Seguro de convoy Astato</strong>: cobertura del cargamento Maris-Korr → Solaria; prima ~5 % del valor del cargamento; cobre asalto, fuga, sabotaje, naufragio. <strong>Producto principal</strong>.</li>
+<li><strong>Seguro ferroviario integral</strong>: cobertura de descarrilamiento, asalto a vagón pasajeros/Astato/cola, daño de locomotora.</li>
+<li><strong>Seguro de armamento en tránsito</strong>: cobertura de autómatas Línea Velar M2 entre forja Iskhal/Mehralt y comprador.</li>
+<li><strong>Seguro de almacén industrial</strong>: cobertura de refinerías y almacenes de Astato contra incendio, fuga y sabotaje sindical.</li>
+<li><strong>Seguro de vida cortesano</strong> (línea menor): cobertura del cabeza de familia noble; prima alta, mercado pequeño.</li>
+<li><strong>Reaseguro inter-bancario</strong>: las Cinco Bancas y la Sociedad mutualizan riesgos sistémicos.</li>
+</ul>
+<h3 id="escándalos-canónicos-3">Escándalos canónicos</h3>
+<ul>
+<li><strong>El “incidente del Convoy 47”</strong> (hace 7 años): un convoy Astato Maris-Korr → Solaria se descarriló por sabotaje sindical. La Sociedad pagó <strong>400.000 AO</strong> de siniestro. La investigación interna determinó que <strong>el agente que negoció la prima sabía del riesgo</strong> y no lo declaró. El agente fue trasladado, no procesado.</li>
+<li><strong>El “expediente Vrenn”</strong> (canónico, latente): la Compañía Imperial obligó hace cuatro años a la Sociedad a denegar cobertura a <strong>un convoy escoltado por mercenarios contratados por Aldric III</strong>. El motivo no declarado: la Compañía no quería sentar precedente de cobertura a la corona en operaciones fuera del Concierto. La denegación causó pérdidas que Aldric III asumió directamente, abriendo brecha con la Compañía.</li>
+<li><strong>El “ratio cosmológico”</strong> (canónico, confidencial): la Sociedad lleva un <strong>archivo interno</strong> que correlaciona el incremento de siniestros de Astato con <strong>fenómenos cosmológicos</strong> (Inversiones, dormición del sello). Si se publicara, daría prueba pública del debilitamiento del sellado.</li>
+</ul>
+<h3 id="vínculos-con-megacorps-2">Vínculos con megacorps</h3>
+<ul>
+<li><strong>Es propiedad operativa de las megacorps</strong>: las cinco corps fundadoras controlan la Junta y su política. <strong>No es independiente</strong> —es <strong>brazo financiero conjunto</strong> de la cumbre corp—.</li>
+<li><strong>Banca Vellanor</strong>: enlace técnico vía Sevra. Maneja los cobros de prima.</li>
+<li><strong>Concierto de Heliopolis</strong>: regulador formal. No interviene salvo en escándalo público.</li>
+<li><strong>Banca de Fortuna</strong>: rivalidad latente — la corona considera la Sociedad como <strong>competencia desleal</strong> a su propio sistema asegurador real, pero no tiene capital suficiente para desplazarla.</li>
+</ul>
+<hr>
+<h2 id="5-cofradía-de-cambistas-veltara">5. Cofradía de Cambistas Veltara</h2>
+<h3 id="naturaleza-institucional-3">Naturaleza institucional</h3>
+<p><strong>Red gremial de cambistas legales</strong> del Aldricato y del Concierto, con sede principal en <a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> (Distrito Bancario, edificio modesto adyacente a la Casa Patronal Vael-Sirinn) y <strong>nodos operativos en las ciudades portuarias mayores</strong>: Heliopolis, Solaria, Mehralt, Maris-Korr, Ferro-Korr, Iskhal, Hjornheim, Karnatha (sucursal tolerada). Su producto firma: la <strong>letra de cambio interconvertible</strong> —documento gremial que permite <strong>mover capital entre continentes sin transportar moneda física</strong>—.</p>
+<p>Aunque la red se llama “Veltara” por origen, <strong>el 60 % de su volumen operativo cruza Calixar y Fortuna</strong>. Veltara es solo sede simbólica.</p>
+<h3 id="liderazgo-3">Liderazgo</h3>
+<ul>
+<li><strong>Patrón Mayor</strong>: <strong>Karet Vael-Sirinn-Veltara</strong> (humano de 71 años, rama mayor de Vael-Sirinn). Cargo vitalicio, designado por consenso de los Cinco Gremios veltarinos.</li>
+<li><strong>Sub-Patrón Heliopolis</strong>: <strong>Albia Krastil-Heliopolis</strong> (humana de 44 años, sobrina de <a href="/NovalisPage/personajes/vellis-krastil" class="wikilink">Vellis Krastil</a>). Enlace con la Bolsa de Heliopolis.</li>
+<li><strong>Sub-Patrón Mehralt</strong>: <strong>Drust Vehrold-Cambio</strong> (humano de 51 años, primo lejano de Tobias Vehrold). Enlace con Casas Vellanor sin conflicto declarado.</li>
+<li><strong>Sub-Patrón Iskhal</strong>: <strong>Skarn Mehrholt-Korr</strong> (enano de 142 años, rama menor de Casa Mehrholt-Vael). Enlace con Banca Mehrholt.</li>
+<li><strong>Sub-Patrón Karnatha</strong>: <strong>Cassia Hilo-Bajo</strong> (humana de 38 años, oficialmente independiente, oficialmente bajo protección de las bandas locales). La sucursal de Karnatha <strong>tolera el flujo gris</strong> sin operar directamente en él.</li>
+</ul>
+<h3 id="capital-estimado-4">Capital estimado</h3>
+<ul>
+<li><strong>Volumen anual de letras emitidas</strong>: ~12 M AO de cambio</li>
+<li><strong>Reserva técnica</strong> para garantizar conversiones: ~3 M AO en oro físico distribuidos entre nodos</li>
+<li><strong>Comisiones anuales</strong> (0,3-0,8 % por letra): ~50.000 AO</li>
+<li><strong>Capital propio</strong>: ~2 M AO</li>
+<li><strong>Total bajo gestión</strong>: ~17 M AO</li>
+</ul>
+<h3 id="productos-financieros-2">Productos financieros</h3>
+<ul>
+<li><strong>Letra de cambio interconvertible</strong>: documento gremial firmado por dos sub-Patrones (origen + destino) que <strong>garantiza el cobro</strong> en el continente de destino al portador identificado. Plazo típico: 3-8 semanas según ruta. Comisión: 0,3 % entre Veltara y Mehralt, 0,5 % entre Veltara y Heliopolis, 0,8 % entre Veltara y Iskhal o Karnatha.</li>
+<li><strong>Cambio físico</strong> en mostrador: Aldric ↔ tela veltaresa ↔ marco mehrholt ↔ vale corp. Tipos publicados diariamente en Bolsa de Heliopolis.</li>
+<li><strong>Custodia temporal</strong> de capital en tránsito (días o semanas) con interés mínimo.</li>
+<li><strong>Servicio de mensajero certificado</strong> para letras de cambio (jinete o barco con sello gremial inviolable).</li>
+<li><strong>Arbitraje de tipos</strong> entre las dos plazas mayores (Heliopolis y Veltara) — la Cofradía gana cuando un tipo se desincroniza brevemente.</li>
+</ul>
+<h3 id="especialización-canónica">Especialización canónica</h3>
+<p>La Cofradía es <strong>la única institución que opera en Karnatha como cambista legal del Concierto</strong>. La sucursal de Karnatha funciona porque las bandas locales <strong>necesitan canal limpio para repatriar capital</strong> a Veltara y Mehralt. La tolerancia es mutua. La Cofradía <strong>no investiga el origen</strong> de los fondos que cambia en Karnatha; el Concierto, a cambio, recibe <strong>inteligencia económica discreta</strong> de la sucursal.</p>
+<h3 id="escándalos-canónicos-4">Escándalos canónicos</h3>
+<ul>
+<li><strong>La doble comisión Krastil-Heliopolis</strong> (hace 3 años): Albia Krastil-Heliopolis cobraba comisión doble en letras de cambio Veltara → Heliopolis vinculadas a la familia Krastil. Descubierto por auditoría interna; el escándalo se cerró con devolución y multa privada de 5.000 AO. Albia conservó el cargo.</li>
+<li><strong>El “asalto a la letra Tres”</strong> (hace 5 años): una letra de 80.000 AO en tránsito Mehralt → Veltara fue interceptada en la frontera. Sospechoso designado: <strong>agente Sin-Cuerda</strong>. La Cofradía pagó la letra al destinatario (Karet Vael-Sirinn-Veltara en persona) y abrió una investigación que sigue sin resolución oficial. Sin-Cuerda niega la operación.</li>
+<li><strong>El “soborno cosmológico”</strong> (canónico, latente): se rumorea que la sucursal de Karnatha <strong>emitió letras a favor de “El Padre Vacío”</strong> (Vorrek Helsen-Mahn, <a href="/NovalisPage/facciones/sectas/culto-del-padre-vacio" class="wikilink">Culto del Padre Vacío</a>) por <strong>120.000 AO</strong> acumulados en cinco años. Documentación en la cripta de Cassia Hilo-Bajo, no auditada.</li>
+</ul>
+<h3 id="vínculos-con-megacorps-3">Vínculos con megacorps</h3>
+<ul>
+<li><strong>Casa Vael-Sirinn</strong>: matriz política y operativa.</li>
+<li><strong>Cinco Gremios de Veltara</strong>: cliente principal y autoridad de designación.</li>
+<li><strong>Casas Vellanor</strong>: relación cordial — comparten clientela calixariana y mehralt sin colisión declarada.</li>
+<li><strong>Banca Mehrholt</strong>: relación cordial-distante — Skarn Mehrholt-Korr opera la cambistería sin que la Banca le imponga línea operativa.</li>
+<li><strong>Concierto de Heliopolis</strong>: regulador formal. Inspección anual ligera.</li>
+<li><strong>Bandas de Karnatha</strong>: tolerancia mutua canonizada.</li>
+</ul>
+<hr>
+<h2 id="sinopsis-comparativa">Sinopsis comparativa</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Institución</th><th>Tipo</th><th>Sede</th><th align="right">Capital gestionado</th><th>Producto firma</th><th>Vínculo corp</th></tr></thead><tbody><tr><td>Banca Vellanor</td><td>Banca privada</td><td>Mehralt + Heliopolis</td><td align="right">~55 M AO</td><td>Crédito industrial + deuda soberana calixar</td><td>Casa Vael-Sirinn matriz</td></tr><tr><td>Casas Vellanor</td><td>Casa mercantil</td><td>Mehralt</td><td align="right">~9 M AO</td><td>Renta urbana obrera</td><td>Compañía Imperial (arrendador secundario)</td></tr><tr><td>Banca Mehrholt</td><td>Pantalla financiera</td><td>Heliopolis oficial / Iskhal real</td><td align="right">~150 M AO</td><td>Crédito militar + deuda continental</td><td>Casa Mehrholt-Vael matriz</td></tr><tr><td>Sociedad de Aseguradores</td><td>Gremio asegurador</td><td>Heliopolis</td><td align="right">~23 M AO</td><td>Seguro de convoy Astato</td><td>Brazo conjunto de cinco corps</td></tr><tr><td>Cofradía de Cambistas Veltara</td><td>Red gremial</td><td>Veltara central + nodos</td><td align="right">~17 M AO</td><td>Letra de cambio interconvertible</td><td>Casa Vael-Sirinn + Cinco Gremios</td></tr></tbody></table>
+<p><strong>Capital total declarado bajo gestión de los cinco gremios</strong>: ~254 M AO. <strong>Capital total real estimado</strong> (incluidas reservas no declaradas y flujo gris): <strong>~320-340 M AO</strong> — aproximadamente <strong>tres años de balanza Aldricato consolidada</strong>.</p>
+<hr>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/facciones/casas-vellanor" class="wikilink">Casas Vellanor</a> — ficha mayor de la familia y de la Banca privada</li>
+<li><a href="/NovalisPage/facciones/banca-mehrholt" class="wikilink">Banca Mehrholt</a> — ficha mayor de la pantalla financiera enana</li>
+<li><a href="/NovalisPage/facciones/casa-mehrholt-vael" class="wikilink">Casa Mehrholt-Vael</a> — matriz operativa de Banca Mehrholt</li>
+<li><a href="/NovalisPage/facciones/casa-vael-sirinn" class="wikilink">Casa Vael-Sirinn</a> — matriz política de Banca Vellanor y Cofradía de Cambistas</li>
+<li><a href="/NovalisPage/facciones/concierto-de-heliopolis" class="wikilink">Concierto de Heliopolis</a> — regulador formal</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — co-fundadora de Sociedad de Aseguradores</li>
+<li><a href="/NovalisPage/facciones/colegio-imperial-de-los-animadores" class="wikilink">Colegio Imperial de los Animadores</a> — miembro de Sociedad de Aseguradores</li>
+<li><a href="/NovalisPage/facciones/cumbre-secreta-corp" class="wikilink">Cumbre Secreta Corp</a> — origen de la Sociedad de Aseguradores</li>
+<li><a href="/NovalisPage/geografia/hacienda-del-norte" class="wikilink">Hacienda del Norte</a> — escenario de cumbre que canonizó la Sociedad</li>
+<li><a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> — sede de las dos primeras y de la Sociedad</li>
+<li><a href="/NovalisPage/arquitectura/veltara" class="wikilink">Veltara</a> — sede de la Cofradía de Cambistas</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — sede central calixariana de Vellanor</li>
+<li><a href="/NovalisPage/arquitectura/iskhal" class="wikilink">Iskhal</a> — sede operativa real de Banca Mehrholt</li>
+<li><a href="/NovalisPage/arquitectura/karnatha" class="wikilink">Karnatha</a> — sucursal tolerada de Cofradía de Cambistas</li>
+<li><a href="/NovalisPage/conceptos/economia/monedas-de-novalis" class="wikilink">Monedas de Novalis</a> — sistema monetario que vehiculan</li>
+<li><a href="/NovalisPage/conceptos/economia/precios-canonicos" class="wikilink">Precios Canónicos</a> — referencia de valoración</li>
+<li><a href="/NovalisPage/conceptos/economia/salarios-canonicos" class="wikilink">Salarios Canónicos</a> — referencia de coste laboral</li>
+<li><a href="/NovalisPage/conceptos/economia/balanza-aldricato" class="wikilink">Balanza Aldricato</a> — flujos macro que canalizan</li>
+<li><a href="/NovalisPage/facciones/concierto-de-heliopolis" class="wikilink">Concierto de Heliopolis</a> — autoridad reguladora</li>
+<li><a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> — antagonista canónico de Casas Vellanor</li>
+<li><a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a> — antagonista latente de la red</li>
+<li><a href="/NovalisPage/facciones/sectas/culto-del-padre-vacio" class="wikilink">Culto del Padre Vacío</a> — receptor latente de letras Karnatha</li>
+<li><a href="/NovalisPage/facciones/sectas/cofradia-de-los-nudos-sueltos" class="wikilink">Cofradía de los Nudos Sueltos</a> — circuito gris paralelo a la Cofradía de Cambistas</li>
+<li><a href="/NovalisPage/personajes/vellis-krastil" class="wikilink">Vellis Krastil</a> — parienta cercana de Albia Krastil-Heliopolis</li>
+<li>Casa de Voltka — cliente cetuano de operaciones grises</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>Las cinco instituciones, mapa de poder canónico</strong>:</p>
+<ul>
+<li><strong>Si Aldric III quisiera asfixiar al régimen Halsen</strong>, <strong>bloquearía la Banca Vellanor</strong> (cortar el crédito al Estado calixariano). El régimen caería en 3-6 meses.</li>
+<li><strong>Si la corona quisiera deslegitimar a la Casa Mehrholt-Vael</strong>, <strong>filtraría el expediente de la cripta de Iskhal</strong> que documenta la pantalla financiera. La Banca Mehrholt perdería licencia fortunesa y la deuda vorathiana se haría tóxica.</li>
+<li><strong>Si la Junta Directiva del Hierro decidiera deshacerse de la corona fortunesa</strong>, <strong>manipularía la Sociedad de Aseguradores</strong> (denegar cobertura sistemática a operaciones de la corona). Aldric III tendría que asumir riesgo directo y se descapitalizaría.</li>
+<li><strong>Si Sin-Cuerda quisiera detonar una crisis financiera</strong>, <strong>asaltaría tres letras de la Cofradía de Cambistas simultáneamente</strong> en rutas diferentes. La red entraría en quiebra técnica en 4-8 semanas.</li>
+<li><strong>Si los Eternistas filtraran su archivo sobre las Casas Vellanor</strong>, <strong>el régimen del rentier industrial calixariano</strong> quedaría expuesto y la Junta de Hierro tendría que intervenir en mercado inmobiliario.</li>
+</ul>
+<p><strong>El “ratio cosmológico” de la Sociedad de Aseguradores</strong> es <strong>palanca pública del despertar de Null</strong>. Si los PJ acceden al archivo de Sevra Vellanor-Korven, tienen prueba documental de que el sellado se debilita —prueba que el Concierto <strong>no quiere reconocer públicamente</strong> porque alimentaría pánico de mercado—.</p>
+<p><strong>El “soborno cosmológico” Karnatha → Padre Vacío</strong> es <strong>vector financiero del Culto del Padre Vacío</strong> que ningún otro actor canónico ha trazado. Cassia Hilo-Bajo lo sabe; nadie más. Si los PJ acceden a la cripta de Cassia, <strong>identifican el flujo financiero del Culto del Padre Vacío</strong> —palanca crítica contra Vorrek Helsen-Mahn—.</p>
+<p><strong>El “asiento que no figura”</strong> de Banca Mehrholt y la <strong>manipulación del ticker</strong> del Banco Central de Fortuna <strong>son la misma operación coordinada</strong>: pre-evento (lunes de Iskhal), Banca Mehrholt y Cinco Bancas pactan compraventa de un activo. El miércoles, el ticker se manipula para mover el precio. Las cinco ganan en quincena. La corona pierde rentabilidad por <strong>al menos 200.000 AO/año</strong> que sale del Banco Central sin explicación. <strong>Aldric III conoce el patrón</strong> pero no la operación específica — necesita prueba documental que solo el archivo de Vetric Hardrach-Sostenido tiene.</p>
+<p><strong>Vetric Hardrach-Sostenido</strong>, director de reclamaciones de la Sociedad de Aseguradores, <strong>es primo lejano de Severina Aldric</strong>. Mantiene correspondencia cifrada con ella desde hace tres años, pasándole información sobre operaciones aseguradoras irregulares. Severina sostiene el archivo pero no actúa. Si los PJ son contratados por Severina para “preparar el archivo para uso público”, están entrando en un movimiento contra la cumbre corp entera.</p>
+<p><strong>Posibles ganchos</strong>:</p>
+<ul>
+<li>Los PJ son contratados por Tobias Vehrold para <strong>extraer una de las dos copias del doble libro Vellanor-Vehrold</strong> antes de que la Junta del Hierro la encuentre. Tobias necesita la prueba pero también necesita destruirla en cuanto la lea.</li>
+<li>Una <strong>letra de cambio falsificada</strong> de la Cofradía de Cambistas Veltara aparece en Karnatha por 200.000 AO. La Cofradía y Vellis Krastil contratan a los PJ —cada uno con motivos distintos— para rastrear el falsificador.</li>
+<li><strong>El archivo cosmológico de Sevra</strong> se filtra parcialmente a la prensa. La prensa pide a los PJ que verifiquen la autenticidad. La verificación implica entrar en la sede de la Sociedad.</li>
+<li><strong>La sucursal Karnatha</strong> sufre un asalto interno: alguien intenta acceder a la cripta de Cassia Hilo-Bajo. Cassia contrata a los PJ para protegerse. Resulta que el agresor era enviado por <strong>el propio Padre Vacío</strong> para destruir las letras antes de que la Cofradía las audite.</li>
+<li>Una <strong>crisis de la Banca Mehrholt</strong> (rumor de quiebra de la Casa) sacude los mercados. Los PJ son enviados a Iskhal a <strong>verificar el estado real de la bóveda doble</strong>. Lo que encuentran (o no encuentran) decide el futuro del Concierto durante una década.</li>
+<li>Una <strong>familia obrera de Maris-Korr</strong> desahuciada por Casas Vellanor pide ayuda a los PJ. La pequeña historia abre la puerta a la documentación del incendio de la Calle del Pozo Largo, palanca del Sindicato del Yunque Roto.</li>
+</ul>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

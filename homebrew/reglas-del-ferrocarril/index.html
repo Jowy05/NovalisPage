@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Reglas del Ferrocarril — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Homebrew</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> homebrew · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Reglas del Ferrocarril</h1> </header> <div class="wiki-prose mt-7"> <h1 id="reglas-del-ferrocarril">Reglas del Ferrocarril</h1>
+<p>Sistema homebrew de D&#x26;D 5e para arbitrar <strong>viajes, encuentros, asaltos y descarrilamientos</strong> en la red ferroviaria de <a href="/NovalisPage/geografia/novalis" class="wikilink">Novalis</a>. Cubre las cinco rutas canónicas regulares, encuentros aleatorios por bioma, mecánica táctica de <strong>asalto a convoy</strong> con cuatro puntos clave, reglas de <strong>presión de vapor</strong> y descarrilamiento. El ferrocarril es <strong>lugar de aventura central</strong> del género magitek-flintlock fantasy del mundo, y este sistema lo vuelve mesa jugable en lugar de telón pintado.</p>
+<blockquote>
+<p>[!info] Invención
+Duraciones canónicas, valores AC/PG, condiciones de inutilización y tabla d20 por bioma son invención mecánica coherente con el canon narrativo. Ajustables.</p>
+</blockquote>
+<h2 id="filosofía-mecánica">Filosofía mecánica</h2>
+<ul>
+<li><strong>El convoy no es un mapa</strong>: es <strong>cuatro objetivos tácticos independientes</strong> (locomotora, vagón Astato, vagón pasajeros, vagón cola) cuyas condiciones de inutilización son distintas. Los asaltantes eligen objetivo y los defensores priorizan defensa.</li>
+<li><strong>El tren se mueve durante el combate</strong>. Cada turno avanza 1 milla. Saltar entre vagones es <strong>acción + tirada Atletismo o Acrobacias DC 13</strong>; caer del tren es 6d6 contundente, save DEX DC 15 a la mitad.</li>
+<li><strong>La presión de vapor es un recurso del fogonero, no del DM</strong>. Aumentar presión gana velocidad pero riesgo de descarrilamiento.</li>
+<li><strong>Los encuentros aleatorios escalan por tramo y bioma</strong>, no por nivel del grupo. Un convoy en taiga oscura cetuana es jaula de criaturas.</li>
+</ul>
+<h2 id="horarios-canónicos-por-ruta">Horarios canónicos por ruta</h2>
+<p>Las cinco rutas regulares de la red ferroviaria. Cada ruta opera con frecuencia distinta; los convoyes especiales (Astato refinado, regalia, presos) se intercalan irregularmente.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ruta</th><th>Duración estándar</th><th>Frecuencia</th><th>Tipo de carga típica</th></tr></thead><tbody><tr><td><strong>Solaria → Mehralt</strong> (eje Aldricato-Calixar)</td><td><strong>6 días</strong> (con 4 paradas en estaciones intermedias)</td><td>2 convoyes / semana en cada dirección</td><td>Mercancía mixta, pasajeros, comunicaciones imperiales</td></tr><tr><td><strong>Halmgard → Iskhal</strong> (eje Vorath industrial)</td><td><strong>2 días</strong> (1 parada técnica)</td><td>1 convoy diario</td><td>Astato extraído, mineral en bruto, alimentos de retorno</td></tr><tr><td><strong>Maris-Korr → Solaria</strong> (vía Ferro-Korr)</td><td><strong>4 días</strong> (sin paradas regulares, escolta militar)</td><td><strong>Convoy Astato refinado, 1 cada 12 días</strong></td><td>Astato refinado en cintas selladas, escolta de 30 guardias</td></tr><tr><td><strong>Ferro-Korr → Bargheim</strong> (eje calixarí-vorathiano)</td><td><strong>3 días</strong> (2 paradas)</td><td>2 convoyes / semana</td><td>Hierro de Ferro-Korr, mercancía intermedia, especias kalmari de retorno</td></tr><tr><td><strong>Heliopolis → Sondaru</strong> (línea sosegada, ramal fortunés)</td><td><strong>5 días</strong> (4 paradas culturales)</td><td>1 convoy / 3 días</td><td>Pasajeros de élite, mercancía fortuna→Cetus, prensa</td></tr></tbody></table>
+<p>Tramos secundarios y ramales locales no se computan en esta tabla. El <strong>convoy de doce días</strong> Maris-Korr→Solaria es el objetivo canónico de asalto de las bandas del Anillo, y la misión inaugural canónica del catálogo (<code>convoy-de-doce-dias.md</code>).</p>
+<h2 id="mecánica-del-convoy--4-puntos-clave">Mecánica del convoy — 4 puntos clave</h2>
+<p>Todo convoy estándar tiene <strong>cuatro vagones tácticamente independientes</strong>. Cada uno con AC, PG y condición de inutilización propia. Los asaltantes eligen objetivo y deciden si <strong>toman el control</strong>, <strong>inutilizan</strong> o <strong>destruyen</strong>.</p>
+<h3 id="1-locomotora">1. Locomotora</h3>
+<p>La caja maestra del tren. Contiene caldera, cabina de maquinista, fogonero, vigía y armario de núcleos de presión.</p>
+<ul>
+<li><strong>AC 15</strong> (acero blindado, blindaje extra de Astato refinado en cabina)</li>
+<li><strong>PG 80</strong></li>
+<li><strong>Inutilización</strong>: cuando los PG bajan de 30, save CON DC 15 del maquinista o <strong>fallo de cabina</strong>: la locomotora pierde control de presión y desencadena tirada de <strong>descarrilamiento</strong>.</li>
+<li><strong>Tripulación estándar</strong>: 1 maquinista (humano veterano CR 1/2), 1 fogonero (CR 1/4), 1 vigía con rifle (CR 1).</li>
+<li><strong>Acción especial PJ</strong>: <strong>detener el tren</strong> requiere acción de maquinista + DC 13 INT (ferrocarriles) o 2 turnos de fogonero reduciendo presión. Un PJ que toma el control puede frenar el tren en 1d6+2 turnos.</li>
+</ul>
+<h3 id="2-vagón-astato">2. Vagón Astato</h3>
+<p>Vagón blindado central del convoy (o vagón único, en convoy de 12 días). Contiene cintas selladas de Astato refinado, generadores arcanos, archivo de control.</p>
+<ul>
+<li><strong>AC 17</strong> (blindaje doble + revestimiento cristalino)</li>
+<li><strong>PG 120</strong></li>
+<li><strong>Inutilización</strong>: solo se considera inutilizado si los PG bajan de 0, o si la cinta de Astato se ve comprometida. Si los PG bajan de 60, <strong>fuga de polvo Astato</strong> dentro del vagón: cualquier criatura dentro 1d4 turnos = 1 hora de exposición (DC 12 save CON).</li>
+<li><strong>Guardia estándar</strong>: 4 guardias corp (CR 1 cada uno), 1 capitán (CR 3), 1 alquimista corp (CR 2, conjura <em>fog cloud</em> sobre el vagón cuando lo asaltan).</li>
+<li><strong>Acción especial PJ</strong>: <strong>abrir la cinta sin protección</strong> = catastrófico (exposición 24 horas instantánea); <strong>transportar la cinta intacta</strong> = requiere carro pesado o autómata + 4 PJ (cada cinta pesa 200 lb).</li>
+</ul>
+<h3 id="3-vagón-de-pasajeros">3. Vagón de Pasajeros</h3>
+<p>Vagón civil. Mezcla de clases (compartimentos privados, salón común, camarote tercera). Contiene NPCs civiles (10-30 según ruta), equipaje, contrabando ocasional.</p>
+<ul>
+<li><strong>AC 13</strong> (madera reforzada, ventanas grandes)</li>
+<li><strong>PG 60</strong></li>
+<li><strong>Inutilización</strong>: PG 0 = colapso estructural; los pasajeros caen propensos. Inutilización táctica posible: incendio (acción + aceite + tirada DC 12) que vacía el vagón en 3 turnos.</li>
+<li><strong>Tripulación</strong>: 1 revisor (CR 1/4), 1 guardia interior (CR 1/2), 0-2 detectives clandestinos (CR 2, mezclados con pasajeros).</li>
+<li><strong>Acción especial PJ</strong>: tomar rehenes; usar pasajeros como escudo civil (acción moral); descubrir contrabando (DC 13 Investigación).</li>
+</ul>
+<h3 id="4-vagón-de-cola">4. Vagón de Cola</h3>
+<p>Furgón de cola: equipaje pesado, correo, caballos, perros guardianes, prisioneros en tránsito.</p>
+<ul>
+<li><strong>AC 13</strong> (madera estándar, una puerta corredera reforzada)</li>
+<li><strong>PG 40</strong></li>
+<li><strong>Inutilización</strong>: PG 0 = descarrilamiento parcial del vagón si está en curva (50% de probabilidad). Inutilización táctica común: <strong>soltar enganche</strong> = acción + DC 14 Atletismo + ataque oportuno; el vagón se queda atrás.</li>
+<li><strong>Tripulación</strong>: 2 guardianes con perros (CR 1 + 1 mastín CR 1/4), 1 guardia animal (CR 1/4).</li>
+<li><strong>Acción especial PJ</strong>: liberar prisioneros (DC 12 Cerrajería); robar correo (mapa+coordenadas, prensa privada de las megacorps); soltar caballos para distracción.</li>
+</ul>
+<h2 id="reglas-de-presión-del-vapor">Reglas de presión del vapor</h2>
+<p>La locomotora opera con un <strong>medidor de presión</strong> dividido en cinco bandas: <strong>Verde (segura), Amarilla (alta), Naranja (forzada), Roja (límite), Negra (catastrófica)</strong>. El fogonero gestiona esto con acciones específicas durante el turno.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Banda de presión</th><th>Velocidad de tren</th><th>Save DEX para evitar descarrilamiento (al final de cada turno en curva)</th><th>Acción para subir o bajar</th></tr></thead><tbody><tr><td><strong>Verde</strong></td><td>1 milla/turno</td><td>No requerido</td><td>Estándar</td></tr><tr><td><strong>Amarilla</strong></td><td>1,5 millas/turno</td><td>DC 10</td><td>Acción del fogonero: subir o bajar 1 banda</td></tr><tr><td><strong>Naranja</strong></td><td>2 millas/turno</td><td>DC 13</td><td>Acción del fogonero + save CON DC 13 (calor)</td></tr><tr><td><strong>Roja</strong></td><td>2,5 millas/turno</td><td>DC 16</td><td>Acción + save CON DC 15 + tirada en Tabla Astato (1 hora)</td></tr><tr><td><strong>Negra</strong></td><td>3 millas/turno</td><td>DC 19</td><td>Solo accesible 1 turno; al final del turno save DC 20 o <strong>explosión catastrófica</strong> (ver descarrilamiento)</td></tr></tbody></table>
+<p>Subir de Naranja a Roja o de Roja a Negra requiere <strong>sobrecargar la caldera con núcleo extra</strong> (consumir 1 núcleo común o equivalente). Bajar 1 banda no consume núcleo pero sí 1 turno completo de fogonero.</p>
+<p><strong>Variante táctica</strong>: un PJ fogonero veterano (Ingeniero o equivalente) puede declarar <strong>presión forzada agresiva</strong>: sube 2 bandas en 1 turno + save CON DC 18 personal (calor). Esto se usa para <strong>escapar de asalto</strong> o <strong>embestir obstáculo</strong>.</p>
+<h2 id="reglas-de-descarrilamiento">Reglas de descarrilamiento</h2>
+<p>Cuando un convoy descarrila por <strong>fallo de cabina</strong>, <strong>explosión catastrófica</strong>, <strong>sabotaje de raíles</strong>, <strong>save DEX fallido en curva</strong> o <strong>inutilización de locomotora</strong>, se aplica esta secuencia:</p>
+<ol>
+<li><strong>Save DEX universal DC 15</strong> para todos los ocupantes y guardias del convoy. Éxito = el ocupante queda agarrado, daño reducido. Fallo = como abajo.</li>
+<li><strong>Daño base 4d6 contundente</strong> a todos los ocupantes (la mitad si superan DEX).</li>
+<li><strong>Todos los pasajeros caen propensos</strong>, incluidos los que superan el save.</li>
+<li><strong>Fuego al 50% (tirada del DM)</strong>: si arde, el daño continúa 1d6 fuego/turno durante 1d4 turnos hasta extinción o evacuación. Los vagones de madera arden más rápido; el vagón Astato genera <strong>explosión secundaria 6d10 fuego + radial 30 pies</strong> si arde y los PG están bajos.</li>
+<li><strong>Tirada de localización</strong>: 1d6 — 1-2 = vagones intactos pero atascados, 3-4 = un vagón volcado, 5-6 = vagones dispersos en 200 pies.</li>
+<li><strong>Encuentro consecuente</strong>: la criatura/banda más cercana del bioma llega en 1d4 turnos atraída por el estruendo. Tirar en Tabla de Encuentros del bioma actual.</li>
+</ol>
+<p>El descarrilamiento es <strong>siempre evento de campaña</strong>: nunca es trivial. Recuperar el cargamento requiere días, presencia de la corp afectada, y suele activar misiones de seguimiento.</p>
+<h2 id="tablas-de-encuentros-aleatorios-por-bioma">Tablas de encuentros aleatorios por bioma</h2>
+<p>Tirar <strong>1d20 al inicio de cada jornada del viaje</strong> y <strong>siempre</strong> al cruzar frontera de bioma. Encuentros 18-20 son “evento de campaña” y deben ser bajados a 17 si el grupo está debilitado.</p>
+<h3 id="estepa-calixar-central-llanuras-saladas-sabana-cetuana">Estepa (Calixar central, llanuras saladas, sabana cetuana)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Encuentro</th></tr></thead><tbody><tr><td>1-3</td><td>Manada de <strong>ovejas saltarinas estepales</strong> cruzando vías; retraso 1d4 horas</td></tr><tr><td>4-6</td><td><strong>Banda mendiga</strong> que pide alimento a las paradas; tirada Persuasión / Engaño</td></tr><tr><td>7-9</td><td><strong>Reaver del Polvo</strong> solitario sobre los raíles (CR 4); intercepta el convoy</td></tr><tr><td>10-12</td><td><strong>Tormenta de polvo</strong>; convoy reduce velocidad 50%, save CON para tripulación</td></tr><tr><td>13-15</td><td><strong>Banda de Pozos Mudos</strong> o <strong>Cráter Negro</strong> preparando emboscada (4-8 miembros, CR 3)</td></tr><tr><td>16-17</td><td><strong>Caravana Fantasma</strong> cruza vías (CR 6, encuentro narrativo); ofrece trato imposible</td></tr><tr><td>18</td><td><strong>Reaver Veterano</strong> + banda completa (CR 7 + 4 reavers); asalto coordinado</td></tr><tr><td>19</td><td><strong>Inversión menor</strong> filtrada del Anillo (CR 5-6 según mesa, una de las menores)</td></tr><tr><td>20</td><td><strong>Asalto coordinado a convoy</strong> (banda completa, ver mecánica de 4 puntos)</td></tr></tbody></table>
+<h3 id="montaña-cordillera-volcánica-montañas-vorathianas-central-cetus">Montaña (Cordillera Volcánica, montañas vorathianas, central cetus)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Encuentro</th></tr></thead><tbody><tr><td>1-3</td><td><strong>Cabra de obsidiana</strong> o herbívoro local en raíles; retraso menor</td></tr><tr><td>4-6</td><td><strong>Avalancha menor</strong> que bloquea vía; 1d4 horas de retiro de escombros</td></tr><tr><td>7-9</td><td><strong>Roc Rojo</strong> o ave de presa grande caza pasajeros que asoman (CR 11 / CR 5)</td></tr><tr><td>10-12</td><td><strong>Niebla espesa de altura</strong>; presión obligatoria a Amarilla, save percepción DC 15</td></tr><tr><td>13-15</td><td><strong>Hobgoblin Clan Volcánico</strong> preparando emboscada (CR 6 + escolta)</td></tr><tr><td>16-17</td><td><strong>Salamandra Mayor de Magma</strong> atraída por calor de locomotora (CR 7)</td></tr><tr><td>18</td><td><strong>Wyvern de Obsidiana</strong> ataca cabina (CR 6 + 1d4 menores)</td></tr><tr><td>19</td><td><strong>Dragón Rojo Joven</strong> sobrevuela; demanda tributo o ataca (CR 10)</td></tr><tr><td>20</td><td><strong>Eco de Halsen</strong> filtrado de cripta cercana (CR 9, Inversión); intercepta convoy con palabras imposibles</td></tr></tbody></table>
+<h3 id="taiga-cetus-norte-taiga-oscura-ramales-calixarís-norte">Taiga (Cetus norte, taiga oscura, ramales calixarís norte)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Encuentro</th></tr></thead><tbody><tr><td>1-3</td><td><strong>Manada de ciervos blancos</strong>; retraso, ningún peligro</td></tr><tr><td>4-6</td><td><strong>Tormenta de nieve</strong>; presión Amarilla obligatoria, save DEX DC 13</td></tr><tr><td>7-9</td><td><strong>Lobo de la Sombra</strong> (CR 4) observa convoy en distancia; no ataca salvo provocación</td></tr><tr><td>10-12</td><td><strong>Espíritu del Bosque Quieto</strong> (CR 4) bloquea vías con árbol caído (ritual silencioso)</td></tr><tr><td>13-15</td><td><strong>Cazador de Niebla</strong> + 2-3 secuaces (CR 3) emboscan parada técnica</td></tr><tr><td>16-17</td><td><strong>Urso Mayor de las Cumbres</strong> atraído por correo de comida (CR 6)</td></tr><tr><td>18</td><td><strong>Centauro Glaciario</strong> tribu Hjorbarn-Vri exige derecho de paso (encuentro político-marcial)</td></tr><tr><td>19</td><td><strong>Wendigo Ártico</strong> acecha el convoy desde dentro de la cabina (NO Inversión, no-muerto clásico, CR 7)</td></tr><tr><td>20</td><td><strong>Eco del Reverso Menor</strong> filtra y desincroniza el tiempo del convoy (encuentro cosmológico)</td></tr></tbody></table>
+<h3 id="costa-cetus-costera-fortuna-costera-ramales-portuarios">Costa (Cetus costera, Fortuna costera, ramales portuarios)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Encuentro</th></tr></thead><tbody><tr><td>1-3</td><td><strong>Pasajeros tardíos</strong> suben en parada; retraso 1d4 horas</td></tr><tr><td>4-6</td><td><strong>Caldo de niebla</strong> persistente; presión Amarilla, percepción DC 12</td></tr><tr><td>7-9</td><td><strong>Avistamiento de ballena</strong> distante; pasajeros se asoman (puede inspirar Sin-Cuerda)</td></tr><tr><td>10-12</td><td><strong>Contrabandista del Hilo Roto</strong> intenta subir mercancía clandestina (encuentro social)</td></tr><tr><td>13-15</td><td><strong>Patrulla corp</strong> sube al convoy a registro arbitrario (encuentro político)</td></tr><tr><td>16-17</td><td><strong>Tormenta marítima atípica</strong> desplaza arena/agua a vías; descarrilamiento posible DC 14</td></tr><tr><td>18</td><td><strong>Pez Fantasma del Velo</strong> masivo varado sobre vías; aprovechamiento contrabandista</td></tr><tr><td>19</td><td><strong>Eco de Marinero</strong> (Inversión costera) sube como pasajero (CR 2 + drama cosmológico)</td></tr><tr><td>20</td><td><strong>Asalto pirata por mar+vía</strong>: Sin-Cuerda coordinados con desembarco; ver mecánica de asalto</td></tr></tbody></table>
+<h3 id="túnel-subterráneos-montaña-perforada-paso-de-mehralt-maris-korr">Túnel (subterráneos, montaña perforada, paso de Mehralt-Maris-Korr)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>1d20</th><th>Encuentro</th></tr></thead><tbody><tr><td>1-3</td><td><strong>Pequeño murciélago de túnel</strong>; sin efecto</td></tr><tr><td>4-6</td><td><strong>Goteo de techo</strong> en cabina; -2 a tiradas perceptivas del maquinista</td></tr><tr><td>7-9</td><td><strong>Ratas gigantes</strong> infestan vagón pasajero (CR 1/4 enjambre)</td></tr><tr><td>10-12</td><td><strong>Falla menor de raíl</strong>; save DEX DC 15 contra descarrilamiento parcial</td></tr><tr><td>13-15</td><td><strong>Espía del Sindicato del Yunque Roto</strong> sabotea raíl previamente; necesita encuentro DC 15 Investigación</td></tr><tr><td>16-17</td><td><strong>Bárbazu</strong> filtrado por veta caliente; ataca a cabina (CR 5)</td></tr><tr><td>18</td><td><strong>Inversiones menores</strong> (1d4) en cruce de túneles; cualquiera del catálogo CR 4-6</td></tr><tr><td>19</td><td><strong>Foco psíquico de Null secundario</strong>: todos los pasajeros tienen la pesadilla de la piedra negra (sin daño, pero drama narrativo y posible activación de PJ con sensibilidad)</td></tr><tr><td>20</td><td><strong>El Tren Inverso</strong> aparece en línea paralela (CR variable, Inversión gemela del convoy real); intercambio cosmológico</td></tr></tbody></table>
+<h2 id="combate-sobre-convoy-en-movimiento">Combate sobre convoy en movimiento</h2>
+<p>Reglas tácticas adicionales para combate en vagones:</p>
+<ul>
+<li><strong>Saltar entre vagones</strong>: acción + Atletismo o Acrobacias DC 13. Fallo crítico (1 natural): el PJ cae bajo las ruedas, save DEX DC 18 o muerte.</li>
+<li><strong>Disparar a distancia desde tren a tren paralelo</strong>: desventaja por movimiento; ventaja si el PJ está agarrado a tope de vagón.</li>
+<li><strong>Pelear sobre techo</strong>: save DEX DC 12 al inicio de cada turno o caer del tren (4d6 contundente, save DEX DC 15 a la mitad).</li>
+<li><strong>Saltar a caballo en marcha</strong>: desde un caballo paralelo al tren a velocidad equivalente, DC 18 Atletismo; éxito = subido a tope de vagón; fallo = save DEX DC 16 o caída bajo cascos.</li>
+<li><strong>Frenazo súbito</strong> (acción del maquinista PJ): todos los del convoy save DEX DC 14 o caer propensos; los enemigos sobre techo caen.</li>
+</ul>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — Combustible cuyo transporte motiva los convoyes</li>
+<li><a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> — Recurso para subir presión y sobrecargar caldera</li>
+<li>Reglas de Exposición al Astato — Riesgo en vagón Astato y en convoyes refinados</li>
+<li><a href="/NovalisPage/homebrew/reglas-de-nucleos-animados" class="wikilink">Reglas de Núcleos Animados</a> — Núcleos consumidos en caldera siguen sus reglas</li>
+<li><a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> — Origen del convoy de doce días canónico</li>
+<li><a href="/NovalisPage/arquitectura/solaria" class="wikilink">Solaria</a> — Destino imperial principal</li>
+<li><a href="/NovalisPage/arquitectura/mehralt" class="wikilink">Mehralt</a> — Industria pesada y eje calixarí</li>
+<li><a href="/NovalisPage/arquitectura/halmgard" class="wikilink">Halmgard</a> — Eje vorathiano industrial</li>
+<li><a href="/NovalisPage/arquitectura/bargheim" class="wikilink">Bargheim</a> — Estación frontera vorathiana</li>
+<li><a href="/NovalisPage/arquitectura/heliopolis" class="wikilink">Heliopolis</a> — Capital fortunesa, ramal ferroviario al puerto</li>
+<li><a href="/NovalisPage/arquitectura/sondaru" class="wikilink">Sondaru</a> — Línea cultural fortuna-Cetus</li>
+<li><a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> — Saboteadores de raíles ocasionales</li>
+<li><a href="/NovalisPage/bestiario/calixar/el-tren-inverso/el-tren-inverso" class="wikilink">El Tren Inverso</a> — Aparición Inversa cosmológica en taiga calixarí</li>
+<li><a href="/NovalisPage/facciones/megacorporaciones" class="wikilink">Megacorporaciones</a> — Operadoras de las rutas y víctimas habituales</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>El convoy de doce días Maris-Korr → Solaria</strong> es el escenario canónico del asalto. Pasa por estepa salada, frontera de Ferro-Korr, llanuras de Drahnvar, paso de Solaria. La banda canónica que lo asalta con más frecuencia es la <strong>Banda del Cráter Negro</strong> (juramento de sangre, militarista). Los <strong>Pozos Mudos</strong> lo asaltan en silencio total (código).</p>
+<p><strong>La inutilización de raíl</strong> es un escenario habitual de los Sin-Cuerda o del Sindicato del Yunque Roto. El sabotaje se hace <strong>antes</strong> del paso del convoy con desperfectos sutiles (1 raíl floja, 1 pasador medio sacado). En el momento del paso, el descarrilamiento es 70% probable a presión Naranja o superior. Investigación posterior DC 17 para identificar el sabotaje deliberado.</p>
+<p><strong>El Tren Inverso</strong> (CR variable, criatura canónica del bestiario calixarí) es la <strong>trampa narrativa</strong> del DM en taiga oscura o cruce de túneles. Aparece como tren idéntico que viaja en sentido inverso por línea paralela imposible. Si los PJ suben, se invierte una regla de su mundo (la dirección del tiempo del PJ se invierte 1 hora, los recuerdos de la próxima hora se reciben antes de vivirla, etc). Investigación arcana DC 20 para entender qué pasó. Encuentro favorito para campañas avanzadas.</p>
+<p><strong>La explosión catastrófica del vagón Astato</strong> es el escenario “tierra arrasada” más extremo. Si la cinta de Astato refinado se rompe y arde, la explosión 6d10 + 30 pies radial deja el área <strong>inhabitable por décadas</strong>. Solo ha ocurrido <strong>dos veces</strong> documentadas en historia ferroviaria (DM: ambas atribuidas oficialmente a banda Cráter Negro, una verdaderamente Sin-Cuerda, otra accidente corp tapado). El segundo cráter es una mazmorra abierta hoy.</p>
+<p><strong>Los convoyes de regalia</strong> (transporte de Espada de Engren, Cuerno de Hjornheim entre ciudades) no aparecen en la tabla regular. Tienen tripulación reforzada (10+ guardias élite, Skald a bordo si vorathiano, escolta autómata), AC y PG duplicados, y un encuentro pre-asalto con grupo paramilitar de élite cualquier vez que se mueven.</p>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>

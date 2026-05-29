@@ -1,0 +1,606 @@
+<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Balanza Aldricato — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css"></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1uIEv9" prefix="r1" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <article class="mx-auto max-w-3xl px-6 py-12"> <nav class="flex flex-wrap items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a> <span class="flex items-center gap-1.5"><span>›</span><span>Conceptos</span></span><span class="flex items-center gap-1.5"><span>›</span><span>Economia</span></span> </nav> <header class="mt-4 border-b border-border pb-5"> <span class="font-mono text-xs uppercase tracking-wider text-accent"> concepto · global </span> <h1 class="mt-2 font-display text-4xl leading-tight text-primary">Balanza Aldricato</h1> </header> <div class="wiki-prose mt-7"> <h1 id="balanza-aldricato">Balanza Aldricato</h1>
+<p>Tabla maestra de <strong>exportaciones e importaciones</strong> de los cuatro continentes principales de <a href="/NovalisPage/geografia/novalis" class="wikilink">Novalis</a> —<a href="/NovalisPage/geografia/fortuna" class="wikilink">Fortuna</a> (corazón administrativo del Aldricato), <a href="/NovalisPage/geografia/calixar" class="wikilink">Calixar</a>, <a href="/NovalisPage/geografia/vorath" class="wikilink">Vorath</a> y <a href="/NovalisPage/geografia/cetus" class="wikilink">Cetus</a>— con valores estimados en <strong>millones de Aldric de oro al año (M AO/año)</strong>. Sirve para arbitrar tratados, encargos de campaña, conflictos comerciales y coherencia de los flujos macro del mundo. Los valores son cifras de <strong>consenso del Concierto de Heliopolis</strong> publicadas en el <em>Anuario Comercial del Aldricato</em> —documento bienal que <strong>subestima sistemáticamente el flujo gris</strong> (núcleos exóticos, brennvin no declarado, Astato Voltka)—.</p>
+<h2 id="fortuna-corazón-del-aldricato">Fortuna (corazón del Aldricato)</h2>
+<h3 id="exportaciones--total-estimado-28-m-aoaño">Exportaciones — total estimado 28 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Destinos principales</th></tr></thead><tbody><tr><td><strong>Grano (trigo, centeno, cebada)</strong></td><td>350.000 toneladas</td><td>7 M</td><td>Calixar (60 %), Vorath (30 %), Cetus (10 %)</td></tr><tr><td><strong>Queso de Voltrede</strong> y derivados lácteos</td><td>9.000 toneladas</td><td>3 M</td><td>Heliopolis interior, Veltara, Iskhal</td></tr><tr><td><strong>Vino</strong> de Velmoria y centro-sur fortunés</td><td>12.000 hectolitros</td><td>4 M</td><td>Veltara, Iskhal, Hjornheim</td></tr><tr><td><strong>Lana cruda y manufacturada</strong></td><td>18.000 toneladas</td><td>5 M</td><td>Veltara textil, Mehralt confección</td></tr><tr><td><strong>Libros y prensa</strong> (editoriales de Heliopolis)</td><td>1,2 M de volúmenes</td><td>2 M</td><td>Veltara, Mehralt, Karnatha, Iskhal</td></tr><tr><td><strong>Brennvin re-exportado</strong> (importado bruto de Vorath, embotellado y rebrand fortunés)</td><td>4.500 hectolitros</td><td>4 M</td><td>Veltara, Calixar (élite), Karnatha</td></tr><tr><td>Aceite de oliva y semilla</td><td>5.500 hectolitros</td><td>1 M</td><td>Mehralt, Iskhal</td></tr><tr><td>Cuero curtido y manufactura cortesana</td><td>800 toneladas</td><td>1 M</td><td>Veltara, Calixar</td></tr><tr><td>Mercancías cortesanas (ropa fina, joyería, relojería heliopolitana, productos editoriales raros)</td><td>—</td><td>1 M</td><td>Casas patronales de los cuatro continentes</td></tr></tbody></table>
+<h3 id="importaciones--total-estimado-32-m-aoaño">Importaciones — total estimado 32 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Origen principal</th></tr></thead><tbody><tr><td><strong>Astato refinado</strong> (grado II y III)</td><td>1.400 toneladas</td><td><strong>18 M</strong></td><td>Calixar Maris-Korr (70 %), Cetus Voltka puro (30 %)</td></tr><tr><td><strong>Hierro y manufactura industrial</strong> (planchas, locomotoras, autómatas Línea Velar)</td><td>—</td><td>4 M</td><td>Mehralt, Iskhal</td></tr><tr><td>Núcleos exóticos cetuanos (legales)</td><td>~150 piezas</td><td>1 M</td><td>Veltara subasta Gremio Núcleos Exóticos</td></tr><tr><td><strong>Especias</strong> (canela, pimienta, azafrán, comino)</td><td>2.500 toneladas</td><td>3 M</td><td>Kalmari, Veltara</td></tr><tr><td>Maderas exóticas y bambú</td><td>8.000 toneladas</td><td>2 M</td><td>Selva nublada cetuana</td></tr><tr><td><strong>Brennvin crudo</strong> (re-exportado tras embotellar)</td><td>7.000 hectolitros</td><td>2 M</td><td>Vinterhof, Vorath rural</td></tr><tr><td><strong>Hielo vorathiano</strong> (barcos refrigeradores)</td><td>12.000 toneladas</td><td>1 M</td><td>Vinterhof, Bargheim</td></tr><tr><td>Pieles, narval-marfil, oso polar (peletería)</td><td>—</td><td>1 M</td><td>Las Lágrimas de Vorath</td></tr></tbody></table>
+<p><strong>Balanza Fortuna</strong>: <strong>déficit ~4 M AO/año</strong>. Cubierto con <strong>emisión monetaria</strong> (Aldric de oro y Sello de plata acuñados de excedente fiscal de Solaria) y con <strong>acumulación de deuda soberana</strong> colocada por la Banca de Fortuna en las Cinco Bancas privadas. La corona considera el déficit <strong>sostenible</strong> mientras Solaria siga refinando Astato y mientras las exportaciones de grano y vino crezcan en línea con el PIB continental.</p>
+<h2 id="calixar">Calixar</h2>
+<h3 id="exportaciones--total-estimado-42-m-aoaño">Exportaciones — total estimado 42 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Destinos principales</th></tr></thead><tbody><tr><td><strong>Astato refinado grado II-III</strong></td><td>1.000 toneladas</td><td><strong>15 M</strong></td><td>Fortuna (Solaria), Vorath (Iskhal), Cetus (élite)</td></tr><tr><td><strong>Astato refinado grado IV</strong> (rarísimo)</td><td>50 toneladas</td><td>10 M</td><td>Compañía Imperial uso interno + clientes estatales</td></tr><tr><td><strong>Hierro refinado y planchas</strong></td><td>80.000 toneladas</td><td>6 M</td><td>Heliopolis, Veltara, Hjornheim</td></tr><tr><td><strong>Autómatas industriales y militares</strong> (Línea Velar M2, Centinela Vael)</td><td>~600 unidades</td><td>5 M</td><td>Casa Mehrholt-Vael vende a los cuatro Estados; Heliopolis ejército real principal cliente</td></tr><tr><td><strong>Locomotoras y vagones</strong></td><td>~25 unidades</td><td>3 M</td><td>Aldricato (ferrocarril), Vorath (delegación Mehrholt)</td></tr><tr><td><strong>Núcleos animados básicos</strong> (Línea Velar, animación Compañía)</td><td>~5.000 unidades</td><td>2 M</td><td>Mercado continental</td></tr><tr><td>Manufactura de hierro fino (relojes industriales, motores)</td><td>—</td><td>1 M</td><td>Heliopolis, Veltara</td></tr></tbody></table>
+<h3 id="importaciones--total-estimado-35-m-aoaño">Importaciones — total estimado 35 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Origen principal</th></tr></thead><tbody><tr><td><strong>Grano (trigo, cebada)</strong></td><td>250.000 toneladas</td><td>6 M</td><td>Fortuna (Voltrede, Velmoria)</td></tr><tr><td><strong>Especias</strong></td><td>1.800 toneladas</td><td>2 M</td><td>Cetus (Kalmari, Veltara)</td></tr><tr><td><strong>Lana y telas finas</strong></td><td>—</td><td>3 M</td><td>Fortuna (50 %), Vorath (50 %)</td></tr><tr><td><strong>Pescado salado y conservado</strong></td><td>25.000 toneladas</td><td>2 M</td><td>Vorath (Ballenahjem, Ekhalmar)</td></tr><tr><td><strong>Vino y brennvin</strong></td><td>—</td><td>4 M</td><td>Fortuna y Vorath</td></tr><tr><td><strong>Madera fina y exótica</strong></td><td>—</td><td>2 M</td><td>Cetus</td></tr><tr><td>Productos cortesanos (joyería, prensa, libros, moda)</td><td>—</td><td>3 M</td><td>Fortuna (Heliopolis)</td></tr><tr><td><strong>Núcleos exóticos cetuanos</strong> (legales + ilegales declarados)</td><td>~80 piezas</td><td>5 M</td><td>Veltara</td></tr><tr><td>Productos veltareses (relojería, vidrio, ámbar de Pacthos)</td><td>—</td><td>2 M</td><td>Cetus</td></tr><tr><td><strong>Tela veltaresa</strong> (insumo financiero de cambio)</td><td>—</td><td>6 M</td><td>Cetus</td></tr></tbody></table>
+<p><strong>Balanza Calixar</strong>: <strong>superávit ~7 M AO/año</strong>. La Compañía Imperial canaliza la mayor parte del superávit a <strong>inversión interna</strong> (refinerías nuevas, vías férreas, autómatas militares) y a <strong>inversión externa</strong> vía Banca Mehrholt (especialmente en deuda soberana vorathiana). Es el <strong>continente más rico per cápita medido en moneda</strong>, pero con la <strong>desigualdad interna más extrema</strong> —la mayor parte del superávit se concentra en la Junta Directiva del Hierro y en las grandes casas armadoras—.</p>
+<h2 id="vorath">Vorath</h2>
+<h3 id="exportaciones--total-estimado-14-m-aoaño">Exportaciones — total estimado 14 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Destinos principales</th></tr></thead><tbody><tr><td><strong>Brennvin crudo</strong> (bota grande, sin embotellar)</td><td>11.000 hectolitros</td><td>3 M</td><td>Fortuna (re-exportación) y Calixar (élite Mehralt)</td></tr><tr><td><strong>Hielo</strong> (barcos refrigeradores hacia continentes templados)</td><td>14.000 toneladas</td><td>1 M</td><td>Heliopolis (élite), Veltara</td></tr><tr><td><strong>Narval-marfil</strong></td><td>~3.500 colmillos</td><td>2 M</td><td>Veltara (artesanía fina), Heliopolis (cortesana)</td></tr><tr><td><strong>Pieles</strong> (oso polar, foca-toro, lobo blanco)</td><td>~12.000 piezas</td><td>1 M</td><td>Fortuna (cortesana), Cetus (curiosidad)</td></tr><tr><td><strong>Pescado salado</strong> (bacalao, lampuga, narval)</td><td>22.000 toneladas</td><td>2 M</td><td>Calixar, Fortuna</td></tr><tr><td><strong>Mantequilla amarilla</strong> (canon: rareza vorathiana)</td><td>2.500 toneladas</td><td>1 M</td><td>Fortuna (cortesana), Veltara</td></tr><tr><td><strong>Manufactura industrial enana</strong> (Iskhal Mehrholt-Vael — locomotoras, armamento, autómatas militares vendidos por Casa)</td><td>—</td><td>4 M</td><td>Vendido vía Banca Mehrholt a los cuatro Estados, declarado en Vorath aunque opera Casa</td></tr></tbody></table>
+<h3 id="importaciones--total-estimado-19-m-aoaño">Importaciones — total estimado 19 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Origen principal</th></tr></thead><tbody><tr><td><strong>Grano</strong> (importación masiva: Vorath no produce suficiente)</td><td>280.000 toneladas</td><td><strong>7 M</strong></td><td>Fortuna (Voltrede mayoritario), Cetus (Pacthos, suplementario)</td></tr><tr><td><strong>Hierro y herramientas básicas</strong></td><td>35.000 toneladas</td><td>3 M</td><td>Calixar (Mehralt directo)</td></tr><tr><td><strong>Núcleos comunes</strong> (para autómatas no militares)</td><td>~800 piezas</td><td>2 M</td><td>Calixar (Línea Velar)</td></tr><tr><td><strong>Vino</strong></td><td>4.500 hectolitros</td><td>2 M</td><td>Fortuna (Velmoria)</td></tr><tr><td><strong>Telas finas y vestuario civilizado</strong></td><td>—</td><td>2 M</td><td>Veltara (mayor) y Fortuna</td></tr><tr><td><strong>Especias</strong></td><td>600 toneladas</td><td>1 M</td><td>Cetus</td></tr><tr><td>Bienes cortesanos (libros, prensa, instrumentos)</td><td>—</td><td>2 M</td><td>Fortuna (Heliopolis)</td></tr></tbody></table>
+<p><strong>Balanza Vorath</strong>: <strong>déficit estructural ~5 M AO/año</strong>. Cubierto con <strong>emisión de deuda soberana</strong> comprada casi exclusivamente por la <strong>Banca Mehrholt</strong> —la Casa Mehrholt-Vael compra la deuda de su propio Estado, lo cual es <strong>público escándalo si se documenta</strong> porque significa que la Confederación de Valles Termales financia su propia infraestructura militar comprando armas a la misma Casa que controla su banca—. El déficit es <strong>políticamente sostenible</strong> porque la Casa Mehrholt-Vael no presiona por cobro: los intereses se refinancian eternamente. <strong>Es la deuda más perfecta del mundo</strong>: la Casa se debe a sí misma.</p>
+<h2 id="cetus">Cetus</h2>
+<h3 id="exportaciones--total-estimado-22-m-aoaño">Exportaciones — total estimado 22 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Destinos principales</th></tr></thead><tbody><tr><td><strong>Especias</strong> (canela kalmariana, pimienta selva nublada, azafrán Veltara, comino Mirakar)</td><td>6.500 toneladas</td><td><strong>8 M</strong></td><td>Fortuna (60 %), Calixar (25 %), Vorath (15 %)</td></tr><tr><td><strong>Maderas exóticas y bambú</strong></td><td>18.000 toneladas</td><td>4 M</td><td>Continental</td></tr><tr><td><strong>Núcleos exóticos</strong> (legales y mercado declarado del Gremio de Núcleos Exóticos)</td><td>~250 piezas</td><td>4 M</td><td>Heliopolis y Mehralt</td></tr><tr><td><strong>Núcleos exóticos no declarados</strong> (mercado negro / mercado gris)</td><td>~150 piezas</td><td><strong>3 M (declarado)</strong></td><td>Karnatha y subasta Veltara cerrada — <strong>flujo gris no oficial estimado 8-12 M reales</strong></td></tr><tr><td><strong>Astato puro Voltka</strong> (Calidad superior, cantidad inferior — solo 50-60 toneladas/año pero ratio puro tres veces más eficiente)</td><td>55 toneladas</td><td>4 M</td><td>Compañía Imperial (compra preferente), Casas Patronales de Cetus, Vorath (Mehrholt-Vael uso militar selecto)</td></tr><tr><td>Productos cortesanos veltareses (relojería, vidrio, ámbar de Pacthos)</td><td>—</td><td>2 M</td><td>Heliopolis</td></tr><tr><td>Aceite de coco, fruta seca, miel selvática</td><td>—</td><td>1 M</td><td>Continental</td></tr></tbody></table>
+<h3 id="importaciones--total-estimado-19-m-aoaño-1">Importaciones — total estimado 19 M AO/año</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Producto</th><th>Volumen anual estimado</th><th>Valor (M AO)</th><th>Origen principal</th></tr></thead><tbody><tr><td><strong>Hierro y herramientas</strong></td><td>45.000 toneladas</td><td>5 M</td><td>Calixar (Mehralt principal)</td></tr><tr><td><strong>Núcleos comunes</strong></td><td>~1.200 piezas</td><td>3 M</td><td>Calixar (Línea Velar)</td></tr><tr><td><strong>Libros, prensa, instrumentos académicos</strong></td><td>—</td><td>2 M</td><td>Fortuna (Heliopolis)</td></tr><tr><td><strong>Vino</strong></td><td>3.500 hectolitros</td><td>2 M</td><td>Fortuna</td></tr><tr><td><strong>Brennvin</strong> (refinado fortunés y crudo vorathiano)</td><td>—</td><td>2 M</td><td>Fortuna y Vorath</td></tr><tr><td><strong>Grano</strong> (suplementario en mal año)</td><td>80.000 toneladas</td><td>2 M</td><td>Fortuna</td></tr><tr><td><strong>Manufactura industrial pesada</strong> (locomotoras, autómatas militares)</td><td>—</td><td>3 M</td><td>Calixar (Compañía Imperial) y Iskhal (Casa Mehrholt-Vael)</td></tr></tbody></table>
+<p><strong>Balanza Cetus</strong>: <strong>superávit ~3 M AO/año declarado</strong>, pero <strong>superávit real estimado 8-12 M AO/año</strong> sumando el flujo gris de núcleos exóticos. El <strong>superávit real</strong> se concentra en las Casas Patronales veltarinas (Vael-Sirinn, Krastil) y en la Casa de Voltka (control del Astato puro). El Sacerdocio Volcánico Kalmariano captura una fracción menor pero significativa vía diezmos especiales sobre especias.</p>
+<h2 id="tabla-consolidada-y-desequilibrios">Tabla consolidada y desequilibrios</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Continente</th><th align="right">Export. (M AO/año)</th><th align="right">Import. (M AO/año)</th><th align="right">Balanza neta</th><th>Notas</th></tr></thead><tbody><tr><td>Fortuna</td><td align="right">28</td><td align="right">32</td><td align="right"><strong>−4</strong></td><td>Cubierto con emisión y deuda.</td></tr><tr><td>Calixar</td><td align="right">42</td><td align="right">35</td><td align="right"><strong>+7</strong></td><td>Concentrado en Compañía y casas armadoras.</td></tr><tr><td>Vorath</td><td align="right">14</td><td align="right">19</td><td align="right"><strong>−5</strong></td><td>Deuda soberana absorbida por Banca Mehrholt.</td></tr><tr><td>Cetus</td><td align="right">22 (decl.)</td><td align="right">19</td><td align="right"><strong>+3 (decl.)</strong></td><td>Real estimado +8 a +12 con flujo gris.</td></tr><tr><td><strong>Total declarado</strong></td><td align="right">106</td><td align="right">105</td><td align="right"><strong>+1</strong></td><td>El sistema cierra en el papel.</td></tr><tr><td><strong>Total estimado real</strong></td><td align="right">~111</td><td align="right">105</td><td align="right"><strong>+6</strong></td><td>El excedente real circula gris.</td></tr></tbody></table>
+<h2 id="notas-estructurales">Notas estructurales</h2>
+<h3 id="astato-como-pivote">Astato como pivote</h3>
+<p>El <strong>70 % de la balanza de Fortuna y el 60 % de la de Calixar</strong> se sostienen, directa o indirectamente, sobre el <strong>Astato</strong> (<a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a>). Si Maris-Korr cerrara por un mes —huelga, sabotaje de <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a>, catástrofe minera, intervención cosmológica— la economía continental <strong>entraría en recesión inmediata</strong>. La <strong>Compañía Imperial del Hierro y la Llama</strong> lo sabe y mantiene reservas estratégicas de Astato para tres meses de operación continental.</p>
+<h3 id="el-brennvin-como-circuito-triangular">El brennvin como circuito triangular</h3>
+<p>El brennvin crudo sale de Vorath, llega a Fortuna donde se embotella con etiqueta fortunesa, y se re-exporta a Cetus y Calixar. <strong>Fortuna captura el margen del embotellado</strong> (~80 %) sin producir el bien. Es el ejemplo canónico de la <strong>renta intermediaria fortunesa</strong> sobre cualquier producto vorathiano. Las casas brennvineras de Vorath lo saben y resienten; el <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> vorathiano ha propuesto <strong>embotellar en origen y exportar directo</strong> —propuesta sistemáticamente bloqueada en la Asamblea por presión Mehrholt-Vael—.</p>
+<h3 id="los-núcleos-exóticos-cetuanos-como-flujo-gris">Los núcleos exóticos cetuanos como flujo gris</h3>
+<p>El <strong>mercado declarado</strong> mueve 4 M AO/año. El <strong>mercado real</strong> mueve 8-12 M. El diferencial (4-8 M AO/año) <strong>no entra en los libros del Concierto</strong> pero alimenta al <strong>Gremio de los Núcleos Exóticos</strong> ilegal de Veltara, a la <strong>Cofradía de los Nudos Sueltos</strong> contrabandista, y a la <strong>mafia de Karnatha</strong>. El <a href="/NovalisPage/facciones/concierto-de-heliopolis" class="wikilink">Concierto de Heliopolis</a> tolera la cifra porque arbitrar el gris dañaría más que aprovecharía.</p>
+<h3 id="la-deuda-vorathiana-como-perfeccionamiento-del-cártel-mehrholt-vael">La deuda vorathiana como perfeccionamiento del cártel Mehrholt-Vael</h3>
+<p>La Casa Mehrholt-Vael <strong>vende armas a Vorath y compra la deuda con la que Vorath le paga</strong>. Si Vorath repudiara la deuda, la Casa colapsaría; si la Casa exigiera cobro real, Vorath colapsaría. <strong>Mutua dependencia perfecta</strong>. El sistema dura 50 años. La Banca de Fortuna lo considera <strong>el mayor riesgo sistémico del continente</strong> —si una palanca externa (la corona fortunesa, Sin-Cuerda, una guerra entre Casas) lo rompe, la deuda vorathiana se monetiza de golpe, el Aldric de oro se devalúa, y los Patrones fortuneses pierden el 30-40 % de su capital—.</p>
+<h3 id="el-astato-puro-de-voltka-como-riesgo-cosmológico">El Astato puro de Voltka como riesgo cosmológico</h3>
+<p>El Astato puro extraído en Voltka es <strong>tres veces más eficiente</strong> que el refinado de Maris-Korr, pero los yacimientos kalmarianos son finitos y conectados a fragmentos del sello cosmológico (cfr. <code>voltka.md</code>). Si los Patrones del Sacerdocio Volcánico decidieran <strong>aumentar la extracción</strong> para capturar más renta, <strong>el sello cosmológico se debilitaría más rápido</strong>. El Sacerdocio lo sabe y limita producción a 55 toneladas/año por <strong>autoridad teológica</strong> —decisión que beneficia indirectamente a la Compañía Imperial (que no quiere competencia) y que la Compañía sostiene con donaciones discretas al Sacerdocio—.</p>
+<h2 id="apariciones">Apariciones</h2>
+<ul>
+<li><a href="/NovalisPage/conceptos/aldricato" class="wikilink">Aldricato</a> — entidad política que regula la balanza</li>
+<li><a href="/NovalisPage/facciones/concierto-de-heliopolis" class="wikilink">Concierto de Heliopolis</a> — publicador del Anuario Comercial</li>
+<li><a href="/NovalisPage/conceptos/economia/monedas-de-novalis" class="wikilink">Monedas de Novalis</a> — sistema monetario base</li>
+<li><a href="/NovalisPage/conceptos/economia/precios-canonicos" class="wikilink">Precios Canónicos</a> — referencia de valoración</li>
+<li><a href="/NovalisPage/conceptos/economia/salarios-canonicos" class="wikilink">Salarios Canónicos</a> — referencia de coste laboral</li>
+<li><a href="/NovalisPage/conceptos/economia/gremios-financieros" class="wikilink">Gremios Financieros</a> — instituciones que financian la balanza</li>
+<li><a href="/NovalisPage/facciones/compania-imperial-del-hierro-y-la-llama" class="wikilink">Compañía Imperial del Hierro y la Llama</a> — actor mayor del flujo Astato</li>
+<li><a href="/NovalisPage/facciones/casa-mehrholt-vael" class="wikilink">Casa Mehrholt-Vael</a> — actor mayor del flujo enano y de la deuda vorathiana</li>
+<li><a href="/NovalisPage/facciones/banca-mehrholt" class="wikilink">Banca Mehrholt</a> — operador de la deuda soberana vorathiana</li>
+<li><a href="/NovalisPage/facciones/casas-vellanor" class="wikilink">Casas Vellanor</a> — operador del cambio inter-continental</li>
+<li><a href="/NovalisPage/conceptos/astato" class="wikilink">Astato</a> — pivote macro</li>
+<li><a href="/NovalisPage/conceptos/nucleos-magicos" class="wikilink">Núcleos Mágicos</a> — bien gris mayor</li>
+<li><a href="/NovalisPage/facciones/gremio-de-los-nucleos-exoticos" class="wikilink">Gremio de los Núcleos Exóticos</a> — mercado declarado de núcleos exóticos</li>
+<li><a href="/NovalisPage/facciones/sectas/cofradia-de-los-nudos-sueltos" class="wikilink">Cofradía de los Nudos Sueltos</a> — contrabando gris</li>
+<li><a href="/NovalisPage/cultura/brennvin" class="wikilink">Brennvin</a> — circuito triangular vorathiano-fortunés</li>
+<li><a href="/NovalisPage/arquitectura/voltka" class="wikilink">Voltka</a> — Astato puro cosmológico</li>
+<li><a href="/NovalisPage/arquitectura/maris-korr" class="wikilink">Maris-Korr</a> — refinería principal Astato</li>
+<li><a href="/NovalisPage/geografia/voltrede" class="wikilink">Voltrede</a> — granero fortunés</li>
+<li><a href="/NovalisPage/arquitectura/solaria" class="wikilink">Solaria</a> — puerto entrada Astato a Fortuna</li>
+</ul>
+<details class="dm"><summary>Contenido del Director — mostrar</summary><div class="dm-body">
+<p><strong>El “Anuario Comercial del Aldricato” del Concierto es deliberadamente impreciso</strong> en tres puntos:</p>
+<ol>
+<li><strong>Núcleos exóticos</strong>: declara 4 M anuales pero la cifra real es 8-12 M. El Concierto sabe la cifra real (vía agentes de la Casa Vael-Sirinn que monitorizan subastas cerradas en Veltara) y <strong>decide no publicarla</strong> porque haría inevitable una intervención que arruinaría a varias casas afiliadas.</li>
+<li><strong>Astato grado IV</strong>: declarado 10 M pero el tonelaje real es 50 toneladas y el valor por gramo en mercado privado es ~6 AO, no 4. <strong>El subregistro es del 20 %</strong> y la diferencia financia operaciones cubiertas de la Compañía Imperial.</li>
+<li><strong>Deuda vorathiana</strong>: el Anuario nunca consolida la cifra. La deuda vorathiana acumulada con la Banca Mehrholt es de aproximadamente <strong>40 M AO total</strong> —tres años de exportaciones del continente—. Si se publicara, el régimen Halsen caería y la Casa Mehrholt-Vael sería incautada por el Concierto.</li>
+</ol>
+<p><strong>El Astato puro Voltka como factor cosmológico</strong>: la decisión kalmariana de mantener producción baja <strong>es la única razón por la que el sellado de <a href="/NovalisPage/dioses/null" class="wikilink">Null</a> no se ha debilitado un escalón más</strong>. Si la Compañía Imperial o un cártel hostil consiguiera <strong>aumentar la producción de Voltka</strong> por golpe político en el Sacerdocio (vector posible: facción interna del Consejo Sacerdotal de Kalmari), el sello entraría en fase crítica. Ya hay un agente de la Compañía Imperial cultivando contactos en el Sacerdocio (canon <code>consejo-sacerdotal-de-kalmari.md</code>).</p>
+<p><strong>El cártel Mehrholt-Vael / Vorath</strong> tiene un <strong>vector de quiebra cosmológica</strong>: si Eira la Memoriosa decidiera <strong>publicar lo que sabe</strong> —que Skarheim el Que Espera dormita bajo el fiordo y que el sellado físico vorathiano tiene una fisura mayor en Galería 17 de Halmgard— el riesgo soberano vorathiano se dispararía y la deuda se devaluaría, arrastrando a la Banca Mehrholt. <strong>Eira lo guarda como palanca</strong>. La Casa Mehrholt-Vael lo sabe y por eso no presiona nunca a Eira.</p>
+<p><strong>Si los PJ obtienen y publican el Anuario Comercial real (no declarado)</strong> —vía robo en la oficina del Concierto, vía soborno a un escribano de Banca de Fortuna, vía filtración de un agente Vellanor— <strong>provocan colapso financiero continental en 3-6 meses</strong>. La crisis abriría:</p>
+<ul>
+<li>Devaluación del Aldric de oro (15-25 %)</li>
+<li>Caída de varias casas de los Linajes</li>
+<li>Crisis política en Hjornheim</li>
+<li>Despertar parcial de Mahr en sueños proféticos (el dios extinto vibra cuando el orden se rompe)</li>
+<li>Apertura de <strong>ventana de oportunidad</strong> para <a href="/NovalisPage/facciones/sin-cuerda" class="wikilink">Sin-Cuerda</a> y los Eternistas</li>
+</ul>
+<p><strong>Posibles ganchos</strong>:</p>
+<ul>
+<li><strong>El robo del Anuario verdadero</strong>: contratados por una facción (Sin-Cuerda, Eternistas, Tobias Vehrold, Aldric III) para extraer el documento del Concierto.</li>
+<li><strong>El sabotaje de Voltka</strong>: una expedición Compañía Imperial discreta hacia Voltka. Los PJ pueden interceptarla y elegir cooperar o detenerla.</li>
+<li><strong>La filtración brennvinera</strong>: una alianza inesperada entre el <a href="/NovalisPage/conceptos/sindicato-del-yunque-roto" class="wikilink">Sindicato del Yunque Roto</a> vorathiano y casas brennvineras de Vinterhof para embotellar en origen. Los PJ pueden mediar, sabotear o cooperar. La maniobra reordena el flujo brennvin y enfada a los Patrones fortuneses.</li>
+<li><strong>El asesinato de un Patrón cetuano de Núcleos Exóticos</strong> durante una subasta cerrada. Los PJ investigan. La pista lleva a la <strong>Cofradía de los Quemadores de Voltka</strong> que ha decidido que el flujo gris debe pararse por motivos cosmológicos.</li>
+<li><strong>El riesgo cosmológico Voltka</strong>: una visión profética de Mahr llega a un PJ —el “Anillo de Voltka se cuartea como cáscara”—. El PJ debe interpretar y actuar antes de que la Compañía Imperial gane la pugna interna del Sacerdocio.</li>
+</ul>
+</div></details> </div> </article>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
+La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
+        para Game Masters y jugadores del mundo Magitek.
+</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
+Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
+</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>
