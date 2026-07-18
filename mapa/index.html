@@ -1,10 +1,531 @@
-<!DOCTYPE html><html lang="es" data-theme="pergamino"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Biblia del mundo de Novalis — wiki, bestiario y herramientas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Fuentes del sistema de tokens: Metamorphous (títulos), Spectral (texto), Inter (UI), DM Mono. --><link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Mapa — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.CMYrrJ-M.css">
-<style>.maplens{position:relative;border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:crosshair;box-shadow:var(--shadow-soft);background:var(--surface)}.maplens img{display:block;width:100%;height:auto}.maplens-lens{position:absolute;border-radius:50%;pointer-events:none;opacity:0;transition:opacity .15s;border:2px solid rgba(255,255,255,.6);box-shadow:0 8px 30px #00000073,inset 0 0 18px #ffffff40;background-repeat:no-repeat}
-</style></head> <body class="flex min-h-screen flex-col"> <header class="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md" data-astro-cid-dmqpwcec> <nav class="mx-auto flex h-16 max-w-6xl items-center px-5" data-astro-cid-dmqpwcec> <a href="/NovalisPage/" class="mr-7 flex flex-shrink-0 items-center gap-2 font-display text-primary" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-astro-cid-dmqpwcec> <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" data-astro-cid-dmqpwcec></polygon> <polygon points="12,7 17,9.5 17,14.5 12,17 7,14.5 7,9.5" data-astro-cid-dmqpwcec></polygon> </svg> <span class="text-lg tracking-[0.14em]" data-astro-cid-dmqpwcec>NOVALIS</span> </a> <ul class="hidden flex-1 items-center gap-0.5 md:flex" data-astro-cid-dmqpwcec> <!-- Wiki (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" class="navlink" data-astro-cid-dmqpwcec>Wiki<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/geografia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🌍</span>Geografía</a><a href="/NovalisPage/historia" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>📜</span>Historia</a><a href="/NovalisPage/facciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🏛️</span>Facciones</a><a href="/NovalisPage/personajes" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>👤</span>Personajes</a><a href="/NovalisPage/razas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🧬</span>Razas</a><a href="/NovalisPage/dioses" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚡</span>Dioses</a><a href="/NovalisPage/objetos" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🗡️</span>Objetos</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/NovalisPage/bestiario" class="navlink" data-astro-cid-dmqpwcec>Bestiario</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/mapa" class="navlink" data-astro-cid-dmqpwcec>Mapa</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/npcs" class="navlink" data-astro-cid-dmqpwcec>NPCs</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/cronologia" class="navlink" data-astro-cid-dmqpwcec>Cronología</a></li><li data-astro-cid-dmqpwcec><a href="/NovalisPage/gaceta" class="navlink" data-astro-cid-dmqpwcec>La Gaceta</a></li> <!-- Herramientas (dropdown) --> <li class="group relative" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas" class="navlink" data-astro-cid-dmqpwcec>Herramientas<span class="ml-1 text-[0.6em] opacity-60" data-astro-cid-dmqpwcec>▼</span></a> <div class="dropdown" data-astro-cid-dmqpwcec> <a href="/NovalisPage/herramientas/encuentros" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>⚔️</span>Encuentros</a><a href="/NovalisPage/herramientas/loot" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>💰</span>Loot</a><a href="/NovalisPage/herramientas/cartas" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🃏</span>Cartas</a><a href="/NovalisPage/herramientas/relaciones" class="dropitem" data-astro-cid-dmqpwcec><span data-astro-cid-dmqpwcec>🕸️</span>Relaciones</a> </div> </li> </ul> <div class="ml-auto flex-none pl-3" data-astro-cid-dmqpwcec> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Zbrx0H" prefix="r3" component-url="/NovalisPage/_astro/CommandPalette.BcZpM3me.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;data-astro-cid-dmqpwcec&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CommandPalette&quot;,&quot;value&quot;:true}" await-children><button class="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 font-ui text-xs text-muted-foreground transition hover:border-accent" aria-label="Buscar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg><span class="hidden sm:inline">Buscar</span><kbd class="hidden rounded border border-border px-1 text-[10px] sm:inline">⌘K</kbd></button><!--astro:end--></astro-island> </div> </nav> </header> <main class="flex-1">  <div class="mx-auto max-w-6xl px-6 py-12"> <nav class="flex items-center gap-1.5 font-ui text-xs text-ink-3"> <a href="/NovalisPage/" class="transition hover:text-accent">Inicio</a><span>›</span><span>Mapa</span> </nav> <h1 class="mt-4 font-display text-4xl text-primary">Mapa de Novalis</h1> <p class="font-body mt-2 max-w-2xl text-muted-foreground">
-El mundo entero. Pasa el ratón por encima para usar la lupa y leer el detalle.
-</p> <div class="mt-8"> <script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><astro-island uid="VuAF9" prefix="r2" component-url="/NovalisPage/_astro/MapLens.DCQgopXO.js" component-export="default" renderer-url="/NovalisPage/_astro/client.DTojXMD-.js" props="{&quot;src&quot;:[0,&quot;/NovalisPage/mapa-mundial.jpg&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;MapLens&quot;,&quot;value&quot;:true}" await-children><div class="maplens"><img src="/NovalisPage/mapa-mundial.jpg" alt="Mapa de Novalis" draggable="false"/><div class="maplens-lens" style="width:190px;height:190px"></div></div><!--astro:end--></astro-island> </div> <h2 class="mt-12 font-display text-2xl text-primary">Continentes</h2> <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"> <a href="/NovalisPage/geografia/calixar" class="group rounded-lg border border-border bg-card p-5 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-accent"> <div class="text-2xl">🌋</div> <div class="font-display mt-2 text-lg text-primary">Calixar</div> <p class="font-body mt-1 text-sm text-muted-foreground">El continente del Sello. Industrial, minero, vigilado: bajo su corteza duerme Null. Provee el Astato del mundo.</p> </a><a href="/NovalisPage/geografia/fortuna" class="group rounded-lg border border-border bg-card p-5 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-accent"> <div class="text-2xl">🏛️</div> <div class="font-display mt-2 text-lg text-primary">Fortuna</div> <p class="font-body mt-1 text-sm text-muted-foreground">El corazón político e intelectual. Sede del Aldricato y de Velmoria.</p> </a><a href="/NovalisPage/geografia/cetus" class="group rounded-lg border border-border bg-card p-5 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-accent"> <div class="text-2xl">⚓</div> <div class="font-display mt-2 text-lg text-primary">Cetus</div> <p class="font-body mt-1 text-sm text-muted-foreground">El archipiélago marítimo. Puertos, comercio y la Línea Sosegada.</p> </a><a href="/NovalisPage/geografia/vorath" class="group rounded-lg border border-border bg-card p-5 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-accent"> <div class="text-2xl">❄️</div> <div class="font-display mt-2 text-lg text-primary">Vorath</div> <p class="font-body mt-1 text-sm text-muted-foreground">Tierras de hielo y Sagas. Clanes y Skalds que recelan del Aldricato.</p> </a> </div> </div>  </main> <footer class="border-t border-border bg-secondary/40"> <div class="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_repeat(4,1fr)]"> <div class="max-w-sm"> <span class="font-display text-xl tracking-wider text-primary">NOVALIS</span> <p class="font-body mt-3 text-sm leading-relaxed text-muted-foreground">
-La biblia del mundo de Engren. Geografía, criaturas, facciones, historia y herramientas
-        para Game Masters y jugadores del mundo Magitek.
-</p> <p class="font-ui mt-3 text-xs uppercase tracking-wider text-ink-3">
-Magitek · Flintlock Fantasy · 4 Continentes · 21 Razas
-</p> <div class="mt-5 flex gap-3"> <a href="#" title="Discord" aria-label="Discord" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg> </a><a href="#" title="Instagram" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg> </a><a href="#" title="YouTube" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-accent hover:text-primary"> <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg> </a> </div> </div> <div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Lore</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Wiki</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Historia</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Geografía</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cronología</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Dioses</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Bestiario</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Calixar</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Vorath</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cetus</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Fortuna</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Inversiones</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">Gentes</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">NPCs</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Facciones</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Razas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Personajes</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">La Gaceta</a> </li> </ul> </div><div> <h4 class="font-ui text-xs font-semibold uppercase tracking-wider text-primary">GM Tools</h4> <ul class="mt-3 space-y-2"> <li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Mapa</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Encuentros</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Loot</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Cartas</a> </li><li> <a href="#" class="font-body text-sm text-muted-foreground transition hover:text-primary">Relaciones</a> </li> </ul> </div> </div> <div class="border-t border-border"> <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 font-ui text-xs text-ink-3 sm:flex-row sm:items-center sm:justify-between"> <span>Mesa de Jowy · 2026</span> <span>Engren / Novalis — Magitek D&amp;D World</span> </div> </div> </footer> </body></html>
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="El Mapa Vivo de Novalis: navega el atlas del mundo sellado, abre los sellos de lacre y sigue las rutas marítimas."><link rel="icon" href="/NovalisPage/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Mapa — Novalis</title><link rel="stylesheet" href="/NovalisPage/_astro/BaseLayout.kREhfYWO.css"><link rel="stylesheet" href="/NovalisPage/_astro/mapa.B5U_5ge_.css"></head> <body> <header class="nav-estacion" data-astro-cid-dmqpwcec> <a class="nav-logo" href="/NovalisPage/" data-astro-cid-dmqpwcec> <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" data-astro-cid-dmqpwcec> <circle cx="11" cy="11" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6" data-astro-cid-dmqpwcec></circle> <circle cx="11" cy="11" r="3.4" fill="none" stroke="currentColor" stroke-width="1.2" data-astro-cid-dmqpwcec></circle> <path d="M11 1.5v4M11 16.5v4M1.5 11h4M16.5 11h4" stroke="currentColor" stroke-width="1.4" data-astro-cid-dmqpwcec></path> </svg> <span data-astro-cid-dmqpwcec>NOVALIS</span> </a> <nav aria-label="Secciones" data-astro-cid-dmqpwcec> <a href="/NovalisPage/wiki" data-astro-cid-dmqpwcec>Wiki</a><a href="/NovalisPage/bestiario" data-astro-cid-dmqpwcec>Bestiario</a><a href="/NovalisPage/mapa" aria-current="page" data-astro-cid-dmqpwcec>Mapa</a><a href="/NovalisPage/gaceta" data-astro-cid-dmqpwcec>La Gaceta</a> </nav> </header>  <section id="mapa-vivo" aria-label="El Mapa Vivo de Novalis"> <h1 class="visually-hidden">El Mapa Vivo de Novalis</h1> <noscript> <div class="mapa-nojs"> <p>El Mapa Vivo necesita JavaScript. Las demás secciones siguen abiertas:</p> <p> <a href="/NovalisPage/wiki">Wiki</a> · <a href="/NovalisPage/bestiario">Bestiario</a> ·
+<a href="/NovalisPage/gaceta">La Gaceta</a> </p> </div> </noscript> <!-- ================= EL MUNDO ================= --> <div id="mv-viewport" role="application" aria-roledescription="mapa interactivo" aria-label="Mapa del mundo de Novalis. Arrastra o usa las flechas para navegar; rueda, doble clic o los botones para acercar."> <div id="mv-world"> <img class="mapa-img" src="/NovalisPage/mapa-mundial.jpg" alt="" draggable="false" decoding="async"> <svg id="mv-rutas" viewBox="0 0 2048 1536" aria-hidden="true"></svg> <!-- notas y POIs se insertan por JS --> </div> <div id="mv-vineta" aria-hidden="true"></div> </div> <!-- ================= HUD ================= --> <div id="mv-cartela" class="mapa-hud mapa-chip"> <div class="mapa-n1">NOVALIS</div> <div class="mapa-filete" aria-hidden="true"></div> <div class="mapa-n2">la biblia del mundo sellado</div> </div> <output id="mv-coords" class="mapa-hud mapa-chip" aria-hidden="true">0°N · 0°O · escala 1:9.000.000</output> <div id="mv-instrumentos" class="mapa-hud"> <svg id="mv-rosa" viewBox="0 0 100 100" aria-hidden="true"> <g class="mapa-rosa-giro"> <circle cx="50" cy="50" r="44" fill="rgba(239,227,198,.13)" stroke="#EFE3C6" stroke-opacity=".85" stroke-width="1.4"></circle> <circle cx="50" cy="50" r="35" fill="none" stroke="#EFE3C6" stroke-opacity=".5" stroke-width=".8" stroke-dasharray="1.5 4.4"></circle> <path d="M50 50 L43 43 L14 50 L43 57 Z M50 50 L57 43 L86 50 L57 57 Z M50 50 L43 57 L50 86 L57 57 Z" fill="#EFE3C6" stroke="#2E2015" stroke-opacity=".5" stroke-width=".7"></path> <path d="M50 50 L43 43 L50 14 L57 43 Z" fill="#9C3B24" stroke="#EFE3C6" stroke-width=".9"></path> <circle cx="50" cy="50" r="3.4" fill="#EFE3C6" stroke="#2E2015" stroke-width=".8"></circle> <text x="50" y="10" text-anchor="middle" font-family="Zilla Slab, serif" font-size="11" font-weight="600" fill="#EFE3C6">N</text> </g> </svg> <div id="mv-zoombar" class="mapa-chip" role="group" aria-label="Controles del mapa"> <button id="mv-b-leyenda" type="button" aria-label="Mostrar leyenda" aria-expanded="false">?</button> <button id="mv-b-mas" type="button" aria-label="Acercar">+</button> <button id="mv-b-menos" type="button" aria-label="Alejar">−</button> <button id="mv-b-encuadre" type="button" aria-label="Reencuadrar: volver a la vista general"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg> </button> </div> </div> <!-- ================= POPOVER PERGAMINO ================= --> <aside id="mv-pop" class="mapa-panel" role="dialog" aria-labelledby="mv-pop-titulo" tabindex="-1"> <button class="mapa-cerrar-pop" type="button" aria-label="Cerrar el sello">×</button> <p class="mapa-pop-region" id="mv-pop-region"></p> <h2 id="mv-pop-titulo"></h2> <p class="mapa-pop-lore" id="mv-pop-lore"></p> <!-- Las fichas viven en su sección: el mapa enlaza al Bestiario. --> <a class="mapa-cta" id="mv-pop-cta" data-geo="/NovalisPage/geografia/" href="/NovalisPage/wiki"></a> </aside> <!-- ================= LEYENDA ================= --> <aside id="mv-leyenda" class="mapa-panel mapa-chip" role="dialog" aria-label="Leyenda del mapa"> <h3>Leyenda</h3> <ul> <li><span class="mapa-s-lacre" aria-hidden="true"></span>Sello de lacre — lugar señalado</li> <li><span class="mapa-s-ruta" aria-hidden="true"></span>Línea punteada — ruta marítima</li> <li><span class="mapa-s-mano" aria-hidden="true">Aa</span>Manuscrito — apunte del cartógrafo</li> </ul> <p class="mapa-teclas">arrastrar&nbsp;·&nbsp;mover<br>rueda&nbsp;/&nbsp;±&nbsp;·&nbsp;acercar<br>doble&nbsp;clic&nbsp;·&nbsp;saltar<br>flechas&nbsp;·&nbsp;desplazar<br>?&nbsp;·&nbsp;esta&nbsp;leyenda</p> </aside> <!-- ================= DESPLIEGUE ================= --> <div id="mv-intro"> <button class="mapa-marca" type="button" aria-label="Desplegar el mapa de Novalis"> <svg viewBox="0 0 100 100" aria-hidden="true"> <circle cx="50" cy="50" r="45" fill="none" stroke="#9C3B24" stroke-width="2"></circle> <circle cx="50" cy="50" r="36" fill="none" stroke="#2E2015" stroke-opacity=".55" stroke-width=".9" stroke-dasharray="2 4"></circle> <path d="M50 12 L54 46 L88 50 L54 54 L50 88 L46 54 L12 50 L46 46 Z" fill="#9C3B24"></path> <circle cx="50" cy="50" r="4" fill="#EFE3C6" stroke="#2E2015"></circle> </svg> <span class="mapa-linea">Archivo cartográfico de Heliopolis</span> <span class="mapa-anio">· 2026 EN ·</span> </button> <p class="mapa-pista" aria-hidden="true">PULSA PARA DESPLEGAR</p> </div> <div id="mv-grano" aria-hidden="true"></div> <div id="mv-cursor" aria-hidden="true"> <svg viewBox="0 0 44 44"> <g class="mapa-cruz mapa-ret"> <path d="M22 0v13M22 31v13M0 22h13M31 22h13"></path> <path d="M22 4h0M22 40h0" stroke-width="3"></path> </g> <circle class="mapa-anillo mapa-ret" cx="22" cy="22" r="8"></circle> <circle class="mapa-punto" cx="22" cy="22" r="1.4"></circle> </svg> </div> </section>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> <script>
+    /* ============================================================
+       EL MAPA VIVO — motor de atlas (vanilla, sin librerías de mapas)
+       Adaptado del prototipo 06: el lienzo vive bajo la nav del sitio.
+       ============================================================ */
+    (function () {
+      'use strict';
+
+      /* ---------- DATOS (edita los % aquí) ----------
+         POIS:  x/y en % del lienzo 2048×1536 (0–100).
+                cta: texto del enlace al Bestiario (el href vive en el HTML del popover).
+         RUTAS: trazos en px del mapa 2048×1536.
+         NOTAS: x/y en %, rot en grados; flecha opcional (path en px locales). */
+      const MAPA = { w: 2048, h: 1536 };
+
+      /* Cada POI: slug = ficha en /geografia/<slug> (el popover enlaza "Info de X"). */
+      const POIS = [
+        /* ---- Calixar ---- */
+        { id: 'mehralt', nombre: 'Mehralt', sub: 'La Gran Mina · Calixar', x: 8.1, y: 52.9, slug: 'mehralt',
+          lore: 'Capital minera de 250.000 almas, alzada en embudo sobre el labio de la Gran Mina: de aquí sale el 75% del Astato del mundo. Bajo su nivel 26 duerme el sello físico de Null.' },
+        { id: 'maris-korr', nombre: 'Maris-Korr', sub: 'Puerto meridional · Calixar', x: 12.1, y: 65.3, slug: 'maris-korr',
+          lore: 'La ciudad costera más rica del continente: el único lugar de Calixar donde la prosperidad tiene fachada mediterránea y el Astato refinado se subasta en público.' },
+        { id: 'ferro-korr', nombre: 'Ferro-Korr', sub: 'Puerto industrial · Calixar', x: 20.3, y: 56.5, slug: 'ferro-korr',
+          lore: 'Principal nodo de carga de Astato del continente: la ciudad que nunca se silencia, construida a imagen de la Compañía Imperial del Hierro y la Llama.' },
+        { id: 'cinder', nombre: 'Cinder', sub: 'Cordillera Volcánica · Calixar', x: 11.5, y: 41.5, slug: 'cinder',
+          lore: 'Pueblo minero-fundidor de 400 almas asentado sobre roca aún caliente, a media jornada en raíl muerto del corredor de la Compañía.' },
+        { id: 'drenpozo', nombre: 'Drenpozo', sub: 'Erg de Calixar', x: 5.5, y: 46.0, slug: 'drenpozo',
+          lore: 'Oasis solitario del desierto de dunas: trescientos habitantes y el pozo más fiable a seis días de marcha en cualquier dirección.' },
+        /* ---- Fortuna ---- */
+        { id: 'heliopolis', nombre: 'Heliopolis', sub: 'Capital del Aldricato · Fortuna', x: 61.0, y: 65.0, slug: 'heliopolis',
+          lore: 'Capital política del Aldricato: 15.000 habitantes y un urbanismo elegante levantado sobre la ciudad extinta Engrenhof. Aquí celebra corte el rey Aldric III.' },
+        { id: 'solaria', nombre: 'Solaria', sub: 'Puerto del sur · Fortuna', x: 64.4, y: 80.5, slug: 'solaria',
+          lore: 'Pulmón industrial del reino: todo el Astato refinado que consume el continente entra por sus muelles.' },
+        { id: 'velmoria', nombre: 'Velmoria', sub: 'Ciudad académica · Fortuna', x: 72.0, y: 62.3, slug: 'velmoria',
+          lore: 'Nudo intelectual del mundo: sede de la Universidad Imperial y del Colegio de los Animadores; sus editoriales definen el saber del continente.' },
+        { id: 'voltrede', nombre: 'Voltrede', sub: 'Cuenca del Río Claro · Fortuna', x: 60.4, y: 61.7, slug: 'voltrede',
+          lore: 'El pueblo agrario emblema del reino: cuna del bisonte doméstico y capital del queso de Fortuna, sobre la cuenca media del Río Claro.' },
+        /* ---- Vorath ---- */
+        { id: 'hjornheim', nombre: 'Hjornheim', sub: 'Confederación de Valles Termales · Vorath', x: 38.0, y: 92.0, slug: 'hjornheim',
+          lore: 'Capital de los gigantes de hielo: 30.000 habitantes que se duplican cuando la Asamblea del solsticio llena la ciudad. Guardan la memoria más larga del mundo.' },
+        { id: 'bargheim', nombre: 'Bargheim', sub: 'Hogar de la Carga · Vorath', x: 29.5, y: 89.0, slug: 'bargheim',
+          lore: 'El valle comercial donde la escala gigante y la humana comparten la misma calle sin jerarquía visible.' },
+        { id: 'vinterhof', nombre: 'Vinterhof', sub: 'Granero de Vorath', x: 46.5, y: 90.5, slug: 'vinterhof',
+          lore: 'Los invernaderos termales fabrican primaveras imposibles bajo cúpulas de vidrio gigante; de aquí sale el brennvin y medio pan del continente.' },
+        { id: 'ballenahjem', nombre: 'Ballenahjem', sub: 'Costa del Mar Boreal · Vorath', x: 52.5, y: 95.0, slug: 'ballenahjem',
+          lore: 'Capital silenciosa de la caza de cetáceos colosales, en una bahía resguardada entre acantilados del extremo sur.' },
+        /* ---- Cetus ---- */
+        { id: 'kalmari', nombre: 'Kalmari', sub: 'Reino Sagrado · Cetus', x: 56.0, y: 29.5, slug: 'kalmari',
+          lore: 'Reino Sagrado de los dragonborn: 150.000 habitantes bajo la Reina Imari, y la única ciudad del mundo construida sobre un volcán dormido como acto de teología.' },
+        { id: 'veltara', nombre: 'Veltara', sub: 'República Mercantil · Cetus', x: 81.0, y: 35.2, slug: 'veltara',
+          lore: 'La República Mercantil de los Cinco Gremios: 400.000 habitantes y una sola ley — todo se compra, todo se vende, todo se sabe.' },
+        { id: 'sondaru', nombre: 'Sondaru', sub: 'Costa sur · Cetus', x: 71.0, y: 39.0, slug: 'sondaru',
+          lore: 'El puerto donde se carga lo que Veltara no quiere tasar y se cuecen los tratos que no aparecen en ningún libro oficial.' },
+        { id: 'suren', nombre: 'Suren', sub: 'Archipiélago volcánico · Cetus', x: 84.8, y: 21.8, slug: 'suren',
+          lore: 'Puerto religioso donde lo sacro y lo comercial se cruzan en la misma calle sin contradicción.' },
+        /* ---- Islas ---- */
+        { id: 'voltka', nombre: 'Voltka', sub: 'Isla del volcán vivo · Cetus', x: 86.8, y: 44.5, slug: 'voltka',
+          lore: 'Segundo yacimiento de Astato del mundo y la única minería ritualizada que Kalmari reconoce como sagrada en sí misma.' },
+        { id: 'atolon-verre', nombre: 'Atolón de Verre', sub: 'Mar Largo', x: 95.6, y: 92.2, slug: 'atolon-de-verre',
+          lore: 'Un solo volcán, una sola caldera y un solo pueblo construido dentro de la caldera activa: sus vecinos recogen Astato puro.' },
+        { id: 'coral-hueco', nombre: 'Coral Hueco', sub: 'Mar Largo · noreste', x: 88.5, y: 5.2, slug: 'coral-hueco',
+          lore: 'Atolón coralino habitado íntegramente por hombres slime: la única población conocida de su raza en cantidad.' },
+        { id: 'pacthos', nombre: 'Pacthos', sub: 'Mar del Pacto', x: 4.6, y: 79.0, slug: 'pacthos',
+          lore: 'La isla donde los tres dioses descansaron tras sellar a Null. La coronan cuatro menhires perpetuamente fríos; el del Este ya se ha calentado: el sello bajó un escalón.' },
+        { id: 'karnatha', nombre: 'Karnatha', sub: 'Mar Largo', x: 74.0, y: 10.5, slug: 'karnatha',
+          lore: 'El cadáver de un dragón colosal convertido en isla; hoy alberga el mejor mercado negro del mundo.' },
+        { id: 'humeante', nombre: 'Archipiélago Humeante', sub: 'Norte de Vorath', x: 33.4, y: 38.3, slug: 'archipielago-humeante',
+          lore: 'Refugio de los últimos semidioses — quedan entre 30 y 50 —, custodios del archivo oral de la verdad de Null.' },
+        { id: 'lagrimas', nombre: 'Las Lágrimas de Vorath', sub: 'Siete islas semiheladas', x: 6.6, y: 7.2, slug: 'las-lagrimas-de-vorath',
+          lore: 'Cadena de siete islas de cultura austera: población humana descendiente de exploradores — no gigante — y la hospitalidad más rígida del mar.' },
+        { id: 'camina', nombre: 'La Isla Que Camina', sub: 'Mar de Vastus', x: 5.4, y: 17.6, slug: 'la-isla-que-camina',
+          lore: 'Reportada por marineros distintos en posiciones distintas durante el mismo año. Los cartógrafos discuten; la isla, mientras, camina.' },
+        { id: 'velo-sur', nombre: 'El Velo Sur', sub: 'Mar de Vastus', x: 3.2, y: 96.4, slug: 'el-velo-sur',
+          lore: 'Donde la geografía deja de obedecer reglas: las brújulas giran solas, las rutas cambian y las islas aparecen y desaparecen.' },
+        { id: 'coro-vacio', nombre: 'El Coro Vacío', sub: 'Mar abierto · este de Cetus', x: 85.3, y: 91.4, slug: 'el-coro-vacio',
+          lore: 'Tres islas rocosas lejos de toda ruta: el último refugio de los kenkus, la raza alada casi extinta.' },
+        { id: 'hilo-roto', nombre: 'La Isla del Hilo Roto', sub: 'Mar Largo', x: 93.0, y: 75.0, slug: null,
+          lore: 'Los cartógrafos la registran; el archivo aún no tiene expediente sobre ella. Los marineros prefieren no explicar el nombre.' },
+        { id: 'hermanas', nombre: 'Las Hermanas del Sur', sub: 'Cinco islas · Mar Largo', x: 72.7, y: 95.0, slug: 'las-hermanas-del-sur',
+          lore: 'Cinco islas subtropicales secas, cinco pueblos pesqueros y una diplomacia interinsular más antigua que el propio Aldricato.' },
+        { id: 'bocas', nombre: 'Bocas del Sello', sub: 'Tres islotes de roca negra', x: 95.7, y: 7.8, slug: 'bocas-del-sello',
+          lore: 'Tres islotes de roca negra en el límite donde acaba el océano cálido y empieza el extraño Mar de Vastus.' },
+      ];
+
+      const RUTAS = [ /* coordenadas en px del mapa 2048×1536 */
+        { d: 'M 452 828 C 800 985, 1160 775, 1560 655' },    /* Maris-Korr → Veltara */
+        { d: 'M 1252 1000 C 1000 1080, 905 1180, 782 1408' },/* Heliopolis → Hjornheim */
+        { d: 'M 1584 640 C 1955 565, 1950 230, 1530 168' },  /* Veltara → Karnatha */
+      ];
+
+      const NOTAS = [
+        { x: 8.4, y: 70.0, rot: -6, texto: 'el menhir del Este\nya está caliente', /* x:8.4% y:70% */
+          flecha: 'M 8 66 C -14 84, -22 104, -34 122' },
+        { x: 38.5, y: 45.5, rot: 2, texto: 'aquí guardan la verdad de Null\n— los que quedan' }, /* x:38.5% y:45.5% */
+      ];
+
+      /* ---------- utilidades ---------- */
+      const root = document.getElementById('mapa-vivo');
+      const $ = s => root.querySelector(s);
+      const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+      const REDUCIDO = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const MOVIL = () => matchMedia('(max-width: 820px)').matches;
+      const FINO = matchMedia('(pointer: fine)').matches;
+
+      const viewport = $('#mv-viewport'), world = $('#mv-world');
+      const rutasSvg = $('#mv-rutas'), coordsEl = $('#mv-coords'), rosaGiro = $('.mapa-rosa-giro');
+      const pop = $('#mv-pop');
+      const leyenda = $('#mv-leyenda'), bLeyenda = $('#mv-b-leyenda');
+
+      /* la nav sticky del sitio queda encima: el lienzo ocupa el resto */
+      function navAlto() {
+        const nav = document.querySelector('.nav-estacion');
+        root.style.setProperty('--mv-nav', (nav ? nav.offsetHeight : 0) + 'px');
+      }
+      /* coordenadas de un evento en el espacio local del lienzo */
+      function lp(e) {
+        const r = viewport.getBoundingClientRect();
+        return { x: e.clientX - r.left, y: e.clientY - r.top };
+      }
+
+      /* ---------- construir rutas, notas y POIs ---------- */
+      const NS = 'http://www.w3.org/2000/svg';
+      RUTAS.forEach((r, i) => {
+        const base_ = document.createElementNS(NS, 'path');
+        base_.setAttribute('d', r.d); base_.setAttribute('class', 'mapa-ruta-base');
+        const viaje = document.createElementNS(NS, 'path');
+        viaje.setAttribute('d', r.d); viaje.setAttribute('pathLength', '1000');
+        viaje.setAttribute('class', 'mapa-ruta-viaje' + (i ? ' v' + (i + 1) : ''));
+        rutasSvg.append(base_, viaje);
+      });
+      /* puerto de origen Maris-Korr */
+      const puerto = document.createElementNS(NS, 'circle');
+      puerto.setAttribute('cx', '452'); puerto.setAttribute('cy', '828'); puerto.setAttribute('r', '7');
+      puerto.setAttribute('class', 'mapa-puerto');
+      const pEti = document.createElementNS(NS, 'text');
+      pEti.setAttribute('x', '472'); pEti.setAttribute('y', '858'); pEti.setAttribute('class', 'mapa-puerto-eti');
+      pEti.textContent = 'Maris-Korr';
+      rutasSvg.append(puerto, pEti);
+
+      NOTAS.forEach(n => {
+        const el = document.createElement('div');
+        el.className = 'mapa-nota'; el.setAttribute('aria-hidden', 'true');
+        el.style.left = n.x + '%'; el.style.top = n.y + '%';
+        el.style.setProperty('--rot', n.rot + 'deg');
+        el.textContent = n.texto;
+        if (n.flecha) {
+          const s = document.createElementNS(NS, 'svg');
+          s.setAttribute('viewBox', '-40 60 60 70');
+          s.setAttribute('style', 'width:60px;height:70px;left:12%;top:96%;');
+          const p = document.createElementNS(NS, 'path');
+          p.setAttribute('d', n.flecha); s.append(p);
+          const punta = document.createElementNS(NS, 'path');
+          punta.setAttribute('d', 'M -26 112 L -34 122 L -22 121');
+          s.append(punta); el.append(s);
+        }
+        world.append(el);
+      });
+
+      const poiEls = {};
+      POIS.forEach(p => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'mapa-poi'; b.dataset.id = p.id;
+        b.style.left = p.x + '%'; b.style.top = p.y + '%';
+        b.setAttribute('aria-label', p.nombre + ' — ' + p.sub);
+        b.setAttribute('aria-haspopup', 'dialog');
+        b.setAttribute('aria-expanded', 'false');
+        b.innerHTML = '<span class="mapa-poi-sello" aria-hidden="true"></span><span class="mapa-poi-eti" aria-hidden="true">' + p.nombre + '</span>';
+        world.append(b); poiEls[p.id] = b;
+      });
+
+      /* ---------- motor pan / zoom ---------- */
+      const Z_MIN = 1, Z_MAX = 3.5;
+      let vw = 0, vh = 0, base = 1;
+      const vista = { x: 0, y: 0, z: 1 };  /* estado dibujado */
+      const meta = { x: 0, y: 0, z: 1 };   /* estado objetivo */
+      let velX = 0, velY = 0, arrastrando = false, pellizco = false, inmediato = REDUCIDO;
+      let mkPrev = 0, coordsPrev = '', rosaPrev = 0, opRutasPrev = -1, nombresPrev = false;
+
+      function medir() {
+        vw = viewport.clientWidth; vh = viewport.clientHeight;
+        base = Math.max(vw / MAPA.w, vh / MAPA.h);
+      }
+      function limX(z) { const s = base * z; return [vw - MAPA.w * s, 0]; }
+      function limY(z) { const s = base * z; return [vh - MAPA.h * s, 0]; }
+      function fijarMeta() {
+        const [ax, bx] = limX(meta.z), [ay, by] = limY(meta.z);
+        meta.x = clamp(meta.x, ax, bx);
+        meta.y = clamp(meta.y, ay, by);
+      }
+      function centrar() {
+        meta.z = 1;
+        const s = base;
+        meta.x = (vw - MAPA.w * s) / 2;
+        meta.y = (vh - MAPA.h * s) / 2;
+        fijarMeta();
+      }
+      function zoomHacia(nz, fx, fy) {
+        nz = clamp(nz, Z_MIN, Z_MAX);
+        const r = (base * nz) / (base * meta.z);
+        meta.x = fx - (fx - meta.x) * r;
+        meta.y = fy - (fy - meta.y) * r;
+        meta.z = nz;
+        fijarMeta();
+      }
+
+      /* bucle principal */
+      function tic() {
+        const k = (inmediato || pellizco) ? 1 : (arrastrando ? 1 : 0.16);
+        if (!arrastrando) {
+          /* inercia: la velocidad empuja la meta, la vista persigue */
+          if (Math.abs(velX) > 0.02 || Math.abs(velY) > 0.02) {
+            meta.x += velX; meta.y += velY;
+            velX *= 0.93; velY *= 0.93;
+            fijarMeta();
+          }
+        }
+        vista.x += (meta.x - vista.x) * k;
+        vista.y += (meta.y - vista.y) * k;
+        vista.z += (meta.z - vista.z) * k;
+        if (Math.abs(meta.x - vista.x) < 0.06) vista.x = meta.x;
+        if (Math.abs(meta.y - vista.y) < 0.06) vista.y = meta.y;
+        if (Math.abs(meta.z - vista.z) < 0.0005) vista.z = meta.z;
+
+        const s = base * vista.z;
+        world.style.transform = 'translate3d(' + vista.x + 'px,' + vista.y + 'px,0) scale(' + s + ')';
+
+        /* marcadores a tamaño constante en pantalla */
+        const mk = 1 / s;
+        if (Math.abs(mk - mkPrev) > 0.002) { world.style.setProperty('--mk', mk); mkPrev = mk; }
+
+        /* etiquetas visibles al acercar */
+        const nom = vista.z > 2.15;
+        if (nom !== nombresPrev) { world.classList.toggle('mapa-nombres', nom); nombresPrev = nom; }
+
+        /* rutas se atenúan con el zoom */
+        const op = clamp(1.18 - (vista.z - 1) * 0.52, 0.14, 1);
+        if (Math.abs(op - opRutasPrev) > 0.01) { rutasSvg.style.opacity = op; opRutasPrev = op; }
+
+        /* rosa de los vientos: se desvía con el arrastre y vuelve al norte */
+        if (!REDUCIDO) {
+          const objetivo = clamp((meta.x - vista.x) * 0.10 + velX * 1.1, -26, 26);
+          const rot = rosaPrev + (objetivo - rosaPrev) * 0.12;
+          if (Math.abs(rot - rosaPrev) > 0.01) { rosaGiro.style.transform = 'rotate(' + rot + 'deg)'; }
+          rosaPrev = rot;
+        }
+
+        /* coordenadas fantásticas del centro del encuadre */
+        const cx = (vw / 2 - vista.x) / s / MAPA.w;
+        const cy = (vh / 2 - vista.y) / s / MAPA.h;
+        const lon = Math.round(-78 + cx * 120);
+        const lat = Math.round(12 - cy * 70);
+        const esc = Math.max(1, Math.round(90 / vista.z)) * 100000;
+        const txt = Math.abs(lat) + '°' + (lat < 0 ? 'S' : 'N') + ' · ' +
+                    Math.abs(lon) + '°' + (lon < 0 ? 'O' : 'E') + ' · escala 1:' +
+                    esc.toLocaleString('es-ES');
+        if (txt !== coordsPrev) { coordsEl.textContent = txt; coordsPrev = txt; }
+
+        if (popAbierto && !MOVIL()) colocarPop();
+        requestAnimationFrame(tic);
+      }
+
+      /* ---------- punteros: arrastre + pellizco ---------- */
+      const punteros = new Map();
+      let px0 = 0, py0 = 0, mx0 = 0, my0 = 0, tPrev = 0, distRecorrida = 0;
+      let pzDist = 0, pzZ = 1, pzMid = null, pzVista = null;
+
+      viewport.addEventListener('pointerdown', e => {
+        distRecorrida = 0;
+        if (e.target.closest('button, a')) return;
+        punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        try { viewport.setPointerCapture(e.pointerId); } catch (_) { }
+        if (punteros.size === 1) {
+          arrastrando = true; distRecorrida = 0;
+          px0 = e.clientX; py0 = e.clientY; mx0 = vista.x; my0 = vista.y;
+          velX = velY = 0; tPrev = performance.now();
+          document.body.dataset.cursor = 'drag';
+          if (popAbierto) cerrarPop();
+          if (leyenda.classList.contains('abierto')) cerrarLeyenda();
+        } else if (punteros.size === 2) {
+          arrastrando = false; pellizco = true;
+          const pts = [...punteros.values()];
+          const r0 = viewport.getBoundingClientRect();
+          pzDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1;
+          pzZ = meta.z;
+          pzMid = { x: (pts[0].x + pts[1].x) / 2 - r0.left, y: (pts[0].y + pts[1].y) / 2 - r0.top };
+          pzVista = { x: meta.x, y: meta.y };
+        }
+      });
+      viewport.addEventListener('pointermove', e => {
+        if (!punteros.has(e.pointerId)) return;
+        punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (pellizco && punteros.size === 2) {
+          const pts = [...punteros.values()];
+          const d = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1;
+          const r0 = viewport.getBoundingClientRect();
+          const mid = { x: (pts[0].x + pts[1].x) / 2 - r0.left, y: (pts[0].y + pts[1].y) / 2 - r0.top };
+          const nz = clamp(pzZ * d / pzDist, Z_MIN, Z_MAX);
+          const r = (base * nz) / (base * pzZ);
+          meta.x = mid.x - (pzMid.x - pzVista.x) * r;
+          meta.y = mid.y - (pzMid.y - pzVista.y) * r;
+          meta.z = nz;
+          fijarMeta();
+          return;
+        }
+        if (!arrastrando) return;
+        const ahora = performance.now();
+        const dx = e.clientX - px0, dy = e.clientY - py0;
+        distRecorrida = Math.max(distRecorrida, Math.abs(dx) + Math.abs(dy));
+        /* límites elásticos: resistencia al salir del lienzo */
+        const [ax, bx] = limX(meta.z), [ay, by] = limY(meta.z);
+        let nx = mx0 + dx, ny = my0 + dy;
+        if (nx > bx) nx = bx + (nx - bx) * 0.38; else if (nx < ax) nx = ax + (nx - ax) * 0.38;
+        if (ny > by) ny = by + (ny - by) * 0.38; else if (ny < ay) ny = ay + (ny - ay) * 0.38;
+        const dt = Math.max(1, ahora - tPrev);
+        velX = velX * 0.75 + ((nx - meta.x) / dt * 17) * 0.25;
+        velY = velY * 0.75 + ((ny - meta.y) / dt * 17) * 0.25;
+        tPrev = ahora;
+        meta.x = nx; meta.y = ny;
+        vista.x = nx; vista.y = ny;
+      });
+      function soltar(e) {
+        punteros.delete(e.pointerId);
+        if (pellizco && punteros.size < 2) {
+          pellizco = false;
+          if (punteros.size === 1) {
+            const p = [...punteros.values()][0];
+            px0 = p.x; py0 = p.y; mx0 = meta.x; my0 = meta.y; arrastrando = true;
+          }
+        }
+        if (arrastrando && punteros.size === 0) {
+          arrastrando = false;
+          if (REDUCIDO) { velX = velY = 0; }
+          else {
+            velX = clamp(velX * 14, -420, 420) / 14; velY = clamp(velY * 14, -420, 420) / 14;
+            velX *= 1.6; velY *= 1.6;
+          }
+          fijarMeta(); /* la vista persigue la meta fijada: rebote elástico */
+        }
+        if (punteros.size === 0) delete document.body.dataset.cursor;
+      }
+      viewport.addEventListener('pointerup', soltar);
+      viewport.addEventListener('pointercancel', soltar);
+
+      /* iOS Safari: el pellizco es del mapa, no de la página */
+      document.addEventListener('gesturestart', e => { if (root.contains(e.target)) e.preventDefault(); });
+
+      /* rueda */
+      viewport.addEventListener('wheel', e => {
+        e.preventDefault();
+        const paso = e.deltaMode === 1 ? e.deltaY * 18 : e.deltaY;
+        const f = lp(e);
+        zoomHacia(meta.z * Math.exp(-paso * 0.0016), f.x, f.y);
+      }, { passive: false });
+
+      /* doble clic */
+      viewport.addEventListener('dblclick', e => {
+        if (e.target.closest('button, a') || distRecorrida > 7) return;
+        const f = lp(e);
+        if (meta.z >= Z_MAX - 0.12) zoomHacia(1, vw / 2, vh / 2);
+        else zoomHacia(meta.z * 1.85, f.x, f.y);
+      });
+
+      /* botones */
+      $('#mv-b-mas').addEventListener('click', () => zoomHacia(meta.z * 1.45, vw / 2, vh / 2));
+      $('#mv-b-menos').addEventListener('click', () => zoomHacia(meta.z / 1.45, vw / 2, vh / 2));
+      $('#mv-b-encuadre').addEventListener('click', () => { velX = velY = 0; centrar(); });
+
+      /* ---------- popover de POI ---------- */
+      let popAbierto = false, poiActivo = null;
+      const popRegion = $('#mv-pop-region'), popTitulo = $('#mv-pop-titulo'),
+            popLore = $('#mv-pop-lore'), popCta = $('#mv-pop-cta');
+
+      function abrirPop(id) {
+        const p = POIS.find(q => q.id === id); if (!p) return;
+        if (poiActivo) poiEls[poiActivo].setAttribute('aria-expanded', 'false');
+        poiActivo = id;
+        poiEls[id].setAttribute('aria-expanded', 'true');
+        popRegion.textContent = p.sub;
+        popTitulo.textContent = p.nombre;
+        popLore.textContent = p.lore;
+        if (p.slug) {
+          popCta.textContent = 'Info de ' + p.nombre;
+          popCta.href = popCta.dataset.geo + p.slug;
+          popCta.hidden = false;
+        } else {
+          popCta.hidden = true;
+        }
+        popAbierto = true;
+        pop.classList.add('abierto');
+        if (!MOVIL()) colocarPop();
+        pop.focus({ preventScroll: true });
+      }
+      function cerrarPop(devolver) {
+        if (!popAbierto) return;
+        popAbierto = false;
+        pop.classList.remove('abierto');
+        if (poiActivo) {
+          poiEls[poiActivo].setAttribute('aria-expanded', 'false');
+          if (devolver) poiEls[poiActivo].focus({ preventScroll: true });
+        }
+        poiActivo = null;
+      }
+      function colocarPop() {
+        const p = POIS.find(q => q.id === poiActivo); if (!p) return;
+        const s = base * vista.z;
+        const sx = vista.x + p.x / 100 * MAPA.w * s;
+        const sy = vista.y + p.y / 100 * MAPA.h * s;
+        const pw = pop.offsetWidth, ph = pop.offsetHeight;
+        const abajo = sy - ph - 34 < 72;
+        pop.classList.toggle('abajo', abajo);
+        const left = clamp(sx - pw / 2, 12, vw - pw - 12);
+        const top = abajo ? sy + 30 : sy - ph - 30;
+        pop.style.left = left + 'px';
+        pop.style.top = top + 'px';
+        pop.style.setProperty('--ax', clamp(sx - left, 20, pw - 20) + 'px');
+      }
+      world.addEventListener('click', e => {
+        const b = e.target.closest('.mapa-poi'); if (!b) return;
+        if (distRecorrida > 7) return;
+        if (poiActivo === b.dataset.id) cerrarPop(true);
+        else abrirPop(b.dataset.id);
+      });
+      pop.querySelector('.mapa-cerrar-pop').addEventListener('click', () => cerrarPop(true));
+
+      /* ---------- cajón SECCIONES y leyenda ---------- */
+      function alternarLeyenda() {
+        const abierta = leyenda.classList.toggle('abierto');
+        bLeyenda.setAttribute('aria-expanded', abierta);
+      }
+      function cerrarLeyenda() {
+        leyenda.classList.remove('abierto');
+        bLeyenda.setAttribute('aria-expanded', 'false');
+      }
+      bLeyenda.addEventListener('click', alternarLeyenda);
+
+      /* ---------- teclado ---------- */
+      addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          if (popAbierto) cerrarPop(true);
+          else if (leyenda.classList.contains('abierto')) cerrarLeyenda();
+          return;
+        }
+        if (e.target && e.target.closest && e.target.closest('input, textarea')) return;
+        const paso = 130;
+        switch (e.key) {
+          case 'ArrowLeft': meta.x += paso; fijarMeta(); e.preventDefault(); break;
+          case 'ArrowRight': meta.x -= paso; fijarMeta(); e.preventDefault(); break;
+          case 'ArrowUp': meta.y += paso; fijarMeta(); e.preventDefault(); break;
+          case 'ArrowDown': meta.y -= paso; fijarMeta(); e.preventDefault(); break;
+          case '+': case '=': zoomHacia(meta.z * 1.3, vw / 2, vh / 2); break;
+          case '-': case '_': zoomHacia(meta.z / 1.3, vw / 2, vh / 2); break;
+          case '?': alternarLeyenda(); break;
+        }
+      });
+
+      /* cerrar popover al pulsar fuera */
+      document.addEventListener('pointerdown', e => {
+        if (!popAbierto || !e.target || !e.target.closest) return;
+        if (e.target.closest('#mv-pop') || e.target.closest('.mapa-poi')) return;
+        cerrarPop();
+      });
+
+      /* ---------- cursor retícula (solo dentro del mapa) ---------- */
+      if (FINO) {
+        const cursor = $('#mv-cursor');
+        let cx = -80, cy = -80, tx = -80, ty = -80;
+        root.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; }, { passive: true });
+        root.addEventListener('pointerleave', () => { tx = -80; ty = -80; });
+        (function moverCursor() {
+          const k = REDUCIDO ? 1 : 0.42;
+          cx += (tx - cx) * k; cy += (ty - cy) * k;
+          cursor.style.transform = 'translate3d(' + cx + 'px,' + cy + 'px,0)';
+          requestAnimationFrame(moverCursor);
+        })();
+        root.addEventListener('pointerover', e => {
+          if (document.body.dataset.cursor === 'drag') return;
+          if (e.target.closest('button, a')) document.body.dataset.cursor = 'hover';
+          else if (document.body.dataset.cursor === 'hover') delete document.body.dataset.cursor;
+        });
+      }
+
+      /* ---------- despliegue ---------- */
+      const intro = $('#mv-intro');
+      let dentro = false;
+      function entrar() {
+        if (dentro) return; dentro = true;
+        intro.style.pointerEvents = 'none';
+        if (window.gsap && !REDUCIDO) {
+          gsap.timeline({ onComplete() { intro.remove(); } })
+            .to(intro, { autoAlpha: 0, scale: 1.05, duration: 0.66, ease: 'power2.inOut' })
+            .fromTo(root, { clipPath: 'inset(5.5% round 16px)' },
+              { clipPath: 'inset(0% round 0px)', duration: 1.05, ease: 'power3.out', clearProps: 'clipPath' }, '<.1');
+        } else {
+          intro.remove();
+        }
+      }
+      if (window.gsap && !REDUCIDO) {
+        gsap.from('#mv-intro .mapa-marca > *', { y: 14, autoAlpha: 0, duration: 0.6, stagger: 0.09, ease: 'power2.out' });
+        gsap.from('#mv-intro svg', { rotation: -40, duration: 0.9, ease: 'power2.out' });
+        setTimeout(entrar, 1900);
+      } else {
+        entrar();
+      }
+      intro.addEventListener('click', entrar);
+      addEventListener('keydown', function unaVez() { entrar(); removeEventListener('keydown', unaVez); }, { once: true });
+
+      /* ---------- arranque ---------- */
+      function arrancar() {
+        navAlto(); medir(); centrar();
+        vista.x = meta.x; vista.y = meta.y; vista.z = meta.z;
+        tic(); /* primer fotograma síncrono; el bucle continúa en rAF */
+      }
+      /* pequeña consola de cartógrafo: edita POIS/RUTAS/NOTAS y muévete desde devtools */
+      window.MapaVivo = {
+        POIS, RUTAS, NOTAS,
+        centrar,
+        ir: (nz, fx, fy) => zoomHacia(nz, fx ?? vw / 2, fy ?? vh / 2),
+        estado: () => ({ x: vista.x, y: vista.y, z: vista.z, metaX: meta.x, metaY: meta.y, metaZ: meta.z, base })
+      };
+      addEventListener('resize', () => {
+        const s0 = base * vista.z;
+        const wcx = (vw / 2 - vista.x) / s0, wcy = (vh / 2 - vista.y) / s0;
+        navAlto(); medir();
+        const s1 = base * meta.z;
+        meta.x = vw / 2 - wcx * s1; meta.y = vh / 2 - wcy * s1;
+        fijarMeta();
+      });
+      arrancar();
+    })();
+  </script>  <footer class="pie-estacion" data-astro-cid-sz7xmlte> <div class="wrap pie-grid" data-astro-cid-sz7xmlte> <p class="pie-marca" data-astro-cid-sz7xmlte>NOVALIS<span data-astro-cid-sz7xmlte> · la biblia del mundo sellado</span></p> <nav aria-label="Secciones (pie)" data-astro-cid-sz7xmlte> <a href="/NovalisPage/wiki" data-astro-cid-sz7xmlte>Wiki</a> <a href="/NovalisPage/bestiario" data-astro-cid-sz7xmlte>Bestiario</a> <a href="/NovalisPage/mapa" data-astro-cid-sz7xmlte>Mapa</a> <a href="/NovalisPage/gaceta" data-astro-cid-sz7xmlte>La Gaceta</a> </nav> <p class="pie-nota" data-astro-cid-sz7xmlte>Línea Imperial · 2026 EN · nombre verdadero: Engren. Pero los nombres verdaderos se pronuncian con cuidado.</p> </div> </footer> </body></html>
